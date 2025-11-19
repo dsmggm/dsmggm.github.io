@@ -13,7 +13,11 @@
       <link>https://example.org/%E7%AC%AC%E4%B8%80/001/</link>
       <pubDate>Wed, 19 Nov 2025 11:56:24 +0800</pubDate>
       <guid>https://example.org/%E7%AC%AC%E4%B8%80/001/</guid>
-      <description></description>
+      <description>&lt;p&gt;1231231
+21312313123&lt;/p&gt;
+&lt;h1 id=&#34;dd&#34;&gt;dd&lt;/h1&gt;
+&lt;h3 id=&#34;33&#34;&gt;33&lt;/h3&gt;
+&lt;p&gt;123123&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
