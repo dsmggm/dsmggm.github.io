@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://dsmggm.github.io/sitemap.xml

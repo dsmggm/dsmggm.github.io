@@ -4,8 +4,13 @@
     <title>Categories on dsmggm博客</title>
     <link>https://dsmggm.github.io/categories/</link>
     <description>Recent content in Categories on dsmggm博客</description>
+    <image>
+      <title>dsmggm博客</title>
+      <url>https://dsmggm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://dsmggm.github.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo -- 0.152.2</generator>
-    <language>zh-cn</language>
+    <language>en</language>
     <atom:link href="https://dsmggm.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
