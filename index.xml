@@ -10,16 +10,87 @@
     <atom:link href="https://dsmggm.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>001</title>
-      <link>https://dsmggm.github.io/%E7%AC%AC%E4%B8%80/001/</link>
+      <link>https://dsmggm.github.io/%E7%AC%AC%E4%B8%80/halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
       <pubDate>Wed, 19 Nov 2025 11:56:24 +0800</pubDate>
-      <guid>https://dsmggm.github.io/%E7%AC%AC%E4%B8%80/001/</guid>
-      <description>&lt;p&gt;1231231
-21312313123&lt;/p&gt;
-&lt;h1 id=&#34;dd&#34;&gt;dd&lt;/h1&gt;
-&lt;h3 id=&#34;33&#34;&gt;33&lt;/h3&gt;
-&lt;p&gt;123123&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cd /root
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;end&lt;/p&gt;</description>
+      <guid>https://dsmggm.github.io/%E7%AC%AC%E4%B8%80/halo%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+      <description>&lt;h1 id=&#34;安装部署&#34;&gt;安装部署&lt;/h1&gt;
+&lt;p&gt;安装部署的方式使用的docker compose部署的方式&lt;/p&gt;
+&lt;p&gt;在root目录下创建一个halo文件夹&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkdir ~/halo
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;创建一个compose.yaml文件并把下方的yaml文件内容放进去&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;touch ~/halo/compose.yaml
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;下面是compose.yaml文件内容&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;services:
+halo:
+    # 镜像
+    image: registry.fit2cloud.com/halo/halo:2.20
+    # 容器名
+    container_name: halo2
+    # 重启策略, on-failure:3 表示失败重启 3 次
+    restart: on-failure:3
+    # 网络接口
+    networks:
+      halo_network:
+    # 端口
+    ports:
+      - &amp;#34;8090:8090&amp;#34;
+    # 持久化存储
+    volumes:
+      - ~/halo/halo2:/root/.halo2
+    # 环境变量
+    environment:
+      - TZ=Asia/Shanghai
+      - &amp;#34;JVM_OPTS=-Xmx256m -Xms256m&amp;#34;
+    # 健康检查
+    healthcheck:
+      test: [&amp;#34;CMD&amp;#34;, &amp;#34;curl&amp;#34;, &amp;#34;-f&amp;#34;, &amp;#34;http://localhost:8090/actuator/health/readiness&amp;#34;]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    # 启动命令
+    command:
+      - --spring.r2dbc.url=r2dbc:pool:mysql://mysql:3306/halo
+      - --spring.r2dbc.username=root
+      # MySQL 的密码，请保证与下方 MYSQL_ROOT_PASSWORD 的变量值一致。
+      - --spring.r2dbc.password=dsmggmDwN&amp;amp;JSa56
+      - --spring.sql.init.platform=mysql
+      # 外部访问地址，请根据实际需要修改
+      - --halo.external-url=http://localhost:8090/
+
+  # MySQL 服务
+  mysql:
+    image: mysql:8.1.0
+    container_name: halo2_mysql
+    restart: on-failure:3
+    networks:
+      halo_network:
+    volumes:
+      - ~/halo/mysql/conf/my.cnf:/etc/mysql/my.cnf
+      - ~/halo/mysql/logs:/logs
+      - ~/halo/mysql/data:/var/lib/mysql
+    privileged: true
+    healthcheck:
+      test: [&amp;#34;CMD&amp;#34;, &amp;#34;mysqladmin&amp;#34;, &amp;#34;ping&amp;#34;, &amp;#34;-h&amp;#34;, &amp;#34;127.0.0.1&amp;#34;, &amp;#34;--silent&amp;#34;]
+      interval: 3s
+      retries: 5
+      start_period: 30s
+    environment:
+      # 请修改此密码，并对应修改上方 Halo 服务的 SPRING_R2DBC_PASSWORD 变量值
+      - MYSQL_ROOT_PASSWORD=dsmggmDwN&amp;amp;JSa56
+      - MYSQL_DATABASE=halo
+      - TZ=Asia/Shanghai
+
+# 定义一个网络
+networks:
+  halo_network:
+&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&#34;启动容器服务&#34;&gt;启动容器服务&lt;/h1&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;cd ~/halo
+# docker compose V2使用这个
+docker compose up -d
+# docker compose V1使用这个
+docker-compose up -d
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;不知道compose版本的直接复制全部粘贴就行&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
