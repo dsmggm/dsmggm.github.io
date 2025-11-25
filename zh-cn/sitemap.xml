@@ -86,15 +86,6 @@
     <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/alpine/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/categories/apline/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://dsmggm.github.io/categories/docker/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -113,16 +104,34 @@
     <loc>https://dsmggm.github.io/tags/windows/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://dsmggm.github.io/windows/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/windows/windwos%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/windows/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/windows/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
+    <loc>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/categories/hugo/</loc>
@@ -135,6 +144,15 @@
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/tags/adguard/</loc>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/categories/alpine/</loc>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/alpine/</loc>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/tags/bncr/</loc>
@@ -156,6 +174,9 @@
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/%E9%83%A8%E7%BD%B2adguard%E5%8E%BB%E9%99%A4%E5%B1%80%E5%9F%9F%E7%BD%91%E5%B9%BF%E5%91%8A%E4%BB%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%AE%98%E6%96%B9%E6%AF%94%E8%BE%83%E6%9C%89%E7%94%A8%E7%9A%84%E8%A7%84%E5%88%99/</loc>
+    <lastmod>2025-11-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&#43;halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
@@ -234,11 +255,9 @@
   </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
   </url><url>
-    <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</loc>
-  </url><url>
-    <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/windwos%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</loc>
-  </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
+  </url><url>
+    <loc>https://dsmggm.github.io/categories/test/</loc>
   </url><url>
     <loc>https://dsmggm.github.io/%E6%90%9C%E7%B4%A2/</loc>
   </url>

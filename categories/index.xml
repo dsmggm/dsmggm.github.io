@@ -40,14 +40,6 @@
         <description></description>
         </item>
         <item>
-        <title>Apline</title>
-        <link>https://dsmggm.github.io/categories/apline/</link>
-        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/apline/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Docker</title>
         <link>https://dsmggm.github.io/categories/docker/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
@@ -70,6 +62,22 @@
         
         <guid>https://dsmggm.github.io/categories/hugo/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Alpine</title>
+        <link>https://dsmggm.github.io/categories/alpine/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/categories/alpine/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Jelina</title>
+        <link>https://dsmggm.github.io/categories/test/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/categories/test/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/categories/test/image.png" alt="Featured image of post Jelina" /&gt;</description>
         </item>
         
     </channel>
