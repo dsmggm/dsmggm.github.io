@@ -7,7 +7,468 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Wed, 19 Nov 2025 11:56:24 +0800</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Jelina安装onboard屏幕软键盘SOP</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png" alt="Featured image of post Jelina安装onboard屏幕软键盘SOP" /&gt;&lt;h1 id=&#34;一安装onboard&#34;&gt;一、安装onboard
+&lt;/h1&gt;&lt;h2 id=&#34;更新系统软件包&#34;&gt;更新系统软件包
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt updata
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image.png&#34;
+	width=&#34;1245&#34;
+	height=&#34;279&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_c8a8d9b5c3dbb96a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_83626ea330634895.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;446&#34;
+		data-flex-basis=&#34;1070px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装onboard软件包&#34;&gt;安装onboard软件包
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install onboard -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png&#34;
+	width=&#34;1242&#34;
+	height=&#34;406&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_7e36e2a157d73ca3.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_fa6d05082dfa0514.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;305&#34;
+		data-flex-basis=&#34;734px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;二设置onboard&#34;&gt;二、设置onboard
+&lt;/h1&gt;&lt;p&gt;在菜单设置中，选择onboard settings&lt;br&gt;
+Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2.png&#34;
+	width=&#34;1245&#34;
+	height=&#34;757&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_b58f2f9da4fdbe6a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_e8067e66da615d7e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;394px&#34;
+	
+&gt;
+将常规设置(General)中将Auto-show when editing text（在输入时自动显示软键盘）打勾
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3.png&#34;
+	width=&#34;1159&#34;
+	height=&#34;576&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_f1b3cbc271451bd6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_ca72f602ed687214.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;201&#34;
+		data-flex-basis=&#34;482px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4.png&#34;
+	width=&#34;810&#34;
+	height=&#34;397&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_c83841696affa0d3.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_62a8f0a851cf7f5d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;204&#34;
+		data-flex-basis=&#34;489px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三设置onboard开机自动启动&#34;&gt;三、设置onboard开机自动启动
+&lt;/h1&gt;&lt;p&gt;在菜单中找到Settings&amp;ndash;&amp;gt;Session and Startup，将onboard添加到启动项中&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5.png&#34;
+	width=&#34;872&#34;
+	height=&#34;941&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_7c99fd8269d73ef9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_d22d643b050ffb88.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;92&#34;
+		data-flex-basis=&#34;222px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6.png&#34;
+	width=&#34;1244&#34;
+	height=&#34;1185&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_75455fcfec62ff8f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_ef99183d7f8f8b60.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;104&#34;
+		data-flex-basis=&#34;251px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四重启&#34;&gt;四、重启
+&lt;/h1&gt;&lt;p&gt;重启系统&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Jelina常用命令</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;h1 id=&#34;jelina默认账密&#34;&gt;Jelina默认账密
+&lt;/h1&gt;&lt;h2 id=&#34;用户1&#34;&gt;用户1
+&lt;/h2&gt;&lt;p&gt;用户名： root&lt;br&gt;
+密码： jelina&lt;/p&gt;
+&lt;h2 id=&#34;用户2&#34;&gt;用户2
+&lt;/h2&gt;&lt;p&gt;用户名： jelina&lt;br&gt;
+密码（大多数时候不需要输入密码）： jelina&lt;/p&gt;
+&lt;h1 id=&#34;jelina常用命令或命令组合&#34;&gt;Jelina常用命令或命令组合
+&lt;/h1&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-ver&lt;/td&gt;
+          &lt;td&gt;查询当前JelinaOS的系统版本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-device-info get &amp;ndash;sn &amp;ndash;ssn&lt;/td&gt;
+          &lt;td&gt;查看设备SN号（RK和NXP兼容）的命令&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat /run/jelina/register/jelina-register-state; echo&lt;/td&gt;
+          &lt;td&gt;检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl restart jelina-jelinvisor&lt;/td&gt;
+          &lt;td&gt;重启jelinvisor，一般用于初始化与Cloud的连接&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat /mnt/boot/config.json&lt;/td&gt;
+          &lt;td&gt;查看“舰队”等配置信息&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;journalctl -u jelina-jelinvisor.servicef&lt;/td&gt;
+          &lt;td&gt;查看最近的jelinvisor日志，一般用于分析设备无法online的情况&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl start &lt;a class=&#34;link&#34; href=&#34;mailto:jelina-upper-new@root.service&#34; &gt;jelina-upper-new@root.service&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;恢复初始状态（Jelinvisor除外）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-offline off&lt;/td&gt;
+          &lt;td&gt;切换jelinvisor到连线模式&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-offline on&lt;/td&gt;
+          &lt;td&gt;切换jelinvisor到离线模式&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title>Jelina系统安装</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png" alt="Featured image of post Jelina系统安装" /&gt;&lt;h1 id=&#34;一系统下载&#34;&gt;一、系统下载
+&lt;/h1&gt;&lt;p&gt;注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的&lt;strong&gt;设备类型&lt;/strong&gt;与&lt;strong&gt;OS版本&lt;/strong&gt;&lt;br&gt;
+下面以&lt;strong&gt;RK3568 RSB-4810&lt;/strong&gt;设备&lt;strong&gt;Debian10 1.1.5&lt;/strong&gt;为例&lt;br&gt;
+选择后点击右下角下载&lt;br&gt;
+一般情况下都会使用&lt;strong&gt;With Configuration&lt;/strong&gt;带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image.png&#34;
+	width=&#34;2984&#34;
+	height=&#34;1649&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_88793089e29d1194.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_97449d9851f40801.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;180&#34;
+		data-flex-basis=&#34;434px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载按钮解释&#34;&gt;下载按钮解释
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;按钮名称&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JlinaFlasher&lt;/td&gt;
+          &lt;td&gt;镜像刻录工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JelinaFlasher-Portable&lt;/td&gt;
+          &lt;td&gt;便携版&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JelinaFlasher-Setup&lt;/td&gt;
+          &lt;td&gt;安装版&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JelinaOS&lt;/td&gt;
+          &lt;td&gt;系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Original&lt;/td&gt;
+          &lt;td&gt;原始系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;With Configuration&lt;/td&gt;
+          &lt;td&gt;带监督配置的系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;配置文件&lt;/td&gt;
+          &lt;td&gt;舰队单独的配置文件&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;二刻录系统安装盘&#34;&gt;二、刻录系统安装盘
+&lt;/h1&gt;&lt;p&gt;arm基本上使用micro SD卡进行刻录烧制&lt;br&gt;
+可以使用JlinaFlasher工具或者是Rufus工具进行烧录&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;准备工具&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JlinaFlasher &amp;amp; Rufus&lt;/td&gt;
+          &lt;td&gt;镜像刻录工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;系统镜像文件&lt;/td&gt;
+          &lt;td&gt;系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;micro SD卡&lt;/td&gt;
+          &lt;td&gt;引导系统载体，用于刻录系统镜像文件，建议8G及以上&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;读卡器&lt;/td&gt;
+          &lt;td&gt;用于读读写micro SD卡&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;打开JlinaFlasher工具，选择系统镜像文件，选择micro SD卡，点击下一步，点击烧录并等待完成即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1.png&#34;
+	width=&#34;1798&#34;
+	height=&#34;1132&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_e09dfb1ba094064c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_daa14d07994e66af.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;381px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2.png&#34;
+	width=&#34;1798&#34;
+	height=&#34;1123&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_7c03c07b07a53d7e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_2a0fadccc23c652.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;160&#34;
+		data-flex-basis=&#34;384px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3.png&#34;
+	width=&#34;1798&#34;
+	height=&#34;1125&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_2f3dee91402ac232.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_cb11e237387a6212.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;383px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png&#34;
+	width=&#34;1798&#34;
+	height=&#34;1130&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_1dbfb9cee5ff781e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_73a94bce62d8d749.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;159&#34;
+		data-flex-basis=&#34;381px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三刷入系统&#34;&gt;三、刷入系统
+&lt;/h1&gt;&lt;p&gt;接好硬件，以下图片作为参考
+将&lt;strong&gt;串口&lt;/strong&gt;、&lt;strong&gt;micro SD&lt;/strong&gt;、&lt;strong&gt;Debug串口连接电脑&lt;/strong&gt;，最后再接通电源，网络可在稍后连接
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5.png&#34;
+	width=&#34;2102&#34;
+	height=&#34;1386&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_947e38f2429951c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_8a9f2cb59a641d62.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;
+串口显示工具使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MobaXterm_Personal&lt;/a&gt;或其它工具&lt;br&gt;
+1、点击会话&lt;br&gt;
+2、点击串口&lt;br&gt;
+3、选择串口设备&lt;br&gt;
+4、波特率一般为115200&lt;br&gt;
+5、点击ok&lt;br&gt;
+没有报错就是连接成功，接着上电就能看到输出内容
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6.png&#34;
+	width=&#34;2997&#34;
+	height=&#34;1888&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_ef1355c22797631.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_d2b01860f7d283eb.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;380px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7.png&#34;
+	width=&#34;2999&#34;
+	height=&#34;1895&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_e754348ca45dc264.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_9db6c4ee4726f22c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;379px&#34;
+	
+&gt;
+接着会显示3秒的U-boot界面，默认会自动刷写Flash，既刷系统
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8.png&#34;
+	width=&#34;1125&#34;
+	height=&#34;394&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_d32c4f8171901937.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_b860083ca7ce7894.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;285&#34;
+		data-flex-basis=&#34;685px&#34;
+	
+&gt;
+等待刷写完成
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9.png&#34;
+	width=&#34;2027&#34;
+	height=&#34;718&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_f5bb94807e9308aa.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_3f2e323be66e8832.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;282&#34;
+		data-flex-basis=&#34;677px&#34;
+	
+&gt;
+刷写完成倒计时30秒自动关机，拔出micro SD卡后重新上电即可开机使用&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10.png&#34;
+	width=&#34;2390&#34;
+	height=&#34;1595&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_79931372825cf2c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_48ed45a441d0a8a7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;149&#34;
+		data-flex-basis=&#34;359px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四开机&#34;&gt;四、开机
+&lt;/h1&gt;&lt;p&gt;开机跑码后界面如下
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11.png&#34;
+	width=&#34;2390&#34;
+	height=&#34;1595&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_bf7e40fa926cdea9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_830ee9890145180f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;149&#34;
+		data-flex-basis=&#34;359px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>硬件接口详解</title>
         <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</link>
         <pubDate>Wed, 19 Nov 2025 11:56:24 +0800</pubDate>

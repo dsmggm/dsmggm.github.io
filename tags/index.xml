@@ -8,19 +8,19 @@
         <language>zh-cn</language>
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Hugo</title>
-        <link>https://dsmggm.github.io/tags/hugo/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/hugo/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Jelina</title>
         <link>https://dsmggm.github.io/tags/jelina/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/tags/jelina/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JelinaCloud</title>
+        <link>https://dsmggm.github.io/tags/jelinacloud/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/jelinacloud/</guid>
         <description></description>
         </item>
         <item>
@@ -34,7 +34,7 @@
         <item>
         <title>研华</title>
         <link>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</link>
-        <pubDate>Wed, 19 Nov 2025 11:56:24 +0800</pubDate>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</guid>
         <description></description>
@@ -48,6 +48,30 @@
         <description></description>
         </item>
         <item>
+        <title>Docker</title>
+        <link>https://dsmggm.github.io/tags/docker/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/docker/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Jd_h5st</title>
+        <link>https://dsmggm.github.io/tags/jd_h5st/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/jd_h5st/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Windows</title>
+        <link>https://dsmggm.github.io/tags/windows/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/windows/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>镜像源</title>
         <link>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
@@ -56,59 +80,91 @@
         <description></description>
         </item>
         <item>
-        <title>Css</title>
-        <link>https://dsmggm.github.io/tags/css/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>文件夹</title>
+        <link>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/css/</guid>
+        <guid>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
         <description></description>
         </item>
         <item>
-        <title>Html</title>
-        <link>https://dsmggm.github.io/tags/html/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Hugo</title>
+        <link>https://dsmggm.github.io/tags/hugo/</link>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/html/</guid>
+        <guid>https://dsmggm.github.io/tags/hugo/</guid>
         <description></description>
         </item>
         <item>
-        <title>Markdown</title>
-        <link>https://dsmggm.github.io/tags/markdown/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>AdGuard</title>
+        <link>https://dsmggm.github.io/tags/adguard/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/markdown/</guid>
+        <guid>https://dsmggm.github.io/tags/adguard/</guid>
         <description></description>
         </item>
         <item>
-        <title>Themes</title>
-        <link>https://dsmggm.github.io/tags/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Bncr</title>
+        <link>https://dsmggm.github.io/tags/bncr/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/themes/</guid>
+        <guid>https://dsmggm.github.io/tags/bncr/</guid>
         <description></description>
         </item>
         <item>
-        <title>Tag With Whitespaces</title>
-        <link>https://dsmggm.github.io/tags/tag-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Bot</title>
+        <link>https://dsmggm.github.io/tags/bot/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/tag-with-whitespaces/</guid>
+        <guid>https://dsmggm.github.io/tags/bot/</guid>
         <description></description>
         </item>
         <item>
-        <title>Text</title>
-        <link>https://dsmggm.github.io/tags/text/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Cloudflare</title>
+        <link>https://dsmggm.github.io/tags/cloudflare/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/text/</guid>
+        <guid>https://dsmggm.github.io/tags/cloudflare/</guid>
         <description></description>
         </item>
         <item>
-        <title>Emoji</title>
-        <link>https://dsmggm.github.io/tags/emoji/</link>
-        <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Halo</title>
+        <link>https://dsmggm.github.io/tags/halo/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/emoji/</guid>
+        <guid>https://dsmggm.github.io/tags/halo/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>R2对象存储</title>
+        <link>https://dsmggm.github.io/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Wechat</title>
+        <link>https://dsmggm.github.io/tags/wechat/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/wechat/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>微信机器人</title>
+        <link>https://dsmggm.github.io/tags/%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/%E5%BE%AE%E4%BF%A1%E6%9C%BA%E5%99%A8%E4%BA%BA/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>无界</title>
+        <link>https://dsmggm.github.io/tags/%E6%97%A0%E7%95%8C/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/tags/%E6%97%A0%E7%95%8C/</guid>
         <description></description>
         </item>
         

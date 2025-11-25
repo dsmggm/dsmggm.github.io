@@ -8,19 +8,19 @@
         <language>zh-cn</language>
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Hugo</title>
-        <link>https://dsmggm.github.io/categories/hugo/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/hugo/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Jelina</title>
         <link>https://dsmggm.github.io/categories/jelina/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/categories/jelina/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JelinaCloud</title>
+        <link>https://dsmggm.github.io/categories/jelinacloud/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/categories/jelinacloud/</guid>
         <description></description>
         </item>
         <item>
@@ -34,57 +34,41 @@
         <item>
         <title>研华</title>
         <link>https://dsmggm.github.io/categories/%E7%A0%94%E5%8D%8E/</link>
-        <pubDate>Wed, 19 Nov 2025 11:56:24 +0800</pubDate>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/categories/%E7%A0%94%E5%8D%8E/</guid>
         <description></description>
         </item>
         <item>
-        <title>技术</title>
-        <link>https://dsmggm.github.io/categories/%E6%8A%80%E6%9C%AF/</link>
+        <title>Apline</title>
+        <link>https://dsmggm.github.io/categories/apline/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/categories/%E6%8A%80%E6%9C%AF/</guid>
+        <guid>https://dsmggm.github.io/categories/apline/</guid>
         <description></description>
         </item>
         <item>
-        <title>Test</title>
-        <link>https://dsmggm.github.io/categories/test/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <title>Docker</title>
+        <link>https://dsmggm.github.io/categories/docker/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/categories/test/</guid>
+        <guid>https://dsmggm.github.io/categories/docker/</guid>
         <description></description>
         </item>
         <item>
-        <title>测试</title>
-        <link>https://dsmggm.github.io/categories/%E6%B5%8B%E8%AF%95/</link>
-        <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+        <title>Windows</title>
+        <link>https://dsmggm.github.io/categories/windows/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/categories/%E6%B5%8B%E8%AF%95/</guid>
+        <guid>https://dsmggm.github.io/categories/windows/</guid>
         <description></description>
         </item>
         <item>
-        <title>Syntax</title>
-        <link>https://dsmggm.github.io/categories/syntax/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+        <title>Hugo</title>
+        <link>https://dsmggm.github.io/categories/hugo/</link>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/categories/syntax/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Themes</title>
-        <link>https://dsmggm.github.io/categories/themes/</link>
-        <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/themes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Test With Whitespaces</title>
-        <link>https://dsmggm.github.io/categories/test-with-whitespaces/</link>
-        <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/test-with-whitespaces/</guid>
+        <guid>https://dsmggm.github.io/categories/hugo/</guid>
         <description></description>
         </item>
         

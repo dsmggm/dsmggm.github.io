@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/hugo/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>hugo搭建记录</title>
-        <link>https://dsmggm.github.io/hugo%E6%95%99%E7%A8%8B/hugo/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        <link>https://dsmggm.github.io/hugo/</link>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/hugo%E6%95%99%E7%A8%8B/hugo/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/1.jpg" alt="Featured image of post hugo搭建记录" /&gt;&lt;h1 id=&#34;一下载hugo&#34;&gt;一、下载hugo
+        <guid>https://dsmggm.github.io/hugo/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/hugo/1.jpg" alt="Featured image of post hugo搭建记录" /&gt;&lt;h1 id=&#34;一下载hugo&#34;&gt;一、下载hugo
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://github.com/gohugoio/hugo/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://github.com/gohugoio/hugo/releases&lt;/a&gt;&lt;br&gt;
 下载带extended的&lt;br&gt;
@@ -610,36 +610,48 @@
 &lt;/h1&gt;&lt;p&gt;创建仓库 {github用户名}.github.io  # 公开，用于访问pages&lt;br&gt;
 创建仓库 {github用户名}.hugo.dev  # 私有，用于提交与actions构建&lt;br&gt;
 私有仓库前往Setttings -&amp;gt; Developer Settings -&amp;gt; Personal access tokens，创建一个token(classic)
-&lt;img src=&#34;https://dsmggm.github.io/image.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://dsmggm.github.io/hugo/image.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;251&#34;
+	srcset=&#34;https://dsmggm.github.io/hugo/image_hu_e2003d0a0057d796.png 480w, https://dsmggm.github.io/hugo/image_hu_57f621b5c7f09c67.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;407&#34;
+		data-flex-basis=&#34;979px&#34;
 	
 &gt;
 token选择永不过期，并勾选 repo 和 workflow 选项&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/image-1.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://dsmggm.github.io/hugo/image-1.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;621&#34;
+	srcset=&#34;https://dsmggm.github.io/hugo/image-1_hu_743da5220d11a82f.png 480w, https://dsmggm.github.io/hugo/image-1_hu_7fe231b9fa2514bf.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;164&#34;
+		data-flex-basis=&#34;395px&#34;
 	
 &gt;
 为保证安全，将生成的token，保存的仓库的变量中，前往Settings -&amp;gt; Secrets and variables -&amp;gt; Actions中设置&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/image-2.png&#34;
-	
-	
-	
+&lt;img src=&#34;https://dsmggm.github.io/hugo/image-2.png&#34;
+	width=&#34;1024&#34;
+	height=&#34;597&#34;
+	srcset=&#34;https://dsmggm.github.io/hugo/image-2_hu_cb2975523bcd4822.png 480w, https://dsmggm.github.io/hugo/image-2_hu_31801bdc96f0584.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;171&#34;
+		data-flex-basis=&#34;411px&#34;
 	
 &gt;
 自动流文件创建：.github/workflows/deploy.yml&lt;/p&gt;

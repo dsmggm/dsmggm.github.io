@@ -2,16 +2,16 @@
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="互为主从均需要执行以下命令\n修改配置文件 修改增加/etc/my.cnf文件\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 [mysqld] # 设备唯一ID，不能相同 server-id = 100 # 启动二进制日志 log_bin = mysql-bin gtid_mode = ON enforce_gtid_consistency = true # 设置不要复制的数据库(可设置多个)根据实际情况打开 # binlog-ignore-db=sys # binlog-ignore-db=mysql # binlog-ignore-db=performance_schema # 设置需要复制的数据库(可设置多个)根据实际情况打开 # binlog-do-db=test server-id：设置服务器的唯一标识符。 log_bin：启用二进制日志记录。 gtid_mode：启用 GTID 模式。 enforce_gtid_consistency：强制 GTID 一致性。\n">
-<title>mysql8.1.0互为主从</title>
+<title></title>
 
 <link rel='canonical' href='https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="mysql8.1.0互为主从">
+<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="">
 <meta property='og:description' content="互为主从均需要执行以下命令\n修改配置文件 修改增加/etc/my.cnf文件\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 [mysqld] # 设备唯一ID，不能相同 server-id = 100 # 启动二进制日志 log_bin = mysql-bin gtid_mode = ON enforce_gtid_consistency = true # 设置不要复制的数据库(可设置多个)根据实际情况打开 # binlog-ignore-db=sys # binlog-ignore-db=mysql # binlog-ignore-db=performance_schema # 设置需要复制的数据库(可设置多个)根据实际情况打开 # binlog-do-db=test server-id：设置服务器的唯一标识符。 log_bin：启用二进制日志记录。 gtid_mode：启用 GTID 模式。 enforce_gtid_consistency：强制 GTID 一致性。\n">
 <meta property='og:url' content='https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/'>
 <meta property='og:site_name' content='dsmggm博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='记录' /><meta property='article:published_time' content='2025-11-19T11:56:24&#43;08:00'/><meta property='article:modified_time' content='2025-11-19T11:56:24&#43;08:00'/>
-<meta name="twitter:title" content="mysql8.1.0互为主从">
+<meta property='og:type' content='article'><meta property='article:section' content='记录' />
+<meta name="twitter:title" content="">
 <meta name="twitter:description" content="互为主从均需要执行以下命令\n修改配置文件 修改增加/etc/my.cnf文件\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 [mysqld] # 设备唯一ID，不能相同 server-id = 100 # 启动二进制日志 log_bin = mysql-bin gtid_mode = ON enforce_gtid_consistency = true # 设置不要复制的数据库(可设置多个)根据实际情况打开 # binlog-ignore-db=sys # binlog-ignore-db=mysql # binlog-ignore-db=performance_schema # 设置需要复制的数据库(可设置多个)根据实际情况打开 # binlog-do-db=test server-id：设置服务器的唯一标识符。 log_bin：启用二进制日志记录。 gtid_mode：启用 GTID 模式。 enforce_gtid_consistency：强制 GTID 一致性。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -221,7 +221,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E8%AE%B0%E5%BD%95/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/">mysql8.1.0互为主从</a>
+            <a href="/%E8%AE%B0%E5%BD%95/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/"></a>
         </h2>
     
         
@@ -230,25 +230,6 @@
     
     
     
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published" datetime='2025-11-19T11:56:24&#43;08:00'>2025-11-19</time>
-            </div>
-        
-
-        
-    </footer>
     
 
     
