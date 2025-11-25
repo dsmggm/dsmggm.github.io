@@ -679,11 +679,21 @@
 </script>
 
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/cursor-effects@1.0.1/dist/cursor-effects.min.js"></script>
 
 
-<script src="/js/cursor/cursor12.js"></script>
-
+<script>
+    
+    if (window.innerWidth > 768) {
+        
+        new cursoreffects.FairyDustCursor({
+            colors: ["#ff00ff", "#00ffff", "#ffff00", "#ffffff"], 
+            particleCount: 15, 
+            particleSize: 3,   
+            fadeSpeed: 1.5     
+        });
+    }
+</script>
 
 
     </body>
