@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>镜像制作 on dsmggm博客</title>
+        <link>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</link>
+        <description>Recent content in 镜像制作 on dsmggm博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Dsmggm</copyright>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>mkisofs打包iso镜像命令</title>
+        <link>https://dsmggm.github.io/mkisofs%E6%89%93%E5%8C%85iso%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/mkisofs%E6%89%93%E5%8C%85iso%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mkisofs
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-r
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-v
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-V &lt;span class=&#34;s2&#34;&gt;&amp;#34;卷标&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-eltorito-alt-boot
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-e boot/grub/efi.img
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-no-emul-boot
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-o ../xxx.iso .
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;-T
+生成翻译表，优化 ISO 文件在不同系统间的兼容性。&lt;/p&gt;
+&lt;p&gt;-r
+使用 Rock Ridge 扩展，保留 Unix/Linux 文件属性（如权限、所有者等）。这对于 Linux 系统的 ISO 非常重要。&lt;/p&gt;
+&lt;p&gt;-v
+显示详细输出，便于调试和查看进度。&lt;/p&gt;
+&lt;p&gt;-V &amp;ldquo;卷标&amp;rdquo;
+设置 ISO 的卷标（Volume Label），即光盘的名称。&lt;/p&gt;
+&lt;p&gt;-eltorito-alt-boot
+指定替代的引导映像，用于支持多种引导方式。&lt;/p&gt;
+&lt;p&gt;-e boot/grub/efi.img
+指定 EFI 引导映像文件路径，使 ISO 支持 UEFI 模式启动。&lt;/p&gt;
+&lt;p&gt;-no-emul-boot
+设置为无模拟引导模式，直接加载引导映像。&lt;/p&gt;
+&lt;p&gt;-o ../xxx.iso
+指定输出 ISO 文件的路径和名称。&lt;/p&gt;
+&lt;p&gt;.
+指定要打包的源目录（当前目录）。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

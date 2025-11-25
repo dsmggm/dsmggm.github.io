@@ -9,10 +9,10 @@
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/windows/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>windows多网络连接(有线无线同时连接)</title>
-        <link>https://dsmggm.github.io/windows/windwos%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</link>
+        <link>https://dsmggm.github.io/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/windows/windwos%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</guid>
+        <guid>https://dsmggm.github.io/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</guid>
         <description>&lt;h1 id=&#34;方案一&#34;&gt;方案一：
 &lt;/h1&gt;&lt;p&gt;ctrl+r打开运行
 输入gpedit.msc打开组策略
@@ -43,112 +43,10 @@
         </item>
         <item>
         <title>windows特殊文件夹命令</title>
-        <link>https://dsmggm.github.io/windows/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</link>
+        <link>https://dsmggm.github.io/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/windows/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;命令&lt;/th&gt;
-          &lt;th&gt;作用说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell: desktop&lt;/td&gt;
-          &lt;td&gt;用户桌面文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell: common desktop&lt;/td&gt;
-          &lt;td&gt;公共用户桌面文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:sendto&lt;/td&gt;
-          &lt;td&gt;&amp;ldquo;发送到&amp;quot;菜单中的文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:startup&lt;/td&gt;
-          &lt;td&gt;用户登陆自启动文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:common startup&lt;/td&gt;
-          &lt;td&gt;全部用户登陆启动文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:programs&lt;/td&gt;
-          &lt;td&gt;开始菜单中的程序文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:common programs&lt;/td&gt;
-          &lt;td&gt;全部用户开始菜单中的程序文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:appdata&lt;/td&gt;
-          &lt;td&gt;应用程序数据文件夹，存储应用程序的配置文件等&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:recent&lt;/td&gt;
-          &lt;td&gt;最近使用的文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:favorites&lt;/td&gt;
-          &lt;td&gt;收藏文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:fonts&lt;/td&gt;
-          &lt;td&gt;字体文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:templates&lt;/td&gt;
-          &lt;td&gt;模板文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:my music&lt;/td&gt;
-          &lt;td&gt;用户音乐文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:my pictures&lt;/td&gt;
-          &lt;td&gt;用户图片文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:videos&lt;/td&gt;
-          &lt;td&gt;用户视频文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:start menu&lt;/td&gt;
-          &lt;td&gt;用户开始菜单文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:appsfolder&lt;/td&gt;
-          &lt;td&gt;全部已安装应用文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:quick launch&lt;/td&gt;
-          &lt;td&gt;开始菜单快速启动文件夹，主要是里面的user pinned(隐藏的)-TaskBar文件夹是固定任务栏的文件夹&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:programfiles&lt;/td&gt;
-          &lt;td&gt;程序安装目录C:\Program Files&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:programfilesx86&lt;/td&gt;
-          &lt;td&gt;程序安装目录C:\Program Files (x86)&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;shell:programfilescommon&lt;/td&gt;
-          &lt;td&gt;程序安装目录C:\Program Files\Common Files&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-</description>
-        </item>
-        <item>
-        <title>windows特殊文件夹命令</title>
-        <link>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</link>
-        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</guid>
+        <guid>https://dsmggm.github.io/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -247,10 +145,10 @@
         </item>
         <item>
         <title>windows优化脚本</title>
-        <link>https://dsmggm.github.io/windows/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</link>
+        <link>https://dsmggm.github.io/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/windows/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</guid>
+        <guid>https://dsmggm.github.io/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</guid>
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;  1

@@ -9,10 +9,10 @@
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>使用cloudflare R2对象存储&#43;halo搭建博客</title>
-        <link>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&#43;halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+        <link>https://dsmggm.github.io/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8&#43;halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+        <guid>https://dsmggm.github.io/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
         <description>&lt;h1 id=&#34;cloudflare-r2对象存储设置&#34;&gt;cloudflare R2对象存储设置
 &lt;/h1&gt;&lt;h2 id=&#34;创建存储桶&#34;&gt;创建存储桶
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://blogbed.dsmggm.dpdns.org/image-8m1k.png&#34;

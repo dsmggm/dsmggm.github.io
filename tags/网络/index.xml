@@ -9,10 +9,10 @@
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Wed, 19 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>windows多网络连接(有线无线同时连接)</title>
-        <link>https://dsmggm.github.io/windows/windwos%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</link>
+        <link>https://dsmggm.github.io/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/windows/windwos%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</guid>
+        <guid>https://dsmggm.github.io/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</guid>
         <description>&lt;h1 id=&#34;方案一&#34;&gt;方案一：
 &lt;/h1&gt;&lt;p&gt;ctrl+r打开运行
 输入gpedit.msc打开组策略
