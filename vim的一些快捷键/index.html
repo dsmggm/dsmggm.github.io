@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="vim的一些快捷键">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="vim的一些快捷键">
 <meta property='og:description' content="一、快速跳转 1、跳转到文件开头 1 gg 2、跳转到文件结尾 1 G 3、跳转到指定行 1 12G 4、开启行号 1 set relativenumber 5、跳转到当前窗口首行 1 H 6、跳转到当前窗口末行 1 L 7、跳转到当前窗口正中间行 1 M 8、搜索 1 /&lt;text&gt; n跳转到下一个结果，N跳转到上一个结果\n9、跳转到上一位置 1 ctrl+o 10、跳转到下一位置 1 ctrl+i 11、定位当前行第一个字符 1 f&lt;char&gt; 例如fd跳转到当前行第一个d字符 如果要跳转到第3个d字符，则输入3fd 如果要跳转到下一个字符，则输入; 如果要跳转到上一个字符，则输入,\n">
 <meta property='og:url' content='https://dsmggm.github.io/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -750,6 +750,60 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

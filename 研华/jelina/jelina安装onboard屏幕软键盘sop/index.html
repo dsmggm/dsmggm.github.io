@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Jelina安装onboard屏幕软键盘SOP">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Jelina安装onboard屏幕软键盘SOP">
 <meta property='og:description' content="一、安装onboard 更新系统软件包 1 apt updata 安装onboard软件包 1 apt install onboard -y 二、设置onboard 在菜单设置中，选择onboard settings\nSettings&ndash;&gt;onboard settings\n将常规设置(General)中将Auto-show when editing text（在输入时自动显示软键盘）打勾 ">
 <meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -704,6 +704,60 @@ Settings&ndash;&gt;onboard settings<br>
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

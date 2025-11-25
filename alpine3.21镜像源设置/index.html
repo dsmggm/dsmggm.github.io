@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="alpine3.21镜像源设置">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="alpine3.21镜像源设置">
 <meta property='og:description' content="镜像源设置路径 1 vi /etc/apk/repositories 可用镜像源 1 2 3 4 https://repo.huaweicloud.com/alpine/v3.21/main https://repo.huaweicloud.com/alpine/v3.21/community https://mirrors.aliyun.com/alpine/v3.21/main https://mirrors.aliyun.com/alpine/v3.21/community 一键替换代码 1 2 3 4 5 6 7 tee /etc/apk/repositories &lt;&lt;EOF https://repo.huaweicloud.com/alpine/v3.21/main https://repo.huaweicloud.com/alpine/v3.21/community https://mirrors.aliyun.com/alpine/v3.21/main https://mirrors.aliyun.com/alpine/v3.21/community EOF apk update ">
 <meta property='og:url' content='https://dsmggm.github.io/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -583,6 +583,60 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

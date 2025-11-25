@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="Jelina常用命令">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Jelina常用命令">
 <meta property='og:description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
 <meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -631,6 +631,60 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

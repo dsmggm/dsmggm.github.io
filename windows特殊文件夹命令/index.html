@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="windows特殊文件夹命令">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="windows特殊文件夹命令">
 <meta property='og:description' content=" 命令 作用说明 shell: desktop 用户桌面文件夹 shell: common desktop 公共用户桌面文件夹 shell:sendto &ldquo;发送到&quot;菜单中的文件夹 shell:startup 用户登陆自启动文件夹 shell:common startup 全部用户登陆启动文件夹 shell:programs 开始菜单中的程序文件夹 shell:common programs 全部用户开始菜单中的程序文件夹 shell:appdata 应用程序数据文件夹，存储应用程序的配置文件等 shell:recent 最近使用的文件夹 shell:favorites 收藏文件夹 shell:fonts 字体文件夹 shell:templates 模板文件夹 shell:my music 用户音乐文件夹 shell:my pictures 用户图片文件夹 shell:videos 用户视频文件夹 shell:start menu 用户开始菜单文件夹 shell:appsfolder 全部已安装应用文件夹 shell:quick launch 开始菜单快速启动文件夹，主要是里面的user pinned(隐藏的)-TaskBar文件夹是固定任务栏的文件夹 shell:programfiles 程序安装目录C:\\Program Files shell:programfilesx86 程序安装目录C:\\Program Files (x86) shell:programfilescommon 程序安装目录C:\\Program Files\\Common Files ">
 <meta property='og:url' content='https://dsmggm.github.io/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -589,6 +589,60 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="kubernetes(k8s)部署教程">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="kubernetes(k8s)部署教程">
 <meta property='og:description' content="kubernetes简单说明 一、工具介绍 1、kubectl kubectl 负责 “控集群”：作为用户操作入口，通过 API 服务器管理集群资源，是集群的 “操作层”。 2、kubelet kubelet 负责 “守节点”：在每个节点上监控容器，确保 Pod 按预期运行，是集群的 “执行层”。 3、kubeadm kubeadm 负责 “搭架子”：初始化集群、加入节点，让集群从 0 到 1 运行起来。 二、容器控制 kubernetes通过CRI标准进行容器管理控制，从version 1.24.0开始，kuberenetes 默认使用 containerd 作为容器运行，如果需要docker支持，需要安装cri-dockerd插件以兼容docker。containerd是更高效小巧更适合kubernetes的容器运行程序，containerd拥有与kubernetes相同的CRI接口标准。\n">
 <meta property='og:url' content='https://dsmggm.github.io/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -1445,6 +1445,60 @@ Service 的作用是 “给 Pod 提供稳定的访问地址”，所以它的 sp
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

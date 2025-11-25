@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="linux基础命令">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="linux基础命令">
 <meta property='og:description' content="linux基础命令列表 常用操作命令 命令 说明 ls List (列出文件和目录如果使用-l参数，则显示文件和目录的详细信息) pwd print working directory(查看当前目录) cd Change Directory (切换目录) mkkdir Make Directory (创建目录) touch 创建文件 cp Copy (复制) mv Move (移动/重命名) rm Remove (删除) cat Catenate (查看文件内容) grep Global Regular Expression Print (搜索) find Find (查找) less Less (查看文件内容) ps Print Status (查看进程状态) kill Kill (结束进程) top/htop 查看进程状态 du Disk Usage (查看磁盘使用情况) free Free Memory (查看内存使用情况) tar Tape Archive (打包/解包) ping ping (测试网络连接) sudo Super User do (以管理员权限执行) chmod Change Mode (修改文件权限) passwd PassWord (修改密码) demsg (查看内核日志) systemctl System Control (查看系统信息) journalctl (查看和管理系统服务日志) | 管道连接 &ndash;help 查看命令的帮助信息 常用工具 命令 说明 curl curl (下载文件工具) vi/vim/nano 编辑文件工具 ip/ipconfig 查看网络信息 nmcli/nmtui 查看网络信息 netplan 调用工具netplan ss 查看端口与进程 ">
 <meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -736,6 +736,60 @@
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>

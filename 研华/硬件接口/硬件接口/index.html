@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
 
-<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="硬件接口详解">
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="硬件接口详解">
 <meta property='og:description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
 <meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
 <meta property='og:site_name' content='dsmggm博客'>
@@ -925,6 +925,60 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
         document.head.appendChild(customFont);
     }());
 </script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+
+
+<script src="/js/cursor/cursor12.js"></script>
+
+
 
     </body>
 </html>
