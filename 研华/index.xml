@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>研华s on dsmggm博客</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/</link>
+        <description>Recent content in 研华s on dsmggm博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Dsmggm</copyright>
+        <lastBuildDate>Wed, 19 Nov 2025 11:56:24 +0800</lastBuildDate><atom:link href="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>硬件接口详解</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</link>
+        <pubDate>Wed, 19 Nov 2025 11:56:24 +0800</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</guid>
+        <description>&lt;p&gt;包括如下内容：
+1、硬件接口的pin 定义。
+2、接口属性。
+3、时序，或者是协议。
+4、用法。。&lt;/p&gt;
+&lt;h1 id=&#34;一总线&#34;&gt;一、总线
+&lt;/h1&gt;&lt;h2 id=&#34;串口&#34;&gt;串口
+&lt;/h2&gt;&lt;h3 id=&#34;rs-232&#34;&gt;RS-232
+&lt;/h3&gt;&lt;p&gt;硬件Pin针脚定义（*为核心针脚）：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;引脚编号&lt;/th&gt;
+          &lt;th&gt;英文简称&lt;/th&gt;
+          &lt;th&gt;中文名称&lt;/th&gt;
+          &lt;th&gt;核心功能&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;DCD&lt;/td&gt;
+          &lt;td&gt;载波检测&lt;/td&gt;
+          &lt;td&gt;告知终端远程设备已连接（如调制解调器检测到载波）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2*&lt;/td&gt;
+          &lt;td&gt;RXD*&lt;/td&gt;
+          &lt;td&gt;接收数据&lt;/td&gt;
+          &lt;td&gt;接收来自外部设备的数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3*&lt;/td&gt;
+          &lt;td&gt;TXD*&lt;/td&gt;
+          &lt;td&gt;发送数据&lt;/td&gt;
+          &lt;td&gt;向外部设备发送数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;DTR&lt;/td&gt;
+          &lt;td&gt;数据终端就绪&lt;/td&gt;
+          &lt;td&gt;通知外部设备自身已准备好通信&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;5*&lt;/td&gt;
+          &lt;td&gt;GND*&lt;/td&gt;
+          &lt;td&gt;信号地&lt;/td&gt;
+          &lt;td&gt;所有信号的参考地线，是通信必需的关键引脚&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;6&lt;/td&gt;
+          &lt;td&gt;DSR&lt;/td&gt;
+          &lt;td&gt;数据设备就绪&lt;/td&gt;
+          &lt;td&gt;外部设备通知终端自身已准备就绪&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;7&lt;/td&gt;
+          &lt;td&gt;RTS&lt;/td&gt;
+          &lt;td&gt;请求发送&lt;/td&gt;
+          &lt;td&gt;请求向外部设备发送数据，属于硬件流控信号&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;8&lt;/td&gt;
+          &lt;td&gt;CTS&lt;/td&gt;
+          &lt;td&gt;清除发送&lt;/td&gt;
+          &lt;td&gt;响应 RTS 信号，告知终端可发送数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;9&lt;/td&gt;
+          &lt;td&gt;RI&lt;/td&gt;
+          &lt;td&gt;振铃指示&lt;/td&gt;
+          &lt;td&gt;通知终端有来电振铃（常用于调制解调器）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;接口属性：&lt;br&gt;
+RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。&lt;/p&gt;
+&lt;p&gt;时序：&lt;br&gt;
+异步通信没有时钟线，全靠「约定好的时序参数」同步，单次传输的数据包格式如下（从左到右）：&lt;br&gt;
+空闲状态 → 起始位 → 数据位 → 校验位（可选） → 停止位 → 空闲状态&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;接线类型&lt;/th&gt;
+          &lt;th&gt;适用场景&lt;/th&gt;
+          &lt;th&gt;所需引脚（DB9）&lt;/th&gt;
+          &lt;th&gt;接线逻辑&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;最简通信（推荐）&lt;/td&gt;
+          &lt;td&gt;短距离、低速率（如调试）&lt;/td&gt;
+          &lt;td&gt;TXD(3)、RXD(2)、GND(5)&lt;/td&gt;
+          &lt;td&gt;设备 A TXD → 设备 B RXD；设备 A RXD → 设备 B TXD；GND 直接相连&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;硬件流控通信&lt;/td&gt;
+          &lt;td&gt;高速 / 大数据量（如工业设备）&lt;/td&gt;
+          &lt;td&gt;加 RTS (7)、CTS (8)&lt;/td&gt;
+          &lt;td&gt;设备 A RTS → 设备 B CTS；设备 A CTS → 设备 B RTS（避免缓冲区溢出）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;全功能通信&lt;/td&gt;
+          &lt;td&gt;需状态检测（如 Modem 拨号）&lt;/td&gt;
+          &lt;td&gt;加 DTR (4)、DSR (6)、DCD (1)、RI (9)&lt;/td&gt;
+          &lt;td&gt;按引脚定义对应连接，用于设备就绪检测、载波检测等&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;rs-485&#34;&gt;RS-485
+&lt;/h3&gt;&lt;h4 id=&#34;modubus-rtu&#34;&gt;modubus-RTU
+&lt;/h4&gt;&lt;p&gt;接口Pin:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;引脚编号&lt;/th&gt;
+          &lt;th&gt;英文简称&lt;/th&gt;
+          &lt;th&gt;中文名称&lt;/th&gt;
+          &lt;th&gt;核心功能&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;GND&lt;/td&gt;
+          &lt;td&gt;信号地&lt;/td&gt;
+          &lt;td&gt;参考地，增强抗干扰性（建议必接）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;A/D+&lt;/td&gt;
+          &lt;td&gt;差分信号正端&lt;/td&gt;
+          &lt;td&gt;与 B 端组成差分传输，高电平表示逻辑 1（部分手册标为 Data+）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;B/D-&lt;/td&gt;
+          &lt;td&gt;差分信号负端&lt;/td&gt;
+          &lt;td&gt;与 A 端组成差分传输，低电平表示逻辑 0（部分手册标为 Data-）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4-9&lt;/td&gt;
+          &lt;td&gt;预留&lt;/td&gt;
+          &lt;td&gt;备用 / 扩展&lt;/td&gt;
+          &lt;td&gt;可用于电源、硬件流控（实际极少用）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;接口属性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;信号类型：差分传输（A/B 双端），抗干扰极强；&lt;/li&gt;
+&lt;li&gt;通信模式：半双工（需 DE/RE 引脚控制收发方向）；&lt;/li&gt;
+&lt;li&gt;传输能力：9600bps 时最远 1200 米，支持最多 32 个节点组网；&lt;/li&gt;
+&lt;li&gt;核心参数：异步通信，波特率 / 数据格式与 RS-232 兼容（8N1 常用）；&lt;/li&gt;
+&lt;li&gt;硬件要求：需 120Ω 终端电阻（远距离），推荐屏蔽双绞线；&lt;/li&gt;
+&lt;li&gt;协议特性：仅物理层规范，常用 Modbus RTU 上层协议，工业场景首选。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;时序：&lt;br&gt;
+与RS-232一致，参考上面RS-232&lt;/p&gt;
+&lt;p&gt;用法：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;接线类型&lt;/th&gt;
+          &lt;th&gt;适用场景&lt;/th&gt;
+          &lt;th&gt;所需引脚（DB9）&lt;/th&gt;
+          &lt;th&gt;接线逻辑&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;最简组网（推荐）&lt;/td&gt;
+          &lt;td&gt;短距离、少节点（≤10个）、低速率（如传感器组网）&lt;/td&gt;
+          &lt;td&gt;A(2)、B(3)、GND(1)&lt;/td&gt;
+          &lt;td&gt;所有设备的 A 引脚互连、B 引脚互连、GND 引脚互连；总线两端设备的 A/B 间各接120Ω终端电阻&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;工业稳定组网&lt;/td&gt;
+          &lt;td&gt;长距离（＞10米）、多节点（≤32个）、高速（如Modbus RTU）&lt;/td&gt;
+          &lt;td&gt;A(2)、B(3)、GND(1)、DE(4)、RE(5)&lt;/td&gt;
+          &lt;td&gt;1. A/B/GND 总线互连+两端120Ω终端电阻；2. 主/从设备 DE 与 RE 短接，通过GPIO控制（高电平发送、低电平接收）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;全功能冗余组网&lt;/td&gt;
+          &lt;td&gt;工业关键场景（需抗干扰+状态监测）&lt;/td&gt;
+          &lt;td&gt;A(2)、B(3)、GND(1)、DE(4)、RE(5)、备用(6-9)&lt;/td&gt;
+          &lt;td&gt;1. 基础组网+终端电阻+DE/RE方向控制；2. 备用引脚可接电源（给从设备供电）或额外差分线（冗余备份）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;modubus-tcp&#34;&gt;modubus-TCP
+&lt;/h4&gt;&lt;p&gt;基于网络的TCP协议，使用了RTU逻辑，可以理解为把把RTU封装进TCP&lt;/p&gt;
+&lt;h3 id=&#34;uart&#34;&gt;UART
+&lt;/h3&gt;&lt;h2 id=&#34;spi&#34;&gt;SPI
+&lt;/h2&gt;&lt;h3 id=&#34;spi-1&#34;&gt;SPI
+&lt;/h3&gt;&lt;h3 id=&#34;qspi&#34;&gt;QSPI
+&lt;/h3&gt;&lt;h3 id=&#34;lpspi&#34;&gt;LPSPI
+&lt;/h3&gt;&lt;h3 id=&#34;flexspi&#34;&gt;FlexSPI
+&lt;/h3&gt;&lt;h2 id=&#34;i2c&#34;&gt;I2C
+&lt;/h2&gt;&lt;h3 id=&#34;接线硬件设计&#34;&gt;接线/硬件设计
+&lt;/h3&gt;&lt;h3 id=&#34;速率时钟&#34;&gt;速率/时钟
+&lt;/h3&gt;&lt;h3 id=&#34;收发协议&#34;&gt;收发协议
+&lt;/h3&gt;&lt;h3 id=&#34;linux下怎么去访问i2c&#34;&gt;linux下怎么去访问i2C
+&lt;/h3&gt;&lt;h2 id=&#34;gpio&#34;&gt;GPIO
+&lt;/h2&gt;&lt;h3 id=&#34;cpu原生&#34;&gt;CPU原生
+&lt;/h3&gt;&lt;h3 id=&#34;iic拓展&#34;&gt;IIC拓展
+&lt;/h3&gt;&lt;h3 id=&#34;linux怎么访问gpio&#34;&gt;linux怎么访问GPIO
+&lt;/h3&gt;&lt;h3 id=&#34;gpio中断&#34;&gt;GPIO中断
+&lt;/h3&gt;&lt;h2 id=&#34;i2s&#34;&gt;I2S
+&lt;/h2&gt;&lt;h3 id=&#34;用来做什么&#34;&gt;用来做什么
+&lt;/h3&gt;&lt;h3 id=&#34;pcm有什么区别&#34;&gt;PCM有什么区别
+&lt;/h3&gt;&lt;h2 id=&#34;pcie&#34;&gt;PCIE
+&lt;/h2&gt;&lt;h3 id=&#34;gen几x几&#34;&gt;Gen几、x几
+&lt;/h3&gt;&lt;h3 id=&#34;pcie在arm设备上通常接什么设备或什么通讯&#34;&gt;PCIE在arm设备上通常接什么设备或什么通讯
+&lt;/h3&gt;&lt;h3 id=&#34;pcie跟sata复用关系rkcpu上&#34;&gt;pcie跟sata复用关系(rkCPU上)
+&lt;/h3&gt;&lt;h2 id=&#34;mipi&#34;&gt;mipi
+&lt;/h2&gt;&lt;h3 id=&#34;csi-2&#34;&gt;CSI-2
+&lt;/h3&gt;&lt;h3 id=&#34;dsi&#34;&gt;DSI
+&lt;/h3&gt;&lt;h4 id=&#34;dsi转lvds&#34;&gt;DSI转lvds
+&lt;/h4&gt;&lt;h4 id=&#34;dsi转hdmi&#34;&gt;DSI转HDMI
+&lt;/h4&gt;&lt;h2 id=&#34;can&#34;&gt;CAN
+&lt;/h2&gt;&lt;h3 id=&#34;can20&#34;&gt;CAN2.0
+&lt;/h3&gt;&lt;h4 id=&#34;标准帧&#34;&gt;标准帧
+&lt;/h4&gt;&lt;h4 id=&#34;扩展帧&#34;&gt;扩展帧
+&lt;/h4&gt;&lt;h3 id=&#34;canfd&#34;&gt;CANFD
+&lt;/h3&gt;&lt;h4 id=&#34;标准帧-1&#34;&gt;标准帧
+&lt;/h4&gt;&lt;h4 id=&#34;扩展帧-1&#34;&gt;扩展帧
+&lt;/h4&gt;&lt;h2 id=&#34;usb&#34;&gt;USB
+&lt;/h2&gt;&lt;h2 id=&#34;ethernet&#34;&gt;ethernet
+&lt;/h2&gt;&lt;h2 id=&#34;sata&#34;&gt;sata
+&lt;/h2&gt;&lt;h2 id=&#34;hdmi&#34;&gt;HDMI
+&lt;/h2&gt;&lt;h2 id=&#34;vga&#34;&gt;VGA
+&lt;/h2&gt;&lt;h2 id=&#34;vga-1&#34;&gt;VGA
+&lt;/h2&gt;&lt;h2 id=&#34;dp&#34;&gt;DP
+&lt;/h2&gt;&lt;h2 id=&#34;edp&#34;&gt;eDP
+&lt;/h2&gt;&lt;h2 id=&#34;lvds&#34;&gt;LVDS
+&lt;/h2&gt;&lt;h1 id=&#34;二接口&#34;&gt;二、接口
+&lt;/h1&gt;&lt;h2 id=&#34;m2&#34;&gt;m.2
+&lt;/h2&gt;&lt;h2 id=&#34;mini-pcie&#34;&gt;mini pcie
+&lt;/h2&gt;&lt;h2 id=&#34;pcie-1&#34;&gt;PCIE
+&lt;/h2&gt;&lt;h2 id=&#34;type-c&#34;&gt;type-c
+&lt;/h2&gt;&lt;h2 id=&#34;rj45&#34;&gt;RJ45
+&lt;/h2&gt;&lt;h2 id=&#34;type-a&#34;&gt;type-A
+&lt;/h2&gt;&lt;h2 id=&#34;micro-usb&#34;&gt;micro USB
+&lt;/h2&gt;&lt;h2 id=&#34;mini-usb&#34;&gt;mini USB
+&lt;/h2&gt;&lt;h1 id=&#34;三上下板接口规范&#34;&gt;三、上下板接口规范
+&lt;/h1&gt;&lt;h2 id=&#34;smarc&#34;&gt;SMARC
+&lt;/h2&gt;&lt;h2 id=&#34;osm&#34;&gt;OSM
+&lt;/h2&gt;&lt;h2 id=&#34;rtx研华&#34;&gt;RTX(研华)
+&lt;/h2&gt;&lt;h3 id=&#34;什么产品&#34;&gt;什么产品
+&lt;/h3&gt;&lt;h2 id=&#34;rtxe研华&#34;&gt;RTXe(研华)
+&lt;/h2&gt;&lt;h3 id=&#34;什么产品-1&#34;&gt;什么产品
+&lt;/h3&gt;&lt;h2 id=&#34;com较为少用&#34;&gt;COM(较为少用)
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>JelinaCloud操作介绍</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</guid>
+        <description>&lt;h1 id=&#34;一jelinacloud注册&#34;&gt;一、JelinaCloud注册
+&lt;/h1&gt;&lt;p&gt;JelinaCloud&lt;a class=&#34;link&#34; href=&#34;https://jelina.wise-iot-cloud.com/dashboard/login?type=register&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;注册链接&lt;/a&gt;地址：&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://jelina.wise-iot-cloud.com/dashboard/login?type=register&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://jelina.wise-iot-cloud.com/dashboard/login?type=register&lt;/a&gt;&lt;br&gt;
+在注册界面输入邮件等相关信息之后点击注册（邮箱用于登录跟验证）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;登录邮箱，点击邮箱内容&lt;strong&gt;Click to activate&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+返回平台&lt;a class=&#34;link&#34; href=&#34;https://jelina.wise-iot-cloud.com/dashboard/login&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;登录界面&lt;/a&gt;，输入用户名和密码进行登录&lt;/p&gt;
+&lt;h1 id=&#34;二jelinacloud舰队管理&#34;&gt;二、JelinaCloud舰队管理
+&lt;/h1&gt;&lt;p&gt;JelinaCloud舰队一般作为同类别群组管理，可以针对某类设备进行批量管理。
+&lt;img src=&#34;https://dsmggm.github.io/image-2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;概要&#34;&gt;概要
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image-6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设备&#34;&gt;设备
+&lt;/h2&gt;&lt;p&gt;可进行批量操作，如：指定Release、指定增量包、重启、固定系统、固定内核、固定系统等&lt;br&gt;
+&lt;strong&gt;注：固定的作用为只可升级，不可降级&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-7.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;release&#34;&gt;Release
+&lt;/h2&gt;&lt;p&gt;release的发布管理
+&lt;img src=&#34;https://dsmggm.github.io/image-8.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;环境增量&#34;&gt;环境增量
+&lt;/h2&gt;&lt;p&gt;增量包的发布管理
+&lt;img src=&#34;https://dsmggm.github.io/image-30.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-31.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-32.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;操作&#34;&gt;操作
+&lt;/h2&gt;&lt;p&gt;舰队的操作管理，比如：修改设备类型，指定舰队Release、指定舰队增量包、生成注册密钥、重启、固定版本等
+&lt;img src=&#34;https://dsmggm.github.io/image-15.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-16.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;配置&#34;&gt;配置
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image-17.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其它&#34;&gt;其它
+&lt;/h2&gt;&lt;p&gt;公共服务变量
+&lt;img src=&#34;https://dsmggm.github.io/image-18.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+权限管理
+&lt;img src=&#34;https://dsmggm.github.io/image-19.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+操作日志
+&lt;img src=&#34;https://dsmggm.github.io/image-20.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三设备管理&#34;&gt;三、设备管理
+&lt;/h1&gt;&lt;p&gt;点击舰队、选择设备，可进入到对设备进行单独的操作&lt;br&gt;
+在此可以看到设备的运行状态，日志，远程桌面，修改设备名称等操作&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-21.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-22.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;远程桌面&#34;&gt;远程桌面
+&lt;/h2&gt;&lt;p&gt;远程桌面可以远程对桌面进行远程管理
+&lt;img src=&#34;https://dsmggm.github.io/image-23.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-24.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-25.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;操作-1&#34;&gt;操作
+&lt;/h2&gt;&lt;p&gt;可单独对设备进行操作，比如：修改设备类型，指定舰队Release、指定舰队增量包、生成注册密钥、重启、固定版本等，舰队管理操作一样
+&lt;img src=&#34;https://dsmggm.github.io/image-26.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-27.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设备配置&#34;&gt;设备配置
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image-28.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;私有服务变量&#34;&gt;私有服务变量
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image-29.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四release的创建说明&#34;&gt;四、Release的创建说明
+&lt;/h1&gt;&lt;p&gt;创建Release分2种，一种开发人员使用compose语法创建，一种使用可视化界面操作
+&lt;img src=&#34;https://dsmggm.github.io/image-9.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;1开发人员模式&#34;&gt;1、开发人员模式
+&lt;/h3&gt;&lt;p&gt;可上传compose.yaml文件或直接编辑文本。具体参见下面示例或&lt;a class=&#34;link&#34; href=&#34;https://jelina.wise-iot-cloud.com/#/zh-cn/learn/start/release_create&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;JelinaCloud文档&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;services&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;db-mysql&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#容器服务名称 service name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;image&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;mysql:5.7&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#容器镜像名称(若不上传容器镜像文件，将会根据此配置去公有DockerHub上拉取公有镜像)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;environment&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;MYSQL_ROOT_PASSWORD&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#初始化数据库密码&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ports&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;s1&#34;&gt;&amp;#39;3306:3306&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#将容器内部端口映射到系统端口&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;volumes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;      &lt;/span&gt;- &lt;span class=&#34;l&#34;&gt;mysql_data:/var/lib/mysql&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#挂载数据卷&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;programs&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#与services类似，Jelina自定义用于装载原生应用的标签&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;helloworld&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#服务名称&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;program&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;helloworld&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;restart&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;on&lt;/span&gt;-&lt;span class=&#34;l&#34;&gt;failure&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#指定服务重启逻辑：当服务失败时进行重启&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/usr/bin/bash helloworld.sh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#服务启动命令&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image-11.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;2非开发人员模式&#34;&gt;2、非开发人员模式
+&lt;/h3&gt;&lt;p&gt;根据字段名填写配置
+&lt;img src=&#34;https://dsmggm.github.io/image-12.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;发布&#34;&gt;发布
+&lt;/h3&gt;&lt;p&gt;添加后点击右边的发布按钮进行发布
+&lt;img src=&#34;https://dsmggm.github.io/image-13.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-14.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Jelina系统安装</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;h1 id=&#34;一系统下载&#34;&gt;一、系统下载
+&lt;/h1&gt;&lt;p&gt;注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的&lt;strong&gt;设备类型&lt;/strong&gt;与&lt;strong&gt;OS版本&lt;/strong&gt;&lt;br&gt;
+下面以&lt;strong&gt;RK3568 RSB-4810&lt;/strong&gt;设备&lt;strong&gt;Debian10 1.1.5&lt;/strong&gt;为例&lt;br&gt;
+选择后点击右下角下载&lt;br&gt;
+一般情况下都会使用&lt;strong&gt;With Configuration&lt;/strong&gt;带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;下载按钮解释&#34;&gt;下载按钮解释
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;按钮名称&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JlinaFlasher&lt;/td&gt;
+          &lt;td&gt;镜像刻录工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JelinaFlasher-Portable&lt;/td&gt;
+          &lt;td&gt;便携版&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JelinaFlasher-Setup&lt;/td&gt;
+          &lt;td&gt;安装版&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JelinaOS&lt;/td&gt;
+          &lt;td&gt;系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Original&lt;/td&gt;
+          &lt;td&gt;原始系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;With Configuration&lt;/td&gt;
+          &lt;td&gt;带监督配置的系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;配置文件&lt;/td&gt;
+          &lt;td&gt;舰队单独的配置文件&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;二刻录系统安装盘&#34;&gt;二、刻录系统安装盘
+&lt;/h1&gt;&lt;p&gt;arm基本上使用micro SD卡进行刻录烧制&lt;br&gt;
+可以使用JlinaFlasher工具或者是Rufus工具进行烧录&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;准备工具&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;JlinaFlasher &amp;amp; Rufus&lt;/td&gt;
+          &lt;td&gt;镜像刻录工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;系统镜像文件&lt;/td&gt;
+          &lt;td&gt;系统镜像文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;micro SD卡&lt;/td&gt;
+          &lt;td&gt;引导系统载体，用于刻录系统镜像文件，建议8G及以上&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;读卡器&lt;/td&gt;
+          &lt;td&gt;用于读读写micro SD卡&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;打开JlinaFlasher工具，选择系统镜像文件，选择micro SD卡，点击下一步，点击烧录并等待完成即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三刷入系统&#34;&gt;三、刷入系统
+&lt;/h1&gt;&lt;p&gt;接好硬件，以下图片作为参考
+将&lt;strong&gt;串口&lt;/strong&gt;、&lt;strong&gt;micro SD&lt;/strong&gt;、&lt;strong&gt;Debug串口连接电脑&lt;/strong&gt;，最后再接通电源，网络可在稍后连接
+&lt;img src=&#34;https://dsmggm.github.io/image-5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+串口显示工具使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;MobaXterm_Personal&lt;/a&gt;或其它工具&lt;br&gt;
+1、点击会话&lt;br&gt;
+2、点击串口&lt;br&gt;
+3、选择串口设备&lt;br&gt;
+4、波特率一般为115200&lt;br&gt;
+5、点击ok&lt;br&gt;
+没有报错就是连接成功，接着上电就能看到输出内容
+&lt;img src=&#34;https://dsmggm.github.io/image-6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-7.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+接着会显示3秒的U-boot界面，默认会自动刷写Flash，既刷系统
+&lt;img src=&#34;https://dsmggm.github.io/image-8.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+等待刷写完成
+&lt;img src=&#34;https://dsmggm.github.io/image-9.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+刷写完成倒计时30秒自动关机，拔出micro SD卡后重新上电即可开机使用&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-10.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四开机&#34;&gt;四、开机
+&lt;/h1&gt;&lt;p&gt;开机跑码后界面如下
+&lt;img src=&#34;https://dsmggm.github.io/image-11.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Jelina系统安装onboard屏幕软键盘SOP</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</guid>
+        <description>&lt;h1 id=&#34;一安装onboard&#34;&gt;一、安装onboard
+&lt;/h1&gt;&lt;h2 id=&#34;更新系统软件包&#34;&gt;更新系统软件包
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt updata
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;安装onboard软件包&#34;&gt;安装onboard软件包
+&lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install onboard -y
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/image-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;二设置onboard&#34;&gt;二、设置onboard
+&lt;/h1&gt;&lt;p&gt;在菜单设置中，选择onboard settings&lt;br&gt;
+Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+将常规设置(General)中将Auto-show when editing text（在输入时自动显示软键盘）打勾
+&lt;img src=&#34;https://dsmggm.github.io/image-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;三设置onboard开机自动启动&#34;&gt;三、设置onboard开机自动启动
+&lt;/h1&gt;&lt;p&gt;在菜单中找到Settings&amp;ndash;&amp;gt;Session and Startup，将onboard添加到启动项中&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/image-6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;四重启&#34;&gt;四、重启
+&lt;/h1&gt;&lt;p&gt;重启系统&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;h1 id=&#34;jelina默认账密&#34;&gt;Jelina默认账密
+&lt;/h1&gt;&lt;h2 id=&#34;用户1&#34;&gt;用户1
+&lt;/h2&gt;&lt;p&gt;用户名： root&lt;br&gt;
+密码： jelina&lt;/p&gt;
+&lt;h2 id=&#34;用户2&#34;&gt;用户2
+&lt;/h2&gt;&lt;p&gt;用户名： jelina&lt;br&gt;
+密码（大多数时候不需要输入密码）： jelina&lt;/p&gt;
+&lt;h1 id=&#34;jelina常用命令或命令组合&#34;&gt;Jelina常用命令或命令组合
+&lt;/h1&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-ver&lt;/td&gt;
+          &lt;td&gt;查询当前JelinaOS的系统版本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-device-info get &amp;ndash;sn &amp;ndash;ssn&lt;/td&gt;
+          &lt;td&gt;查看设备SN号（RK和NXP兼容）的命令&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat /run/jelina/register/jelina-register-state; echo&lt;/td&gt;
+          &lt;td&gt;检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl restart jelina-jelinvisor&lt;/td&gt;
+          &lt;td&gt;重启jelinvisor，一般用于初始化与Cloud的连接&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat /mnt/boot/config.json&lt;/td&gt;
+          &lt;td&gt;查看“舰队”等配置信息&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;journalctl -u jelina-jelinvisor.servicef&lt;/td&gt;
+          &lt;td&gt;查看最近的jelinvisor日志，一般用于分析设备无法online的情况&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl start &lt;a class=&#34;link&#34; href=&#34;mailto:jelina-upper-new@root.service&#34; &gt;jelina-upper-new@root.service&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;恢复初始状态（Jelinvisor除外）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-offline off&lt;/td&gt;
+          &lt;td&gt;切换jelinvisor到连线模式&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-offline on&lt;/td&gt;
+          &lt;td&gt;切换jelinvisor到离线模式&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
+        <description>&lt;h1 id=&#34;linux基础命令列表&#34;&gt;linux基础命令列表
+&lt;/h1&gt;&lt;h2 id=&#34;常用操作命令&#34;&gt;常用操作命令
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ls&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;L&lt;/strong&gt;ist (列出文件和目录如果使用-l参数，则显示文件和目录的详细信息)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;pwd&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;p&lt;/strong&gt;rint &lt;strong&gt;w&lt;/strong&gt;orking &lt;strong&gt;d&lt;/strong&gt;irectory(查看当前目录)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cd&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;C&lt;/strong&gt;hange &lt;strong&gt;D&lt;/strong&gt;irectory (切换目录)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mkkdir&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Ma&lt;/strong&gt;ke &lt;strong&gt;Dir&lt;/strong&gt;ectory (创建目录)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;touch&lt;/td&gt;
+          &lt;td&gt;创建文件&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cp&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;C&lt;/strong&gt;o&lt;strong&gt;p&lt;/strong&gt;y (复制)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;mv&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;M&lt;/strong&gt;o&lt;strong&gt;v&lt;/strong&gt;e (移动/重命名)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;rm&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;R&lt;/strong&gt;e&lt;strong&gt;m&lt;/strong&gt;ove (删除)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Cat&lt;/strong&gt;enate (查看文件内容)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;grep&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;G&lt;/strong&gt;lobal &lt;strong&gt;R&lt;/strong&gt;egular &lt;strong&gt;E&lt;/strong&gt;xpression &lt;strong&gt;P&lt;/strong&gt;rint (搜索)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;find&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Find&lt;/strong&gt; (查找)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;less&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Less&lt;/strong&gt; (查看文件内容)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ps&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;P&lt;/strong&gt;rint &lt;strong&gt;S&lt;/strong&gt;tatus (查看进程状态)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;kill&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Kill&lt;/strong&gt; (结束进程)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;top/htop&lt;/td&gt;
+          &lt;td&gt;查看进程状态&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;du&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;D&lt;/strong&gt;isk &lt;strong&gt;U&lt;/strong&gt;sage (查看磁盘使用情况)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;free&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;F&lt;/strong&gt;ree &lt;strong&gt;M&lt;/strong&gt;emory (查看内存使用情况)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;tar&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;T&lt;/strong&gt;ape &lt;strong&gt;Ar&lt;/strong&gt;chive (打包/解包)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ping&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;ping&lt;/strong&gt; (测试网络连接)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;sudo&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;S&lt;/strong&gt;uper &lt;strong&gt;U&lt;/strong&gt;ser &lt;strong&gt;do&lt;/strong&gt; (以管理员权限执行)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;chmod&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;Ch&lt;/strong&gt;ange &lt;strong&gt;Mod&lt;/strong&gt;e (修改文件权限)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;passwd&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;PassW&lt;/strong&gt;or&lt;strong&gt;d&lt;/strong&gt; (修改密码)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;demsg&lt;/td&gt;
+          &lt;td&gt;(查看内核日志)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;System&lt;/strong&gt; &lt;strong&gt;C&lt;/strong&gt;on&lt;strong&gt;t&lt;/strong&gt;ro&lt;strong&gt;l&lt;/strong&gt; (查看系统信息)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;journalctl&lt;/td&gt;
+          &lt;td&gt;(查看和管理系统服务日志)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;|&lt;/td&gt;
+          &lt;td&gt;管道连接&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;command&gt; &amp;ndash;help&lt;/td&gt;
+          &lt;td&gt;查看命令的帮助信息&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;常用工具&#34;&gt;常用工具
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;curl&lt;/td&gt;
+          &lt;td&gt;curl (下载文件工具)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;vi/vim/nano&lt;/td&gt;
+          &lt;td&gt;编辑文件工具&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ip/ipconfig&lt;/td&gt;
+          &lt;td&gt;查看网络信息&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;nmcli/nmtui&lt;/td&gt;
+          &lt;td&gt;查看网络信息&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;netplan&lt;/td&gt;
+          &lt;td&gt;调用工具netplan&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;ss&lt;/td&gt;
+          &lt;td&gt;查看端口与进程&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        </item>
+        <item>
+        <title></title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E5%94%AE%E5%89%8D%E4%BD%9C%E5%BA%9F/001/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E5%94%AE%E5%89%8D%E4%BD%9C%E5%BA%9F/001/</guid>
+        <description>&lt;p&gt;售前核心思路&lt;/p&gt;
+&lt;p&gt;选择方向&lt;br&gt;
+功耗、价格、性能&lt;/p&gt;
+&lt;p&gt;1、arm服务成本&lt;br&gt;
+找到对应的人，确认客户需求&lt;br&gt;
+2、哪些事对项目最具有影响&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
