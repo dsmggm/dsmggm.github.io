@@ -40,6 +40,24 @@
     <loc>https://dsmggm.github.io/hugo%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://dsmggm.github.io/categories/jelina/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/jelina/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/categories/linux/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/linux/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://dsmggm.github.io/tags/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -52,6 +70,9 @@
                 hreflang="zh-cn"
                 href="https://dsmggm.github.io/tags/"
                 />
+  </url><url>
+    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/%E8%AE%B0%E5%BD%95/alpine%E5%AE%89%E8%A3%85docker/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
@@ -170,9 +191,6 @@
     <loc>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/</loc>
-    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
-  </url><url>
     <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
   </url><url>
@@ -256,10 +274,6 @@
   </url><url>
     <loc>https://dsmggm.github.io/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-  </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
   </url><url>
     <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E5%94%AE%E5%89%8D%E4%BD%9C%E5%BA%9F/001/</loc>
   </url><url>
