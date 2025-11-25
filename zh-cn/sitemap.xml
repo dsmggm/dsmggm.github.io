@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://dsmggm.github.io/</loc>
-    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -15,8 +15,43 @@
                 href="https://dsmggm.github.io/"
                 />
   </url><url>
-    <loc>https://dsmggm.github.io/p/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
+    <loc>https://dsmggm.github.io/categories/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dsmggm.github.io/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://dsmggm.github.io/categories/"
+                />
+  </url><url>
+    <loc>https://dsmggm.github.io/categories/hugo/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/hugo/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/p/hugo%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/post/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/</loc>
+    <lastmod>2025-11-20T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://dsmggm.github.io/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://dsmggm.github.io/tags/"
+                />
   </url><url>
     <loc>https://dsmggm.github.io/p/alpine%E5%AE%89%E8%A3%85docker/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
@@ -93,9 +128,6 @@
     <loc>https://dsmggm.github.io/p/openwrt%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%AE%9A%E5%88%B6%E5%B1%9E%E4%BA%8E%E4%BD%A0%E8%87%AA%E5%B7%B1%E7%9A%84openwrt/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/post/</loc>
-    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
-  </url><url>
     <loc>https://dsmggm.github.io/p/sh%E8%84%9A%E6%9C%AC%E5%8F%82%E6%95%B0%E5%86%99%E6%B3%95/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
   </url><url>
@@ -129,18 +161,35 @@
     <loc>https://dsmggm.github.io/p/%E6%97%A0%E7%95%8Cbncr%E6%90%AD%E5%BB%BA%E5%BE%AE%E4%BF%A1bot%E6%9C%BA%E5%99%A8%E4%BA%BAdocker/</loc>
     <lastmod>2025-11-19T11:56:24+08:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/</loc>
-    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dsmggm.github.io/en/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://dsmggm.github.io/categories/"
-                />
+    <loc>https://dsmggm.github.io/categories/%E7%A0%94%E5%8D%8E/</loc>
+    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</loc>
+    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/p/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%A6%E8%A7%A3/</loc>
+    <lastmod>2025-11-19T11:56:24+08:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/alpine/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/p/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/p/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/p/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/p/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/categories/%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
+    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://dsmggm.github.io/p/test-chinese/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
@@ -172,19 +221,6 @@
     <loc>https://dsmggm.github.io/categories/syntax/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://dsmggm.github.io/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://dsmggm.github.io/tags/"
-                />
-  </url><url>
     <loc>https://dsmggm.github.io/categories/themes/</loc>
     <lastmod>2019-03-11T00:00:00+00:00</lastmod>
   </url><url>
@@ -211,14 +247,6 @@
   </url><url>
     <loc>https://dsmggm.github.io/p/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/p/</loc>
-  </url><url>
-    <loc>https://dsmggm.github.io/p/</loc>
-  </url><url>
-    <loc>https://dsmggm.github.io/p/</loc>
-  </url><url>
-    <loc>https://dsmggm.github.io/p/</loc>
   </url><url>
     <loc>https://dsmggm.github.io/p/</loc>
   </url><url>

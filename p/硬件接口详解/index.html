@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
+<title>硬件接口详解</title>
+
+<link rel='canonical' href='https://dsmggm.github.io/p/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%A6%E8%A7%A3/'>
+
+<link rel="stylesheet" href="/scss/style.min.b0e76e98cdd4f7082d1fc36f7af7e0843a81201db2197c03ca426751dc923735.css"><meta property='og:title' content="硬件接口详解">
+<meta property='og:description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
+<meta property='og:url' content='https://dsmggm.github.io/p/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%A6%E8%A7%A3/'>
+<meta property='og:site_name' content='dsmggm博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-19T11:56:24&#43;08:00'/><meta property='article:modified_time' content='2025-11-19T11:56:24&#43;08:00'/>
+<meta name="twitter:title" content="硬件接口详解">
+<meta name="twitter:description" content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">✅</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">dsmggm博客</a></h1>
+            <h2 class="site-description">日常记录与学习~</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/dsmggm'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E6%90%9C%E7%B4%A2/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                    
+                        <li id="i18n-switch">  
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-language" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M4 5h7" />
+  <path d="M9 3v2c0 4.418 -2.239 8 -5 8" />
+  <path d="M5 9c-.003 2.144 2.952 3.908 6.7 4" />
+  <path d="M12 20l4 -9l4 9" />
+  <path d="M19.1 18h-6.2" />
+</svg>
+
+
+
+                            <select name="language" title="language" onchange="window.location.href = this.selectedOptions[0].value">
+                                
+                                    <option value="https://dsmggm.github.io/en/" >English</option>
+                                
+                                    <option value="https://dsmggm.github.io/" selected>中文</option>
+                                
+                            </select>
+                        </li>
+                    
+                
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#串口">串口</a>
+      <ol>
+        <li><a href="#rs-232">RS-232</a></li>
+        <li><a href="#rs-485">RS-485</a>
+          <ol>
+            <li><a href="#modubus-rtu">modubus-RTU</a></li>
+            <li><a href="#modubus-tcp">modubus-TCP</a></li>
+          </ol>
+        </li>
+        <li><a href="#uart">UART</a></li>
+      </ol>
+    </li>
+    <li><a href="#spi">SPI</a>
+      <ol>
+        <li><a href="#spi-1">SPI</a></li>
+        <li><a href="#qspi">QSPI</a></li>
+        <li><a href="#lpspi">LPSPI</a></li>
+        <li><a href="#flexspi">FlexSPI</a></li>
+      </ol>
+    </li>
+    <li><a href="#i2c">I2C</a>
+      <ol>
+        <li><a href="#接线硬件设计">接线/硬件设计</a></li>
+        <li><a href="#速率时钟">速率/时钟</a></li>
+        <li><a href="#收发协议">收发协议</a></li>
+        <li><a href="#linux下怎么去访问i2c">linux下怎么去访问i2C</a></li>
+      </ol>
+    </li>
+    <li><a href="#gpio">GPIO</a>
+      <ol>
+        <li><a href="#cpu原生">CPU原生</a></li>
+        <li><a href="#iic拓展">IIC拓展</a></li>
+        <li><a href="#linux怎么访问gpio">linux怎么访问GPIO</a></li>
+        <li><a href="#gpio中断">GPIO中断</a></li>
+      </ol>
+    </li>
+    <li><a href="#i2s">I2S</a>
+      <ol>
+        <li><a href="#用来做什么">用来做什么</a></li>
+        <li><a href="#pcm有什么区别">PCM有什么区别</a></li>
+      </ol>
+    </li>
+    <li><a href="#pcie">PCIE</a>
+      <ol>
+        <li><a href="#gen几x几">Gen几、x几</a></li>
+        <li><a href="#pcie在arm设备上通常接什么设备或什么通讯">PCIE在arm设备上通常接什么设备或什么通讯</a></li>
+        <li><a href="#pcie跟sata复用关系rkcpu上">pcie跟sata复用关系(rkCPU上)</a></li>
+      </ol>
+    </li>
+    <li><a href="#mipi">mipi</a>
+      <ol>
+        <li><a href="#csi-2">CSI-2</a></li>
+        <li><a href="#dsi">DSI</a>
+          <ol>
+            <li><a href="#dsi转lvds">DSI转lvds</a></li>
+            <li><a href="#dsi转hdmi">DSI转HDMI</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#can">CAN</a>
+      <ol>
+        <li><a href="#can20">CAN2.0</a>
+          <ol>
+            <li><a href="#标准帧">标准帧</a></li>
+            <li><a href="#扩展帧">扩展帧</a></li>
+          </ol>
+        </li>
+        <li><a href="#canfd">CANFD</a>
+          <ol>
+            <li><a href="#标准帧-1">标准帧</a></li>
+            <li><a href="#扩展帧-1">扩展帧</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#usb">USB</a></li>
+    <li><a href="#ethernet">ethernet</a></li>
+    <li><a href="#sata">sata</a></li>
+    <li><a href="#hdmi">HDMI</a></li>
+    <li><a href="#vga">VGA</a></li>
+    <li><a href="#vga-1">VGA</a></li>
+    <li><a href="#dp">DP</a></li>
+    <li><a href="#edp">eDP</a></li>
+    <li><a href="#lvds">LVDS</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#m2">m.2</a></li>
+    <li><a href="#mini-pcie">mini pcie</a></li>
+    <li><a href="#pcie-1">PCIE</a></li>
+    <li><a href="#type-c">type-c</a></li>
+    <li><a href="#rj45">RJ45</a></li>
+    <li><a href="#type-a">type-A</a></li>
+    <li><a href="#micro-usb">micro USB</a></li>
+    <li><a href="#mini-usb">mini USB</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#smarc">SMARC</a></li>
+    <li><a href="#osm">OSM</a></li>
+    <li><a href="#rtx研华">RTX(研华)</a>
+      <ol>
+        <li><a href="#什么产品">什么产品</a></li>
+      </ol>
+    </li>
+    <li><a href="#rtxe研华">RTXe(研华)</a>
+      <ol>
+        <li><a href="#什么产品-1">什么产品</a></li>
+      </ol>
+    </li>
+    <li><a href="#com较为少用">COM(较为少用)</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E7%A0%94%E5%8D%8E/" >
+                研华
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E8%AF%A6%E8%A7%A3/">硬件接口详解</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2025-11-19T11:56:24&#43;08:00'>2025-11-19</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>包括如下内容：
+1、硬件接口的pin 定义。
+2、接口属性。
+3、时序，或者是协议。
+4、用法。。</p>
+<h1 id="一总线">一、总线
+</h1><h2 id="串口">串口
+</h2><h3 id="rs-232">RS-232
+</h3><p>硬件Pin针脚定义（*为核心针脚）：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>引脚编号</th>
+          <th>英文简称</th>
+          <th>中文名称</th>
+          <th>核心功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>DCD</td>
+          <td>载波检测</td>
+          <td>告知终端远程设备已连接（如调制解调器检测到载波）</td>
+      </tr>
+      <tr>
+          <td>2*</td>
+          <td>RXD*</td>
+          <td>接收数据</td>
+          <td>接收来自外部设备的数据</td>
+      </tr>
+      <tr>
+          <td>3*</td>
+          <td>TXD*</td>
+          <td>发送数据</td>
+          <td>向外部设备发送数据</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>DTR</td>
+          <td>数据终端就绪</td>
+          <td>通知外部设备自身已准备好通信</td>
+      </tr>
+      <tr>
+          <td>5*</td>
+          <td>GND*</td>
+          <td>信号地</td>
+          <td>所有信号的参考地线，是通信必需的关键引脚</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>DSR</td>
+          <td>数据设备就绪</td>
+          <td>外部设备通知终端自身已准备就绪</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>RTS</td>
+          <td>请求发送</td>
+          <td>请求向外部设备发送数据，属于硬件流控信号</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>CTS</td>
+          <td>清除发送</td>
+          <td>响应 RTS 信号，告知终端可发送数据</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>RI</td>
+          <td>振铃指示</td>
+          <td>通知终端有来电振铃（常用于调制解调器）</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>接口属性：<br>
+RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。</p>
+<p>时序：<br>
+异步通信没有时钟线，全靠「约定好的时序参数」同步，单次传输的数据包格式如下（从左到右）：<br>
+空闲状态 → 起始位 → 数据位 → 校验位（可选） → 停止位 → 空闲状态</p>
+<p>用法：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>接线类型</th>
+          <th>适用场景</th>
+          <th>所需引脚（DB9）</th>
+          <th>接线逻辑</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>最简通信（推荐）</td>
+          <td>短距离、低速率（如调试）</td>
+          <td>TXD(3)、RXD(2)、GND(5)</td>
+          <td>设备 A TXD → 设备 B RXD；设备 A RXD → 设备 B TXD；GND 直接相连</td>
+      </tr>
+      <tr>
+          <td>硬件流控通信</td>
+          <td>高速 / 大数据量（如工业设备）</td>
+          <td>加 RTS (7)、CTS (8)</td>
+          <td>设备 A RTS → 设备 B CTS；设备 A CTS → 设备 B RTS（避免缓冲区溢出）</td>
+      </tr>
+      <tr>
+          <td>全功能通信</td>
+          <td>需状态检测（如 Modem 拨号）</td>
+          <td>加 DTR (4)、DSR (6)、DCD (1)、RI (9)</td>
+          <td>按引脚定义对应连接，用于设备就绪检测、载波检测等</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="rs-485">RS-485
+</h3><h4 id="modubus-rtu">modubus-RTU
+</h4><p>接口Pin:</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>引脚编号</th>
+          <th>英文简称</th>
+          <th>中文名称</th>
+          <th>核心功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>GND</td>
+          <td>信号地</td>
+          <td>参考地，增强抗干扰性（建议必接）</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>A/D+</td>
+          <td>差分信号正端</td>
+          <td>与 B 端组成差分传输，高电平表示逻辑 1（部分手册标为 Data+）</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>B/D-</td>
+          <td>差分信号负端</td>
+          <td>与 A 端组成差分传输，低电平表示逻辑 0（部分手册标为 Data-）</td>
+      </tr>
+      <tr>
+          <td>4-9</td>
+          <td>预留</td>
+          <td>备用 / 扩展</td>
+          <td>可用于电源、硬件流控（实际极少用）</td>
+      </tr>
+  </tbody>
+</table></div>
+<p>接口属性：</p>
+<ol>
+<li>信号类型：差分传输（A/B 双端），抗干扰极强；</li>
+<li>通信模式：半双工（需 DE/RE 引脚控制收发方向）；</li>
+<li>传输能力：9600bps 时最远 1200 米，支持最多 32 个节点组网；</li>
+<li>核心参数：异步通信，波特率 / 数据格式与 RS-232 兼容（8N1 常用）；</li>
+<li>硬件要求：需 120Ω 终端电阻（远距离），推荐屏蔽双绞线；</li>
+<li>协议特性：仅物理层规范，常用 Modbus RTU 上层协议，工业场景首选。</li>
+</ol>
+<p>时序：<br>
+与RS-232一致，参考上面RS-232</p>
+<p>用法：</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>接线类型</th>
+          <th>适用场景</th>
+          <th>所需引脚（DB9）</th>
+          <th>接线逻辑</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>最简组网（推荐）</td>
+          <td>短距离、少节点（≤10个）、低速率（如传感器组网）</td>
+          <td>A(2)、B(3)、GND(1)</td>
+          <td>所有设备的 A 引脚互连、B 引脚互连、GND 引脚互连；总线两端设备的 A/B 间各接120Ω终端电阻</td>
+      </tr>
+      <tr>
+          <td>工业稳定组网</td>
+          <td>长距离（＞10米）、多节点（≤32个）、高速（如Modbus RTU）</td>
+          <td>A(2)、B(3)、GND(1)、DE(4)、RE(5)</td>
+          <td>1. A/B/GND 总线互连+两端120Ω终端电阻；2. 主/从设备 DE 与 RE 短接，通过GPIO控制（高电平发送、低电平接收）</td>
+      </tr>
+      <tr>
+          <td>全功能冗余组网</td>
+          <td>工业关键场景（需抗干扰+状态监测）</td>
+          <td>A(2)、B(3)、GND(1)、DE(4)、RE(5)、备用(6-9)</td>
+          <td>1. 基础组网+终端电阻+DE/RE方向控制；2. 备用引脚可接电源（给从设备供电）或额外差分线（冗余备份）</td>
+      </tr>
+  </tbody>
+</table></div>
+<h4 id="modubus-tcp">modubus-TCP
+</h4><p>基于网络的TCP协议，使用了RTU逻辑，可以理解为把把RTU封装进TCP</p>
+<h3 id="uart">UART
+</h3><h2 id="spi">SPI
+</h2><h3 id="spi-1">SPI
+</h3><h3 id="qspi">QSPI
+</h3><h3 id="lpspi">LPSPI
+</h3><h3 id="flexspi">FlexSPI
+</h3><h2 id="i2c">I2C
+</h2><h3 id="接线硬件设计">接线/硬件设计
+</h3><h3 id="速率时钟">速率/时钟
+</h3><h3 id="收发协议">收发协议
+</h3><h3 id="linux下怎么去访问i2c">linux下怎么去访问i2C
+</h3><h2 id="gpio">GPIO
+</h2><h3 id="cpu原生">CPU原生
+</h3><h3 id="iic拓展">IIC拓展
+</h3><h3 id="linux怎么访问gpio">linux怎么访问GPIO
+</h3><h3 id="gpio中断">GPIO中断
+</h3><h2 id="i2s">I2S
+</h2><h3 id="用来做什么">用来做什么
+</h3><h3 id="pcm有什么区别">PCM有什么区别
+</h3><h2 id="pcie">PCIE
+</h2><h3 id="gen几x几">Gen几、x几
+</h3><h3 id="pcie在arm设备上通常接什么设备或什么通讯">PCIE在arm设备上通常接什么设备或什么通讯
+</h3><h3 id="pcie跟sata复用关系rkcpu上">pcie跟sata复用关系(rkCPU上)
+</h3><h2 id="mipi">mipi
+</h2><h3 id="csi-2">CSI-2
+</h3><h3 id="dsi">DSI
+</h3><h4 id="dsi转lvds">DSI转lvds
+</h4><h4 id="dsi转hdmi">DSI转HDMI
+</h4><h2 id="can">CAN
+</h2><h3 id="can20">CAN2.0
+</h3><h4 id="标准帧">标准帧
+</h4><h4 id="扩展帧">扩展帧
+</h4><h3 id="canfd">CANFD
+</h3><h4 id="标准帧-1">标准帧
+</h4><h4 id="扩展帧-1">扩展帧
+</h4><h2 id="usb">USB
+</h2><h2 id="ethernet">ethernet
+</h2><h2 id="sata">sata
+</h2><h2 id="hdmi">HDMI
+</h2><h2 id="vga">VGA
+</h2><h2 id="vga-1">VGA
+</h2><h2 id="dp">DP
+</h2><h2 id="edp">eDP
+</h2><h2 id="lvds">LVDS
+</h2><h1 id="二接口">二、接口
+</h1><h2 id="m2">m.2
+</h2><h2 id="mini-pcie">mini pcie
+</h2><h2 id="pcie-1">PCIE
+</h2><h2 id="type-c">type-c
+</h2><h2 id="rj45">RJ45
+</h2><h2 id="type-a">type-A
+</h2><h2 id="micro-usb">micro USB
+</h2><h2 id="mini-usb">mini USB
+</h2><h1 id="三上下板接口规范">三、上下板接口规范
+</h1><h2 id="smarc">SMARC
+</h2><h2 id="osm">OSM
+</h2><h2 id="rtx研华">RTX(研华)
+</h2><h3 id="什么产品">什么产品
+</h3><h2 id="rtxe研华">RTXe(研华)
+</h2><h3 id="什么产品-1">什么产品
+</h3><h2 id="com较为少用">COM(较为少用)
+</h2>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E7%A0%94%E5%8D%8E/">研华</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="dsmggm/dsmggm.github.io"
+    data-repo-id="R_kgDOQYfQbA"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOQYfQbM4Cx9Ge"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('preferred_color_scheme');
+            } else {
+                setGiscusTheme('preferred_color_scheme');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2025 Dsmggm
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
