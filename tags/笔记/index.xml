@@ -23,7 +23,8 @@ Enhancing Export&lt;br&gt;
 安装后需要启用&lt;/p&gt;
 &lt;h1 id=&#34;设置插件&#34;&gt;设置插件
 &lt;/h1&gt;&lt;h2 id=&#34;git&#34;&gt;git
-&lt;/h2&gt;&lt;p&gt;设置自动提交&lt;br&gt;
+&lt;/h2&gt;&lt;h3 id=&#34;电脑端设置&#34;&gt;电脑端设置
+&lt;/h3&gt;&lt;p&gt;设置自动提交&lt;br&gt;
 Automatic -&amp;gt;&lt;br&gt;
 Auto commit-and-sync after stopping file edits -&amp;gt; 开启  # 开启后，每次编辑文件后，会自动提交并同步到仓库&lt;br&gt;
 Auto commit-and-sync interval (minutes)-&amp;gt; 5 #  自动提交同步的时间间隔，单位为分钟&lt;/p&gt;
@@ -44,7 +45,8 @@ Auto commit-and-sync interval (minutes)-&amp;gt; 5 #  自动提交同步的时�
 &lt;p&gt;设置自动拉取
 Pull -&amp;gt;&lt;br&gt;
 Pull On Startup -&amp;gt; 开启  # 开启后，每次启动obsidian时，会自动拉取仓库的最新内容&lt;/p&gt;
-&lt;h2 id=&#34;custom-attachment-location&#34;&gt;Custom Attachment Location
+&lt;h3 id=&#34;移动端设置&#34;&gt;移动端设置
+&lt;/h3&gt;&lt;h2 id=&#34;custom-attachment-location&#34;&gt;Custom Attachment Location
 &lt;/h2&gt;&lt;p&gt;附件存储位置设置
 Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  #  附件的Markdown url格式，${noteFileName}为笔记文件名，${generatedAttachmentFileName}为生成的附件文件名&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1.png&#34;
@@ -78,7 +80,7 @@ Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  
 		data-flex-basis=&#34;307px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;enhancing-export&#34;&gt;Enhancing Export
+&lt;h2 id=&#34;enhancing-export可不用&#34;&gt;Enhancing Export（可不用）
 &lt;/h2&gt;&lt;p&gt;导出设置&lt;br&gt;
 下载&lt;a class=&#34;link&#34; href=&#34;https://github.com/jgm/pandoc/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;pandoc&lt;/a&gt;&lt;br&gt;
