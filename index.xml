@@ -2564,6 +2564,45 @@ token选择永不过期，并勾选 repo 和 workflow 选项&lt;br&gt;
 </description>
         </item>
         <item>
+        <title>obsidian笔记设置记录</title>
+        <link>https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/</link>
+        <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/</guid>
+        <description>&lt;p&gt;需要先打开仓库&lt;br&gt;
+插件的安装是基于仓库的&lt;/p&gt;
+&lt;h1 id=&#34;安装插件&#34;&gt;安装插件
+&lt;/h1&gt;&lt;p&gt;安装以下几个插件&lt;br&gt;
+git&lt;br&gt;
+Custom Attachment Location&lt;br&gt;
+Enhancing Export&lt;br&gt;
+安装后需要启用&lt;/p&gt;
+&lt;h1 id=&#34;设置插件&#34;&gt;设置插件
+&lt;/h1&gt;&lt;h2 id=&#34;git&#34;&gt;git
+&lt;/h2&gt;&lt;p&gt;设置自动提交&lt;br&gt;
+Automatic -&amp;gt;&lt;br&gt;
+Auto commit-and-sync after stopping file edits -&amp;gt; 开启  # 开启后，每次编辑文件后，会自动提交并同步到仓库&lt;br&gt;
+Auto commit-and-sync interval (minutes)-&amp;gt; 5 #  自动提交同步的时间间隔，单位为分钟&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image.png&#34;
+	width=&#34;1510&#34;
+	height=&#34;412&#34;
+	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image_hu_3091706444a6002d.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image_hu_e7758af0c4f0b81f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;366&#34;
+		data-flex-basis=&#34;879px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;设置自动拉取
+Pull -&amp;gt;&lt;br&gt;
+Pull On Startup -&amp;gt; 开启  # 开启后，每次启动obsidian时，会自动拉取仓库的最新内容&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>alpine3.21镜像源设置</title>
         <link>https://dsmggm.github.io/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
