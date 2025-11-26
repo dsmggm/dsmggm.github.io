@@ -44,6 +44,40 @@ Auto commit-and-sync interval (minutes)-&amp;gt; 5 #  自动提交同步的时�
 &lt;p&gt;设置自动拉取
 Pull -&amp;gt;&lt;br&gt;
 Pull On Startup -&amp;gt; 开启  # 开启后，每次启动obsidian时，会自动拉取仓库的最新内容&lt;/p&gt;
+&lt;h2 id=&#34;custom-attachment-location&#34;&gt;Custom Attachment Location
+&lt;/h2&gt;&lt;p&gt;附件存储位置设置
+Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  #  附件的Markdown url格式，${noteFileName}为笔记文件名，${generatedAttachmentFileName}为生成的附件文件名&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1.png&#34;
+	width=&#34;2304&#34;
+	height=&#34;1798&#34;
+	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1_hu_676d0df64f8009e9.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1_hu_141c432a07e3aaf6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;文件与链接&lt;br&gt;
+关闭 使用wiki链接&lt;br&gt;
+内部链接类型 修改为&lt;strong&gt;基于当前笔记的相对路径&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2.png&#34;
+	width=&#34;2304&#34;
+	height=&#34;1798&#34;
+	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2_hu_bf5e4dedeaee4e7e.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2_hu_67097b71be0c34fe.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;128&#34;
+		data-flex-basis=&#34;307px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         
