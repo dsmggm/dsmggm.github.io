@@ -481,7 +481,9 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 4、用法。。&lt;/p&gt;
 &lt;h1 id=&#34;一总线&#34;&gt;一、总线
 &lt;/h1&gt;&lt;h2 id=&#34;串口&#34;&gt;串口
-&lt;/h2&gt;&lt;h3 id=&#34;rs-232&#34;&gt;RS-232
+&lt;/h2&gt;&lt;h3 id=&#34;uart&#34;&gt;UART
+&lt;/h3&gt;&lt;p&gt;UART&lt;/p&gt;
+&lt;h3 id=&#34;rs-232&#34;&gt;RS-232
 &lt;/h3&gt;&lt;p&gt;硬件Pin针脚定义（*为核心针脚）：&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
@@ -490,6 +492,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
           &lt;th&gt;英文简称&lt;/th&gt;
           &lt;th&gt;中文名称&lt;/th&gt;
           &lt;th&gt;核心功能&lt;/th&gt;
+          &lt;th&gt;&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -498,54 +501,63 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
           &lt;td&gt;DCD&lt;/td&gt;
           &lt;td&gt;载波检测&lt;/td&gt;
           &lt;td&gt;告知终端远程设备已连接（如调制解调器检测到载波）&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;2*&lt;/td&gt;
           &lt;td&gt;RXD*&lt;/td&gt;
           &lt;td&gt;接收数据&lt;/td&gt;
           &lt;td&gt;接收来自外部设备的数据&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;3*&lt;/td&gt;
           &lt;td&gt;TXD*&lt;/td&gt;
           &lt;td&gt;发送数据&lt;/td&gt;
           &lt;td&gt;向外部设备发送数据&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;4&lt;/td&gt;
           &lt;td&gt;DTR&lt;/td&gt;
           &lt;td&gt;数据终端就绪&lt;/td&gt;
           &lt;td&gt;通知外部设备自身已准备好通信&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;5*&lt;/td&gt;
           &lt;td&gt;GND*&lt;/td&gt;
           &lt;td&gt;信号地&lt;/td&gt;
           &lt;td&gt;所有信号的参考地线，是通信必需的关键引脚&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;6&lt;/td&gt;
           &lt;td&gt;DSR&lt;/td&gt;
           &lt;td&gt;数据设备就绪&lt;/td&gt;
           &lt;td&gt;外部设备通知终端自身已准备就绪&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;7&lt;/td&gt;
           &lt;td&gt;RTS&lt;/td&gt;
           &lt;td&gt;请求发送&lt;/td&gt;
           &lt;td&gt;请求向外部设备发送数据，属于硬件流控信号&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;8&lt;/td&gt;
           &lt;td&gt;CTS&lt;/td&gt;
           &lt;td&gt;清除发送&lt;/td&gt;
           &lt;td&gt;响应 RTS 信号，告知终端可发送数据&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;9&lt;/td&gt;
           &lt;td&gt;RI&lt;/td&gt;
           &lt;td&gt;振铃指示&lt;/td&gt;
           &lt;td&gt;通知终端有来电振铃（常用于调制解调器）&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -664,12 +676,17 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
           &lt;td&gt;A(2)、B(3)、GND(1)、DE(4)、RE(5)、备用(6-9)&lt;/td&gt;
           &lt;td&gt;1. 基础组网+终端电阻+DE/RE方向控制；2. 备用引脚可接电源（给从设备供电）或额外差分线（冗余备份）&lt;/td&gt;
       &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h4 id=&#34;modubus-tcp&#34;&gt;modubus-TCP
 &lt;/h4&gt;&lt;p&gt;基于网络的TCP协议，使用了RTU逻辑，可以理解为把把RTU封装进TCP&lt;/p&gt;
-&lt;h3 id=&#34;uart&#34;&gt;UART
-&lt;/h3&gt;&lt;h2 id=&#34;spi&#34;&gt;SPI
+&lt;h2 id=&#34;spi&#34;&gt;SPI
 &lt;/h2&gt;&lt;h3 id=&#34;spi-1&#34;&gt;SPI
 &lt;/h3&gt;&lt;h3 id=&#34;qspi&#34;&gt;QSPI
 &lt;/h3&gt;&lt;h3 id=&#34;lpspi&#34;&gt;LPSPI

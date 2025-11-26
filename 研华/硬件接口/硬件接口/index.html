@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 UART UART\nRS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
 <title>硬件接口详解</title>
 
 <link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
 
 <link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="硬件接口详解">
-<meta property='og:description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
+<meta property='og:description' content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 UART UART\nRS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
 <meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
 <meta property='og:site_name' content='dsmggm博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-19T11:56:24&#43;08:00'/><meta property='article:modified_time' content='2025-11-19T11:56:24&#43;08:00'/>
 <meta name="twitter:title" content="硬件接口详解">
-<meta name="twitter:description" content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 RS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
+<meta name="twitter:description" content="包括如下内容： 1、硬件接口的pin 定义。 2、接口属性。 3、时序，或者是协议。 4、用法。。\n一、总线 串口 UART UART\nRS-232 硬件Pin针脚定义（*为核心针脚）：\n引脚编号 英文简称 中文名称 核心功能 1 DCD 载波检测 告知终端远程设备已连接（如调制解调器检测到载波） 2* RXD* 接收数据 接收来自外部设备的数据 3* TXD* 发送数据 向外部设备发送数据 4 DTR 数据终端就绪 通知外部设备自身已准备好通信 5* GND* 信号地 所有信号的参考地线，是通信必需的关键引脚 6 DSR 数据设备就绪 外部设备通知终端自身已准备就绪 7 RTS 请求发送 请求向外部设备发送数据，属于硬件流控信号 8 CTS 清除发送 响应 RTS 信号，告知终端可发送数据 9 RI 振铃指示 通知终端有来电振铃（常用于调制解调器） 接口属性：\nRS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -211,6 +211,7 @@
   <ol>
     <li><a href="#串口">串口</a>
       <ol>
+        <li><a href="#uart">UART</a></li>
         <li><a href="#rs-232">RS-232</a></li>
         <li><a href="#rs-485">RS-485</a>
           <ol>
@@ -218,7 +219,6 @@
             <li><a href="#modubus-tcp">modubus-TCP</a></li>
           </ol>
         </li>
-        <li><a href="#uart">UART</a></li>
       </ol>
     </li>
     <li><a href="#spi">SPI</a>
@@ -393,7 +393,9 @@
 4、用法。。</p>
 <h1 id="一总线">一、总线
 </h1><h2 id="串口">串口
-</h2><h3 id="rs-232">RS-232
+</h2><h3 id="uart">UART
+</h3><p>UART</p>
+<h3 id="rs-232">RS-232
 </h3><p>硬件Pin针脚定义（*为核心针脚）：</p>
 <div class="table-wrapper"><table>
   <thead>
@@ -402,6 +404,7 @@
           <th>英文简称</th>
           <th>中文名称</th>
           <th>核心功能</th>
+          <th></th>
       </tr>
   </thead>
   <tbody>
@@ -410,54 +413,63 @@
           <td>DCD</td>
           <td>载波检测</td>
           <td>告知终端远程设备已连接（如调制解调器检测到载波）</td>
+          <td></td>
       </tr>
       <tr>
           <td>2*</td>
           <td>RXD*</td>
           <td>接收数据</td>
           <td>接收来自外部设备的数据</td>
+          <td></td>
       </tr>
       <tr>
           <td>3*</td>
           <td>TXD*</td>
           <td>发送数据</td>
           <td>向外部设备发送数据</td>
+          <td></td>
       </tr>
       <tr>
           <td>4</td>
           <td>DTR</td>
           <td>数据终端就绪</td>
           <td>通知外部设备自身已准备好通信</td>
+          <td></td>
       </tr>
       <tr>
           <td>5*</td>
           <td>GND*</td>
           <td>信号地</td>
           <td>所有信号的参考地线，是通信必需的关键引脚</td>
+          <td></td>
       </tr>
       <tr>
           <td>6</td>
           <td>DSR</td>
           <td>数据设备就绪</td>
           <td>外部设备通知终端自身已准备就绪</td>
+          <td></td>
       </tr>
       <tr>
           <td>7</td>
           <td>RTS</td>
           <td>请求发送</td>
           <td>请求向外部设备发送数据，属于硬件流控信号</td>
+          <td></td>
       </tr>
       <tr>
           <td>8</td>
           <td>CTS</td>
           <td>清除发送</td>
           <td>响应 RTS 信号，告知终端可发送数据</td>
+          <td></td>
       </tr>
       <tr>
           <td>9</td>
           <td>RI</td>
           <td>振铃指示</td>
           <td>通知终端有来电振铃（常用于调制解调器）</td>
+          <td></td>
       </tr>
   </tbody>
 </table></div>
@@ -576,12 +588,17 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
           <td>A(2)、B(3)、GND(1)、DE(4)、RE(5)、备用(6-9)</td>
           <td>1. 基础组网+终端电阻+DE/RE方向控制；2. 备用引脚可接电源（给从设备供电）或额外差分线（冗余备份）</td>
       </tr>
+      <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+      </tr>
   </tbody>
 </table></div>
 <h4 id="modubus-tcp">modubus-TCP
 </h4><p>基于网络的TCP协议，使用了RTU逻辑，可以理解为把把RTU封装进TCP</p>
-<h3 id="uart">UART
-</h3><h2 id="spi">SPI
+<h2 id="spi">SPI
 </h2><h3 id="spi-1">SPI
 </h3><h3 id="qspi">QSPI
 </h3><h3 id="lpspi">LPSPI
