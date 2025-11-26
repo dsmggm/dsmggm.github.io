@@ -2634,6 +2634,11 @@ Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  
 		data-flex-basis=&#34;307px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;h2 id=&#34;enhancing-export&#34;&gt;Enhancing Export
+&lt;/h2&gt;&lt;p&gt;导出设置&lt;br&gt;
+下载&lt;a class=&#34;link&#34; href=&#34;https://github.com/jgm/pandoc/releases&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;pandoc&lt;/a&gt;&lt;br&gt;
+将pandoc.exe路径填入Pandoc加入到环境变量中，让程序可以调用&lt;/p&gt;
 </description>
         </item>
         <item>
