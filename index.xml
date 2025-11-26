@@ -1181,9 +1181,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;h1 id=&#34;一总线&#34;&gt;一、总线
 &lt;/h1&gt;&lt;h2 id=&#34;串口&#34;&gt;串口
 &lt;/h2&gt;&lt;h3 id=&#34;uart&#34;&gt;UART
-&lt;/h3&gt;&lt;p&gt;UART&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;UART是异步串行通信，用TTL电平来表示，使用高低电平通讯，经典的RS-232与RS-485都由UART经过芯片转换来实现。&lt;/p&gt;
 &lt;h3 id=&#34;rs-232&#34;&gt;RS-232
-&lt;/h3&gt;&lt;p&gt;硬件Pin针脚定义（*为核心针脚）：&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;硬件Pin针脚定义（*为核心针脚）：
+RS-232为±9V以上的电压通讯，靠GND做参考&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -1297,7 +1298,8 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;rs-485&#34;&gt;RS-485
-&lt;/h3&gt;&lt;h4 id=&#34;modubus-rtu&#34;&gt;modubus-RTU
+&lt;/h3&gt;&lt;p&gt;RS-285为差分信号A线与B线相差2V~6V，2条线为1组为半双工、全双工则由2组组成，GND是必须的&lt;/p&gt;
+&lt;h4 id=&#34;modubus-rtu&#34;&gt;modubus-RTU
 &lt;/h4&gt;&lt;p&gt;接口Pin:&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
