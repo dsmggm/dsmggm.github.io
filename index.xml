@@ -9574,34 +9574,66 @@ openwrt路径：&lt;/p&gt;
 &lt;p&gt;等待安装完成（时间取决于网络和桌面环境大小）。&lt;/p&gt;
 &lt;h2 id=&#34;方式-2用apt直接安装灵活&#34;&gt;方式 2：用apt直接安装（灵活）
 &lt;/h2&gt;&lt;p&gt;若不想用tasksel，可直接通过apt安装特定桌面环境：&lt;/p&gt;
-&lt;p&gt;桌面环境&lt;/p&gt;
-&lt;p&gt;安装命令&lt;/p&gt;
-&lt;p&gt;GNOME&lt;/p&gt;
-&lt;p&gt;apt install -y task-gnome-desktop（或gnome-shell gdm3）&lt;/p&gt;
-&lt;p&gt;KDE&lt;/p&gt;
-&lt;p&gt;apt install -y task-kde-desktop（或plasma-desktop sddm）&lt;/p&gt;
-&lt;p&gt;Xfce&lt;/p&gt;
-&lt;p&gt;apt install -y task-xfce-desktop（或xfce4 xfce4-goodies lightdm）&lt;/p&gt;
-&lt;p&gt;LXDE&lt;/p&gt;
-&lt;p&gt;apt install -y task-lxde-desktop（或lxde-core lightdm）&lt;/p&gt;
-&lt;p&gt;LXQt&lt;/p&gt;
-&lt;p&gt;apt install -y task-lxqt-desktop（或lxqt lightdm）&lt;/p&gt;
-&lt;p&gt;三、配置显示管理器&lt;/p&gt;
-&lt;p&gt;桌面环境需要显示管理器（登录界面），安装时会自动提示选择默认显示管理器：&lt;/p&gt;
-&lt;p&gt;GNOME 推荐gdm3&lt;/p&gt;
-&lt;p&gt;KDE 推荐sddm&lt;/p&gt;
-&lt;p&gt;轻量级桌面（Xfce/LXDE/LXQt）推荐lightdm&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;桌面环境&lt;/th&gt;
+          &lt;th&gt;安装命令&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;GNOME&lt;/td&gt;
+          &lt;td&gt;apt install -y task-gnome-desktop（或gnome-shell gdm3）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;KDE&lt;/td&gt;
+          &lt;td&gt;apt install -y task-kde-desktop（或plasma-desktop sddm）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;Xfce&lt;/td&gt;
+          &lt;td&gt;apt install -y task-xfce-desktop（或xfce4 xfce4-goodies lightdm）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;LXDE&lt;/td&gt;
+          &lt;td&gt;apt install -y task-lxde-desktop（或lxde-core lightdm）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;LXQt&lt;/td&gt;
+          &lt;td&gt;apt install -y task-lxqt-desktop（或lxqt lightdm）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;三配置显示管理器&#34;&gt;三、配置显示管理器
+&lt;/h1&gt;&lt;p&gt;桌面环境需要显示管理器（登录界面），安装时会自动提示选择默认显示管理器：
+· GNOME 推荐gdm3
+· KDE 推荐sddm
+· 轻量级桌面（Xfce/LXDE/LXQt）推荐lightdm&lt;/p&gt;
 &lt;p&gt;若安装时未提示，可手动配置默认显示管理器：&lt;/p&gt;
-&lt;p&gt;dpkg-reconfigure gdm3  # 或替换为sddm/lightdm&lt;/p&gt;
-&lt;p&gt;四、重启系统&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dpkg-reconfigure gdm3  &lt;span class=&#34;c1&#34;&gt;# 或替换为sddm/lightdm&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;四、重启系统&lt;/p&gt;
 &lt;p&gt;安装完成后，重启系统即可进入桌面环境：&lt;/p&gt;
-&lt;p&gt;reboot&lt;/p&gt;
-&lt;p&gt;注意事项&lt;/p&gt;
-&lt;p&gt;网络问题：若下载慢，可先更换 Debian 源（编辑/etc/apt/sources.list，替换为国内源如清华、阿里云）。&lt;/p&gt;
-&lt;p&gt;硬件兼容：老旧显卡可能需要安装闭源驱动（如 NVIDIA），否则桌面可能卡顿。&lt;/p&gt;
-&lt;p&gt;sudo 权限：若需普通用户用sudo，可安装sudo并将用户加入sudo组：&lt;/p&gt;
-&lt;p&gt;apt install -y sudo&lt;/p&gt;
-&lt;p&gt;usermod -aG sudo 你的用户名&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;reboot
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;注意事项&lt;/p&gt;
+&lt;p&gt;网络问题：若下载慢，可先更换 Debian 源（编辑/etc/apt/sources.list，替换为国内源如清华、阿里云）。
+硬件兼容：老旧显卡可能需要安装闭源驱动（如 NVIDIA），否则桌面可能卡顿。
+sudo 权限：若需普通用户用sudo，可安装sudo并将用户加入sudo组：
+apt install -y sudo
+usermod -aG sudo 你的用户名&lt;/p&gt;
 </description>
         </item>
         <item>
