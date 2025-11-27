@@ -410,7 +410,42 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;qspi&#34;&gt;QSPI
-&lt;/h3&gt;&lt;h3 id=&#34;lpspi&#34;&gt;LPSPI
+&lt;/h3&gt;&lt;p&gt;QSPI（Quad SPI，四线串行外设接口）是SPI的扩展，使用4条数据线进行传输，提高数据传输速率。&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;针脚名称&lt;/th&gt;
+          &lt;th&gt;功能描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SCLK（Serial Clock）&lt;/td&gt;
+          &lt;td&gt;时钟信号，由主机产生，同步数据传输时序&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CS/SS（Chip Select）&lt;/td&gt;
+          &lt;td&gt;片选信号，低电平有效（选中指定从机）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IO0/D0&lt;/td&gt;
+          &lt;td&gt;双向数据线 0（兼容传统 SPI 的 MOSI） 双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IO1/D1&lt;/td&gt;
+          &lt;td&gt;双向数据线 1（兼容传统 SPI 的 MISO） 双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IO2/D2&lt;/td&gt;
+          &lt;td&gt;双向数据线 2（部分芯片复用为写保护功能 / WP#） 双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;IO3/D3&lt;/td&gt;
+          &lt;td&gt;双向数据线 3（部分芯片复用为保持功能 / HOLD#） 双向&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;lpspi&#34;&gt;LPSPI
 &lt;/h3&gt;&lt;h3 id=&#34;flexspi&#34;&gt;FlexSPI
 &lt;/h3&gt;&lt;h2 id=&#34;i2c&#34;&gt;I2C
 &lt;/h2&gt;&lt;h3 id=&#34;接线硬件设计&#34;&gt;接线/硬件设计

@@ -339,7 +339,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%A0%94%E5%8D%8E/" >
+            <a href="/categories/%E7%A0%94%E5%8D%8E/" style="background-color: #000000ff; color: #fff;">
                 研华
             </a>
         
@@ -634,7 +634,42 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
   </tbody>
 </table></div>
 <h3 id="qspi">QSPI
-</h3><h3 id="lpspi">LPSPI
+</h3><p>QSPI（Quad SPI，四线串行外设接口）是SPI的扩展，使用4条数据线进行传输，提高数据传输速率。</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>针脚名称</th>
+          <th>功能描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SCLK（Serial Clock）</td>
+          <td>时钟信号，由主机产生，同步数据传输时序</td>
+      </tr>
+      <tr>
+          <td>CS/SS（Chip Select）</td>
+          <td>片选信号，低电平有效（选中指定从机）</td>
+      </tr>
+      <tr>
+          <td>IO0/D0</td>
+          <td>双向数据线 0（兼容传统 SPI 的 MOSI） 双向</td>
+      </tr>
+      <tr>
+          <td>IO1/D1</td>
+          <td>双向数据线 1（兼容传统 SPI 的 MISO） 双向</td>
+      </tr>
+      <tr>
+          <td>IO2/D2</td>
+          <td>双向数据线 2（部分芯片复用为写保护功能 / WP#） 双向</td>
+      </tr>
+      <tr>
+          <td>IO3/D3</td>
+          <td>双向数据线 3（部分芯片复用为保持功能 / HOLD#） 双向</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="lpspi">LPSPI
 </h3><h3 id="flexspi">FlexSPI
 </h3><h2 id="i2c">I2C
 </h2><h3 id="接线硬件设计">接线/硬件设计
