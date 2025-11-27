@@ -24,22 +24,6 @@
         <description></description>
         </item>
         <item>
-        <title>Jelina</title>
-        <link>https://dsmggm.github.io/categories/jelina/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/jelina/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>JelinaCloud</title>
-        <link>https://dsmggm.github.io/categories/jelinacloud/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/jelinacloud/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Windows</title>
         <link>https://dsmggm.github.io/categories/windows/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
@@ -48,35 +32,11 @@
         <description></description>
         </item>
         <item>
-        <title>Hugo</title>
-        <link>https://dsmggm.github.io/categories/hugo/</link>
+        <title>Other</title>
+        <link>https://dsmggm.github.io/categories/other/</link>
         <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/categories/hugo/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Obsidian</title>
-        <link>https://dsmggm.github.io/categories/obsidian/</link>
-        <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/obsidian/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>AI</title>
-        <link>https://dsmggm.github.io/categories/ai/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/ai/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Alpine</title>
-        <link>https://dsmggm.github.io/categories/alpine/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/alpine/</guid>
+        <guid>https://dsmggm.github.io/categories/other/</guid>
         <description></description>
         </item>
         <item>
@@ -85,46 +45,6 @@
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/categories/docker/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Halo</title>
-        <link>https://dsmggm.github.io/categories/halo/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/halo/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Kubernetes</title>
-        <link>https://dsmggm.github.io/categories/kubernetes/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/kubernetes/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>MySQL</title>
-        <link>https://dsmggm.github.io/categories/mysql/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/mysql/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>OpenWrt</title>
-        <link>https://dsmggm.github.io/categories/openwrt/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/openwrt/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Python</title>
-        <link>https://dsmggm.github.io/categories/python/</link>
-        <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/categories/python/</guid>
         <description></description>
         </item>
         <item>
