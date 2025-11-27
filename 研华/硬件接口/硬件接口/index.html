@@ -603,6 +603,33 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 <h2 id="spi">SPI
 </h2><h3 id="spi-1">SPI
 </h3><p>SPI（Serial Peripheral Interface，串行外设接口）是一种<strong>同步串行通信协议</strong></p>
+<p>传统SPI针脚定义</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>针脚名称</th>
+          <th>功能描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SCLK（Serial Clock）</td>
+          <td>时钟信号，由主机产生，同步数据传输时序</td>
+      </tr>
+      <tr>
+          <td>MOSI（Master Out Slave In）</td>
+          <td>主机输出→从机输入（数据发送线）</td>
+      </tr>
+      <tr>
+          <td>MISO（Master In Slave Out）</td>
+          <td>从机输出→主机输入（数据接收线）</td>
+      </tr>
+      <tr>
+          <td>CS/SS（Chip Select）</td>
+          <td>片选信号，低电平有效（选中指定从机）</td>
+      </tr>
+  </tbody>
+</table></div>
 <h3 id="qspi">QSPI
 </h3><h3 id="lpspi">LPSPI
 </h3><h3 id="flexspi">FlexSPI

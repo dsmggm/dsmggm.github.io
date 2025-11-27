@@ -1390,6 +1390,33 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 &lt;h2 id=&#34;spi&#34;&gt;SPI
 &lt;/h2&gt;&lt;h3 id=&#34;spi-1&#34;&gt;SPI
 &lt;/h3&gt;&lt;p&gt;SPI（Serial Peripheral Interface，串行外设接口）是一种&lt;strong&gt;同步串行通信协议&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;传统SPI针脚定义&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;针脚名称&lt;/th&gt;
+          &lt;th&gt;功能描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SCLK（Serial Clock）&lt;/td&gt;
+          &lt;td&gt;时钟信号，由主机产生，同步数据传输时序&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;MOSI（Master Out Slave In）&lt;/td&gt;
+          &lt;td&gt;主机输出→从机输入（数据发送线）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;MISO（Master In Slave Out）&lt;/td&gt;
+          &lt;td&gt;从机输出→主机输入（数据接收线）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;CS/SS（Chip Select）&lt;/td&gt;
+          &lt;td&gt;片选信号，低电平有效（选中指定从机）&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h3 id=&#34;qspi&#34;&gt;QSPI
 &lt;/h3&gt;&lt;h3 id=&#34;lpspi&#34;&gt;LPSPI
 &lt;/h3&gt;&lt;h3 id=&#34;flexspi&#34;&gt;FlexSPI
