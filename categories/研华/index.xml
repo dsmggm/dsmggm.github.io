@@ -377,15 +377,50 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 &lt;/h3&gt;&lt;p&gt;i2C是总线，也是IIC，通用高速通讯接口
 由飞利浦发明，解决串口一对多以及速度慢的问题而研发，原理是给接收端赋予编号，实现一对多通讯，并增加SCL时钟线，可以根据接收设备发送不同的时钟信号决定不同的传输速度，原来的串口线成为单根SDA线，以高低电压指示0跟1。
 一主多从，7位地址可以连接111个设备，接收端元器件一般不接内置电阻
-电路设计一般都是开漏模式
-&lt;img src=&#34;https://dsmggm.github.io/index-20251128154828498.png&#34;
+电路设计一般都是开漏模式&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;针脚&lt;/th&gt;
+          &lt;th&gt;名称&lt;/th&gt;
+          &lt;th&gt;功能描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1&lt;/td&gt;
+          &lt;td&gt;VCC/3V3/5V&lt;/td&gt;
+          &lt;td&gt;电源正极（通常 3.3V 或 5V）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2&lt;/td&gt;
+          &lt;td&gt;SCL&lt;/td&gt;
+          &lt;td&gt;时钟线&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3&lt;/td&gt;
+          &lt;td&gt;SDA&lt;/td&gt;
+          &lt;td&gt;数据线&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4&lt;/td&gt;
+          &lt;td&gt;GND&lt;/td&gt;
+          &lt;td&gt;接地&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;https://dsmggm.github.io/index-20251128154828498.png&#34;
 	
 	
 	
 	loading=&#34;lazy&#34;
 	
 	
-&gt;&lt;/p&gt;
+&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 &lt;h3 id=&#34;速率时钟&#34;&gt;速率/时钟
 &lt;/h3&gt;&lt;p&gt;可变速，标准模式100kbps，快速模式400kbps，高速模式3.4Mbps&lt;/p&gt;
 &lt;h3 id=&#34;收发协议&#34;&gt;收发协议
