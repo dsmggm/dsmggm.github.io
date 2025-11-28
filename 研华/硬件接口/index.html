@@ -4,11 +4,11 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一、总线 串口 UART UART是异步串行通信，用TTL电平来表示，使用高低电平通讯，经典的RS-232与RS-485都由UART经过芯片转换来实现。\nRS-232 硬件Pin针脚定义（*为核心针脚）： RS-232为±9V以上的电压通讯，靠GND做参考\n">
 <title>硬件接口详解</title>
 
-<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
+<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
 
 <link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="硬件接口详解">
 <meta property='og:description' content="一、总线 串口 UART UART是异步串行通信，用TTL电平来表示，使用高低电平通讯，经典的RS-232与RS-485都由UART经过芯片转换来实现。\nRS-232 硬件Pin针脚定义（*为核心针脚）： RS-232为±9V以上的电压通讯，靠GND做参考\n">
-<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
+<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/'>
 <meta property='og:site_name' content='dsmggm博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-27T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="硬件接口详解">
@@ -358,7 +358,7 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%A0%94%E5%8D%8E/" style="background-color: #0080ffff; color: #fff;">
+            <a href="/categories/%E7%A0%94%E5%8D%8E/" style="background-color: #0051a2ff; color: #fff;">
                 研华
             </a>
         
@@ -367,7 +367,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/">硬件接口详解</a>
+            <a href="/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/">硬件接口详解</a>
         </h2>
     
         
@@ -689,11 +689,98 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
   </tbody>
 </table></div>
 <h3 id="lpspi">LPSPI
-</h3><h3 id="flexspi">FlexSPI
-</h3><h2 id="i2c">I2C
+</h3><p>可以理解为低功耗的QSPI，主要用于一些电池设备，有对功耗的深度优化，支持休眠模式下工作</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>引脚名称</th>
+          <th>功能描述</th>
+          <th>方向</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SCK</td>
+          <td>串行时钟信号（主模式输出，从模式输入）</td>
+          <td>主→从</td>
+      </tr>
+      <tr>
+          <td>PCS[0-3]</td>
+          <td>片选信号（低电平有效），选择目标从设备</td>
+          <td>主→从</td>
+      </tr>
+      <tr>
+          <td>SOUT/DATA[0]</td>
+          <td>串行数据输出（可配置为输入），四线模式下为数据位 0</td>
+          <td>双向</td>
+      </tr>
+      <tr>
+          <td>SIN/DATA[1]</td>
+          <td>串行数据输入（可配置为输出），四线模式下为数据位 1</td>
+          <td>双向</td>
+      </tr>
+      <tr>
+          <td>DATA[2]</td>
+          <td>四线模式下为数据位 2（部分芯片复用为其他功能）</td>
+          <td>双向</td>
+      </tr>
+      <tr>
+          <td>DATA[3]</td>
+          <td>四线模式下为数据位 3（部分芯片复用为其他功能）</td>
+          <td>双向</td>
+      </tr>
+  </tbody>
+</table></div>
+<h3 id="flexspi">FlexSPI
+</h3><p>性能最强的SPI</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>引脚名称</th>
+          <th>功能描述</th>
+          <th>方向</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>SCK</strong></td>
+          <td>串行时钟（主模式输出，从模式输入）</td>
+          <td>主→从</td>
+      </tr>
+      <tr>
+          <td><strong>CS[0-3]</strong></td>
+          <td>片选信号（低电平有效），选择目标设备</td>
+          <td>主→从</td>
+      </tr>
+      <tr>
+          <td><strong>IO[0-7]</strong></td>
+          <td>双向数据线（模式不同，使用数量不同）</td>
+          <td>双向</td>
+      </tr>
+      <tr>
+          <td><strong>DQS</strong></td>
+          <td>数据选通（仅 DDR 模式需要，部分设备可省略）</td>
+          <td>双向</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="i2c">I2C
 </h2><h3 id="接线硬件设计">接线/硬件设计
-</h3><h3 id="速率时钟">速率/时钟
-</h3><h3 id="收发协议">收发协议
+</h3><p>i2C是总线，也是IIC，通用高速通讯接口
+由飞利浦发明，解决串口一对多以及速度慢的问题而研发，原理是给接收端赋予编号，实现一对多通讯，并增加SCL时钟线，可以根据接收设备发送不同的时钟信号决定不同的传输速度，原来的串口线成为单根SDA线，以高低电压指示0跟1。
+一主多从，7位地址可以连接111个设备，接收端元器件一般不接内置电阻
+电路设计一般都是开漏模式
+<img src="/index-20251128154828498.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h3 id="速率时钟">速率/时钟
+</h3><p>可变速，标准模式100kbps，快速模式400kbps，高速模式3.4Mbps</p>
+<h3 id="收发协议">收发协议
 </h3><h3 id="linux下怎么去访问i2c">linux下怎么去访问i2C
 </h3><h2 id="gpio">GPIO
 </h2><h3 id="cpu原生">CPU原生

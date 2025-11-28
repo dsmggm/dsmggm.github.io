@@ -9,10 +9,10 @@
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>硬件接口详解</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</link>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</link>
         <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</guid>
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</guid>
         <description>&lt;h1 id=&#34;一总线&#34;&gt;一、总线
 &lt;/h1&gt;&lt;h2 id=&#34;串口&#34;&gt;串口
 &lt;/h2&gt;&lt;h3 id=&#34;uart&#34;&gt;UART
@@ -297,11 +297,98 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h3 id=&#34;lpspi&#34;&gt;LPSPI
-&lt;/h3&gt;&lt;h3 id=&#34;flexspi&#34;&gt;FlexSPI
-&lt;/h3&gt;&lt;h2 id=&#34;i2c&#34;&gt;I2C
+&lt;/h3&gt;&lt;p&gt;可以理解为低功耗的QSPI，主要用于一些电池设备，有对功耗的深度优化，支持休眠模式下工作&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;引脚名称&lt;/th&gt;
+          &lt;th&gt;功能描述&lt;/th&gt;
+          &lt;th&gt;方向&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SCK&lt;/td&gt;
+          &lt;td&gt;串行时钟信号（主模式输出，从模式输入）&lt;/td&gt;
+          &lt;td&gt;主→从&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;PCS[0-3]&lt;/td&gt;
+          &lt;td&gt;片选信号（低电平有效），选择目标从设备&lt;/td&gt;
+          &lt;td&gt;主→从&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SOUT/DATA[0]&lt;/td&gt;
+          &lt;td&gt;串行数据输出（可配置为输入），四线模式下为数据位 0&lt;/td&gt;
+          &lt;td&gt;双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;SIN/DATA[1]&lt;/td&gt;
+          &lt;td&gt;串行数据输入（可配置为输出），四线模式下为数据位 1&lt;/td&gt;
+          &lt;td&gt;双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DATA[2]&lt;/td&gt;
+          &lt;td&gt;四线模式下为数据位 2（部分芯片复用为其他功能）&lt;/td&gt;
+          &lt;td&gt;双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;DATA[3]&lt;/td&gt;
+          &lt;td&gt;四线模式下为数据位 3（部分芯片复用为其他功能）&lt;/td&gt;
+          &lt;td&gt;双向&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;flexspi&#34;&gt;FlexSPI
+&lt;/h3&gt;&lt;p&gt;性能最强的SPI&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;引脚名称&lt;/th&gt;
+          &lt;th&gt;功能描述&lt;/th&gt;
+          &lt;th&gt;方向&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SCK&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;串行时钟（主模式输出，从模式输入）&lt;/td&gt;
+          &lt;td&gt;主→从&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;CS[0-3]&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;片选信号（低电平有效），选择目标设备&lt;/td&gt;
+          &lt;td&gt;主→从&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;IO[0-7]&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;双向数据线（模式不同，使用数量不同）&lt;/td&gt;
+          &lt;td&gt;双向&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;DQS&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;数据选通（仅 DDR 模式需要，部分设备可省略）&lt;/td&gt;
+          &lt;td&gt;双向&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;i2c&#34;&gt;I2C
 &lt;/h2&gt;&lt;h3 id=&#34;接线硬件设计&#34;&gt;接线/硬件设计
-&lt;/h3&gt;&lt;h3 id=&#34;速率时钟&#34;&gt;速率/时钟
-&lt;/h3&gt;&lt;h3 id=&#34;收发协议&#34;&gt;收发协议
+&lt;/h3&gt;&lt;p&gt;i2C是总线，也是IIC，通用高速通讯接口
+由飞利浦发明，解决串口一对多以及速度慢的问题而研发，原理是给接收端赋予编号，实现一对多通讯，并增加SCL时钟线，可以根据接收设备发送不同的时钟信号决定不同的传输速度，原来的串口线成为单根SDA线，以高低电压指示0跟1。
+一主多从，7位地址可以连接111个设备，接收端元器件一般不接内置电阻
+电路设计一般都是开漏模式
+&lt;img src=&#34;https://dsmggm.github.io/index-20251128154828498.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;速率时钟&#34;&gt;速率/时钟
+&lt;/h3&gt;&lt;p&gt;可变速，标准模式100kbps，快速模式400kbps，高速模式3.4Mbps&lt;/p&gt;
+&lt;h3 id=&#34;收发协议&#34;&gt;收发协议
 &lt;/h3&gt;&lt;h3 id=&#34;linux下怎么去访问i2c&#34;&gt;linux下怎么去访问i2C
 &lt;/h3&gt;&lt;h2 id=&#34;gpio&#34;&gt;GPIO
 &lt;/h2&gt;&lt;h3 id=&#34;cpu原生&#34;&gt;CPU原生
