@@ -389,7 +389,36 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 &lt;h3 id=&#34;速率时钟&#34;&gt;速率/时钟
 &lt;/h3&gt;&lt;p&gt;可变速，标准模式100kbps，快速模式400kbps，高速模式3.4Mbps&lt;/p&gt;
 &lt;h3 id=&#34;收发协议&#34;&gt;收发协议
-&lt;/h3&gt;&lt;h3 id=&#34;linux下怎么去访问i2c&#34;&gt;linux下怎么去访问i2C
+&lt;/h3&gt;&lt;p&gt;起始位跟结束时在一个周期内进行突变来表示
+SCL高电平为传输数据模式，从主机会接收SDA的电平
+下面是示例图
+&lt;img src=&#34;https://dsmggm.github.io/index-20251128160514603.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+每个周期最后一位表示是否继续传输数据，以进行下一轮数据的发送
+&lt;img src=&#34;https://dsmggm.github.io/index-20251128160830160.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+怎么确定是读还是写，从第一组数据用来作为指针使用，包括是读模式还是写模式，以及设备编号（器件地址，根据芯片数据手册）
+&lt;img src=&#34;https://dsmggm.github.io/index-20251128161151099.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;linux下怎么去访问i2c&#34;&gt;linux下怎么去访问i2C
 &lt;/h3&gt;&lt;h2 id=&#34;gpio&#34;&gt;GPIO
 &lt;/h2&gt;&lt;h3 id=&#34;cpu原生&#34;&gt;CPU原生
 &lt;/h3&gt;&lt;h3 id=&#34;iic拓展&#34;&gt;IIC拓展
