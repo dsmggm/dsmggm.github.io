@@ -871,10 +871,26 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpiomon gpiochip0 &lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 监听gpiochip0的第0引脚电平变化（边沿触发）&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;操作 I2C 转 GPIO（如 PCA9555）
+I2C 转 GPIO 芯片驱动加载后会被识别为&lt;code&gt;gpiochipX&lt;/code&gt;，操作方式与原生 GPIO 完全一致：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpiodetect  &lt;span class=&#34;c1&#34;&gt;# 找到I2C扩展GPIO对应的gpiochip（如gpiochip1）&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;gpioset gpiochip1 &lt;span class=&#34;nv&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;1&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# 设置扩展GPIO的第0引脚为高电平&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
 &lt;/div&gt;&lt;h3 id=&#34;gpio中断&#34;&gt;GPIO中断
-&lt;/h3&gt;&lt;h2 id=&#34;i2s&#34;&gt;I2S
+&lt;/h3&gt;&lt;p&gt;GPIO 中断（GPIO Interrupt）是指&lt;strong&gt;当 GPIO 引脚的电平状态发生预设变化时（如从低到高、从高到低或保持某电平），GPIO 控制器主动向 CPU 发送的硬件中断请求&lt;/strong&gt;。它是嵌入式系统中实现 “事件驱动” 的核心机制，替代低效的 “轮询检测”（CPU 持续查询 GPIO 状态），大幅降低系统功耗、提升响应效率。&lt;/p&gt;
+&lt;h2 id=&#34;i2s&#34;&gt;I2S
 &lt;/h2&gt;&lt;h3 id=&#34;用来做什么&#34;&gt;用来做什么
-&lt;/h3&gt;&lt;h3 id=&#34;pcm有什么区别&#34;&gt;PCM有什么区别
+&lt;/h3&gt;&lt;p&gt;专门用于声音传输的硬件接口，传输的数据格式为PCM
+输出：通过 I2S 把声音数据传给音箱的 “解码芯片”，音箱再出声
+输入：麦克风把声音变成数字数据，通过 I2S 传给录音笔的存储芯片，保存成音频文件&lt;/p&gt;
+&lt;h3 id=&#34;pcm有什么区别&#34;&gt;PCM有什么区别
 &lt;/h3&gt;&lt;h2 id=&#34;pcie&#34;&gt;PCIE
 &lt;/h2&gt;&lt;h3 id=&#34;gen几x几&#34;&gt;Gen几、x几
 &lt;/h3&gt;&lt;h3 id=&#34;pcie在arm设备上通常接什么设备或什么通讯&#34;&gt;PCIE在arm设备上通常接什么设备或什么通讯
