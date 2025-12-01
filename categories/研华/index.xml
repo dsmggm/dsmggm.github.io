@@ -741,8 +741,44 @@ I2C 转 GPIO 芯片驱动加载后会被识别为&lt;code&gt;gpiochipX&lt;/code&
 &lt;/h3&gt;&lt;p&gt;专门用于声音传输的硬件接口，传输的数据格式为PCM
 输出：通过 I2S 把声音数据传给音箱的 “解码芯片”，音箱再出声
 输入：麦克风把声音变成数字数据，通过 I2S 传给录音笔的存储芯片，保存成音频文件&lt;/p&gt;
-&lt;h3 id=&#34;pcm有什么区别&#34;&gt;PCM有什么区别
-&lt;/h3&gt;&lt;h2 id=&#34;pcie&#34;&gt;PCIE
+&lt;h3 id=&#34;针脚定义&#34;&gt;针脚定义
+&lt;/h3&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;针脚名称&lt;/th&gt;
+          &lt;th&gt;常用别名&lt;/th&gt;
+          &lt;th&gt;方向&lt;/th&gt;
+          &lt;th&gt;功能&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;BCLK&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SCK (串行时钟)&lt;br&gt;&lt;br&gt;位时钟&lt;/td&gt;
+          &lt;td&gt;主设备输出&lt;br&gt;&lt;br&gt;从设备输入&lt;/td&gt;
+          &lt;td&gt;像 &amp;ldquo;节拍器&amp;rdquo; 一样，每滴答一次传 1 位数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;LRCLK&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;WS (字选择)&lt;br&gt;&lt;br&gt;FS (帧同步)&lt;/td&gt;
+          &lt;td&gt;主设备输出&lt;br&gt;&lt;br&gt;从设备输入&lt;/td&gt;
+          &lt;td&gt;告诉接收方：&lt;br&gt;&lt;br&gt;0 = 左声道数据&lt;br&gt;&lt;br&gt;1 = 右声道数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;SD&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SDO (输出)&lt;br&gt;&lt;br&gt;SDI (输入)&lt;/td&gt;
+          &lt;td&gt;单向&lt;br&gt;&lt;br&gt;(取决于角色)&lt;/td&gt;
+          &lt;td&gt;传输实际的&lt;strong&gt;PCM 音频数据&lt;/strong&gt;(0 和 1 的串)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;MCLK（可选）&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;主时钟 / 系统时钟（可选）&lt;/td&gt;
+          &lt;td&gt;主设备输出，从设备接收&lt;/td&gt;
+          &lt;td&gt;通常是采样率的 256/384 倍，- 帮助多设备间精确同步，提高音质稳定性&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;pcie&#34;&gt;PCIE
 &lt;/h2&gt;&lt;h3 id=&#34;gen几x几&#34;&gt;Gen几、x几
 &lt;/h3&gt;&lt;h3 id=&#34;pcie在arm设备上通常接什么设备或什么通讯&#34;&gt;PCIE在arm设备上通常接什么设备或什么通讯
 &lt;/h3&gt;&lt;h3 id=&#34;pcie跟sata复用关系rkcpu上&#34;&gt;pcie跟sata复用关系(rkCPU上)

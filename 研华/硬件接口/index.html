@@ -267,7 +267,7 @@
     <li><a href="#i2s">I2S</a>
       <ol>
         <li><a href="#用来做什么">用来做什么</a></li>
-        <li><a href="#pcm有什么区别">PCM有什么区别</a></li>
+        <li><a href="#针脚定义">针脚定义</a></li>
       </ol>
     </li>
     <li><a href="#pcie">PCIE</a>
@@ -1133,8 +1133,44 @@ I2C 转 GPIO 芯片驱动加载后会被识别为<code>gpiochipX</code>，操作
 </h3><p>专门用于声音传输的硬件接口，传输的数据格式为PCM
 输出：通过 I2S 把声音数据传给音箱的 “解码芯片”，音箱再出声
 输入：麦克风把声音变成数字数据，通过 I2S 传给录音笔的存储芯片，保存成音频文件</p>
-<h3 id="pcm有什么区别">PCM有什么区别
-</h3><h2 id="pcie">PCIE
+<h3 id="针脚定义">针脚定义
+</h3><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>针脚名称</th>
+          <th>常用别名</th>
+          <th>方向</th>
+          <th>功能</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>BCLK</strong></td>
+          <td>SCK (串行时钟)<br><br>位时钟</td>
+          <td>主设备输出<br><br>从设备输入</td>
+          <td>像 &ldquo;节拍器&rdquo; 一样，每滴答一次传 1 位数据</td>
+      </tr>
+      <tr>
+          <td><strong>LRCLK</strong></td>
+          <td>WS (字选择)<br><br>FS (帧同步)</td>
+          <td>主设备输出<br><br>从设备输入</td>
+          <td>告诉接收方：<br><br>0 = 左声道数据<br><br>1 = 右声道数据</td>
+      </tr>
+      <tr>
+          <td><strong>SD</strong></td>
+          <td>SDO (输出)<br><br>SDI (输入)</td>
+          <td>单向<br><br>(取决于角色)</td>
+          <td>传输实际的<strong>PCM 音频数据</strong>(0 和 1 的串)</td>
+      </tr>
+      <tr>
+          <td><strong>MCLK（可选）</strong></td>
+          <td>主时钟 / 系统时钟（可选）</td>
+          <td>主设备输出，从设备接收</td>
+          <td>通常是采样率的 256/384 倍，- 帮助多设备间精确同步，提高音质稳定性</td>
+      </tr>
+  </tbody>
+</table></div>
+<h2 id="pcie">PCIE
 </h2><h3 id="gen几x几">Gen几、x几
 </h3><h3 id="pcie在arm设备上通常接什么设备或什么通讯">PCIE在arm设备上通常接什么设备或什么通讯
 </h3><h3 id="pcie跟sata复用关系rkcpu上">pcie跟sata复用关系(rkCPU上)
