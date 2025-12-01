@@ -846,7 +846,114 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 	
 ></p>
 <h3 id="linux下怎么去访问i2c">linux下怎么去访问i2C
-</h3><h2 id="gpio">GPIO
+</h3><p>1、查看系统总线</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 查看已注册的I2C总线</span>
+</span></span><span class="line"><span class="cl">ls /dev/i2c*  
+</span></span><span class="line"><span class="cl"><span class="c1"># 或通过内核日志/设备树信息确认</span>
+</span></span><span class="line"><span class="cl">dmesg <span class="p">|</span> grep -i i2c
+</span></span><span class="line"><span class="cl">ls -l /sys/bus/i2c/devices/
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果没有的话，还需要加载访问驱动</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">modprobe i2c-dev  <span class="c1"># 加载用户空间I2C访问驱动</span>
+</span></span><span class="line"><span class="cl">lsmod <span class="p">|</span> grep i2c  <span class="c1"># 确认驱动加载</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、安装i2c-tools</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Debian/Ubuntu</span>
+</span></span><span class="line"><span class="cl">apt install i2c-tools
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># CentOS/RHEL</span>
+</span></span><span class="line"><span class="cl">yum install i2c-tools
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 源码编译（可选）</span>
+</span></span><span class="line"><span class="cl">git clone https://github.com/groeck/i2c-tools.git
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> i2c-tools <span class="o">&amp;&amp;</span> make <span class="o">&amp;&amp;</span> make install
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>3、扫描总线上的设备地址</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">i2cdetect -y <span class="m">1</span>  <span class="c1"># 扫描第1号I2C总线（-y 跳过交互确认）</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>输出示例（<code>UU</code>表示已被内核驱动占用，<code>20</code>/<code>21</code>等为可用设备地址）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+</span></span><span class="line"><span class="cl">00:                         -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">20: 20 -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span><span class="line"><span class="cl">30: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>4、读取设备寄存器数据</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># `i2cdump`以十六进制形式 dump 设备所有寄存器：</span>
+</span></span><span class="line"><span class="cl">i2cdump -y <span class="m">1</span> 0x20  <span class="c1"># 总线1，地址0x20的设备</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># `i2cget`读取指定寄存器的值：</span>
+</span></span><span class="line"><span class="cl">i2cget -y <span class="m">1</span> 0x20 0x00  <span class="c1"># 读取总线1、地址0x20、寄存器0x00的值</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>5、写入数据到寄存器</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># `i2cset`写入数据到指定寄存器：</span>
+</span></span><span class="line"><span class="cl">i2cset -y <span class="m">1</span> 0x20 0x01 0xFF  <span class="c1"># 向总线1、地址0x20的寄存器0x01写入0xFF</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="gpio">GPIO
 </h2><h3 id="cpu原生">CPU原生
 </h3><h3 id="iic拓展">IIC拓展
 </h3><h3 id="linux怎么访问gpio">linux怎么访问GPIO
