@@ -787,9 +787,14 @@ FPGA、专用加速卡
 WIFI模块、蓝牙模块&lt;/p&gt;
 &lt;h3 id=&#34;pcie跟sata复用关系rkcpu上&#34;&gt;pcie跟sata复用关系(rkCPU上)
 &lt;/h3&gt;&lt;h2 id=&#34;mipi&#34;&gt;mipi
-&lt;/h2&gt;&lt;h3 id=&#34;csi-2&#34;&gt;CSI-2
-&lt;/h3&gt;&lt;h3 id=&#34;dsi&#34;&gt;DSI
-&lt;/h3&gt;&lt;h4 id=&#34;dsi转lvds&#34;&gt;DSI转lvds
+&lt;/h2&gt;&lt;p&gt;mipi是移动设备专用高速接口&lt;/p&gt;
+&lt;h3 id=&#34;csi-2&#34;&gt;CSI-2
+&lt;/h3&gt;&lt;p&gt;mipi csi-2是摄像头数据接口&lt;/p&gt;
+&lt;h3 id=&#34;dsi&#34;&gt;DSI
+&lt;/h3&gt;&lt;p&gt;mipi dsi是屏幕数据接口&lt;/p&gt;
+&lt;h3 id=&#34;hsi&#34;&gt;HSI
+&lt;/h3&gt;&lt;p&gt;mipi hsi是射频数据高速接口，如5G射频&lt;/p&gt;
+&lt;h4 id=&#34;dsi转lvds&#34;&gt;DSI转lvds
 &lt;/h4&gt;&lt;h4 id=&#34;dsi转hdmi&#34;&gt;DSI转HDMI
 &lt;/h4&gt;&lt;h2 id=&#34;can&#34;&gt;CAN
 &lt;/h2&gt;&lt;h3 id=&#34;can20&#34;&gt;CAN2.0
