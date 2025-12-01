@@ -955,6 +955,66 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 </div>
 </div><h2 id="gpio">GPIO
 </h2><p>通用IO接口，可通过软件配置通用引脚功能的工作模式，工作模式有8种</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>序号</th>
+          <th>模式名称</th>
+          <th>大类归属</th>
+          <th>配置要点 &amp; 核心特点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>浮空输入（Input Floating）</td>
+          <td>输入模式</td>
+          <td><code>MODER=00</code>（输入）+<code>PUPDR=00</code>（无上下拉）；电平由外部电路决定，未接外部电路时电平漂移</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>上拉输入（Input Pull-Up）</td>
+          <td>输入模式</td>
+          <td><code>MODER=00</code>+<code>PUPDR=01</code>（上拉）；默认高电平，外部拉低时读低电平（如按键检测）</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>下拉输入（Input Pull-Down）</td>
+          <td>输入模式</td>
+          <td><code>MODER=00</code>+<code>PUPDR=10</code>（下拉）；默认低电平，外部拉高时读高电平</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>模拟输入（Analog Input）</td>
+          <td>模拟模式</td>
+          <td><code>MODER=11</code>（模拟）；GPIO 数字电路关闭，引脚直通 ADC/DAC，用于读取 / 输出模拟信号</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>推挽输出（Output Push-Pull）</td>
+          <td>输出模式</td>
+          <td><code>MODER=01</code>（输出）+<code>OTYPER=0</code>（推挽）；可主动输出高低电平，驱动能力强</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>开漏输出（Output Open-Drain）</td>
+          <td>输出模式</td>
+          <td><code>MODER=01</code>+<code>OTYPER=1</code>（开漏）；仅能拉低电平，需外部上拉才能输出高电平</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>复用推挽输出（AF Push-Pull）</td>
+          <td>复用功能模式</td>
+          <td><code>MODER=10</code>（复用）+<code>OTYPER=0</code>；引脚作为外设（如 UART_TX）输出端，电平由外设控制</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>复用开漏输出（AF Open-Drain）</td>
+          <td>复用功能模式</td>
+          <td><code>MODER=10</code>+<code>OTYPER=1</code>；引脚作为外设（如 I2C_SDA）输出端，开漏特性适配总线协议</td>
+      </tr>
+  </tbody>
+</table></div>
 <h3 id="cpu原生">CPU原生
 </h3><h3 id="i2c拓展">I2C拓展
 </h3><h3 id="linux怎么访问gpio">linux怎么访问GPIO
