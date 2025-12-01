@@ -1022,14 +1022,28 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 以 PCA9555（16 路 I2C 转 GPIO）为例“</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">CPU/MCU PCA9555（I2C GPIO扩展芯片） 外设（LED/传感器/按键） 
-</span></span><span class="line"><span class="cl">┌───────────┐ ┌───────────────────────────┐ ┌─────────────┐ 
-</span></span><span class="line"><span class="cl">│ SDA（I2C） ├────┤ SDA（引脚15） ├────┤ GPIO0~GPIO15│ │ SCL（I2C） ├────┤ SCL（引脚14） ├────┤ （输入/输出）│ │ VCC（3.3V）├────┤ VDD（引脚1） │ └─────────────┘ │ GND ├────┤ GND（引脚8） │ │ INT（可选）├────┤ INT（引脚9/10，中断输出） │ └───────────┘ │ A0/A1/A2（引脚11~13） │ │ （地址配置，默认000） │ └───────────────────────────┘
+</span></span><span class="line"><span class="cl">┌───────────┐     ┌──────────────────────────┐    ┌─────────────┐ 
+</span></span><span class="line"><span class="cl">│ SDA（I2C） ├────┤ SDA（引脚15）              ├────┤ GPIO0~GPIO15│ 
+</span></span><span class="line"><span class="cl">│ SCL（I2C） ├────┤ SCL（引脚14）              ├────┤ （输入/输出）│ 
+</span></span><span class="line"><span class="cl">│ VCC（3.3V）├────┤ VDD（引脚1）               │    └─────────────┘ 
+</span></span><span class="line"><span class="cl">│ GND       ├────┤ GND（引脚8）               │ 
+</span></span><span class="line"><span class="cl">│ INT（可选）├────┤ INT（引脚9/10，中断输出）    │ 
+</span></span><span class="line"><span class="cl">└───────────┘    │ A0/A1/A2（引脚11~13）      │ 
+</span></span><span class="line"><span class="cl">                 │ （地址配置，默认000）        │ 
+</span></span><span class="line"><span class="cl">                 └───────────────────────────┘
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="linux怎么访问gpio">linux怎么访问GPIO
