@@ -259,7 +259,7 @@
     <li><a href="#gpio">GPIO</a>
       <ol>
         <li><a href="#cpu原生">CPU原生</a></li>
-        <li><a href="#i2c拓展">I2C拓展</a></li>
+        <li><a href="#i2c扩展">I2C扩展</a></li>
         <li><a href="#linux怎么访问gpio">linux怎么访问GPIO</a></li>
         <li><a href="#gpio中断">GPIO中断</a></li>
       </ol>
@@ -1016,8 +1016,23 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
   </tbody>
 </table></div>
 <h3 id="cpu原生">CPU原生
-</h3><h3 id="i2c拓展">I2C拓展
-</h3><h3 id="linux怎么访问gpio">linux怎么访问GPIO
+</h3><p>CPU总线支持的GPIO</p>
+<h3 id="i2c扩展">I2C扩展
+</h3><p>通过IIC扩展的GPIO，可以满足CPU原生数量不足的问题，可通过I2C拓展芯片扩展GPIO接口
+以 PCA9555（16 路 I2C 转 GPIO）为例“</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">CPU/MCU PCA9555（I2C GPIO扩展芯片） 外设（LED/传感器/按键） 
+</span></span><span class="line"><span class="cl">┌───────────┐ ┌───────────────────────────┐ ┌─────────────┐ 
+</span></span><span class="line"><span class="cl">│ SDA（I2C） ├────┤ SDA（引脚15） ├────┤ GPIO0~GPIO15│ │ SCL（I2C） ├────┤ SCL（引脚14） ├────┤ （输入/输出）│ │ VCC（3.3V）├────┤ VDD（引脚1） │ └─────────────┘ │ GND ├────┤ GND（引脚8） │ │ INT（可选）├────┤ INT（引脚9/10，中断输出） │ └───────────┘ │ A0/A1/A2（引脚11~13） │ │ （地址配置，默认000） │ └───────────────────────────┘
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="linux怎么访问gpio">linux怎么访问GPIO
 </h3><h3 id="gpio中断">GPIO中断
 </h3><h2 id="i2s">I2S
 </h2><h3 id="用来做什么">用来做什么
