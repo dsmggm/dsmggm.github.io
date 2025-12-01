@@ -944,8 +944,13 @@ WIFI模块、蓝牙模块&lt;/p&gt;
 &lt;h3 id=&#34;hsi&#34;&gt;HSI
 &lt;/h3&gt;&lt;p&gt;mipi hsi是射频数据高速接口，如5G射频&lt;/p&gt;
 &lt;h4 id=&#34;dsi转lvds&#34;&gt;DSI转lvds
-&lt;/h4&gt;&lt;h4 id=&#34;dsi转hdmi&#34;&gt;DSI转HDMI
-&lt;/h4&gt;&lt;h2 id=&#34;can&#34;&gt;CAN
+&lt;/h4&gt;&lt;p&gt;通过芯片转换，分离DSI特有的初始化跟亮度调节等控制信号
+串行数据包转为 LVDS 所需的并行像素流 + 同步信号
+从 MIPI 的 200mV 差分提升到 LVDS 的 350mV 标准
+重新生成 LVDS 时钟和同步信号，匹配显示面板要求&lt;/p&gt;
+&lt;h4 id=&#34;dsi转hdmi&#34;&gt;DSI转HDMI
+&lt;/h4&gt;&lt;p&gt;通过芯片转换，差分信后转TMDS信号&lt;/p&gt;
+&lt;h2 id=&#34;can&#34;&gt;CAN
 &lt;/h2&gt;&lt;h3 id=&#34;can20&#34;&gt;CAN2.0
 &lt;/h3&gt;&lt;h4 id=&#34;标准帧&#34;&gt;标准帧
 &lt;/h4&gt;&lt;h4 id=&#34;扩展帧&#34;&gt;扩展帧
