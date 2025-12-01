@@ -711,7 +711,7 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;gpio&#34;&gt;GPIO
-&lt;/h2&gt;&lt;p&gt;通用IO接口，有&lt;/p&gt;
+&lt;/h2&gt;&lt;p&gt;通用IO接口，可通过软件配置通用引脚功能的工作模式，工作模式有8种&lt;/p&gt;
 &lt;h3 id=&#34;cpu原生&#34;&gt;CPU原生
 &lt;/h3&gt;&lt;h3 id=&#34;i2c拓展&#34;&gt;I2C拓展
 &lt;/h3&gt;&lt;h3 id=&#34;linux怎么访问gpio&#34;&gt;linux怎么访问GPIO
