@@ -781,7 +781,11 @@ I2C 转 GPIO 芯片驱动加载后会被识别为&lt;code&gt;gpiochipX&lt;/code&
 &lt;h2 id=&#34;pcie&#34;&gt;PCIE
 &lt;/h2&gt;&lt;h3 id=&#34;gen几x几&#34;&gt;Gen几、x几
 &lt;/h3&gt;&lt;h3 id=&#34;pcie在arm设备上通常接什么设备或什么通讯&#34;&gt;PCIE在arm设备上通常接什么设备或什么通讯
-&lt;/h3&gt;&lt;h3 id=&#34;pcie跟sata复用关系rkcpu上&#34;&gt;pcie跟sata复用关系(rkCPU上)
+&lt;/h3&gt;&lt;p&gt;4G、5G模块
+数据采集卡
+FPGA、专用加速卡
+WIFI模块、蓝牙模块&lt;/p&gt;
+&lt;h3 id=&#34;pcie跟sata复用关系rkcpu上&#34;&gt;pcie跟sata复用关系(rkCPU上)
 &lt;/h3&gt;&lt;h2 id=&#34;mipi&#34;&gt;mipi
 &lt;/h2&gt;&lt;h3 id=&#34;csi-2&#34;&gt;CSI-2
 &lt;/h3&gt;&lt;h3 id=&#34;dsi&#34;&gt;DSI
