@@ -2349,8 +2349,16 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;最后操作&#34;&gt;最后操作
-&lt;/h2&gt;&lt;p&gt;完成后关闭程序，断开电源，关闭USB-OTG模式（J4针脚跳帽设置为Pin2-Pin3连接Host模式）
+&lt;/h2&gt;&lt;p&gt;完成后关闭程序，断开电源，&lt;strong&gt;关闭USB-OTG模式&lt;/strong&gt;（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
 连接串口线查看开机信息即可
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204144848646.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204143657564.png&#34;
 	
 	
@@ -2422,10 +2430,11 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;硬件设置相比方法一少了进入maskrom模式的操作&#34;&gt;硬件设置（相比方法一少了进入MaskROM模式的操作）：
+&lt;h2 id=&#34;硬件操作相比方法一少了进入maskrom模式的操作&#34;&gt;硬件操作（相比方法一少了进入MaskROM模式的操作）：
 &lt;/h2&gt;&lt;p&gt;&lt;strong&gt;打开USB-OTG模式&lt;/strong&gt;
 J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 &lt;code&gt;注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)&lt;/code&gt;
+&lt;strong&gt;USB、Debug接口都需要与电脑连接&lt;/strong&gt;
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204140850011.png&#34;
 	
 	
@@ -2433,8 +2442,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	loading=&#34;lazy&#34;
 	
 	
-&gt;&lt;/p&gt;
-&lt;p&gt;USB、Debug接口都需要与电脑连接
+&gt;
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204141753716.png&#34;
 	
 	
@@ -2450,7 +2458,66 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 &gt;&lt;/p&gt;
-</description>
+&lt;h2 id=&#34;上电操作&#34;&gt;上电操作
+&lt;/h2&gt;&lt;p&gt;上电，在debug窗口快速按Ctrl+C组合键，进入U-Boot
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204145038299.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+然后输入&lt;code&gt;download&lt;/code&gt;，进入到下载模式
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204145148694.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;刷写系统&#34;&gt;刷写系统
+&lt;/h2&gt;&lt;p&gt;进入RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序（参考方法一）
+&lt;strong&gt;发现一个LOADER设备&lt;/strong&gt;，执行
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204145515478.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204145642435.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+烧录完成后断电&lt;strong&gt;关闭USB-OTG模式&lt;/strong&gt;（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
+连接串口线查看开机信息即可
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204144848646.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204143657564.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;方法三sd卡烧录镜像&#34;&gt;方法三：SD卡烧录镜像
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意：要先确定板子上当前系统为 Linux，如果当前板子上的系统为 Android 系统，则不能 用此方法，只能用“方法一”。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;生成updataimg&#34;&gt;生成updata.img
+&lt;/h2&gt;</description>
         </item>
         
     </channel>

@@ -244,7 +244,13 @@
 
   <ol>
     <li><a href="#硬件准备与方法一相同">硬件准备（与方法一相同）：</a></li>
-    <li><a href="#硬件设置相比方法一少了进入maskrom模式的操作">硬件设置（相比方法一少了进入MaskROM模式的操作）：</a></li>
+    <li><a href="#硬件操作相比方法一少了进入maskrom模式的操作">硬件操作（相比方法一少了进入MaskROM模式的操作）：</a></li>
+    <li><a href="#上电操作">上电操作</a></li>
+    <li><a href="#刷写系统">刷写系统</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#生成updataimg">生成updata.img</a></li>
   </ol>
 </nav>
         </div>
@@ -481,8 +487,16 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 ></p>
 <h2 id="最后操作">最后操作
-</h2><p>完成后关闭程序，断开电源，关闭USB-OTG模式（J4针脚跳帽设置为Pin2-Pin3连接Host模式）
+</h2><p>完成后关闭程序，断开电源，<strong>关闭USB-OTG模式</strong>（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
 连接串口线查看开机信息即可
+<img src="/index-20251204144848646.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
 <img src="/index-20251204143657564.png"
 	
 	
@@ -554,10 +568,11 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
       </tr>
   </tbody>
 </table></div>
-<h2 id="硬件设置相比方法一少了进入maskrom模式的操作">硬件设置（相比方法一少了进入MaskROM模式的操作）：
+<h2 id="硬件操作相比方法一少了进入maskrom模式的操作">硬件操作（相比方法一少了进入MaskROM模式的操作）：
 </h2><p><strong>打开USB-OTG模式</strong>
 J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 <code>注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)</code>
+<strong>USB、Debug接口都需要与电脑连接</strong>
 <img src="/index-20251204140850011.png"
 	
 	
@@ -565,8 +580,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	loading="lazy"
 	
 	
-></p>
-<p>USB、Debug接口都需要与电脑连接
+>
 <img src="/index-20251204141753716.png"
 	
 	
@@ -582,7 +596,66 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-
+<h2 id="上电操作">上电操作
+</h2><p>上电，在debug窗口快速按Ctrl+C组合键，进入U-Boot
+<img src="/index-20251204145038299.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+然后输入<code>download</code>，进入到下载模式
+<img src="/index-20251204145148694.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="刷写系统">刷写系统
+</h2><p>进入RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序（参考方法一）
+<strong>发现一个LOADER设备</strong>，执行
+<img src="/index-20251204145515478.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<img src="/index-20251204145642435.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+烧录完成后断电<strong>关闭USB-OTG模式</strong>（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
+连接串口线查看开机信息即可
+<img src="/index-20251204144848646.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<img src="/index-20251204143657564.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h1 id="方法三sd卡烧录镜像">方法三：SD卡烧录镜像
+</h1><p><strong>注意：要先确定板子上当前系统为 Linux，如果当前板子上的系统为 Android 系统，则不能 用此方法，只能用“方法一”。</strong></p>
+<h2 id="生成updataimg">生成updata.img
+</h2>
 </section>
 
 
