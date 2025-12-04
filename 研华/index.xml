@@ -2244,12 +2244,58 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;h2 id=&#34;硬件设置&#34;&gt;硬件设置：
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;下面以RSB-4810为例：&lt;/strong&gt;
-需要将主板
+&lt;/h2&gt;&lt;p&gt;*&lt;em&gt;打开硬件的MaskROM模式&lt;/em&gt;
 J1跳帽跳到Pin1-Pin2连接(MaskROM模式)
-&lt;code&gt;注：默认Pin2-Pin3连接(非MaskROM模式)&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
-&lt;code&gt;注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)&lt;/code&gt;&lt;/p&gt;
+&lt;code&gt;注：默认Pin2-Pin3连接(非MaskROM模式)&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204140912668.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;打开USB-OTG模式&lt;/strong&gt;
+J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
+&lt;code&gt;注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204140850011.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;软件准备&#34;&gt;软件准备
+&lt;/h2&gt;&lt;h3 id=&#34;安装驱动&#34;&gt;安装驱动
+&lt;/h3&gt;&lt;p&gt;解压 DriverAssitant_v4.91.zip
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204141108641.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+运行程序并安装驱动
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204141126623.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;运行烧写镜像程序&#34;&gt;运行烧写镜像程序
+&lt;/h3&gt;&lt;p&gt;解压文件后进入 RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204141315363.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         
