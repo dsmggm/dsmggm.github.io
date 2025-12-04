@@ -256,6 +256,11 @@
     <li><a href="#2解压sddisktool_v168zip">2.解压SDDiskTool_v1.68.zip，</a></li>
     <li><a href="#3使用sd烧录系统">3.使用SD烧录系统</a></li>
   </ol>
+
+  <ol>
+    <li><a href="#1生成updataimg-1">1.生成updata.img</a></li>
+    <li><a href="#2升级操作">2.升级操作</a></li>
+  </ol>
 </nav>
         </div>
     </section>
@@ -755,7 +760,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 ></li>
 </ol>
 <h2 id="3使用sd烧录系统">3.使用SD烧录系统
-</h2><p>将SD卡插入SD卡槽，连接Debug线，上电自动刷写新系统，查看debug串口信息
+</h2><p>将SD卡插入SD卡槽，连接Debug线，上电自动刷写新系统，查看debug串口信息，等待烧录完成
 <img src="/index-20251204151807024.png"
 	
 	
@@ -763,7 +768,69 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	loading="lazy"
 	
 	
+>
+<img src="/index-20251204152457011.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+到这一步，不要断电。拔出SD卡，等待系统重启即可完成</p>
+<h1 id="方法四">方法四：
+</h1><h2 id="1生成updataimg-1">1.生成updata.img
+</h2><p>在 PC 上双击运行“rockdev\”目录下的“mkupdate.bat”文件
+<img src="/index-20251204150935968.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+耐心等待生成“rockdev\update.img”
+<img src="/index-20251204150957426.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+<img src="/index-20251204151004480.png"
+	
+	
+	
+	loading="lazy"
+	
+	
 ></p>
+<h2 id="2升级操作">2.升级操作
+</h2><p>通过 U 盘等方式将 update.img 拷贝到系统的 “/userdata/” 目录下
+然后执行下面的命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cp /run/media/sda1/update.img /userdata/  <span class="c1"># 根据实际情况去拷贝</span>
+</span></span><span class="line"><span class="cl">sync
+</span></span><span class="line"><span class="cl">update-ota
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>执行完update-ota后，系统会自动进行升级，过程中请勿断电
+<img src="/index-20251204153510957.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+此方法，可以理解为系统为 APP 开放的 API，可以集成到 APP 里面，通过界面进行升 级。</p>
 
 </section>
 
