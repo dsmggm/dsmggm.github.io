@@ -252,6 +252,7 @@
 
   <ol>
     <li><a href="#1生成updataimg">1.生成updata.img</a></li>
+    <li><a href="#2解压sddisktool_v168zip">2.解压SDDiskTool_v1.68.zip，</a></li>
   </ol>
 </nav>
         </div>
@@ -664,7 +665,39 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 <h1 id="方法三sd卡烧录镜像">方法三：SD卡烧录镜像
 </h1><p><strong>注意：要先确定板子上当前系统为 Linux，如果当前板子上的系统为 Android 系统，则不能 用此方法，只能用“方法一”。</strong></p>
 <h2 id="1生成updataimg">1.生成updata.img
-</h2>
+</h2><p>在 PC 上双击运行“rockdev\”目录下的“mkupdate.bat”文件
+<img src="/index-20251204150935968.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>
+耐心等待生成“rockdev\update.img”
+<img src="/index-20251204150957426.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+><img src="/index-20251204151004480.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="2解压sddisktool_v168zip">2.解压SDDiskTool_v1.68.zip，
+</h2><ol>
+<li>运行SD_Firmware_Tool.exe</li>
+<li>插入 SD 卡，选中 SD 卡设备</li>
+<li>选择功能模式为“固件升级”</li>
+<li>选择升级固件为“update.img”的绝对路径</li>
+</ol>
+
 </section>
 
 
