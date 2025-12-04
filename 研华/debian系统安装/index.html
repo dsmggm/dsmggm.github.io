@@ -229,6 +229,7 @@
             <nav id="TableOfContents">
   <ol>
     <li><a href="#硬件准备">硬件准备：</a></li>
+    <li><a href="#硬件设置">硬件设置：</a></li>
   </ol>
 </nav>
         </div>
@@ -270,6 +271,8 @@
     <h1 id="下载debian系统镜像">下载debian系统镜像
 </h1><p>到<a class="link" href="https://ess-wiki.advantech.com.tw/view/RISC"  target="_blank" rel="noopener"
     >ESS-WIKI</a>下载官方镜像及工具、选择对应的设备，这里以RSB-4810为例
+选择 Release Note
+在Image Download从百度网盘下载系统镜像
 <img src="/index-20251204135043888.png"
 	
 	
@@ -278,7 +281,6 @@
 	
 	
 >
-选择 Release Note
 <img src="/index-20251204135043900.png"
 	
 	
@@ -287,7 +289,6 @@
 	
 	
 >
-在Image Download从百度网盘下载系统镜像
 <img src="/index-20251204135043903.png"
 	
 	
@@ -306,8 +307,8 @@
 	loading="lazy"
 	
 	
->
-文件夹内文件如下图示例
+></p>
+<p>文件夹内文件如下图示例
 <img src="/index-20251204135043915.png"
 	
 	
@@ -343,11 +344,29 @@
           <td>设备供电电源</td>
       </tr>
       <tr>
-          <td>下面以RSB-4810为例需要将主板J1跳帽跳到Pin1-Pin2，J4跳帽</td>
+          <td>USB公对公实物示例图</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><img src="/index-20251204140754041.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></td>
           <td></td>
       </tr>
   </tbody>
 </table></div>
+<h2 id="硬件设置">硬件设置：
+</h2><p><strong>下面以RSB-4810为例：</strong>
+需要将主板
+J1跳帽跳到Pin1-Pin2连接(MaskROM模式)
+<code>注：默认Pin2-Pin3连接(非MaskROM模式)</code></p>
+<p>J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
+<code>注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)</code></p>
 
 </section>
 

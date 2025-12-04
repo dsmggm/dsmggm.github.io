@@ -10184,6 +10184,8 @@ openwrt路径：&lt;/p&gt;
         <description>&lt;h1 id=&#34;下载debian系统镜像&#34;&gt;下载debian系统镜像
 &lt;/h1&gt;&lt;p&gt;到&lt;a class=&#34;link&#34; href=&#34;https://ess-wiki.advantech.com.tw/view/RISC&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ESS-WIKI&lt;/a&gt;下载官方镜像及工具、选择对应的设备，这里以RSB-4810为例
+选择 Release Note
+在Image Download从百度网盘下载系统镜像
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204135043888.png&#34;
 	
 	
@@ -10192,7 +10194,6 @@ openwrt路径：&lt;/p&gt;
 	
 	
 &gt;
-选择 Release Note
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204135043900.png&#34;
 	
 	
@@ -10201,7 +10202,6 @@ openwrt路径：&lt;/p&gt;
 	
 	
 &gt;
-在Image Download从百度网盘下载系统镜像
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204135043903.png&#34;
 	
 	
@@ -10220,8 +10220,8 @@ openwrt路径：&lt;/p&gt;
 	loading=&#34;lazy&#34;
 	
 	
-&gt;
-文件夹内文件如下图示例
+&gt;&lt;/p&gt;
+&lt;p&gt;文件夹内文件如下图示例
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204135043915.png&#34;
 	
 	
@@ -10257,11 +10257,29 @@ openwrt路径：&lt;/p&gt;
           &lt;td&gt;设备供电电源&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;下面以RSB-4810为例需要将主板J1跳帽跳到Pin1-Pin2，J4跳帽&lt;/td&gt;
+          &lt;td&gt;USB公对公实物示例图&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;img src=&#34;https://dsmggm.github.io/index-20251204140754041.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/td&gt;
           &lt;td&gt;&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;h2 id=&#34;硬件设置&#34;&gt;硬件设置：
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;下面以RSB-4810为例：&lt;/strong&gt;
+需要将主板
+J1跳帽跳到Pin1-Pin2连接(MaskROM模式)
+&lt;code&gt;注：默认Pin2-Pin3连接(非MaskROM模式)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
+&lt;code&gt;注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)&lt;/code&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
