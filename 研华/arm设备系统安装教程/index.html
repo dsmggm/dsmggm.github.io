@@ -228,29 +228,30 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#硬件准备">硬件准备：</a></li>
-    <li><a href="#硬件设置">硬件设置：</a></li>
-    <li><a href="#软件准备">软件准备</a>
+    <li><a href="#1硬件准备">1.硬件准备：</a></li>
+    <li><a href="#2硬件设置">2.硬件设置：</a></li>
+    <li><a href="#3软件准备">3.软件准备</a>
       <ol>
-        <li><a href="#安装驱动">安装驱动</a></li>
-        <li><a href="#运行烧写镜像程序">运行烧写镜像程序</a></li>
+        <li><a href="#31安装驱动">3.1安装驱动</a></li>
+        <li><a href="#32运行烧写镜像程序">3.2运行烧写镜像程序</a></li>
       </ol>
     </li>
-    <li><a href="#连接硬件上电">连接硬件，上电</a></li>
-    <li><a href="#退出maskrom模式">退出MaskROM模式</a></li>
-    <li><a href="#最后操作">最后操作</a></li>
-    <li><a href="#异常">异常</a></li>
+    <li><a href="#4连接硬件上电">4.连接硬件，上电</a></li>
+    <li><a href="#5退出maskrom模式">5.退出MaskROM模式</a></li>
+    <li><a href="#6最后操作">6.最后操作</a></li>
+    <li><a href="#7常见异常">7.常见异常</a></li>
   </ol>
 
   <ol>
-    <li><a href="#硬件准备与方法一相同">硬件准备（与方法一相同）：</a></li>
-    <li><a href="#硬件操作相比方法一少了进入maskrom模式的操作">硬件操作（相比方法一少了进入MaskROM模式的操作）：</a></li>
-    <li><a href="#上电操作">上电操作</a></li>
-    <li><a href="#刷写系统">刷写系统</a></li>
+    <li><a href="#1硬件准备与方法一相同">1.硬件准备（与方法一相同）：</a></li>
+    <li><a href="#2硬件操作相比方法一少了进入maskrom模式的操作">2.硬件操作（相比方法一少了进入MaskROM模式的操作）：</a></li>
+    <li><a href="#3上电操作">3.上电操作</a></li>
+    <li><a href="#4刷写系统">4.刷写系统</a></li>
+    <li><a href="#5最后操作">5.最后操作</a></li>
   </ol>
 
   <ol>
-    <li><a href="#生成updataimg">生成updata.img</a></li>
+    <li><a href="#1生成updataimg">1.生成updata.img</a></li>
   </ol>
 </nav>
         </div>
@@ -339,7 +340,7 @@
 	
 ></p>
 <h1 id="方法一maskrom-模式">方法一：MaskROM 模式
-</h1><h2 id="硬件准备">硬件准备：
+</h1><h2 id="1硬件准备">1.硬件准备：
 </h2><div class="table-wrapper"><table>
   <thead>
       <tr>
@@ -381,8 +382,8 @@
       </tr>
   </tbody>
 </table></div>
-<h2 id="硬件设置">硬件设置：
-</h2><p>*<em>打开硬件的MaskROM模式</em>
+<h2 id="2硬件设置">2.硬件设置：
+</h2><p>2.1**打开硬件的MaskROM模式*
 J1跳帽跳到Pin1-Pin2连接(MaskROM模式)
 <code>注：默认Pin2-Pin3连接(非MaskROM模式)</code>
 <img src="/index-20251204140912668.png"
@@ -393,7 +394,7 @@ J1跳帽跳到Pin1-Pin2连接(MaskROM模式)
 	
 	
 ></p>
-<p><strong>打开USB-OTG模式</strong>
+<p>2.2<strong>打开USB-OTG模式</strong>
 J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 <code>注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)</code>
 <img src="/index-20251204140850011.png"
@@ -404,8 +405,8 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="软件准备">软件准备
-</h2><h3 id="安装驱动">安装驱动
+<h2 id="3软件准备">3.软件准备
+</h2><h3 id="31安装驱动">3.1安装驱动
 </h3><p>解压 DriverAssitant_v4.91.zip
 <img src="/index-20251204141108641.png"
 	
@@ -424,7 +425,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h3 id="运行烧写镜像程序">运行烧写镜像程序
+<h3 id="32运行烧写镜像程序">3.2运行烧写镜像程序
 </h3><p>解压文件后进入 RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序
 <img src="/index-20251204141533367.png"
 	
@@ -443,7 +444,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="连接硬件上电">连接硬件，上电
+<h2 id="4连接硬件上电">4.连接硬件，上电
 </h2><p>设备接入USB，之后上电
 上电后在烧录软件软件看是否有<strong>发现一个MASKROM</strong>字样
 <img src="/index-20251204141753716.png"
@@ -461,7 +462,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="退出maskrom模式">退出MaskROM模式
+<h2 id="5退出maskrom模式">5.退出MaskROM模式
 </h2><p>发现设备后需要退出MaskROM，将J1跳线帽跳回Pin2—Pin3，然后点击执行
 <img src="/index-20251204142149734.png"
 	
@@ -486,7 +487,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="最后操作">最后操作
+<h2 id="6最后操作">6.最后操作
 </h2><p>完成后关闭程序，断开电源，<strong>关闭USB-OTG模式</strong>（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
 连接串口线查看开机信息即可
 <img src="/index-20251204144848646.png"
@@ -505,7 +506,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="异常">异常
+<h2 id="7常见异常">7.常见异常
 </h2><p>如果出现**<code>准备IDB失败</code>**的异常，有可能：</p>
 <ol>
 <li>没有退出MaskROM模式</li>
@@ -522,7 +523,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 ></li>
 </ol>
 <h1 id="方法二u-boot-download命令">方法二：U-Boot download命令
-</h1><h2 id="硬件准备与方法一相同">硬件准备（与方法一相同）：
+</h1><h2 id="1硬件准备与方法一相同">1.硬件准备（与方法一相同）：
 </h2><div class="table-wrapper"><table>
   <thead>
       <tr>
@@ -568,11 +569,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
       </tr>
   </tbody>
 </table></div>
-<h2 id="硬件操作相比方法一少了进入maskrom模式的操作">硬件操作（相比方法一少了进入MaskROM模式的操作）：
-</h2><p><strong>打开USB-OTG模式</strong>
+<h2 id="2硬件操作相比方法一少了进入maskrom模式的操作">2.硬件操作（相比方法一少了进入MaskROM模式的操作）：
+</h2><p>2.1<strong>打开USB-OTG模式</strong>
 J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 <code>注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)</code>
-<strong>USB、Debug接口都需要与电脑连接</strong>
 <img src="/index-20251204140850011.png"
 	
 	
@@ -580,7 +580,8 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	loading="lazy"
 	
 	
->
+></p>
+<p>2.2<strong>USB、Debug接口都需要与电脑连接</strong>
 <img src="/index-20251204141753716.png"
 	
 	
@@ -596,7 +597,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="上电操作">上电操作
+<h2 id="3上电操作">3.上电操作
 </h2><p>上电，在debug窗口快速按Ctrl+C组合键，进入U-Boot
 <img src="/index-20251204145038299.png"
 	
@@ -615,7 +616,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 ></p>
-<h2 id="刷写系统">刷写系统
+<h2 id="4刷写系统">4.刷写系统
 </h2><p>进入RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序（参考方法一）
 <strong>发现一个LOADER设备</strong>，执行
 <img src="/index-20251204145515478.png"
@@ -633,8 +634,16 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	loading="lazy"
 	
 	
->
-烧录完成后断电<strong>关闭USB-OTG模式</strong>（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
+><img src="/index-20251204150741951.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></p>
+<h2 id="5最后操作">5.最后操作
+</h2><p>烧录完成后断电<strong>关闭USB-OTG模式</strong>（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）
 连接串口线查看开机信息即可
 <img src="/index-20251204144848646.png"
 	
@@ -654,7 +663,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 ></p>
 <h1 id="方法三sd卡烧录镜像">方法三：SD卡烧录镜像
 </h1><p><strong>注意：要先确定板子上当前系统为 Linux，如果当前板子上的系统为 Android 系统，则不能 用此方法，只能用“方法一”。</strong></p>
-<h2 id="生成updataimg">生成updata.img
+<h2 id="1生成updataimg">1.生成updata.img
 </h2>
 </section>
 
