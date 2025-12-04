@@ -4,11 +4,11 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="下载debian系统镜像 到ESS-WIKI下载官方镜像及工具、选择对应的设备，这里以RSB-4810刷Debian11为例 选择 Release Note 在Image Download从百度网盘下载系统镜像 注：系统镜像文件包含工具包\n">
 <title></title>
 
-<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/debian%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/'>
+<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 
 <link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="">
 <meta property='og:description' content="下载debian系统镜像 到ESS-WIKI下载官方镜像及工具、选择对应的设备，这里以RSB-4810刷Debian11为例 选择 Release Note 在Image Download从百度网盘下载系统镜像 注：系统镜像文件包含工具包\n">
-<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/debian%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/'>
+<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/'>
 <meta property='og:site_name' content='dsmggm博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='研华' />
 <meta name="twitter:title" content="">
@@ -241,6 +241,10 @@
     <li><a href="#最后操作">最后操作</a></li>
     <li><a href="#异常">异常</a></li>
   </ol>
+
+  <ol>
+    <li><a href="#硬件准备与方法一相同">硬件准备（与方法一相同）：</a></li>
+  </ol>
 </nav>
         </div>
     </section>
@@ -259,7 +263,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E7%A0%94%E5%8D%8E/debian%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/"></a>
+            <a href="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/"></a>
         </h2>
     
         
@@ -327,7 +331,7 @@
 	
 	
 ></p>
-<h1 id="安装方法一maskrom刷写模式">安装方法一：MaskROM刷写模式
+<h1 id="方法一maskrom-模式">方法一：MaskROM 模式
 </h1><h2 id="硬件准备">硬件准备：
 </h2><div class="table-wrapper"><table>
   <thead>
@@ -502,6 +506,76 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 ></li>
 </ol>
+<h1 id="方法二u-boot-download命令">方法二：U-Boot download命令
+</h1><h2 id="硬件准备与方法一相同">硬件准备（与方法一相同）：
+</h2><div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>名称</th>
+          <th>功能描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>USB公对公(USB-TO-USB)</td>
+          <td>用于电脑跟设备USB OTG口连接传输数据</td>
+      </tr>
+      <tr>
+          <td>debug串口连接线</td>
+          <td>用于查看设备输出日志</td>
+      </tr>
+      <tr>
+          <td>主板</td>
+          <td>设备主题</td>
+      </tr>
+      <tr>
+          <td>电源</td>
+          <td>设备供电电源</td>
+      </tr>
+      <tr>
+          <td></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>USB公对公实物示例图</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><img src="/index-20251204140754041.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+>## 硬件设置（相比方法一少了进入MaskROM模式的操作）：</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><strong>打开USB-OTG模式</strong></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)</td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><code>注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)</code></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td><img src="/index-20251204140850011.png"
+	
+	
+	
+	loading="lazy"
+	
+	
+></td>
+          <td></td>
+      </tr>
+  </tbody>
+</table></div>
 
 </section>
 
