@@ -10335,9 +10335,34 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 	
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;连接硬件&#34;&gt;连接硬件
-&lt;/h2&gt;&lt;p&gt;设备接入USB，通电
+&lt;h2 id=&#34;连接硬件上电&#34;&gt;连接硬件，上电
+&lt;/h2&gt;&lt;p&gt;设备接入USB，之后上电
+上电后在烧录软件软件看是否有&lt;strong&gt;发现一个MASKROM&lt;/strong&gt;字样
 &lt;img src=&#34;https://dsmggm.github.io/index-20251204141753716.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;img src=&#34;https://dsmggm.github.io/index-20251204142753565.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;退出maskrom模式&#34;&gt;退出MaskROM模式
+&lt;/h2&gt;&lt;p&gt;发现设备后需要退出MaskROM，将J1跳线帽跳回Pin2—Pin3，然后点击执行
+&lt;img src=&#34;https://dsmggm.github.io/index-20251204142149734.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;img src=&#34;https://dsmggm.github.io/index-20251204142638018.png&#34;
 	
 	
 	
