@@ -10230,8 +10230,39 @@ openwrt路径：&lt;/p&gt;
 	
 	
 &gt;&lt;/p&gt;
-&lt;h1 id=&#34;安装方法一&#34;&gt;安装方法一：
-&lt;/h1&gt;</description>
+&lt;h1 id=&#34;安装方法一maskrom刷写模式&#34;&gt;安装方法一：MaskROM刷写模式
+&lt;/h1&gt;&lt;h2 id=&#34;硬件准备&#34;&gt;硬件准备：
+&lt;/h2&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;名称&lt;/th&gt;
+          &lt;th&gt;功能描述&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;USB公对公(USB-TO-USB)&lt;/td&gt;
+          &lt;td&gt;用于电脑跟设备USB OTG口连接传输数据&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;debug串口连接线&lt;/td&gt;
+          &lt;td&gt;用于查看设备输出日志&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;主板&lt;/td&gt;
+          &lt;td&gt;设备主题&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;电源&lt;/td&gt;
+          &lt;td&gt;设备供电电源&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;下面以RSB-4810为例需要将主板J1跳帽跳到Pin1-Pin2，J4跳帽&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
         </item>
         <item>
         <title>搜索</title>
