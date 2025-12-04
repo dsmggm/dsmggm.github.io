@@ -10586,6 +10586,9 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)
 &lt;li&gt;插入 SD 卡，选中 SD 卡设备&lt;/li&gt;
 &lt;li&gt;选择功能模式为“固件升级”&lt;/li&gt;
 &lt;li&gt;选择升级固件为“update.img”的绝对路径&lt;/li&gt;
+&lt;li&gt;确认选项&lt;/li&gt;
+&lt;li&gt;开始创建&lt;/li&gt;
+&lt;li&gt;创建成功&lt;/li&gt;
 &lt;/ol&gt;
 </description>
         </item>
