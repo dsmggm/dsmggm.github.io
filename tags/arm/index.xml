@@ -153,7 +153,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;h2 id=&#34;演示&#34;&gt;演示
 &lt;/h2&gt;&lt;p&gt;下面以mobaxterm为例进行ssh链接演示&lt;br&gt;
 点击左上角的&lt;strong&gt;会话&lt;/strong&gt; - &lt;strong&gt;ssh&lt;/strong&gt; - &lt;strong&gt;输入远程主机&lt;/strong&gt; - &lt;strong&gt;指定用户名&lt;/strong&gt; - &lt;strong&gt;确定&lt;/strong&gt; - &lt;strong&gt;输入密码&lt;/strong&gt;&lt;br&gt;
-注：输入密码的时候是不显示密码文本的&lt;br&gt;
+&lt;code&gt;注：输入密码的时候是不显示密码文本的&lt;/code&gt;&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174224126.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1890&#34;
@@ -164,6 +164,71 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 		class=&#34;gallery-image&#34; 
 		data-flex-grow=&#34;158&#34;
 		data-flex-basis=&#34;380px&#34;
+	
+&gt;
+选择**信任身份(Accept)**进行连接
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212000965.png&#34;
+	width=&#34;1186&#34;
+	height=&#34;504&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212000965_hu_6c1d3d3ec43fcb9e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212000965_hu_6e952bf49775fc68.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;235&#34;
+		data-flex-basis=&#34;564px&#34;
+	
+&gt;
+输入密码
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212054706.png&#34;
+	width=&#34;779&#34;
+	height=&#34;162&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212054706_hu_127bbdac6b32840.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212054706_hu_3c804f99390ad5d4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;480&#34;
+		data-flex-basis=&#34;1154px&#34;
+	
+&gt;
+是否保存密码&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212440594.png&#34;
+	width=&#34;1091&#34;
+	height=&#34;421&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212440594_hu_3dd47cce7631e155.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212440594_hu_92d57fe9b4fdd95b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;259&#34;
+		data-flex-basis=&#34;621px&#34;
+	
+&gt;
+登录成功&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212604351.png&#34;
+	width=&#34;1685&#34;
+	height=&#34;882&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212604351_hu_d9815929b0b8d974.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212604351_hu_20fffdc32a0c912b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;191&#34;
+		data-flex-basis=&#34;458px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;出现&lt;strong&gt;Access denied&lt;/strong&gt;一般就是账户不允许被ssh远程登录，或者是账户密码错误
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212302096.png&#34;
+	width=&#34;747&#34;
+	height=&#34;90&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212302096_hu_4096d5a99bf0e855.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212302096_hu_f4e499b590662644.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;830&#34;
+		data-flex-basis=&#34;1992px&#34;
 	
 &gt;&lt;/p&gt;
 </description>
