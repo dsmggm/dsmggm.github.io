@@ -7,7 +7,40 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>ssh工具的连接与使用</title>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+        <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+        <description>&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
+&lt;/h1&gt;&lt;p&gt;Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。&lt;/p&gt;
+&lt;p&gt;SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文主要介绍OpenSSH免费开源实现在linux中的应用，如果要在Windows中使用SSH，我们将介绍命令行以及第三方工具的使用方法。&lt;/p&gt;
+&lt;h1 id=&#34;命令行连接&#34;&gt;命令行连接
+&lt;/h1&gt;&lt;p&gt;命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh user@remote-host
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;user -&amp;gt; 指用户&lt;br&gt;
+remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&lt;/p&gt;
+&lt;p&gt;示例：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh root@192.168.22.4
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;说明：使用ssh工具使用&lt;strong&gt;root&lt;/strong&gt;用户登录到&lt;strong&gt;192.168.22.4&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>arm设备系统安装教程</title>
         <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>

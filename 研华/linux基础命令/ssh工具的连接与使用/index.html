@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="一、系统下载 注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的设备类型与OS版本\n下面以RK3568 RSB-4810设备Debian10 1.1.5为例\n选择后点击右下角下载\n一般情况下都会使用With Configuration带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。\n">
-<title>Jelina系统安装</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="ssh是什么 Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。\n">
+<title>ssh工具的连接与使用</title>
 
-<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/'>
+<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/'>
 
-<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Jelina系统安装">
-<meta property='og:description' content="一、系统下载 注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的设备类型与OS版本\n下面以RK3568 RSB-4810设备Debian10 1.1.5为例\n选择后点击右下角下载\n一般情况下都会使用With Configuration带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。\n">
-<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/'>
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="ssh工具的连接与使用">
+<meta property='og:description' content="ssh是什么 Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。\n">
+<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/'>
 <meta property='og:site_name' content='dsmggm博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='Jelina' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png' />
-<meta name="twitter:title" content="Jelina系统安装">
-<meta name="twitter:description" content="一、系统下载 注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的设备类型与OS版本\n下面以RK3568 RSB-4810设备Debian10 1.1.5为例\n选择后点击右下角下载\n一般情况下都会使用With Configuration带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='arm' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-12-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-12-05T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="ssh工具的连接与使用">
+<meta name="twitter:description" content="ssh是什么 Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -229,14 +228,8 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#一系统下载">一、系统下载</a>
-      <ol>
-        <li><a href="#下载按钮解释">下载按钮解释</a></li>
-      </ol>
-    </li>
-    <li><a href="#二刻录系统安装盘">二、刻录系统安装盘</a></li>
-    <li><a href="#三刷入系统">三、刷入系统</a></li>
-    <li><a href="#四开机">四、开机</a></li>
+    <li><a href="#ssh是什么">ssh是什么</a></li>
+    <li><a href="#命令行连接">命令行连接</a></li>
   </ol>
 </nav>
         </div>
@@ -248,20 +241,8 @@
 
 
             <main class="main full-width">
-    <article class="has-image main-article">
+    <article class="main-article">
     <header class="article-header">
-        <div class="article-image">
-            <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_64d980cdec54b054.png"
-                        srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_64d980cdec54b054.png 800w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_6b9669693a258c09.png 1600w"
-                        width="800" 
-                        height="503" 
-                        loading="lazy"
-                        alt="Featured image of post Jelina系统安装" />
-                
-            </a>
-        </div>
-    
 
     <div class="article-details">
     
@@ -276,7 +257,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">Jelina系统安装</a>
+            <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/">ssh工具的连接与使用</a>
         </h2>
     
         
@@ -298,7 +279,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2025-11-20T00:00:00Z'>2025-11-20</time>
+                <time class="article-time--published" datetime='2025-12-05T00:00:00Z'>2025-12-05</time>
             </div>
         
 
@@ -314,264 +295,31 @@
     <section class="article-content">
     
     
-    <h1 id="一系统下载">一、系统下载
-</h1><p>注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的<strong>设备类型</strong>与<strong>OS版本</strong><br>
-下面以<strong>RK3568 RSB-4810</strong>设备<strong>Debian10 1.1.5</strong>为例<br>
-选择后点击右下角下载<br>
-一般情况下都会使用<strong>With Configuration</strong>带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。<br>
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image.png"
-	width="2984"
-	height="1649"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_88793089e29d1194.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_97449d9851f40801.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="180"
-		data-flex-basis="434px"
-	
-></p>
-<h2 id="下载按钮解释">下载按钮解释
-</h2><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>按钮名称</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>JlinaFlasher</td>
-          <td>镜像刻录工具</td>
-      </tr>
-      <tr>
-          <td>JelinaFlasher-Portable</td>
-          <td>便携版</td>
-      </tr>
-      <tr>
-          <td>JelinaFlasher-Setup</td>
-          <td>安装版</td>
-      </tr>
-      <tr>
-          <td>JelinaOS</td>
-          <td>系统镜像文件</td>
-      </tr>
-      <tr>
-          <td>Original</td>
-          <td>原始系统镜像文件</td>
-      </tr>
-      <tr>
-          <td>With Configuration</td>
-          <td>带监督配置的系统镜像文件</td>
-      </tr>
-      <tr>
-          <td>配置文件</td>
-          <td>舰队单独的配置文件</td>
-      </tr>
-  </tbody>
-</table></div>
-<h1 id="二刻录系统安装盘">二、刻录系统安装盘
-</h1><p>arm基本上使用micro SD卡进行刻录烧制<br>
-可以使用JlinaFlasher工具或者是Rufus工具进行烧录</p>
-<div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>准备工具</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>JlinaFlasher &amp; Rufus</td>
-          <td>镜像刻录工具</td>
-      </tr>
-      <tr>
-          <td>系统镜像文件</td>
-          <td>系统镜像文件</td>
-      </tr>
-      <tr>
-          <td>micro SD卡</td>
-          <td>引导系统载体，用于刻录系统镜像文件，建议8G及以上</td>
-      </tr>
-      <tr>
-          <td>读卡器</td>
-          <td>用于读读写micro SD卡</td>
-      </tr>
-  </tbody>
-</table></div>
-<p>打开JlinaFlasher工具，选择系统镜像文件，选择micro SD卡，点击下一步，点击烧录并等待完成即可<br>
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1.png"
-	width="1798"
-	height="1132"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_e09dfb1ba094064c.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_daa14d07994e66af.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="158"
-		data-flex-basis="381px"
-	
->
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2.png"
-	width="1798"
-	height="1123"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_7c03c07b07a53d7e.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_2a0fadccc23c652.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="160"
-		data-flex-basis="384px"
-	
->
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3.png"
-	width="1798"
-	height="1125"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_2f3dee91402ac232.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_cb11e237387a6212.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="159"
-		data-flex-basis="383px"
-	
->
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png"
-	width="1798"
-	height="1130"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_1dbfb9cee5ff781e.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_73a94bce62d8d749.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="159"
-		data-flex-basis="381px"
-	
-></p>
-<h1 id="三刷入系统">三、刷入系统
-</h1><p>接好硬件，以下图片作为参考
-将<strong>串口</strong>、<strong>micro SD</strong>、<strong>Debug串口连接电脑</strong>，最后再接通电源，网络可在稍后连接
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5.png"
-	width="2102"
-	height="1386"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_947e38f2429951c.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_8a9f2cb59a641d62.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="151"
-		data-flex-basis="363px"
-	
->
-串口显示工具使用<a class="link" href="https://github.com/RipplePiam/MobaXterm-Chinese-Simplified/releases"  target="_blank" rel="noopener"
-    >MobaXterm_Personal</a>或其它工具<br>
-1、点击会话<br>
-2、点击串口<br>
-3、选择串口设备<br>
-4、波特率一般为115200<br>
-5、点击ok<br>
-没有报错就是连接成功，接着上电就能看到输出内容
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6.png"
-	width="2997"
-	height="1888"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_ef1355c22797631.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_d2b01860f7d283eb.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="158"
-		data-flex-basis="380px"
-	
->
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7.png"
-	width="2999"
-	height="1895"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_e754348ca45dc264.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_9db6c4ee4726f22c.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="158"
-		data-flex-basis="379px"
-	
->
-接着会显示3秒的U-boot界面，默认会自动刷写Flash，既刷系统
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8.png"
-	width="1125"
-	height="394"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_d32c4f8171901937.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_b860083ca7ce7894.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="285"
-		data-flex-basis="685px"
-	
->
-等待刷写完成
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9.png"
-	width="2027"
-	height="718"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_f5bb94807e9308aa.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_3f2e323be66e8832.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="282"
-		data-flex-basis="677px"
-	
->
-刷写完成倒计时30秒自动关机，拔出micro SD卡后重新上电即可开机使用<br>
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10.png"
-	width="2390"
-	height="1595"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_79931372825cf2c.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_48ed45a441d0a8a7.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="149"
-		data-flex-basis="359px"
-	
-></p>
-<h1 id="四开机">四、开机
-</h1><p>开机跑码后界面如下
-<img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11.png"
-	width="2390"
-	height="1595"
-	srcset="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_bf7e40fa926cdea9.png 480w, /%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_830ee9890145180f.png 1024w"
-	loading="lazy"
-	
-		alt="alt text"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="149"
-		data-flex-basis="359px"
-	
-></p>
+    <h1 id="ssh是什么">ssh是什么
+</h1><p>Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。</p>
+<p>SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文主要介绍OpenSSH免费开源实现在linux中的应用，如果要在Windows中使用SSH，我们将介绍命令行以及第三方工具的使用方法。</p>
+<h1 id="命令行连接">命令行连接
+</h1><p>命令：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh user@remote-host
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>user -&gt; 指用户<br>
+remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
+<p>示例：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh root@192.168.22.4
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>说明：使用ssh工具使用<strong>root</strong>用户登录到<strong>192.168.22.4</strong></p>
 
 </section>
 
@@ -580,7 +328,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/jelina/">Jelina</a>
+            <a href="/tags/arm/">Arm</a>
         
             <a href="/tags/linux/">Linux</a>
         
@@ -603,6 +351,30 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+        
+        
+            <div class="article-image">
+                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_2f5007466eb64697.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post arm设备系统安装教程"
+                        
+                        data-hash="md5-ghD2fn/FRGxzWWbFX2tOLQ==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">arm设备系统安装教程</h2>
+        </div>
+    </a>
+</article>
+
             
                 
 <article class="has-image">
@@ -642,37 +414,24 @@
 
             
                 
-<article class="">
-    <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">ssh工具的连接与使用</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
 <article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">
         
         
             <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_2f5007466eb64697.png" 
+                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.bb9f42734cbb882af34749da4bf234e5_hu_131206b19b172d71.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
-                        alt="Featured image of post arm设备系统安装教程"
+                        alt="Featured image of post Jelina系统安装"
                         
-                        data-hash="md5-ghD2fn/FRGxzWWbFX2tOLQ==">
+                        data-hash="md5-u59Cc0y7iCrzR0naS/I05Q==">
                 
             </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">arm设备系统安装教程</h2>
+            <h2 class="article-title">Jelina系统安装</h2>
         </div>
     </a>
 </article>

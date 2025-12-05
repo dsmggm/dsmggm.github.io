@@ -19,7 +19,7 @@
 &lt;/h1&gt;&lt;p&gt;安装以下几个插件&lt;br&gt;
 git&lt;br&gt;
 Custom Attachment Location&lt;br&gt;
-Enhancing Export&lt;br&gt;
+Enhancing Export(其实不需要)&lt;br&gt;
 安装后需要启用&lt;/p&gt;
 &lt;h1 id=&#34;设置插件&#34;&gt;设置插件
 &lt;/h1&gt;&lt;h2 id=&#34;git&#34;&gt;git
@@ -66,7 +66,7 @@ Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  
 &gt;&lt;/p&gt;
 &lt;p&gt;文件与链接&lt;br&gt;
 关闭 使用wiki链接&lt;br&gt;
-内部链接类型 修改为&lt;strong&gt;基于当前笔记的相对路径&lt;/strong&gt;
+内部链接类型 修改为&lt;strong&gt;基于当前笔记的相对路径&lt;/strong&gt;&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2.png&#34;
 	width=&#34;2304&#34;
 	height=&#34;1798&#34;
