@@ -234,7 +234,12 @@
         <li><a href="#命令行使用方法">命令行使用方法：</a></li>
         <li><a href="#指定端口">指定端口：</a></li>
         <li><a href="#windows连接示例">windows连接示例</a></li>
-        <li><a href="#问题">问题</a></li>
+        <li><a href="#常见异常">常见异常</a>
+          <ol>
+            <li><a href="#权限拒绝">权限拒绝</a></li>
+            <li><a href="#主机失联">主机失联</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
     <li><a href="#其它软件连接">其它软件连接</a>
@@ -249,10 +254,10 @@
           </ol>
         </li>
         <li><a href="#演示">演示</a></li>
-        <li><a href="#异常解惑">异常解惑</a>
+        <li><a href="#常见异常-1">常见异常</a>
           <ol>
             <li><a href="#主机密钥改变">主机密钥改变</a></li>
-            <li><a href="#主机失联">主机失联</a></li>
+            <li><a href="#主机失联-1">主机失联</a></li>
           </ol>
         </li>
       </ol>
@@ -377,8 +382,35 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 	
 ></li>
 </ol>
-<h2 id="问题">问题
-</h2><p>可能会遇到的问题</p>
+<h2 id="常见异常">常见异常
+</h2><h3 id="权限拒绝">权限拒绝
+</h3><p>账户或密码错误，或是账户不允许被ssh登录
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470.png"
+	width="1078"
+	height="124"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470_hu_7a3fe3249dc8f112.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470_hu_11d3dad9e1d91e3c.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="869"
+		data-flex-basis="2086px"
+	
+></p>
+<h3 id="主机失联">主机失联
+</h3><p>无法正常连接主机，检查主机或是端口是否无法通讯<br>
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732.png"
+	width="1627"
+	height="97"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732_hu_e017aa9f23e602c5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732_hu_38bcf7e4b996cd06.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="1677"
+		data-flex-basis="4025px"
+	
+></p>
 <h1 id="其它软件连接">其它软件连接
 </h1><h2 id="工具介绍">工具介绍
 </h2><p>其它软件较为出名有<strong>PuTTY、Termius、FinalShell、MobaXterm、XShell</strong>等，每个人可以根据自己的习惯喜好进行选择</p>
@@ -540,7 +572,7 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 		data-flex-basis="1992px"
 	
 ></p>
-<h2 id="异常解惑">异常解惑
+<h2 id="常见异常-1">常见异常
 </h2><h3 id="主机密钥改变">主机密钥改变
 </h3><p>服务器身份改变，需要重新接受密钥<br>
 <strong>Accept the new server hostkey and carry on connecting</strong>接受新的服务器主机密钥并继续连接<br>
@@ -558,7 +590,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis="271px"
 	
 ></p>
-<h3 id="主机失联">主机失联
+<h3 id="主机失联-1">主机失联
 </h3><p>无法正常连接主机，检查主机或是端口是否无法通讯
 <img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297.png"
 	width="997"

@@ -68,8 +68,35 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;问题&#34;&gt;问题
-&lt;/h2&gt;&lt;p&gt;可能会遇到的问题&lt;/p&gt;
+&lt;h2 id=&#34;常见异常&#34;&gt;常见异常
+&lt;/h2&gt;&lt;h3 id=&#34;权限拒绝&#34;&gt;权限拒绝
+&lt;/h3&gt;&lt;p&gt;账户或密码错误，或是账户不允许被ssh登录
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470.png&#34;
+	width=&#34;1078&#34;
+	height=&#34;124&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470_hu_7a3fe3249dc8f112.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470_hu_11d3dad9e1d91e3c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;869&#34;
+		data-flex-basis=&#34;2086px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;主机失联&#34;&gt;主机失联
+&lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732.png&#34;
+	width=&#34;1627&#34;
+	height=&#34;97&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732_hu_e017aa9f23e602c5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732_hu_38bcf7e4b996cd06.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;1677&#34;
+		data-flex-basis=&#34;4025px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h1 id=&#34;其它软件连接&#34;&gt;其它软件连接
 &lt;/h1&gt;&lt;h2 id=&#34;工具介绍&#34;&gt;工具介绍
 &lt;/h2&gt;&lt;p&gt;其它软件较为出名有&lt;strong&gt;PuTTY、Termius、FinalShell、MobaXterm、XShell&lt;/strong&gt;等，每个人可以根据自己的习惯喜好进行选择&lt;/p&gt;
@@ -231,7 +258,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 		data-flex-basis=&#34;1992px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h2 id=&#34;异常解惑&#34;&gt;异常解惑
+&lt;h2 id=&#34;常见异常-1&#34;&gt;常见异常
 &lt;/h2&gt;&lt;h3 id=&#34;主机密钥改变&#34;&gt;主机密钥改变
 &lt;/h3&gt;&lt;p&gt;服务器身份改变，需要重新接受密钥&lt;br&gt;
 &lt;strong&gt;Accept the new server hostkey and carry on connecting&lt;/strong&gt;接受新的服务器主机密钥并继续连接&lt;br&gt;
@@ -249,7 +276,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis=&#34;271px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;主机失联&#34;&gt;主机失联
+&lt;h3 id=&#34;主机失联-1&#34;&gt;主机失联
 &lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297.png&#34;
 	width=&#34;997&#34;
