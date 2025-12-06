@@ -231,6 +231,38 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 		data-flex-basis=&#34;1992px&#34;
 	
 &gt;&lt;/p&gt;
+&lt;h2 id=&#34;异常解惑&#34;&gt;异常解惑
+&lt;/h2&gt;&lt;h3 id=&#34;主机密钥改变&#34;&gt;主机密钥改变
+&lt;/h3&gt;&lt;p&gt;服务器身份改变，需要重新接受密钥&lt;br&gt;
+&lt;strong&gt;Accept the new server hostkey and carry on connecting&lt;/strong&gt;接受新的服务器主机密钥并继续连接&lt;br&gt;
+Refuse the new server hostkey and abort the connection拒绝新服务器主机密钥并中止连接&lt;br&gt;
+Accept and save as additional hostkey (keep the existing ones)接受并保存为附加主机密钥(保留现有密钥)&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206123423974.png&#34;
+	width=&#34;1188&#34;
+	height=&#34;1051&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206123423974_hu_96935df5839f156d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206123423974_hu_46b9d938cd15a85.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;113&#34;
+		data-flex-basis=&#34;271px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;主机失联&#34;&gt;主机失联
+&lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297.png&#34;
+	width=&#34;997&#34;
+	height=&#34;450&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297_hu_bdec58ee631d91b2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297_hu_1c4606db6d7959bc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;221&#34;
+		data-flex-basis=&#34;531px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
