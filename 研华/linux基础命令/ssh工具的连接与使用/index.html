@@ -231,34 +231,36 @@
     <li><a href="#ssh是什么">ssh是什么</a></li>
     <li><a href="#openssh命令行连接">OpenSSH命令行连接</a>
       <ol>
-        <li><a href="#命令行使用方法">命令行使用方法：</a></li>
-        <li><a href="#指定端口">指定端口：</a></li>
+        <li><a href="#命令行使用方法">命令行使用方法</a></li>
+        <li><a href="#指定端口">指定端口</a></li>
         <li><a href="#windows连接示例">windows连接示例</a></li>
         <li><a href="#常见异常">常见异常</a>
           <ol>
             <li><a href="#权限拒绝">权限拒绝</a></li>
             <li><a href="#主机失联">主机失联</a></li>
+            <li><a href="#主机密钥改变">主机密钥改变</a></li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#常用ssh如阿健">常用ssh如阿健</a>
+    <li><a href="#mobaxterm工具使用教程">mobaxterm工具使用教程</a>
+      <ol>
+        <li><a href="#使用示例">使用示例</a></li>
+        <li><a href="#常见异常-1">常见异常</a>
+          <ol>
+            <li><a href="#主机失联-1">主机失联</a></li>
+            <li><a href="#主机密钥改变-1">主机密钥改变</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#常用ssh软件">常用ssh软件</a>
       <ol>
         <li><a href="#putty">PuTTY</a></li>
         <li><a href="#terminals">Terminals</a></li>
         <li><a href="#finalshell">FinalShell</a></li>
         <li><a href="#xshell">XShell</a></li>
         <li><a href="#mobaxterm">MobaXterm</a></li>
-      </ol>
-    </li>
-    <li><a href="#mobaxterm工具使用教程">mobaxterm工具使用教程</a>
-      <ol>
-        <li><a href="#常见异常-1">常见异常</a>
-          <ol>
-            <li><a href="#主机失联-1">主机失联</a></li>
-            <li><a href="#主机密钥改变">主机密钥改变</a></li>
-          </ol>
-        </li>
       </ol>
     </li>
   </ol>
@@ -330,7 +332,7 @@
 </h1><p>Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。</p>
 <p>SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文主要介绍在linux中的应用，如果要在Windows中使用SSH，我们将介绍命令行以及第三方工具的使用方法。</p>
 <h1 id="openssh命令行连接">OpenSSH命令行连接
-</h1><h2 id="命令行使用方法">命令行使用方法：
+</h1><h2 id="命令行使用方法">命令行使用方法
 </h2><div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -351,7 +353,7 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>说明：使用ssh工具使用<strong>root</strong>用户登录到<strong>192.168.22.4</strong></p>
-<h2 id="指定端口">指定端口：
+<h2 id="指定端口">指定端口
 </h2><p>ssh默认端口一般为22，如果非22端口就需要使用-p参数指定端口<br>
 示例：</p>
 <div class="highlight"><div class="chroma">
@@ -410,87 +412,11 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 		data-flex-basis="4025px"
 	
 ></p>
-<h1 id="常用ssh如阿健">常用ssh如阿健
-</h1><p>其它软件较为出名有<strong>PuTTY、Termius、FinalShell、MobaXterm、XShell</strong>等，每个人可以根据自己的习惯喜好进行选择</p>
-<h2 id="putty">PuTTY
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013.png"
-	width="921"
-	height="851"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013_hu_57163abe454d7d15.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013_hu_80d0100b88fa52bd.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="108"
-		data-flex-basis="259px"
-	
->
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950.png"
-	width="672"
-	height="421"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950_hu_b6d4af628709ffd5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950_hu_bb0dcd757b02601b.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="159"
-		data-flex-basis="383px"
-	
-></p>
-<h2 id="terminals">Terminals
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145.png"
-	width="1329"
-	height="885"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145_hu_31fdc8c44d290f60.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145_hu_726152864e2d8bec.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="150"
-		data-flex-basis="360px"
-	
-></p>
-<h2 id="finalshell">FinalShell
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384.png"
-	width="1400"
-	height="788"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384_hu_2968104aeed65e5d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384_hu_3ab264f323084255.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="177"
-		data-flex-basis="426px"
-	
-></p>
-<h2 id="xshell">XShell
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865.png"
-	width="1400"
-	height="749"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865_hu_51f8dad85e6781cd.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865_hu_3faf811fbe6e4527.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="186"
-		data-flex-basis="448px"
-	
-></p>
-<h2 id="mobaxterm">MobaXterm
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927.png"
-	width="1366"
-	height="708"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927_hu_6d0c41e6874a801c.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927_hu_33a62d0ac516d016.png 1024w"
-	loading="lazy"
-	
-	
-		class="gallery-image" 
-		data-flex-grow="192"
-		data-flex-basis="463px"
-	
-></p>
+<h3 id="主机密钥改变">主机密钥改变
+</h3><p>服务器身份改变，需要重新接受密钥或删除现有密钥</p>
 <h1 id="mobaxterm工具使用教程">mobaxterm工具使用教程
-</h1><p>下面以mobaxterm为例进行ssh链接演示<br>
+</h1><h2 id="使用示例">使用示例
+</h2><p>下面以mobaxterm为例进行ssh链接演示<br>
 点击左上角的<strong>会话</strong> - <strong>ssh</strong> - <strong>输入远程主机</strong> - <strong>指定用户名</strong> - <strong>确定</strong> - <strong>输入密码</strong><br>
 <code>注：输入密码的时候是不显示密码文本的</code><br>
 <img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174224126.png"
@@ -585,7 +511,7 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 		data-flex-basis="531px"
 	
 ></p>
-<h3 id="主机密钥改变">主机密钥改变
+<h3 id="主机密钥改变-1">主机密钥改变
 </h3><p>服务器身份改变，需要重新接受密钥<br>
 <strong>Accept the new server hostkey and carry on connecting</strong>接受新的服务器主机密钥并继续连接<br>
 Refuse the new server hostkey and abort the connection拒绝新服务器主机密钥并中止连接<br>
@@ -600,6 +526,85 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		class="gallery-image" 
 		data-flex-grow="113"
 		data-flex-basis="271px"
+	
+></p>
+<h1 id="常用ssh软件">常用ssh软件
+</h1><p>其它软件较为出名有<strong>PuTTY、Termius、FinalShell、MobaXterm、XShell</strong>等，每个人可以根据自己的习惯喜好进行选择</p>
+<h2 id="putty">PuTTY
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013.png"
+	width="921"
+	height="851"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013_hu_57163abe454d7d15.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013_hu_80d0100b88fa52bd.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="108"
+		data-flex-basis="259px"
+	
+>
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950.png"
+	width="672"
+	height="421"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950_hu_b6d4af628709ffd5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950_hu_bb0dcd757b02601b.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="159"
+		data-flex-basis="383px"
+	
+></p>
+<h2 id="terminals">Terminals
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145.png"
+	width="1329"
+	height="885"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145_hu_31fdc8c44d290f60.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145_hu_726152864e2d8bec.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="150"
+		data-flex-basis="360px"
+	
+></p>
+<h2 id="finalshell">FinalShell
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384.png"
+	width="1400"
+	height="788"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384_hu_2968104aeed65e5d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384_hu_3ab264f323084255.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="177"
+		data-flex-basis="426px"
+	
+></p>
+<h2 id="xshell">XShell
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865.png"
+	width="1400"
+	height="749"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865_hu_51f8dad85e6781cd.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865_hu_3faf811fbe6e4527.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="186"
+		data-flex-basis="448px"
+	
+></p>
+<h2 id="mobaxterm">MobaXterm
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927.png"
+	width="1366"
+	height="708"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927_hu_6d0c41e6874a801c.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927_hu_33a62d0ac516d016.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="192"
+		data-flex-basis="463px"
 	
 ></p>
 
