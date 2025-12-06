@@ -98,7 +98,19 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机密钥改变&#34;&gt;主机密钥改变
-&lt;/h3&gt;&lt;p&gt;服务器身份改变，需要重新接受密钥或删除现有密钥&lt;/p&gt;
+&lt;/h3&gt;&lt;p&gt;服务器身份改变，需要重新接受密钥或删除现有密钥
+&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206130952353.png&#34;
+	width=&#34;1825&#34;
+	height=&#34;603&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206130952353_hu_b75283134a07197c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206130952353_hu_1fb51fcd146bcde6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;302&#34;
+		data-flex-basis=&#34;726px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h1 id=&#34;mobaxterm工具使用教程&#34;&gt;mobaxterm工具使用教程
 &lt;/h1&gt;&lt;h2 id=&#34;使用示例&#34;&gt;使用示例
 &lt;/h2&gt;&lt;p&gt;下面以mobaxterm为例进行ssh链接演示&lt;br&gt;
