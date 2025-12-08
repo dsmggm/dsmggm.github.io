@@ -10,10 +10,10 @@
 <meta property='og:description' content="ssh是什么 Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。\n">
 <meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/'>
 <meta property='og:site_name' content='dsmggm博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='arm' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-12-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-12-05T00:00:00&#43;00:00'/><meta property='og:image' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='arm' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-12-05T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-12-05T00:00:00&#43;00:00'/><meta property='og:image' content='https://dsmggm.github.io/index-20251205172810576.png' />
 <meta name="twitter:title" content="ssh工具的连接与使用">
 <meta name="twitter:description" content="ssh是什么 Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。\n"><meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576.png' />
+    <meta name="twitter:image" content='https://dsmggm.github.io/index-20251205172810576.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -279,12 +279,8 @@
     <header class="article-header">
         <div class="article-image">
             <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/">
-                <img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576_hu_637156aaee967920.png"
-                        srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576_hu_637156aaee967920.png 800w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576_hu_4b936f3fc52f825f.png 1600w"
-                        width="800" 
-                        height="326" 
-                        loading="lazy"
-                        alt="Featured image of post ssh工具的连接与使用" />
+                
+                    <img src="/index-20251205172810576.png" loading="lazy" alt="Featured image of post ssh工具的连接与使用" />
                 
             </a>
         </div>
@@ -383,10 +379,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 <ol>
 <li>第一次连接需要确认key的保存跟连接</li>
 <li>输入密码的时候不会显示任何字符
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png"
 	width="2423"
 	height="988"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576_hu_d9dd0bb0f4ee5323.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205172810576_hu_17b745212740d851.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_d9dd0bb0f4ee5323.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_17b745212740d851.png 1024w"
 	loading="lazy"
 	
 	
@@ -399,10 +395,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 <h2 id="常见异常">常见异常
 </h2><h3 id="权限拒绝">权限拒绝
 </h3><p>账户或密码错误，或是账户不允许被ssh登录
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213.png"
 	width="1078"
 	height="124"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470_hu_7a3fe3249dc8f112.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124720470_hu_11d3dad9e1d91e3c.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_7a3fe3249dc8f112.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_11d3dad9e1d91e3c.png 1024w"
 	loading="lazy"
 	
 	
@@ -413,10 +409,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 ></p>
 <h3 id="主机失联">主机失联
 </h3><p>无法正常连接主机，检查主机或是端口是否无法通讯<br>
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215.png"
 	width="1627"
 	height="97"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732_hu_e017aa9f23e602c5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206125134732_hu_38bcf7e4b996cd06.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_e017aa9f23e602c5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_38bcf7e4b996cd06.png 1024w"
 	loading="lazy"
 	
 	
@@ -427,10 +423,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 ></p>
 <h3 id="主机密钥改变">主机密钥改变
 </h3><p>服务器身份改变，需要重新接受密钥或删除现有密钥
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206130952353.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219.png"
 	width="1825"
 	height="603"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206130952353_hu_b75283134a07197c.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206130952353_hu_1fb51fcd146bcde6.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_b75283134a07197c.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_1fb51fcd146bcde6.png 1024w"
 	loading="lazy"
 	
 	
@@ -448,10 +444,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">ssh-keygen -R 192.168.11.5
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206131756064.png"
+</div><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222.png"
 	width="1431"
 	height="293"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206131756064_hu_847dde08667f9d9d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206131756064_hu_4dd82f8993f96794.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_847dde08667f9d9d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_4dd82f8993f96794.png 1024w"
 	loading="lazy"
 	
 	
@@ -461,10 +457,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 	
 >
 或直接手动删除<strong>c:\users\用户.ssh\known_hosts</strong>文件下的的对应IP密钥
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206132027332.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223.png"
 	width="1602"
 	height="952"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206132027332_hu_1353b0dd994b7ef0.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206132027332_hu_6a52bbe23067256d.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_1353b0dd994b7ef0.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_6a52bbe23067256d.png 1024w"
 	loading="lazy"
 	
 	
@@ -479,10 +475,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 </h2><p>下面以mobaxterm为例进行ssh链接演示<br>
 点击左上角的<strong>会话</strong> - <strong>ssh</strong> - <strong>输入远程主机</strong> - <strong>指定用户名</strong> - <strong>确定</strong> - <strong>输入密码</strong><br>
 <code>注：输入密码的时候是不显示密码文本的</code><br>
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174224126.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225.png"
 	width="2999"
 	height="1890"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174224126_hu_f06548c656b2a408.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174224126_hu_73c58315e3e7139e.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f06548c656b2a408.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_73c58315e3e7139e.png 1024w"
 	loading="lazy"
 	
 	
@@ -492,10 +488,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 	
 >
 选择**信任身份(Accept)**进行连接<br>
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212000965.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227.png"
 	width="1186"
 	height="504"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212000965_hu_6c1d3d3ec43fcb9e.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212000965_hu_6e952bf49775fc68.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_6c1d3d3ec43fcb9e.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_6e952bf49775fc68.png 1024w"
 	loading="lazy"
 	
 	
@@ -505,10 +501,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 	
 >
 输入密码
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212054706.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229.png"
 	width="779"
 	height="162"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212054706_hu_127bbdac6b32840.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212054706_hu_3c804f99390ad5d4.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_127bbdac6b32840.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_3c804f99390ad5d4.png 1024w"
 	loading="lazy"
 	
 	
@@ -518,10 +514,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 	
 >
 是否保存密码<br>
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212440594.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230.png"
 	width="1091"
 	height="421"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212440594_hu_3dd47cce7631e155.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212440594_hu_92d57fe9b4fdd95b.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_3dd47cce7631e155.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_92d57fe9b4fdd95b.png 1024w"
 	loading="lazy"
 	
 	
@@ -531,10 +527,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 	
 >
 登录成功<br>
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212604351.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231.png"
 	width="1685"
 	height="882"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212604351_hu_d9815929b0b8d974.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212604351_hu_20fffdc32a0c912b.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_d9815929b0b8d974.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_20fffdc32a0c912b.png 1024w"
 	loading="lazy"
 	
 	
@@ -545,10 +541,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 ></p>
 <h2 id="常见异常-1">常见异常
 </h2><p>出现<strong>Access denied</strong>一般就是账户不允许被ssh远程登录，或者是账户密码错误
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212302096.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232.png"
 	width="747"
 	height="90"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212302096_hu_4096d5a99bf0e855.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205212302096_hu_f4e499b590662644.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_4096d5a99bf0e855.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_f4e499b590662644.png 1024w"
 	loading="lazy"
 	
 	
@@ -559,10 +555,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 ></p>
 <h3 id="主机失联-1">主机失联
 </h3><p>无法正常连接主机，检查主机或是端口是否无法通讯
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234.png"
 	width="997"
 	height="450"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297_hu_bdec58ee631d91b2.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206124003297_hu_1c4606db6d7959bc.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_bdec58ee631d91b2.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_1c4606db6d7959bc.png 1024w"
 	loading="lazy"
 	
 	
@@ -576,10 +572,10 @@ remote -&gt; 指被远程访问的设备，可以是域名，也可以是ip</p>
 <strong>Accept the new server hostkey and carry on connecting</strong>接受新的服务器主机密钥并继续连接<br>
 Refuse the new server hostkey and abort the connection拒绝新服务器主机密钥并中止连接<br>
 Accept and save as additional hostkey (keep the existing ones)接受并保存为附加主机密钥(保留现有密钥)<br>
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206123423974.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236.png"
 	width="1188"
 	height="1051"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206123423974_hu_96935df5839f156d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251206123423974_hu_46b9d938cd15a85.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_96935df5839f156d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_46b9d938cd15a85.png 1024w"
 	loading="lazy"
 	
 	
@@ -591,10 +587,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 <h1 id="常用ssh软件">常用ssh软件
 </h1><p>其它软件较为出名有<strong>PuTTY、Termius、FinalShell、MobaXterm、XShell</strong>等，每个人可以根据自己的习惯喜好进行选择</p>
 <h2 id="putty">PuTTY
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013.png"
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238.png"
 	width="921"
 	height="851"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013_hu_57163abe454d7d15.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173725013_hu_80d0100b88fa52bd.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_57163abe454d7d15.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_80d0100b88fa52bd.png 1024w"
 	loading="lazy"
 	
 	
@@ -603,10 +599,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis="259px"
 	
 >
-<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950.png"
+<img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240.png"
 	width="672"
 	height="421"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950_hu_b6d4af628709ffd5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173319950_hu_bb0dcd757b02601b.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6d4af628709ffd5.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_bb0dcd757b02601b.png 1024w"
 	loading="lazy"
 	
 	
@@ -616,10 +612,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 ></p>
 <h2 id="terminals">Terminals
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145.png"
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242.png"
 	width="1329"
 	height="885"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145_hu_31fdc8c44d290f60.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173646145_hu_726152864e2d8bec.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_31fdc8c44d290f60.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_726152864e2d8bec.png 1024w"
 	loading="lazy"
 	
 	
@@ -629,10 +625,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 ></p>
 <h2 id="finalshell">FinalShell
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384.png"
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244.png"
 	width="1400"
 	height="788"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384_hu_2968104aeed65e5d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173834384_hu_3ab264f323084255.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_2968104aeed65e5d.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_3ab264f323084255.png 1024w"
 	loading="lazy"
 	
 	
@@ -642,10 +638,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 ></p>
 <h2 id="xshell">XShell
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865.png"
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246.png"
 	width="1400"
 	height="749"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865_hu_51f8dad85e6781cd.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205173759865_hu_3faf811fbe6e4527.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_51f8dad85e6781cd.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_3faf811fbe6e4527.png 1024w"
 	loading="lazy"
 	
 	
@@ -655,10 +651,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 ></p>
 <h2 id="mobaxterm">MobaXterm
-</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927.png"
+</h2><p><img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248.png"
 	width="1366"
 	height="708"
-	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927_hu_6d0c41e6874a801c.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251205174018927_hu_33a62d0ac516d016.png 1024w"
+	srcset="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_6d0c41e6874a801c.png 480w, /%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_33a62d0ac516d016.png 1024w"
 	loading="lazy"
 	
 	
