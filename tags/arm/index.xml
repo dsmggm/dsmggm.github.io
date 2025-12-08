@@ -13,7 +13,7 @@
         <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/index-20251205172810576.png" alt="Featured image of post ssh工具的连接与使用" /&gt;&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
+        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png" alt="Featured image of post ssh工具的连接与使用" /&gt;&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
 &lt;/h1&gt;&lt;p&gt;Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。&lt;/p&gt;
 &lt;p&gt;SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文主要介绍在linux中的应用，如果要在Windows中使用SSH，我们将介绍命令行以及第三方工具的使用方法。&lt;/p&gt;
 &lt;h1 id=&#34;openssh命令行连接&#34;&gt;OpenSSH命令行连接
