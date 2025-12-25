@@ -5,7 +5,7 @@
         <link>https://dsmggm.github.io/tags/linux/</link>
         <description>Recent content in Linux on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
+        <language>en-us</language>
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Fri, 05 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>ssh工具的连接与使用</title>
@@ -58,7 +58,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png&#34;
 	width=&#34;2423&#34;
 	height=&#34;988&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_d9dd0bb0f4ee5323.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_17b745212740d851.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_9b7d8e9429f36bda.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_f528a3691ff527f8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -74,7 +74,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213.png&#34;
 	width=&#34;1078&#34;
 	height=&#34;124&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_7a3fe3249dc8f112.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_11d3dad9e1d91e3c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_199e7f7daa3cda20.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_ae3269c243b79684.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -88,7 +88,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215.png&#34;
 	width=&#34;1627&#34;
 	height=&#34;97&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_e017aa9f23e602c5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_38bcf7e4b996cd06.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_50212c190c088272.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_d0d8704455773653.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -102,7 +102,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219.png&#34;
 	width=&#34;1825&#34;
 	height=&#34;603&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_b75283134a07197c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_1fb51fcd146bcde6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_58ab3d50f7d13238.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_d5afd885da717c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -123,7 +123,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222.png&#34;
 	width=&#34;1431&#34;
 	height=&#34;293&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_847dde08667f9d9d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_4dd82f8993f96794.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_879a2a814545918c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_918665bf4473711.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -136,7 +136,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223.png&#34;
 	width=&#34;1602&#34;
 	height=&#34;952&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_1353b0dd994b7ef0.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_6a52bbe23067256d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_9a9acd493c9c0802.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_ea305b8d857e5911.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -154,7 +154,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1890&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f06548c656b2a408.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_73c58315e3e7139e.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_7e3e6c5c65a35ea1.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f5303b2d9aa54a22.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -167,7 +167,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227.png&#34;
 	width=&#34;1186&#34;
 	height=&#34;504&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_6c1d3d3ec43fcb9e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_6e952bf49775fc68.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_e31e244dab6db990.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_d4b804408546c0c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -180,7 +180,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229.png&#34;
 	width=&#34;779&#34;
 	height=&#34;162&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_127bbdac6b32840.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_3c804f99390ad5d4.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_99d73f38e97a9ed4.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_aca4d83337ddce80.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -193,7 +193,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230.png&#34;
 	width=&#34;1091&#34;
 	height=&#34;421&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_3dd47cce7631e155.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_92d57fe9b4fdd95b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_a1a13646ff9745ac.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_ceae3433b52dff92.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -206,7 +206,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231.png&#34;
 	width=&#34;1685&#34;
 	height=&#34;882&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_d9815929b0b8d974.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_20fffdc32a0c912b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_ae6443555019efef.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_8b1cda2ca00c1db8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -220,7 +220,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232.png&#34;
 	width=&#34;747&#34;
 	height=&#34;90&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_4096d5a99bf0e855.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_f4e499b590662644.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_43cf4ed523209b23.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_17a362912606943b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -234,7 +234,7 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234.png&#34;
 	width=&#34;997&#34;
 	height=&#34;450&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_bdec58ee631d91b2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_1c4606db6d7959bc.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_607819b90842d708.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_ff29d0ebcce37ef0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -251,7 +251,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236.png&#34;
 	width=&#34;1188&#34;
 	height=&#34;1051&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_96935df5839f156d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_46b9d938cd15a85.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_89080e4a801ac94f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_b2249e9ce103cc1c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -266,7 +266,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238.png&#34;
 	width=&#34;921&#34;
 	height=&#34;851&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_57163abe454d7d15.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_80d0100b88fa52bd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_cadb18c451aedfd9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_1e6bd6a41de792ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -278,7 +278,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240.png&#34;
 	width=&#34;672&#34;
 	height=&#34;421&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6d4af628709ffd5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_bb0dcd757b02601b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_c616409a8df537be.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6f01966ea74bfbb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -291,7 +291,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242.png&#34;
 	width=&#34;1329&#34;
 	height=&#34;885&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_31fdc8c44d290f60.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_726152864e2d8bec.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_2a02199019a2d2c7.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_118ff2b8e446cfc1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -304,7 +304,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;788&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_2968104aeed65e5d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_3ab264f323084255.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_362045221a0ea162.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_a74831190271e5f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -317,7 +317,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;749&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_51f8dad85e6781cd.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_3faf811fbe6e4527.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_f90bd6857712a4d6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_bc7b781f554b5a3a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -330,7 +330,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248.png&#34;
 	width=&#34;1366&#34;
 	height=&#34;708&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_6d0c41e6874a801c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_33a62d0ac516d016.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_f5afde8006acccac.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_84a00d6d3b6357.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -355,7 +355,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_a8ebec9c4bbc48ba.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_5b41beb943b8b1c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_21b5363ff899027e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_101c25de696c06f4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -367,7 +367,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_c3a7504df3345cab.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_b4c8690d2ed72064.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_db66f4c89fabf26d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_8c7166141bd49985.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -379,7 +379,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_336a27fa64ed1ab1.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_41dd04d43b6097d0.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_3cad6ccd34e10d73.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_6998265a5e790968.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -395,7 +395,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913.png&#34;
 	width=&#34;1843&#34;
 	height=&#34;511&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_b6f50510c25c42f5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_4ae2a84b484f761.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_26d81186fb88dd45.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_f12361ac23ef034f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -408,7 +408,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915.png&#34;
 	width=&#34;1523&#34;
 	height=&#34;605&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_fc8cc52ac5e3d85.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_eac75f71b84ea4f3.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_ff98d0af62152d15.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_3d86b0d0d39d9c39.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -449,7 +449,7 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041.png&#34;
 	width=&#34;2225&#34;
 	height=&#34;1301&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_c72885232535cf88.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_9afc6f1f16ec33a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_7432284047bdc2ee.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_ff5d740ca48aad7f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -465,7 +465,7 @@ J1跳帽跳到Pin1-Pin2连接(MaskROM模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668.png&#34;
 	width=&#34;1688&#34;
 	height=&#34;1217&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_804a81f74c7150d6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_c8a6248332b33684.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_341048b5099af0bd.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_e0461217283e19dd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -480,7 +480,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011.png&#34;
 	width=&#34;1694&#34;
 	height=&#34;889&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_b06e0533652b43cb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_470a5f78c0aef309.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_fa2ef9cbd37b9433.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_2e8f5354845ee0f9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -495,7 +495,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641.png&#34;
 	width=&#34;1760&#34;
 	height=&#34;558&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_8ace7bc4062d8627.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_36b7b1812476b5e7.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_5ac884f967577003.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_2cc3e002c81cd35f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -508,7 +508,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623.png&#34;
 	width=&#34;1661&#34;
 	height=&#34;635&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_106710b166708636.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_34acf6121c6504ae.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_2ce645f354acf027.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_e7ba8ce626fa1843.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -522,7 +522,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367.png&#34;
 	width=&#34;1622&#34;
 	height=&#34;954&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_cc3364647c876343.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_c747ea16406078f5.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_6533a64d4cd6e59a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_362900b8881e016c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -535,7 +535,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775.png&#34;
 	width=&#34;2997&#34;
 	height=&#34;1827&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_78aad990a77977ba.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_1087f17983bde014.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_fa26c95554afbeda.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_d154b2b14dc00e3b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -549,7 +549,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716.png&#34;
 	width=&#34;1679&#34;
 	height=&#34;1427&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_d778b7943aa29422.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_1f9348a50f2d7c41.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_304809aa6e9a9f5a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_f7b92609de6fd4ba.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -562,7 +562,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1008&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_c735bfc6248e69b4.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_14b225dc22ad8db0.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_687aca3a30a8236d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_164910fa2f0ca93c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -576,7 +576,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734.png&#34;
 	width=&#34;1685&#34;
 	height=&#34;945&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_6bd88a3ecf6c85ed.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_29b8121ba493fe38.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_9ac56b3aa70e5bf9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_57b6b1fe9a1fed6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -588,7 +588,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018.png&#34;
 	width=&#34;2174&#34;
 	height=&#34;1013&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_dfb9c01b93ebce8a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_8645449c065db691.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_33575ec3fc562cab.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_3138d10767028e69.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -600,7 +600,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_36c514d021f8f47b.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_2246965b67fda135.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_e1ff83970da848ba.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_b35fd4012f91e181.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -615,7 +615,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646.png&#34;
 	width=&#34;1472&#34;
 	height=&#34;936&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_eec141b61400c092.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_2ed27feb9fd3d15a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_b435d5a62d98d87f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_15eb95977d6d87b2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -627,7 +627,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564.png&#34;
 	width=&#34;2450&#34;
 	height=&#34;1636&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_43eb9c75be27bfbe.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_2d807533917b7443.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_571c6e5a518d6f62.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_5e2c2d24b3ef0453.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -646,7 +646,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546.png&#34;
 	width=&#34;2169&#34;
 	height=&#34;1010&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_21133bef2a7a8ff2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_ea02db439d4281f6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_35598589c51e6169.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_57a088b26f198c08.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -688,7 +688,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041.png&#34;
 	width=&#34;2225&#34;
 	height=&#34;1301&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_c72885232535cf88.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_9afc6f1f16ec33a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_7432284047bdc2ee.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_ff5d740ca48aad7f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -704,7 +704,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011.png&#34;
 	width=&#34;1694&#34;
 	height=&#34;889&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_b06e0533652b43cb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_470a5f78c0aef309.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_fa2ef9cbd37b9433.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_2e8f5354845ee0f9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -717,7 +717,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716.png&#34;
 	width=&#34;1679&#34;
 	height=&#34;1427&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_d778b7943aa29422.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_1f9348a50f2d7c41.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_304809aa6e9a9f5a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_f7b92609de6fd4ba.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -729,7 +729,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312.png&#34;
 	width=&#34;1148&#34;
 	height=&#34;1033&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_9d63c33b6c9b8bca.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_64c41a3a26c19782.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_ad90770d9a98a19a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_10e935eb0762edfd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -743,7 +743,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299.png&#34;
 	width=&#34;1564&#34;
 	height=&#34;1170&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_f3c4bab53aa5e464.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_20af169ab59c1fd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_920114e873359d45.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_df7d610d1ef2158c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -756,7 +756,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694.png&#34;
 	width=&#34;1501&#34;
 	height=&#34;675&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_8670a7416cc2c18c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_f9f6850748d0d36a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_69d29dee2cff04af.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_41a2e4dd7fb45b20.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -771,7 +771,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_da08844b88600aa0.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_f15cf04da819f09e.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_bd898187d3140ff2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_1f9822adcbd28ae5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -783,7 +783,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_633802909e8bf8e8.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_c0d0d43dc1381f3f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_dcbc6e01c989c3d0.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_35f56edad94ba712.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -795,7 +795,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_7051994992e36177.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_ecd1438b6ec3f245.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_9c753a7d7686dc98.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_168ce255bdd6c011.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -810,7 +810,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646.png&#34;
 	width=&#34;1472&#34;
 	height=&#34;936&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_eec141b61400c092.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_2ed27feb9fd3d15a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_b435d5a62d98d87f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_15eb95977d6d87b2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -822,7 +822,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564.png&#34;
 	width=&#34;2450&#34;
 	height=&#34;1636&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_43eb9c75be27bfbe.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_2d807533917b7443.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_571c6e5a518d6f62.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_5e2c2d24b3ef0453.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -838,7 +838,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968.png&#34;
 	width=&#34;1584&#34;
 	height=&#34;1087&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_51d0231f5360c086.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_e1f3a4ac884d981c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_88eca8bdacb2af63.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_c8f81f2d40c8223c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -851,7 +851,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426.png&#34;
 	width=&#34;1582&#34;
 	height=&#34;830&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_660c841a170b8497.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_ff22b82122bffb50.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_fe7cf32de21f5a2f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_b273a27e6dfbca15.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -863,7 +863,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480.png&#34;
 	width=&#34;1112&#34;
 	height=&#34;686&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_119098775909f3cb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_ff854b11d5835f0d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_e2e3e7ec70b026a5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_88b309c8369b8997.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -884,7 +884,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096.png&#34;
 	width=&#34;1820&#34;
 	height=&#34;916&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_c6e86fc5538ca8ca.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_f9369a09a40cc31e.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_6cde1ebdf78db682.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_d026f16645f9aa9a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -899,7 +899,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024.png&#34;
 	width=&#34;1539&#34;
 	height=&#34;1091&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_c2b31641a005c80c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_8deb8ea6ac2b62a1.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_1eeebceb066add82.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_cc1a4072fbdb167f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -911,7 +911,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011.png&#34;
 	width=&#34;1386&#34;
 	height=&#34;846&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_f3531ee74a221849.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_64d599f1874d9b92.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_53754fb63e9df555.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_5a9333de10d71d2c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -927,7 +927,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968.png&#34;
 	width=&#34;1584&#34;
 	height=&#34;1087&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_51d0231f5360c086.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_e1f3a4ac884d981c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_88eca8bdacb2af63.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_c8f81f2d40c8223c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -940,7 +940,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426.png&#34;
 	width=&#34;1582&#34;
 	height=&#34;830&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_660c841a170b8497.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_ff22b82122bffb50.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_fe7cf32de21f5a2f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_b273a27e6dfbca15.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -952,7 +952,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480.png&#34;
 	width=&#34;1112&#34;
 	height=&#34;686&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_119098775909f3cb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_ff854b11d5835f0d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_e2e3e7ec70b026a5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_88b309c8369b8997.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -980,7 +980,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010.png&#34;
 	width=&#34;1134&#34;
 	height=&#34;272&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_f993c3bb6ca94c36.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_751b7450b2e5349f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_d437b925cbb5f12c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_671d2fa884d98ec5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -993,7 +993,7 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957.png&#34;
 	width=&#34;1510&#34;
 	height=&#34;729&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_e9f24168ad827e54.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_4102a0f625fe0671.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_5dec476cd872ff24.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_d7177b573b3fe7bb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1173,7 +1173,7 @@ usermod -aG sudo 你的用户名&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image.png&#34;
 	width=&#34;1245&#34;
 	height=&#34;279&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_c8a8d9b5c3dbb96a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_83626ea330634895.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_83434f98b670345b.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_1d114dccd1a83ad1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1196,7 +1196,7 @@ usermod -aG sudo 你的用户名&lt;/p&gt;
 &lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png&#34;
 	width=&#34;1242&#34;
 	height=&#34;406&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_7e36e2a157d73ca3.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_fa6d05082dfa0514.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_39945fa75b294f46.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_d673091f6c0511ce.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1213,7 +1213,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2.png&#34;
 	width=&#34;1245&#34;
 	height=&#34;757&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_b58f2f9da4fdbe6a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_e8067e66da615d7e.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_a96415cebd3200cb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_db69dd480de1d6f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1228,7 +1228,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3.png&#34;
 	width=&#34;1159&#34;
 	height=&#34;576&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_f1b3cbc271451bd6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_ca72f602ed687214.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_bae870d5a3f37ee4.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_6263fb2827e8486b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1242,7 +1242,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4.png&#34;
 	width=&#34;810&#34;
 	height=&#34;397&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_c83841696affa0d3.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_62a8f0a851cf7f5d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_3c4343187ab5c36c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_64cc5644a1f2caea.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1258,7 +1258,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5.png&#34;
 	width=&#34;872&#34;
 	height=&#34;941&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_7c99fd8269d73ef9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_d22d643b050ffb88.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_e60c81e4defba8d7.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_c12c0cf1ca99dcb2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1272,7 +1272,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6.png&#34;
 	width=&#34;1244&#34;
 	height=&#34;1185&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_75455fcfec62ff8f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_ef99183d7f8f8b60.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_5e8d2014e45268fb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_f53305a25510fb75.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1363,7 +1363,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_88793089e29d1194.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_97449d9851f40801.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_25ceda204a14ebb2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_75e9181fedd0fdf9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1446,7 +1446,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1132&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_e09dfb1ba094064c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_daa14d07994e66af.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_2c6e77e11a814f65.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_c3191962b8dbc5b7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1460,7 +1460,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1123&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_7c03c07b07a53d7e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_2a0fadccc23c652.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_b107046f9ad55105.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_a67eda709bd1a99c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1474,7 +1474,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1125&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_2f3dee91402ac232.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_cb11e237387a6212.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_5784f329843284a2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_c0c598df79915bad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1488,7 +1488,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1130&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_1dbfb9cee5ff781e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_73a94bce62d8d749.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_36728630c91981e1.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_2803e925750a7655.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1505,7 +1505,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5.png&#34;
 	width=&#34;2102&#34;
 	height=&#34;1386&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_947e38f2429951c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_8a9f2cb59a641d62.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_fef458f0e90f203.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_3d40b8391b03f40e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1527,7 +1527,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6.png&#34;
 	width=&#34;2997&#34;
 	height=&#34;1888&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_ef1355c22797631.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_d2b01860f7d283eb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_2493f24283790287.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_3a6e41c37f75b265.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1541,7 +1541,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1895&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_e754348ca45dc264.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_9db6c4ee4726f22c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_3d107b978b9a770b.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_2ec5f6b5cfa6d1fa.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1556,7 +1556,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8.png&#34;
 	width=&#34;1125&#34;
 	height=&#34;394&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_d32c4f8171901937.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_b860083ca7ce7894.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_41da44b36117b17e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_f1f187d64e8bd8b8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1571,7 +1571,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9.png&#34;
 	width=&#34;2027&#34;
 	height=&#34;718&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_f5bb94807e9308aa.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_3f2e323be66e8832.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_2e6ebf11e959ff0a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_8d5b464510748bd0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1586,7 +1586,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10.png&#34;
 	width=&#34;2390&#34;
 	height=&#34;1595&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_79931372825cf2c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_48ed45a441d0a8a7.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_256f6547fe6f4f30.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_fde40de5bec7affd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -1602,7 +1602,7 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11.png&#34;
 	width=&#34;2390&#34;
 	height=&#34;1595&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_bf7e40fa926cdea9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_830ee9890145180f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_51b1551c929580ab.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_295afe86fbf538dd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2130,7 +2130,7 @@ GPT分区可能需要使用gdisk来调整分区&lt;/p&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;USER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;root&amp;#39;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;@&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;%&amp;#39;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;IDENTIFIED&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;123456&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;privileges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;-- 刷新权限
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;flush&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;privileges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;  &lt;/span&gt;&lt;span class=&#34;c1&#34;&gt;-- 刷新权限
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;修改密码&lt;/p&gt;
@@ -2206,7 +2206,7 @@ GPT分区可能需要使用gdisk来调整分区&lt;/p&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 遇到错误时停止脚本&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; -e
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
@@ -2476,7 +2476,7 @@ GPT分区可能需要使用gdisk来调整分区&lt;/p&gt;
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/bash
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 初始化变量，用于存储命令行选项的值&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;verbose&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;m&#34;&gt;0&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;# 是否启用详细模式&lt;/span&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nv&#34;&gt;output_file&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;     &lt;span class=&#34;c1&#34;&gt;# 输出文件路径&lt;/span&gt;
@@ -2675,7 +2675,7 @@ GPT分区可能需要使用gdisk来调整分区&lt;/p&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;UNIQUE&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;INT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;users: 表名
@@ -2742,15 +2742,15 @@ UNIQUE：唯一约束，确保每个邮箱地址在表中不重复。允许NULL&
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;修改列&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;将&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name列数值类型修改为VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;字符串&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;个字节&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;MODIFY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;修改字段名称，将&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name字改成username&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;RENAME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;修改&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username字段数据类型为字符串50字节&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，且默认值为&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;MODIFY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;varchar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DEFAULT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;添加列&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;列名为&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，值类型为字符串&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;字符&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ADD&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;删除字段&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DROP&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;MODIFY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;200&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;修改字段名称，将&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name字改成username&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;RENAME&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;to&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;修改&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username字段数据类型为字符串50字节&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，且默认值为&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;MODIFY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;username&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;varchar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;50&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DEFAULT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;添加列&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;列名为&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;，值类型为字符串&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;err&#34;&gt;字符&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ADD&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;VARCHAR&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;100&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;删除字段&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;ALTER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;TABLE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DROP&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;COLUMN&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;注：列名就是字段名&lt;/p&gt;
@@ -2785,12 +2785,12 @@ UNIQUE：唯一约束，确保每个邮箱地址在表中不重复。允许NULL&
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;插入单条记录&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;INSERT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;INTO&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;VALUES&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;张三&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;zhangsan@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;INSERT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;INTO&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;VALUES&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;张三&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;zhangsan@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;批量插入&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;INSERT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;INTO&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;VALUES&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;李四&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lisi@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;王五&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;wangwu@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;批量插入&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;INSERT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;INTO&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;VALUES&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;李四&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lisi@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;王五&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;wangwu@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;28&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;查询数据&#34;&gt;查询数据
@@ -2807,13 +2807,13 @@ UNIQUE：唯一约束，确保每个邮箱地址在表中不重复。允许NULL&
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;查询&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users表所有记录&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;查询特定字段&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;条件查询&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;AND&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;LIKE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;李%&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;排序与分页&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ORDER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DESC&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;LIMIT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;OFFSET&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;查询特定字段&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;条件查询&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;25&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;AND&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;LIKE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;李%&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;排序与分页&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;SELECT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;ORDER&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;BY&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DESC&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;LIMIT&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;OFFSET&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;&lt;strong&gt;&amp;gt; 25:&lt;/strong&gt; 大于25岁
@@ -2834,10 +2834,10 @@ UNIQUE：唯一约束，确保每个邮箱地址在表中不重复。允许NULL&
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;更新单条记录&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;UPDATE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;李四&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;UPDATE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;31&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;name&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;李四&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;批量更新&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;UPDATE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;批量更新&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;UPDATE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;SET&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;age&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;30&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;删除数据&#34;&gt;删除数据
@@ -2851,10 +2851,10 @@ UNIQUE：唯一约束，确保每个邮箱地址在表中不重复。允许NULL&
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;删除单条记录&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DELETE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;wangwu@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;DELETE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;WHERE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;email&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;wangwu@example.com&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;清空表（保留表结构）&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;DELETE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;#&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;err&#34;&gt;清空表（保留表结构）&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;DELETE&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;k&#34;&gt;FROM&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;n&#34;&gt;users&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h2 id=&#34;备份数据库&#34;&gt;备份数据库
@@ -3194,11 +3194,11 @@ UNIQUE：唯一约束，确保每个邮箱地址在表中不重复。允许NULL&
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker run -d &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;-v ~/adguardhome:/opt/adguardhome &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --name adguardhome &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --restart unless-stopped &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  --network host &lt;span class=&#34;se&#34;&gt;\
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;se&#34;&gt;&lt;/span&gt;  adguard/adguardhome
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;-v ~/adguardhome:/opt/adguardhome &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --name adguardhome &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --restart unless-stopped &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  --network host &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  adguard/adguardhome
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;h1 id=&#34;openwrt部署&#34;&gt;openwrt部署

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="nginx.conf配置文件说明\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 # 运行 Nginx 服务的用户和用户组 user nginx; # 自动根据 CPU 核心数设置工作进程数 worker_processes auto; # 错误日志路径和日志级别（notice 表示记录通知级别及以上的日志） error_log /var/log/nginx/error.log notice; # Nginx 进程 ID 存储文件路径 pid /run/nginx.pid; # 事件模块配置，处理客户端连接 events { # 每个工作进程允许的最大并发连接数 worker_connections 1024; } # HTTP 核心模块配置，处理 HTTP 请求 http { # 包含 MIME 类型映射文件，用于识别不同文件类型 include /etc/nginx/mime.types; # 默认文件类型（当无法识别文件类型时使用） default_type application/octet-stream; # 定义访问日志格式，记录客户端请求信息 log_format main &#39;$remote_addr - $remote_user [$time_local] &#34;$request&#34; &#39; &#39;$status $body_bytes_sent &#34;$http_referer&#34; &#39; &#39;&#34;$http_user_agent&#34; &#34;$http_x_forwarded_for&#34;&#39;; # 访问日志路径和使用的日志格式 access_log /var/log/nginx/access.log main; # 启用高效文件传输模式，提高静态文件传输性能 sendfile on; # 启用 TCP_NOPUSH 选项，提高网络数据包发送效率（默认注释掉） #tcp_nopush on; # 保持长连接的超时时间 keepalive_timeout 65; # 启用 Gzip 压缩（默认注释掉，可根据需要启用） #gzip on; # 包含所有 .conf 后缀的配置文件，用于模块化管理，server模块，多个server多个配置文件 include /etc/nginx/conf.d/*.conf; # 定义后端服务器集群，用于负载均衡 upstream backend { # 指定后端服务器地址和端口 server 192.168.11.3:4321; } } server配置文件\n">
 <title>nginx配置文件注释说明</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 

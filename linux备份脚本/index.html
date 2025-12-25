@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 #!/bin/bash # 遇到错误时停止脚本 set -e : &#39; 这是块注释内容 # 仅打包不压缩 tar -cvf 备份文件名.tar 源文件或目录 # 使用gzip压缩（.tar.gz或.tgz） tar -zcvf 备份文件名.tar.gz 源文件或目录 # 使用bzip2压缩（.tar.bz2） tar -jcvf 备份文件名.tar.bz2 源文件或目录 # 使用xz压缩（.tar.xz，压缩率最高） tar -Jcvf 备份文件名.tar.xz 源文件或目录 -c：创建新的归档文件 -v：显示详细的打包过程 -f：指定备份文件的名称 -z：使用 gzip 压缩 -j：使用 bzip2 压缩 -J：使用 xz 压缩 -x：解压文件 -t：查看归档文件内容 时间变量 年 月 日 时 分 秒 %Y %m %d %H %M %S echo $(date +%Y%m%d%H%M%S) &#39; # 时间变量 TIMESTAMP=$(date +%Y%m%d%H%M%S) # 定义备份源 SOURCE_DIR=&#34;/root/&#34; # 定义存放文件 BACKUP_DIR=&#34;/root/backup_$TIMESTAMP.tar.xz&#34; # 创建备份目录 mkdir -p &#34;$(dirname $BACKUP_DIR)&#34; # 或使用 install -D /dev/null &#34;$BACKUP_DIR&#34; # 创建备份文件 tar -Jcvf &#34;$BACKUP_DIR&#34; &#34;$SOURCE_DIR&#34; echo &#34;备份完成: $BACKUP_DIR&#34; ">
 <title>linux备份脚本</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -319,7 +319,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 遇到错误时停止脚本</span>
 </span></span><span class="line"><span class="cl"><span class="nb">set</span> -e
 </span></span><span class="line"><span class="cl">

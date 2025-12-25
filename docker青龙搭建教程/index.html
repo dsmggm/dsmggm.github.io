@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="快速搭建 1 2 3 4 5 6 7 8 9 docker run -dit \\ -v ~/ql/data:/ql/data \\ -p 5700:5700 \\ -e QlBaseUrl=&#34;/&#34; \\ -e QlPort=&#34;5700&#34; \\ --name qinglong \\ --hostname qinglong \\ --restart unless-stopped \\ whyour/qinglong:latest 搭建python3.10版本 1 2 3 4 5 6 7 8 9 docker run -dit \\ -v ~/ql/python3.10:/ql/data \\ -p 6700:5700 \\ -e QlBaseUrl=&#34;/&#34; \\ -e QlPort=&#34;5700&#34; \\ --name ql_py3.10\\ --hostname qinglong \\ --restart unless-stopped \\ whyour/qinglong:python3.10 旧版本搭建 1 2 3 4 5 6 7 8 9 10 11 12 13 docker run -dit \\ -v ~/ql/old/config:/ql/config \\ -v ~/ql/old/log:/ql/log \\ -v ~/ql/old/db:/ql/db \\ -v ~/ql/old/repo:/ql/repo \\ -v ~/ql/old/raw:/ql/raw \\ -v ~/ql/old/scripts:/ql/scripts \\ -v ~/ql/old/jbot:/ql/jbot \\ -p 4700:5700 \\ --name ql_old\\ --hostname qinglong \\ --restart unless-stopped \\ whyour/qinglong:2.11.3 其它版本 正式版: whyour/qinglong:latest Python3.10 正式版: whyour/qinglong:python3.10 debian 版: whyour/qinglong:debian Python3.10 debian 版: whyour/qinglong:debian-python3.10\n">
 <title>docker青龙搭建教程</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -316,14 +316,14 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -dit <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v ~/ql/data:/ql/data <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 5700:5700 <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">QlBaseUrl</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">QlPort</span><span class="o">=</span><span class="s2">&#34;5700&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --name qinglong <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --hostname qinglong <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --restart unless-stopped <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  whyour/qinglong:latest
+</span></span></span><span class="line"><span class="cl">  -v ~/ql/data:/ql/data <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -p 5700:5700 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">QlBaseUrl</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">QlPort</span><span class="o">=</span><span class="s2">&#34;5700&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --name qinglong <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --hostname qinglong <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl">  whyour/qinglong:latest
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="搭建python310版本">搭建python3.10版本
@@ -341,14 +341,14 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -dit <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v ~/ql/python3.10:/ql/data <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 6700:5700 <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">QlBaseUrl</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">QlPort</span><span class="o">=</span><span class="s2">&#34;5700&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --name ql_py3.10<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --hostname qinglong <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --restart unless-stopped <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  whyour/qinglong:python3.10
+</span></span></span><span class="line"><span class="cl">  -v ~/ql/python3.10:/ql/data <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -p 6700:5700 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">QlBaseUrl</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">QlPort</span><span class="o">=</span><span class="s2">&#34;5700&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --name ql_py3.10<span class="se">\
+</span></span></span><span class="line"><span class="cl">  --hostname qinglong <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl">  whyour/qinglong:python3.10
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="旧版本搭建">旧版本搭建
@@ -370,18 +370,18 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -dit <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/config:/ql/config <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/log:/ql/log <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/db:/ql/db <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/repo:/ql/repo <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/raw:/ql/raw <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/scripts:/ql/scripts <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -v ~/ql/old/jbot:/ql/jbot <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   -p 4700:5700 <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --name ql_old<span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --hostname qinglong <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   --restart unless-stopped <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>   whyour/qinglong:2.11.3
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/config:/ql/config <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/log:/ql/log <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/db:/ql/db <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/repo:/ql/repo <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/raw:/ql/raw <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/scripts:/ql/scripts <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -v ~/ql/old/jbot:/ql/jbot <span class="se">\
+</span></span></span><span class="line"><span class="cl">   -p 4700:5700 <span class="se">\
+</span></span></span><span class="line"><span class="cl">   --name ql_old<span class="se">\
+</span></span></span><span class="line"><span class="cl">   --hostname qinglong <span class="se">\
+</span></span></span><span class="line"><span class="cl">   --restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl">   whyour/qinglong:2.11.3
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="其它版本">其它版本

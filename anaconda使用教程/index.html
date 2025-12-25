@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="初始设置 设置环境变量 1 C:\\ProgramData\\miniconda3 1 C:\\ProgramData\\miniconda3\\Library\\bin 1 C:\\ProgramData\\miniconda3\\Scripts\\ PowerShell 权限配置（关键） 1 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser 初始化powershell 1 conda init powershell 查看conda信息 1 conda info 查看配置信息 1 conda config --show 添加镜像源代理 1 2 conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ 删除镜像源代理 1 2 conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/ conda config --remove channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/ 设置包缓存位置 添加包缓存位置（最高优先级） 1 conda config --add pkgs_dirs D:/conda/pkgs 查看当前pkgs_dirs配置 1 conda config --show pkgs_dirs 设置环境保存位置 1 conda config --add envs_dirs D:/conda/envs 查看可用python版本 1 conda search python 安装python 1 conda install python=3.11 设置默认python版本 1 conda config --add create_default_packages python=3.11 使用教程 创建环境 1 conda create --name test python=3.11 创建环境到指定路径 1 conda create --name test --prefix D:/myenvs/testenv python=3.9 删除环境 1 conda remove --name test --all 1 conda remove -n test --all 列出所有环境 1 conda env list 激活环境 1 conda activate test 1 conda activate D:/myenvs/testenv 反激活环境 1 conda deactivate 安装包 1 conda install numpy 1 conda install numpy=1.23 升级包 1 conda update numpy 卸载包 1 conda remove numpy 导出当前环境到配置文件 1 conda env export &gt; environment.yml 只导出通过手动安装的包（推荐） 1 conda env export --from-history &gt; environment.yml 导出指定环境到配置文件 1 conda env export -n test&gt; environment.yml 使用配置文件创建虚拟环境 1 conda env create --name test -f environment.yml ">
 <title>anaconda使用教程</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -665,7 +665,7 @@
         
         
             <div class="article-image">
-                <img src="/hugo/1.60116b1ccfc8632e9a65f7d51df3efc2_hu_c1cfd6b8275d624a.jpg" 
+                <img src="/hugo/1.60116b1ccfc8632e9a65f7d51df3efc2_hu_cfdf11edc5d3ff36.jpg" 
                         width="250" 
                         height="150" 
                         loading="lazy"

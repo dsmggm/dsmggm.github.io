@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="docker-compose.yaml文件内容如下\n1 2 3 4 5 6 7 8 9 10 11 12 keepalived: image: openeuler/keepalived:latest container_name: keepalived restart: always network_mode: host cap_add: - NET_ADMIN # 需要网络管理权限 - NET_BROADCAST - NET_RAW volumes: - /data/docker/keepalived/conf:/etc/keepalived command: keepalived -f /etc/keepalived/keepalived.conf --dont-fork --log-console --log-detail keepalived.conf 配置文件如下\n">
 <title>docker搭建keepalived双机热备</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -376,7 +376,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="c1"># Nginx健康检查脚本</span>
+</span></span></span><span class="line"><span class="cl"><span class="c1"># Nginx健康检查脚本</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 请求检查</span>
 </span></span><span class="line"><span class="cl"><span class="k">if</span> ! curl -s --head --request GET http://127.0.0.1:8085/ <span class="p">|</span> grep <span class="s2">&#34;200 OK&#34;</span> &gt; /dev/null<span class="p">;</span> <span class="k">then</span>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="拉取镜像 1 docker pull docker.1ms.run/guovern/iptv-api 运行容器 1 2 3 4 5 6 7 8 docker run -d \\ --name iptv_api \\ --restart unless-stopped \\ --network host \\ -v ~/iptv/config:/iptv-api/config \\ -v ~/iptv/output:/iptv-api/output \\ -e UPDATE_CRON1=&#34;0 */4 * * *&#34; \\ guovern/iptv-api 说明 接口地址：ip:8000 m3u 接口：ip:8000/m3u txt 接口：ip:8000/txt 接口内容：ip:8000/content 测速日志：ip:8000/log\n">
 <title>docker搭建iptv_api本地iptv资源</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -324,13 +324,13 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -d <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --name iptv_api <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --restart unless-stopped <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --network host <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v ~/iptv/config:/iptv-api/config <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v ~/iptv/output:/iptv-api/output <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">UPDATE_CRON1</span><span class="o">=</span><span class="s2">&#34;0 */4 * * *&#34;</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  guovern/iptv-api
+</span></span></span><span class="line"><span class="cl">  --name iptv_api <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --network host <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -v ~/iptv/config:/iptv-api/config <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -v ~/iptv/output:/iptv-api/output <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">UPDATE_CRON1</span><span class="o">=</span><span class="s2">&#34;0 */4 * * *&#34;</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  guovern/iptv-api
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="说明">说明

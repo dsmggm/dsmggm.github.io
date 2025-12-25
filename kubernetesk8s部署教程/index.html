@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="kubernetes简单说明 一、工具介绍 1、kubectl kubectl 负责 “控集群”：作为用户操作入口，通过 API 服务器管理集群资源，是集群的 “操作层”。 2、kubelet kubelet 负责 “守节点”：在每个节点上监控容器，确保 Pod 按预期运行，是集群的 “执行层”。 3、kubeadm kubeadm 负责 “搭架子”：初始化集群、加入节点，让集群从 0 到 1 运行起来。 二、容器控制 kubernetes通过CRI标准进行容器管理控制，从version 1.24.0开始，kuberenetes 默认使用 containerd 作为容器运行，如果需要docker支持，需要安装cri-dockerd插件以兼容docker。containerd是更高效小巧更适合kubernetes的容器运行程序，containerd拥有与kubernetes相同的CRI接口标准。\n">
 <title>kubernetes(k8s)部署教程</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -716,26 +716,26 @@ systemctl enable &ndash;now containerd</p>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="c"># 初始化配置（InitConfiguration）：用于kubeadm init命令初始化控制平面时的临时配置，主要涉及节点注册、引导令牌等</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">bootstrapTokens</span><span class="p">:</span><span class="w">  </span><span class="c"># 引导令牌配置：用于新节点加入集群时的身份验证（临时凭证）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span>- <span class="nt">groups</span><span class="p">:</span><span class="w">  </span><span class="c"># 令牌所属的用户组（RBAC权限关联）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">bootstrapTokens</span><span class="p">:</span><span class="w">  </span><span class="c"># 引导令牌配置：用于新节点加入集群时的身份验证（临时凭证）</span><span class="w">
+</span></span></span><span class="line"><span class="cl">- <span class="nt">groups</span><span class="p">:</span><span class="w">  </span><span class="c"># 令牌所属的用户组（RBAC权限关联）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">system:bootstrappers:kubeadm:default-node-token </span><span class="w"> </span><span class="c"># 默认节点引导组，关联预定义的bootstrap权限</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">token</span><span class="p">:</span><span class="w"> </span><span class="l">abcdef.0123456789abcdef </span><span class="w"> </span><span class="c"># 实际令牌值（格式为6位.16位，共23字符），节点加入时需提供此令牌</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">ttl</span><span class="p">:</span><span class="w"> </span><span class="l">24h0m0s </span><span class="w"> </span><span class="c"># 令牌有效期（24小时），过期后无法用于新节点加入</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">usages</span><span class="p">:</span><span class="w">  </span><span class="c"># 令牌用途</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">signing </span><span class="w"> </span><span class="c"># 用于签名（如签署节点的TLS bootstrap证书请求）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span>- <span class="l">authentication </span><span class="w"> </span><span class="c"># 用于身份认证（节点加入集群时的身份验证）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">InitConfiguration </span><span class="w"> </span><span class="c"># 配置类型：初始化配置（kubeadm init专用）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">localAPIEndpoint</span><span class="p">:</span><span class="w">  </span><span class="c"># 本地API服务器端点配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">InitConfiguration </span><span class="w"> </span><span class="c"># 配置类型：初始化配置（kubeadm init专用）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">localAPIEndpoint</span><span class="p">:</span><span class="w">  </span><span class="c"># 本地API服务器端点配置</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">advertiseAddress</span><span class="p">:</span><span class="w"> </span><span class="m">1.2.3.4</span><span class="w">  </span><span class="c"># API服务器对外通告的地址（控制平面节点的IP，需其他节点可访问）  ##################重点重点重点重点重点##################</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">bindPort</span><span class="p">:</span><span class="w"> </span><span class="m">6443</span><span class="w">  </span><span class="c"># API服务器绑定的端口（默认6443，Kubernetes API标准端口）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">nodeRegistration</span><span class="p">:</span><span class="w">  </span><span class="c"># 节点注册配置（当前节点作为控制平面节点的注册信息）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">nodeRegistration</span><span class="p">:</span><span class="w">  </span><span class="c"># 节点注册配置（当前节点作为控制平面节点的注册信息）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">criSocket</span><span class="p">:</span><span class="w"> </span><span class="l">unix:///var/run/containerd/containerd.sock  # 容器运行时接口（CRI）的套接字路径 </span><span class="w"> </span><span class="c">##################重点重点重点重点重点##################</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="c"># 此处指定containerd的默认套接字，需与实际安装的容器运行时匹配</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">imagePullPolicy</span><span class="p">:</span><span class="w"> </span><span class="l">IfNotPresent </span><span class="w"> </span><span class="c"># 镜像拉取策略：本地存在则不重复拉取，不存在则拉取</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">imagePullSerial</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">  </span><span class="c"># 是否串行拉取镜像（避免并行拉取导致的网络/存储压力）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">node  # 节点名称（默认会使用主机名，此处显式指定为&#34;node&#34;）  </span><span class="w"> </span><span class="c">##################重点重点重点重点重点##################</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">taints</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">  </span><span class="c"># 节点污点配置（null表示无污点，控制平面节点默认会添加NoSchedule污点，此处可能被覆盖）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">timeouts</span><span class="p">:</span><span class="w">  </span><span class="c"># 各种操作的超时时间配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">timeouts</span><span class="p">:</span><span class="w">  </span><span class="c"># 各种操作的超时时间配置</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">controlPlaneComponentHealthCheck</span><span class="p">:</span><span class="w"> </span><span class="l">4m0s </span><span class="w"> </span><span class="c"># 控制平面组件健康检查超时时间（4分钟）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">discovery</span><span class="p">:</span><span class="w"> </span><span class="l">5m0s </span><span class="w"> </span><span class="c"># 集群发现过程超时时间（如查找现有控制平面节点，5分钟）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">etcdAPICall</span><span class="p">:</span><span class="w"> </span><span class="l">2m0s </span><span class="w"> </span><span class="c"># 调用etcd API的超时时间（2分钟）</span><span class="w">
@@ -743,29 +743,29 @@ systemctl enable &ndash;now containerd</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">kubernetesAPICall</span><span class="p">:</span><span class="w"> </span><span class="l">1m0s </span><span class="w"> </span><span class="c"># 调用Kubernetes API的超时时间（1分钟）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">tlsBootstrap</span><span class="p">:</span><span class="w"> </span><span class="l">5m0s </span><span class="w"> </span><span class="c"># TLS证书引导过程超时时间（5分钟）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">upgradeManifests</span><span class="p">:</span><span class="w"> </span><span class="l">5m0s </span><span class="w"> </span><span class="c"># 升级清单（manifest）处理超时时间（5分钟）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 集群配置（ClusterConfiguration）：用于定义集群的持久化配置，如网络、证书、组件等</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiServer</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># API服务器配置（空对象表示使用默认配置，可自定义如启动参数、证书等）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">kubeadm.k8s.io/v1beta4 </span><span class="w"> </span><span class="c"># kubeadm配置的API版本（v1beta4为较新稳定版本）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">caCertificateValidityPeriod</span><span class="p">:</span><span class="w"> </span><span class="l">87600h0m0s </span><span class="w"> </span><span class="c"># CA根证书有效期（87600小时=10年，默认10年）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">certificateValidityPeriod</span><span class="p">:</span><span class="w"> </span><span class="l">8760h0m0s </span><span class="w"> </span><span class="c"># 其他组件证书（如apiserver、kubelet等）的有效期（8760小时=1年）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">certificatesDir</span><span class="p">:</span><span class="w"> </span><span class="l">/etc/kubernetes/pki </span><span class="w"> </span><span class="c"># 证书存储目录（默认路径，包含CA、各组件证书和私钥）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">clusterName</span><span class="p">:</span><span class="w"> </span><span class="l">kubernetes </span><span class="w"> </span><span class="c"># 集群名称（默认值，影响集群内资源的标识，如DNS域名前缀）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">controllerManager</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># 控制器管理器配置（空对象表示默认，可自定义启动参数如--horizontal-pod-autoscaler-sync-period等）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">dns</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># CoreDNS配置（空对象表示默认，可自定义副本数、资源限制等）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">encryptionAlgorithm</span><span class="p">:</span><span class="w"> </span><span class="l">RSA-2048 </span><span class="w"> </span><span class="c"># 用于加密集群敏感数据（如Secret）的算法（默认RSA-2048）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">etcd</span><span class="p">:</span><span class="w">  </span><span class="c"># etcd数据库配置（Kubernetes的核心数据存储）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="c"># 集群配置（ClusterConfiguration）：用于定义集群的持久化配置，如网络、证书、组件等</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">apiServer</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># API服务器配置（空对象表示使用默认配置，可自定义如启动参数、证书等）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">kubeadm.k8s.io/v1beta4 </span><span class="w"> </span><span class="c"># kubeadm配置的API版本（v1beta4为较新稳定版本）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">caCertificateValidityPeriod</span><span class="p">:</span><span class="w"> </span><span class="l">87600h0m0s </span><span class="w"> </span><span class="c"># CA根证书有效期（87600小时=10年，默认10年）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">certificateValidityPeriod</span><span class="p">:</span><span class="w"> </span><span class="l">8760h0m0s </span><span class="w"> </span><span class="c"># 其他组件证书（如apiserver、kubelet等）的有效期（8760小时=1年）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">certificatesDir</span><span class="p">:</span><span class="w"> </span><span class="l">/etc/kubernetes/pki </span><span class="w"> </span><span class="c"># 证书存储目录（默认路径，包含CA、各组件证书和私钥）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">clusterName</span><span class="p">:</span><span class="w"> </span><span class="l">kubernetes </span><span class="w"> </span><span class="c"># 集群名称（默认值，影响集群内资源的标识，如DNS域名前缀）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">controllerManager</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># 控制器管理器配置（空对象表示默认，可自定义启动参数如--horizontal-pod-autoscaler-sync-period等）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">dns</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># CoreDNS配置（空对象表示默认，可自定义副本数、资源限制等）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">encryptionAlgorithm</span><span class="p">:</span><span class="w"> </span><span class="l">RSA-2048 </span><span class="w"> </span><span class="c"># 用于加密集群敏感数据（如Secret）的算法（默认RSA-2048）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">etcd</span><span class="p">:</span><span class="w">  </span><span class="c"># etcd数据库配置（Kubernetes的核心数据存储）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">local</span><span class="p">:</span><span class="w">  </span><span class="c"># 使用本地etcd（单节点集群常用，高可用集群需配置external使用外部etcd）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">dataDir</span><span class="p">:</span><span class="w"> </span><span class="l">/var/lib/etcd </span><span class="w"> </span><span class="c"># etcd数据存储目录（默认路径，需确保有足够磁盘空间）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">imageRepository</span><span class="p">:</span><span class="w"> </span><span class="l">registry.k8s.io </span><span class="w"> </span><span class="c"># 容器镜像仓库地址（默认使用Kubernetes官方仓库，国内可替换为镜像源）##################重点重点重点重点重点##################    使用阿里云 registry.aliyuncs.com/google_containers</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">ClusterConfiguration </span><span class="w"> </span><span class="c"># 配置类型：集群配置（定义集群全局属性）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kubernetesVersion</span><span class="p">:</span><span class="w"> </span><span class="m">1.34.0</span><span class="w">  </span><span class="c"># 要安装的Kubernetes版本（需与实际镜像仓库中的版本匹配）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">networking</span><span class="p">:</span><span class="w">  </span><span class="c"># 集群网络配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">imageRepository</span><span class="p">:</span><span class="w"> </span><span class="l">registry.k8s.io </span><span class="w"> </span><span class="c"># 容器镜像仓库地址（默认使用Kubernetes官方仓库，国内可替换为镜像源）##################重点重点重点重点重点##################    使用阿里云 registry.aliyuncs.com/google_containers</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">ClusterConfiguration </span><span class="w"> </span><span class="c"># 配置类型：集群配置（定义集群全局属性）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">kubernetesVersion</span><span class="p">:</span><span class="w"> </span><span class="m">1.34.0</span><span class="w">  </span><span class="c"># 要安装的Kubernetes版本（需与实际镜像仓库中的版本匹配）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">networking</span><span class="p">:</span><span class="w">  </span><span class="c"># 集群网络配置</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">dnsDomain</span><span class="p">:</span><span class="w"> </span><span class="l">cluster.local </span><span class="w"> </span><span class="c"># 集群内部DNS域名（默认值，Pod和Service的DNS后缀）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">serviceSubnet</span><span class="p">:</span><span class="w"> </span><span class="m">10.96.0.0</span><span class="l">/12 </span><span class="w"> </span><span class="c"># Service的集群IP网段（默认10.96.0.0/12，需与Pod网段不重叠）</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">podSubnet</span><span class="p">:</span><span class="w"> </span><span class="m">10.244.0.0</span><span class="l">/16  # Pod的集群IP网段（默认10.244.0.0/16，需与Service网段不重叠）   </span><span class="w"> </span><span class="c">##################重点重点重点重点重点##################    默认没有pod网段，需要添加此行配置</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">proxy</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># kube-proxy配置（空对象表示默认，可自定义模式如ipvs或iptables）</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">scheduler</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># 调度器配置（空对象表示默认，可自定义调度策略、启动参数等）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">proxy</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># kube-proxy配置（空对象表示默认，可自定义模式如ipvs或iptables）</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">scheduler</span><span class="p">:</span><span class="w"> </span>{}<span class="w">  </span><span class="c"># 调度器配置（空对象表示默认，可自定义调度策略、启动参数等）</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
 </div><p>2、初始化
@@ -857,7 +857,7 @@ systemctl enable &ndash;now containerd</p>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">kubeadm join 192.168.11.50:6443 --token abcdef.0123456789abcdef <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>        --discovery-token-ca-cert-hash sha256:81c26f4a2bbb3e90695ee7ae6173da86f53259a04bcae8365ab78fc77589f65e
+</span></span></span><span class="line"><span class="cl">        --discovery-token-ca-cert-hash sha256:81c26f4a2bbb3e90695ee7ae6173da86f53259a04bcae8365ab78fc77589f65e
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="安装calico网络插件控制节点">安装calico网络插件(控制节点)
@@ -988,12 +988,12 @@ systemctl enable &ndash;now containerd</p>
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 部署 Nginx 的 Deployment 配置</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Deployment</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="c"># 部署 Nginx 的 Deployment 配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">apps/v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Deployment</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">metadata</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginxweb </span><span class="w"> </span><span class="c"># Deployment 名称</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">spec</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">matchLabels</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">nginxweb1 </span><span class="w"> </span><span class="c"># 匹配的 Pod 标签</span><span class="w">
@@ -1009,13 +1009,13 @@ systemctl enable &ndash;now containerd</p>
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">imagePullPolicy</span><span class="p">:</span><span class="w"> </span><span class="l">IfNotPresent </span><span class="w"> </span><span class="c"># 镜像拉取策略</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">ports</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">          </span>- <span class="nt">containerPort</span><span class="p">:</span><span class="w"> </span><span class="m">80</span><span class="w">  </span><span class="c"># 容器内暴露的端口</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nn">---</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 暴露 Nginx 的 Service 配置</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Service</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">metadata</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nn">---</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="c"># 暴露 Nginx 的 Service 配置</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">apiVersion</span><span class="p">:</span><span class="w"> </span><span class="l">v1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">kind</span><span class="p">:</span><span class="w"> </span><span class="l">Service</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">metadata</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">nginxweb-service </span><span class="w"> </span><span class="c"># Service 名称</span><span class="w">
-</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">spec</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="nt">spec</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">externalTrafficPolicy</span><span class="p">:</span><span class="w"> </span><span class="l">Cluster </span><span class="w"> </span><span class="c"># 外部流量策略</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">selector</span><span class="p">:</span><span class="w">
 </span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">app</span><span class="p">:</span><span class="w"> </span><span class="l">nginxweb1 </span><span class="w"> </span><span class="c"># 匹配的 Pod 标签（与 Deployment 中 Pod 标签一致）</span><span class="w">

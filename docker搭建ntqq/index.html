@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 1 2 3 4 5 6 7 8 9 10 11 docker run -d \\ -e NAPCAT_GID=$(id -g) \\ -e NAPCAT_UID=$(id -u) \\ -v ~/napcat/qqdata/:/app/.config/QQ \\ -v ~/napcat/config/:/app/napcat/config \\ -p 3000:3000 \\ -p 3001:3001 \\ -p 6099:6099 \\ --name napcat \\ --restart=always \\ mlikiowa/napcat-docker:latest 修改config里面的webui.json中的token用于web登录 登录页面http://192.168.11.3:6099/webui\n">
 <title>docker搭建ntqq</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -283,16 +283,16 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -d <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">NAPCAT_GID</span><span class="o">=</span><span class="k">$(</span>id -g<span class="k">)</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -e <span class="nv">NAPCAT_UID</span><span class="o">=</span><span class="k">$(</span>id -u<span class="k">)</span> <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v ~/napcat/qqdata/:/app/.config/QQ <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -v ~/napcat/config/:/app/napcat/config <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 3000:3000 <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 3001:3001 <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  -p 6099:6099 <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --name napcat <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --restart<span class="o">=</span>always <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  mlikiowa/napcat-docker:latest
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">NAPCAT_GID</span><span class="o">=</span><span class="k">$(</span>id -g<span class="k">)</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -e <span class="nv">NAPCAT_UID</span><span class="o">=</span><span class="k">$(</span>id -u<span class="k">)</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -v ~/napcat/qqdata/:/app/.config/QQ <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -v ~/napcat/config/:/app/napcat/config <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -p 3000:3000 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -p 3001:3001 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  -p 6099:6099 <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --name napcat <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --restart<span class="o">=</span>always <span class="se">\
+</span></span></span><span class="line"><span class="cl">  mlikiowa/napcat-docker:latest
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>修改config里面的webui.json中的token用于web登录

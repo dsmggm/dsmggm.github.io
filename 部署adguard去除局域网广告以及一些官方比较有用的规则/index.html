@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="docker部署命令 1 2 3 4 5 6 docker run -d \\ -v ~/adguardhome:/opt/adguardhome \\ --name adguardhome \\ --restart unless-stopped \\ --network host \\ adguard/adguardhome openwrt部署 openwrt定制可提前将AdGuard添加到openwrt中，可到openwrt在线编译，定制属于你自己的openwrt查看 登录openwrt，点系统-软件包-更新列表 搜索adguardhome 安装以下包\n">
 <title>部署AdGuard，去除局域网广告，以及一些官方比较有用的规则</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -322,11 +322,11 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">docker run -d <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>-v ~/adguardhome:/opt/adguardhome <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --name adguardhome <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --restart unless-stopped <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  --network host <span class="se">\
-</span></span></span><span class="line"><span class="cl"><span class="se"></span>  adguard/adguardhome
+</span></span></span><span class="line"><span class="cl">-v ~/adguardhome:/opt/adguardhome <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --name adguardhome <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --restart unless-stopped <span class="se">\
+</span></span></span><span class="line"><span class="cl">  --network host <span class="se">\
+</span></span></span><span class="line"><span class="cl">  adguard/adguardhome
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="openwrt部署">openwrt部署

@@ -5,7 +5,7 @@
         <link>https://dsmggm.github.io/tags/obsidian/</link>
         <description>Recent content in Obsidian on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>zh-cn</language>
+        <language>en-us</language>
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Mon, 10 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/obsidian/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>obsidian笔记设置记录</title>
@@ -31,7 +31,7 @@ Auto commit-and-sync interval (minutes)-&amp;gt; 5 #  自动提交同步的时�
 &lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image.png&#34;
 	width=&#34;1510&#34;
 	height=&#34;412&#34;
-	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image_hu_3091706444a6002d.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image_hu_e7758af0c4f0b81f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image_hu_cbe3b07fc4a9b779.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image_hu_c25b44622e646c76.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -53,7 +53,7 @@ Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  
 &lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1.png&#34;
 	width=&#34;2304&#34;
 	height=&#34;1798&#34;
-	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1_hu_676d0df64f8009e9.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1_hu_141c432a07e3aaf6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1_hu_64763b9cdcc08545.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-1_hu_9f7040fd822c6ae1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -70,7 +70,7 @@ Markdown url 格式 -&amp;gt; ./${noteFileName}-${generatedAttachmentFileName}  
 &lt;img src=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2.png&#34;
 	width=&#34;2304&#34;
 	height=&#34;1798&#34;
-	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2_hu_bf5e4dedeaee4e7e.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2_hu_67097b71be0c34fe.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2_hu_738e6bf8b88d5d21.png 480w, https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/image-2_hu_1e3febc9b0fb6d01.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;

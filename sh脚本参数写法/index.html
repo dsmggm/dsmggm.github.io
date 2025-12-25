@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-cn" dir="ltr">
+<html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content=" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 #!/bin/bash # 初始化变量，用于存储命令行选项的值 verbose=0 # 是否启用详细模式 output_file=&#34;&#34; # 输出文件路径 input_file=&#34;&#34; # 输入文件路径 # 显示帮助信息的函数 show_help() { echo &#34;用法: $0 [选项] [参数...]&#34; echo &#34;选项:&#34; echo &#34; -h, --help 显示此帮助信息&#34; echo &#34; -v, --verbose 启用详细模式&#34; echo &#34; -o, --output FILE 指定输出文件&#34; echo &#34; -i, --input FILE 指定输入文件&#34; exit 0 } # 使用getopts处理短选项 # :表示选项后面需要参数 # v: 表示v选项需要参数 # o: 表示o选项需要参数 # i: 表示i选项需要参数 # h 表示h选项不需要参数 while getopts &#34;:hvo:i:&#34; opt; do case $opt in h) show_help # 显示帮助信息并退出 ;; v) verbose=1 # 启用详细模式 ;; o) output_file=&#34;$OPTARG&#34; # 设置输出文件 ;; i) input_file=&#34;$OPTARG&#34; # 设置输入文件 ;; \\?) echo &#34;无效的选项: -$OPTARG&#34; &gt;&amp;2 # 处理未知选项 show_help ;; :) echo &#34;选项 -$OPTARG 需要一个参数。&#34; &gt;&amp;2 # 处理缺少参数的选项 show_help ;; esac done # 移动参数指针，跳过已处理的选项 shift $((OPTIND-1)) # 检查是否有必需的参数 if [[ -z &#34;$input_file&#34; ]]; then echo &#34;错误: 必须指定输入文件 (-i)&#34; &gt;&amp;2 show_help fi # 可选参数检查 if [[ -z &#34;$output_file&#34; ]]; then output_file=&#34;output.txt&#34; # 设置默认输出文件 fi # 详细模式输出 if [[ $verbose -eq 1 ]]; then echo &#34;详细模式已启用&#34; echo &#34;输入文件: $input_file&#34; echo &#34;输出文件: $output_file&#34; echo &#34;剩余参数: $*&#34; fi # 主逻辑示例 echo &#34;处理文件: $input_file&#34; echo &#34;结果将保存到: $output_file&#34; # 这里可以添加实际的处理逻辑 # 例如: cat &#34;$input_file&#34; &gt; &#34;$output_file&#34; echo &#34;处理完成&#34; ">
 <title>sh脚本参数写法</title>
@@ -58,7 +58,7 @@
                     
                     
                         
-                        <img src="/img/avatar_hu_bdb8be1ab45d1ce5.png" width="300"
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
                             height="300" class="site-logo" loading="lazy" alt="Avatar">
                     
                 
@@ -347,7 +347,7 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 初始化变量，用于存储命令行选项的值</span>
 </span></span><span class="line"><span class="cl"><span class="nv">verbose</span><span class="o">=</span><span class="m">0</span>          <span class="c1"># 是否启用详细模式</span>
 </span></span><span class="line"><span class="cl"><span class="nv">output_file</span><span class="o">=</span><span class="s2">&#34;&#34;</span>     <span class="c1"># 输出文件路径</span>
