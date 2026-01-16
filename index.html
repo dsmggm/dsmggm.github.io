@@ -281,13 +281,13 @@
 </div><p><code>input.png</code> 为输入的图片
 <code>320x240</code> 为转换后的尺寸<br>
 <code>mylogo.bmp</code> 为生成的图片路径，需要改成实际编译保存的位置例如：<code>tools/logos/mylogo.bmp</code></p>
-<p>重新编译固件</p>
+<p>编译</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make am335x_defconfig
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make <span class="nv">LOGO_BMP</span><span class="o">=</span>tools/logos/mylogo.bmp
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
