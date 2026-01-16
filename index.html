@@ -281,13 +281,59 @@
 </div><p><code>input.png</code> 为输入的图片
 <code>320x240</code> 为转换后的尺寸<br>
 <code>mylogo.bmp</code> 为生成的图片路径，需要改成实际编译保存的位置例如：<code>tools/logos/mylogo.bmp</code></p>
-<p>编译</p>
+<p>修改am335文件include\configs\am335x_evm.h<br>
+在238行#define CONFIG_CMD_EXT2后面添加下面内容</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">make <span class="nv">LOGO_BMP</span><span class="o">=</span>tools/logos/mylogo.bmp
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/* Enable boot logo and splash screen */
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_VIDEO_LOGO</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_VIDEO_BMP_LOGO</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_SPLASH_SCREEN</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_SPLASH_SCREEN_ALIGN</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 设置编译变量，需要根据实际环境设定</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$env</span>:ARCH <span class="o">=</span> <span class="s2">&#34;arm&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nv">$env</span>:CROSS_COMPILE <span class="o">=</span> <span class="s2">&#34;arm-linux-gnueabihf-&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 编译</span>
+</span></span><span class="line"><span class="cl">make am335x_evm_defconfig
+</span></span><span class="line"><span class="cl">make <span class="nv">LOGO_BMP</span><span class="o">=</span>tools/logos/mylogo.bmp -j4
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/* Enable boot logo and splash screen */
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_VIDEO_LOGO</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_VIDEO_BMP_LOGO</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_SPLASH_SCREEN</span>
+</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_SPLASH_SCREEN_ALIGN</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
