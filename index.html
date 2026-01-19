@@ -269,37 +269,20 @@
     
     <h1 id="u-boot阶段">u-boot阶段
 </h1><p>准备好图片<br>
-需要提前按imagemagick工具</p>
+需要提前安装imagemagick工具  apt install imagemagick -y</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert input.png -resize <span class="s2">&#34;320x240!&#34;</span> -colors <span class="m">240</span> -type Palette BMP3:mylogo.bmp
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert input.png -resize <span class="s2">&#34;320x240!&#34;</span> -colors <span class="m">240</span> -type Palette BMP3:logo.bmp
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><code>input.png</code> 为输入的图片
 <code>320x240</code> 为转换后的尺寸<br>
-<code>mylogo.bmp</code> 为生成的图片路径，需要改成实际编译保存的位置例如：<code>tools/logos/mylogo.bmp</code></p>
-<p>修改am335文件include\configs\am335x_evm.h<br>
-在238行<code>#define CONFIG_CMD_EXT2</code>后面添加下面内容</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">/* Enable boot logo and splash screen */
-</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_VIDEO_LOGO</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_VIDEO_BMP_LOGO</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_SPLASH_SCREEN</span>
-</span></span><span class="line"><span class="cl"><span class="c1">#define CONFIG_SPLASH_SCREEN_ALIGN</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>编译</p>
+<code>logo.bmp</code> 为生成的图片路径<br>
+需要将logo.bmp放置到u-boot编译目录下：<code>tools/logo.bmp</code></p>
+<p>编译</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -320,7 +303,9 @@
 </span></span><span class="line"><span class="cl">make <span class="nv">LOGO_BMP</span><span class="o">=</span>tools/logos/mylogo.bmp -j4
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
+</div><p>make am335x_rom3310_config
+make CROSS_COMPILE=arm-linux-gnueabihf- LOGO_BMP=logo.bmp</p>
+
 </section>
 
 
