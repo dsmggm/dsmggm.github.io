@@ -228,7 +228,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#u-boot阶段">u-boot阶段</a></li>
+    <li><a href="#u-boot编译logo启动">u-boot编译logo启动</a></li>
   </ol>
 </nav>
         </div>
@@ -267,9 +267,9 @@
     <section class="article-content">
     
     
-    <h1 id="u-boot阶段">u-boot阶段
+    <h1 id="u-boot编译logo启动">u-boot编译logo启动
 </h1><p>准备好图片<br>
-需要提前安装imagemagick工具  apt install imagemagick -y</p>
+需要提前安装imagemagick工具  <code>apt install imagemagick -y</code></p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -282,7 +282,7 @@
 <code>320x240</code> 为转换后的尺寸<br>
 <code>logo.bmp</code> 为生成的图片路径<br>
 需要将logo.bmp放置到u-boot编译目录下：<code>tools/logo.bmp</code></p>
-<p>编译</p>
+<p>编译前需要确保gcc4与交叉编译工具</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -292,20 +292,35 @@
 </span><span class="lnt">5
 </span><span class="lnt">6
 </span><span class="lnt">7
+</span><span class="lnt">8
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 设置编译变量，需要根据实际环境设定</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$env</span>:ARCH <span class="o">=</span> <span class="s2">&#34;arm&#34;</span>
-</span></span><span class="line"><span class="cl"><span class="nv">$env</span>:CROSS_COMPILE <span class="o">=</span> <span class="s2">&#34;arm-linux-gnueabihf-&#34;</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 编译</span>
-</span></span><span class="line"><span class="cl">make am335x_evm_defconfig
-</span></span><span class="line"><span class="cl">make <span class="nv">LOGO_BMP</span><span class="o">=</span>tools/logos/mylogo.bmp -j4
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装gcc4.8版本工具链</span>
+</span></span><span class="line"><span class="cl">apt install gcc-4.8-arm-linux-gnueabihf g++-4.8-arm-linux-gnueabihf -y
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建gcc的软链接</span>
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/bin/arm-linux-gnueabihf-gcc-4.8 /usr/bin/arm-linux-gnueabihf-gcc
+</span></span><span class="line"><span class="cl"><span class="c1"># g++也创建软链接（编译C++代码时需要）</span>
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/bin/arm-linux-gnueabihf-g++-4.8 /usr/bin/arm-linux-gnueabihf-g++
+</span></span><span class="line"><span class="cl"><span class="c1"># 64 位 Ubuntu 仍需 32 位库支持</span>
+</span></span><span class="line"><span class="cl">apt install libc6:i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 -y
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>make am335x_rom3310_config
-make CROSS_COMPILE=arm-linux-gnueabihf- LOGO_BMP=logo.bmp</p>
-
+</div><p>编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 指定配置模板</span>
+</span></span><span class="line"><span class="cl">make am335x_rom3310_config
+</span></span><span class="line"><span class="cl"><span class="c1"># 编译</span>
+</span></span><span class="line"><span class="cl">make <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabihf- <span class="nv">LOGO_BMP</span><span class="o">=</span>logo.bmp
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
