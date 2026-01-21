@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
-<title>Jelina常用命令</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="u-boot编译logo启动 准备好图片\n需要提前安装imagemagick工具 apt install imagemagick -y\n1 convert input.png -resize &#34;320x240!&#34; -colors 240 -type Palette BMP3:logo.bmp input.png 为输入的图片 320x240 为转换后的尺寸\nlogo.bmp 为生成的图片路径\n需要将logo.bmp放置到u-boot编译目录下：tools/logo.bmp\n">
+<title>arm修改启动logo</title>
 
-<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8logo/'>
 
-<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Jelina常用命令">
-<meta property='og:description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
-<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="arm修改启动logo">
+<meta property='og:description' content="u-boot编译logo启动 准备好图片\n需要提前安装imagemagick工具 apt install imagemagick -y\n1 convert input.png -resize &#34;320x240!&#34; -colors 240 -type Palette BMP3:logo.bmp input.png 为输入的图片 320x240 为转换后的尺寸\nlogo.bmp 为生成的图片路径\n需要将logo.bmp放置到u-boot编译目录下：tools/logo.bmp\n">
+<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8logo/'>
 <meta property='og:site_name' content='dsmggm博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='Jelina' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-20T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Jelina常用命令">
-<meta name="twitter:description" content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
+<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='arm' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2026-01-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-21T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="arm修改启动logo">
+<meta name="twitter:description" content="u-boot编译logo启动 准备好图片\n需要提前安装imagemagick工具 apt install imagemagick -y\n1 convert input.png -resize &#34;320x240!&#34; -colors 240 -type Palette BMP3:logo.bmp input.png 为输入的图片 320x240 为转换后的尺寸\nlogo.bmp 为生成的图片路径\n需要将logo.bmp放置到u-boot编译目录下：tools/logo.bmp\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -228,13 +228,7 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#jelina默认账密">Jelina默认账密</a>
-      <ol>
-        <li><a href="#用户1">用户1</a></li>
-        <li><a href="#用户2">用户2</a></li>
-      </ol>
-    </li>
-    <li><a href="#jelina常用命令或命令组合">Jelina常用命令或命令组合</a></li>
+    <li><a href="#u-boot编译logo启动">u-boot编译logo启动</a></li>
   </ol>
 </nav>
         </div>
@@ -262,7 +256,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Jelina常用命令</a>
+            <a href="/%E7%A0%94%E5%8D%8E/arm%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8logo/">arm修改启动logo</a>
         </h2>
     
         
@@ -284,7 +278,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2025-11-20T00:00:00Z'>2025-11-20</time>
+                <time class="article-time--published" datetime='2026-01-21T00:00:00Z'>2026-01-21</time>
             </div>
         
 
@@ -300,61 +294,60 @@
     <section class="article-content">
     
     
-    <h1 id="jelina默认账密">Jelina默认账密
-</h1><h2 id="用户1">用户1
-</h2><p>用户名： root<br>
-密码： jelina</p>
-<h2 id="用户2">用户2
-</h2><p>用户名： jelina<br>
-密码（大多数时候不需要输入密码）： jelina</p>
-<h1 id="jelina常用命令或命令组合">Jelina常用命令或命令组合
-</h1><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>命令</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>jelina-ver</td>
-          <td>查询当前JelinaOS的系统版本</td>
-      </tr>
-      <tr>
-          <td>jelina-device-info get &ndash;sn &ndash;ssn</td>
-          <td>查看设备SN号（RK和NXP兼容）的命令</td>
-      </tr>
-      <tr>
-          <td>cat /run/jelina/register/jelina-register-state; echo</td>
-          <td>检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过</td>
-      </tr>
-      <tr>
-          <td>systemctl restart jelina-jelinvisor</td>
-          <td>重启jelinvisor，一般用于初始化与Cloud的连接</td>
-      </tr>
-      <tr>
-          <td>cat /mnt/boot/config.json</td>
-          <td>查看“舰队”等配置信息</td>
-      </tr>
-      <tr>
-          <td>journalctl -u jelina-jelinvisor.servicef</td>
-          <td>查看最近的jelinvisor日志，一般用于分析设备无法online的情况</td>
-      </tr>
-      <tr>
-          <td>systemctl start <a class="link" href="mailto:jelina-upper-new@root.service" >jelina-upper-new@root.service</a></td>
-          <td>恢复初始状态（Jelinvisor除外）</td>
-      </tr>
-      <tr>
-          <td>jelina-offline off</td>
-          <td>切换jelinvisor到连线模式</td>
-      </tr>
-      <tr>
-          <td>jelina-offline on</td>
-          <td>切换jelinvisor到离线模式</td>
-      </tr>
-  </tbody>
-</table></div>
-
+    <h1 id="u-boot编译logo启动">u-boot编译logo启动
+</h1><p>准备好图片<br>
+需要提前安装imagemagick工具  <code>apt install imagemagick -y</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">convert input.png -resize <span class="s2">&#34;320x240!&#34;</span> -colors <span class="m">240</span> -type Palette BMP3:logo.bmp
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>input.png</code> 为输入的图片
+<code>320x240</code> 为转换后的尺寸<br>
+<code>logo.bmp</code> 为生成的图片路径<br>
+需要将logo.bmp放置到u-boot编译目录下：<code>tools/logo.bmp</code></p>
+<p>编译前需要确保gcc4与交叉编译工具</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装gcc4.8版本工具链</span>
+</span></span><span class="line"><span class="cl">apt install gcc-4.8-arm-linux-gnueabihf g++-4.8-arm-linux-gnueabihf -y
+</span></span><span class="line"><span class="cl"><span class="c1"># 创建gcc的软链接</span>
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/bin/arm-linux-gnueabihf-gcc-4.8 /usr/bin/arm-linux-gnueabihf-gcc
+</span></span><span class="line"><span class="cl"><span class="c1"># g++也创建软链接（编译C++代码时需要）</span>
+</span></span><span class="line"><span class="cl">sudo ln -s /usr/bin/arm-linux-gnueabihf-g++-4.8 /usr/bin/arm-linux-gnueabihf-g++
+</span></span><span class="line"><span class="cl"><span class="c1"># 64 位 Ubuntu 仍需 32 位库支持</span>
+</span></span><span class="line"><span class="cl">apt install libc6:i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1 -y
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>编译</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 指定配置模板</span>
+</span></span><span class="line"><span class="cl">make am335x_rom3310_config
+</span></span><span class="line"><span class="cl"><span class="c1"># 编译</span>
+</span></span><span class="line"><span class="cl">make <span class="nv">CROSS_COMPILE</span><span class="o">=</span>arm-linux-gnueabihf- <span class="nv">LOGO_BMP</span><span class="o">=</span>logo.bmp
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -362,7 +355,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/jelina/">Jelina</a>
+            <a href="/tags/arm/">Arm</a>
         
             <a href="/tags/linux/">Linux</a>
         
@@ -385,67 +378,6 @@
     <h2 class="section-title">相关文章</h2>
     <div class="related-content">
         <div class="flex article-list--tile">
-            
-                
-<article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/">
-        
-        
-            <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_4cfb89fd987e630.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Jelina安装onboard屏幕软键盘SOP"
-                        
-                        data-hash="md5-XtA7/M3tnsxE1&#43;K&#43;tyOQAw==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Jelina安装onboard屏幕软键盘SOP</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">
-        
-        
-            <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.bb9f42734cbb882af34749da4bf234e5_hu_eb7a41a2fec565f9.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Jelina系统安装"
-                        
-                        data-hash="md5-u59Cc0y7iCrzR0naS/I05Q==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Jelina系统安装</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/%E7%A0%94%E5%8D%8E/arm%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8logo/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">arm修改启动logo</h2>
-        </div>
-    </a>
-</article>
-
             
                 
 <article class="has-image">
@@ -490,6 +422,67 @@
 
         <div class="article-details">
             <h2 class="article-title">arm设备系统安装教程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/">
+        
+        
+            <div class="article-image">
+                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_4cfb89fd987e630.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Jelina安装onboard屏幕软键盘SOP"
+                        
+                        data-hash="md5-XtA7/M3tnsxE1&#43;K&#43;tyOQAw==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Jelina安装onboard屏幕软键盘SOP</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Jelina常用命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">
+        
+        
+            <div class="article-image">
+                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.bb9f42734cbb882af34749da4bf234e5_hu_eb7a41a2fec565f9.png" 
+                        width="250" 
+                        height="150" 
+                        loading="lazy"
+                        alt="Featured image of post Jelina系统安装"
+                        
+                        data-hash="md5-u59Cc0y7iCrzR0naS/I05Q==">
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Jelina系统安装</h2>
         </div>
     </a>
 </article>
