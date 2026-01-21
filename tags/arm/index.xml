@@ -161,11 +161,14 @@ dmesg | grep -i &amp;lt;接口&amp;gt; 检查驱动加载消息，必要时安�
 &lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。&lt;/li&gt;
 &lt;li&gt;观察与判定：
-ip addr show 无 inet 地址或出现 169.254.x.x 。&lt;br&gt;
-ip route 缺少 default 网关或指向无效接口。&lt;br&gt;
-ping 同网段设备失败但物理层正常。&lt;br&gt;
-能 ping 小包却无法传输大报文、HTTPS／SSH 连接容易超时，常见于 MTU 设置过小或被PPPoE/隧道额外封装压缩。&lt;br&gt;
-ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;ip addr show 无 inet 地址或出现 169.254.x.x 。&lt;/li&gt;
+&lt;li&gt;ip route 缺少 default 网关或指向无效接口。&lt;/li&gt;
+&lt;li&gt;ping 同网段设备失败但物理层正常。&lt;/li&gt;
+&lt;li&gt;能 ping 小包却无法传输大报文、HTTPS／SSH 连接容易超时，常见于 MTU 设置过小或被PPPoE/隧道额外封装压缩。&lt;/li&gt;
+&lt;li&gt;ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;排查步骤：&lt;/li&gt;
 &lt;li&gt;&lt;/li&gt;
 &lt;/ul&gt;
