@@ -108,9 +108,52 @@ dmesg | grep -i &amp;lt;接口&amp;gt; 检查驱动加载消息，必要时安�
 &lt;li&gt;ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;排查步骤：&lt;/li&gt;
-&lt;li&gt;&lt;/li&gt;
+&lt;li&gt;排查步骤：
+&lt;ul&gt;
+&lt;li&gt;确认网络管理工具：
+&lt;ul&gt;
+&lt;li&gt;NetworkManager： systemctl is-active NetworkManager 为 active ； nmcli general status 能返回状态。&lt;/li&gt;
+&lt;li&gt;Netplan： ls /etc/netplan/ 有 YAML 文件； sudo netplan status 可查看当前配置。&lt;/li&gt;
+&lt;li&gt;systemd-networkd： systemctl is-active systemd-networkd 为 active ；配置在/etc/systemd/network/ 。&lt;/li&gt;
+&lt;li&gt;ifupdown（传统脚本）：Debian/旧版 Ubuntu 使用 /etc/network/interfaces ，可用ifquery &amp;ndash;list 查看。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多个工具同时运行&lt;/strong&gt;：如果 systemctl 显示 NetworkManager 和 systemd-networkd 均为active ，或 Netplan 配置与 NetworkManager 同时存在，可能出现互相覆盖，应决定保留其一，并停用/禁用其他服务（如 sudo systemctl disable &amp;ndash;now systemd-networkd ）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;都未运行&lt;/strong&gt;：若所有管理工具均显示 inactive ，网络接口可能由手工脚本或容器化平台接管。可临时使用 sudo ip addr add 、sudo ip route add 手动设定，并确认是否有网管脚本（如/etc/rc.local 、/usr/local/bin/*.sh ）或云平台代理。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;DHCP 请求被拒绝&lt;/strong&gt;： sudo dhclient -v 输出包含 DHCPREQUEST on &amp;lt;接口&amp;gt; 后接 DHCPNAK 、No DHCPOFFERS received ，或 NetworkManager 日志出现 dhcp4 (接口): request denied 。此时说明网络联通正常但服务器拒绝分配地址，可临时配置静态 IP 保持通信，并将日志截图、MAC 地址与所需网段提交给 DHCP 管理员排查（检查地址池、认证策略、保留 IP 冲突等）。&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;针对工具核对配置：
+&lt;ul&gt;
+&lt;li&gt;NetworkManager： nmcli dev show &amp;lt;接口&amp;gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。
+&lt;ul&gt;
+&lt;li&gt;命令方式设置静态 IP，参考脚本：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;nmcli connection modify &amp;lt;连接名&amp;gt; &lt;br&gt;
+ipv4.method manual &lt;br&gt;
+ipv4.addresses 192.168.1.10/24 &lt;br&gt;
+ipv4.gateway 192.168.1.1 &lt;br&gt;
+ipv4.dns &amp;ldquo;8.8.8.8 114.114.114.114&amp;rdquo;
+nmcli connection up &amp;lt;连接名&amp;gt;
+```
+* DHCP
+* 静态IP
+* 路由
+* MTU
+* 命名空间隔离
+* IP冲突
+* DHCP被拒场景&lt;/p&gt;
 </description>
         </item>
         <item>
