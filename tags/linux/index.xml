@@ -69,12 +69,115 @@
 &lt;/div&gt;</description>
         </item>
         <item>
+        <title>Linux 设备上网原理与故障排查指南</title>
+        <link>https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</link>
+        <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png" alt="Featured image of post Linux 设备上网原理与故障排查指南" /&gt;&lt;h1 id=&#34;网络分层模型5-层--7-层&#34;&gt;网络分层模型（5 层 / 7 层）
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png&#34;
+	width=&#34;1120&#34;
+	height=&#34;1587&#34;
+	srcset=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_6c2fe291860c6c5f.png 480w, https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_848124c766cfa3ad.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;70&#34;
+		data-flex-basis=&#34;169px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;物理层（Physical）&lt;/strong&gt;：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据链路层（Data Link）&lt;/strong&gt;：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;网络层（Network）&lt;/strong&gt;：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;传输层（Transport）&lt;/strong&gt;：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;会话层（Session）&lt;/strong&gt;：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;表示层（Presentation）&lt;/strong&gt;：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;应用层（Application）&lt;/strong&gt;：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。&lt;br&gt;
+&lt;code&gt;说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;上网原理概述&#34;&gt;上网原理概述
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。&lt;/li&gt;
+&lt;li&gt;数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。&lt;/li&gt;
+&lt;li&gt;网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。&lt;/li&gt;
+&lt;li&gt;传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。&lt;/li&gt;
+&lt;li&gt;应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。&lt;/li&gt;
+&lt;li&gt;DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;各层常见故障与排查&#34;&gt;各层常见故障与排查
+&lt;/h1&gt;&lt;h2 id=&#34;物理层&#34;&gt;物理层
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。&lt;/li&gt;
+&lt;li&gt;观察与判定：
+电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。&lt;br&gt;
+网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072.png&#34;
+	width=&#34;3072&#34;
+	height=&#34;4096&#34;
+	srcset=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_87c4c8da5cacdf05.png 480w, https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_ddb7c65aa6c6af01.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;&lt;img src=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566.png&#34;
+	width=&#34;3072&#34;
+	height=&#34;4096&#34;
+	srcset=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_28f634463c645626.png 480w, https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_7268865c7283d5fb.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;75&#34;
+		data-flex-basis=&#34;180px&#34;
+	
+&gt;
+常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。&lt;br&gt;
+若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100
+Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8
+依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。&lt;/li&gt;
+&lt;li&gt;排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。&lt;/li&gt;
+&lt;li&gt;解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;数据链路层&#34;&gt;数据链路层
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。&lt;/li&gt;
+&lt;li&gt;观察与判定：
+ip link show 显示接口 state DOWN 或接口未列出。&lt;br&gt;
+dmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。&lt;br&gt;
+局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。&lt;/li&gt;
+&lt;li&gt;排查步骤：
+sudo ip link set &amp;lt;接口&amp;gt; up 尝试启用；若失败继续排查。
+lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。&lt;br&gt;
+dmesg | grep -i &amp;lt;接口&amp;gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。&lt;br&gt;
+与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。&lt;/li&gt;
+&lt;li&gt;解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;网络层&#34;&gt;网络层
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。&lt;/li&gt;
+&lt;li&gt;观察与判定：
+ip addr show 无 inet 地址或出现 169.254.x.x 。&lt;br&gt;
+ip route 缺少 default 网关或指向无效接口。&lt;br&gt;
+ping 同网段设备失败但物理层正常。&lt;br&gt;
+能 ping 小包却无法传输大报文、HTTPS／SSH 连接容易超时，常见于 MTU 设置过小或被PPPoE/隧道额外封装压缩。&lt;br&gt;
+ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。&lt;/li&gt;
+&lt;li&gt;排查步骤：&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
         <title>ssh工具的连接与使用</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+        <link>https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
         <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png" alt="Featured image of post ssh工具的连接与使用" /&gt;&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
+        <guid>https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png" alt="Featured image of post ssh工具的连接与使用" /&gt;&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
 &lt;/h1&gt;&lt;p&gt;Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。&lt;/p&gt;
 &lt;p&gt;SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文主要介绍在linux中的应用，如果要在Windows中使用SSH，我们将介绍命令行以及第三方工具的使用方法。&lt;/p&gt;
 &lt;h1 id=&#34;openssh命令行连接&#34;&gt;OpenSSH命令行连接
@@ -116,10 +219,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;ol&gt;
 &lt;li&gt;第一次连接需要确认key的保存跟连接&lt;/li&gt;
 &lt;li&gt;输入密码的时候不会显示任何字符
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png&#34;
 	width=&#34;2423&#34;
 	height=&#34;988&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_9b7d8e9429f36bda.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_f528a3691ff527f8.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_9b7d8e9429f36bda.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_f528a3691ff527f8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -132,10 +235,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;h2 id=&#34;常见异常&#34;&gt;常见异常
 &lt;/h2&gt;&lt;h3 id=&#34;权限拒绝&#34;&gt;权限拒绝
 &lt;/h3&gt;&lt;p&gt;账户或密码错误，或是账户不允许被ssh登录
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213.png&#34;
 	width=&#34;1078&#34;
 	height=&#34;124&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_199e7f7daa3cda20.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_ae3269c243b79684.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_199e7f7daa3cda20.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_ae3269c243b79684.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -146,10 +249,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机失联&#34;&gt;主机失联
 &lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215.png&#34;
 	width=&#34;1627&#34;
 	height=&#34;97&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_50212c190c088272.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_d0d8704455773653.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_50212c190c088272.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_d0d8704455773653.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -160,10 +263,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机密钥改变&#34;&gt;主机密钥改变
 &lt;/h3&gt;&lt;p&gt;服务器身份改变，需要重新接受密钥或删除现有密钥
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219.png&#34;
 	width=&#34;1825&#34;
 	height=&#34;603&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_58ab3d50f7d13238.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_d5afd885da717c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_58ab3d50f7d13238.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_d5afd885da717c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -181,10 +284,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -R 192.168.11.5
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222.png&#34;
 	width=&#34;1431&#34;
 	height=&#34;293&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_879a2a814545918c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_918665bf4473711.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_879a2a814545918c.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_918665bf4473711.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -194,10 +297,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 或直接手动删除&lt;strong&gt;c:\users\用户.ssh\known_hosts&lt;/strong&gt;文件下的的对应IP密钥
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223.png&#34;
 	width=&#34;1602&#34;
 	height=&#34;952&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_9a9acd493c9c0802.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_ea305b8d857e5911.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_9a9acd493c9c0802.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_ea305b8d857e5911.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -212,10 +315,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;/h2&gt;&lt;p&gt;下面以mobaxterm为例进行ssh链接演示&lt;br&gt;
 点击左上角的&lt;strong&gt;会话&lt;/strong&gt; - &lt;strong&gt;ssh&lt;/strong&gt; - &lt;strong&gt;输入远程主机&lt;/strong&gt; - &lt;strong&gt;指定用户名&lt;/strong&gt; - &lt;strong&gt;确定&lt;/strong&gt; - &lt;strong&gt;输入密码&lt;/strong&gt;&lt;br&gt;
 &lt;code&gt;注：输入密码的时候是不显示密码文本的&lt;/code&gt;&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1890&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_7e3e6c5c65a35ea1.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f5303b2d9aa54a22.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_7e3e6c5c65a35ea1.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f5303b2d9aa54a22.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -225,10 +328,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 选择**信任身份(Accept)**进行连接&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227.png&#34;
 	width=&#34;1186&#34;
 	height=&#34;504&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_e31e244dab6db990.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_d4b804408546c0c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_e31e244dab6db990.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_d4b804408546c0c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -238,10 +341,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 输入密码
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229.png&#34;
 	width=&#34;779&#34;
 	height=&#34;162&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_99d73f38e97a9ed4.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_aca4d83337ddce80.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_99d73f38e97a9ed4.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_aca4d83337ddce80.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -251,10 +354,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 是否保存密码&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230.png&#34;
 	width=&#34;1091&#34;
 	height=&#34;421&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_a1a13646ff9745ac.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_ceae3433b52dff92.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_a1a13646ff9745ac.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_ceae3433b52dff92.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -264,10 +367,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 登录成功&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231.png&#34;
 	width=&#34;1685&#34;
 	height=&#34;882&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_ae6443555019efef.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_8b1cda2ca00c1db8.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_ae6443555019efef.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_8b1cda2ca00c1db8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -278,10 +381,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;常见异常-1&#34;&gt;常见异常
 &lt;/h2&gt;&lt;p&gt;出现&lt;strong&gt;Access denied&lt;/strong&gt;一般就是账户不允许被ssh远程登录，或者是账户密码错误
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232.png&#34;
 	width=&#34;747&#34;
 	height=&#34;90&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_43cf4ed523209b23.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_17a362912606943b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_43cf4ed523209b23.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_17a362912606943b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -292,10 +395,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机失联-1&#34;&gt;主机失联
 &lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234.png&#34;
 	width=&#34;997&#34;
 	height=&#34;450&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_607819b90842d708.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_ff29d0ebcce37ef0.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_607819b90842d708.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_ff29d0ebcce37ef0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -309,10 +412,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;strong&gt;Accept the new server hostkey and carry on connecting&lt;/strong&gt;接受新的服务器主机密钥并继续连接&lt;br&gt;
 Refuse the new server hostkey and abort the connection拒绝新服务器主机密钥并中止连接&lt;br&gt;
 Accept and save as additional hostkey (keep the existing ones)接受并保存为附加主机密钥(保留现有密钥)&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236.png&#34;
 	width=&#34;1188&#34;
 	height=&#34;1051&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_89080e4a801ac94f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_b2249e9ce103cc1c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_89080e4a801ac94f.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_b2249e9ce103cc1c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -324,10 +427,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;h1 id=&#34;常用ssh软件&#34;&gt;常用ssh软件
 &lt;/h1&gt;&lt;p&gt;其它软件较为出名有&lt;strong&gt;PuTTY、Termius、FinalShell、MobaXterm、XShell&lt;/strong&gt;等，每个人可以根据自己的习惯喜好进行选择&lt;/p&gt;
 &lt;h2 id=&#34;putty&#34;&gt;PuTTY
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238.png&#34;
 	width=&#34;921&#34;
 	height=&#34;851&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_cadb18c451aedfd9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_1e6bd6a41de792ad.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_cadb18c451aedfd9.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_1e6bd6a41de792ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -336,10 +439,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis=&#34;259px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240.png&#34;
 	width=&#34;672&#34;
 	height=&#34;421&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_c616409a8df537be.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6f01966ea74bfbb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_c616409a8df537be.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6f01966ea74bfbb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -349,10 +452,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;terminals&#34;&gt;Terminals
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242.png&#34;
 	width=&#34;1329&#34;
 	height=&#34;885&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_2a02199019a2d2c7.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_118ff2b8e446cfc1.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_2a02199019a2d2c7.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_118ff2b8e446cfc1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -362,10 +465,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;finalshell&#34;&gt;FinalShell
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;788&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_362045221a0ea162.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_a74831190271e5f6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_362045221a0ea162.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_a74831190271e5f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -375,10 +478,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;xshell&#34;&gt;XShell
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;749&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_f90bd6857712a4d6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_bc7b781f554b5a3a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_f90bd6857712a4d6.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_bc7b781f554b5a3a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -388,10 +491,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;mobaxterm&#34;&gt;MobaXterm
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248.png&#34;
 	width=&#34;1366&#34;
 	height=&#34;708&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_f5afde8006acccac.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_84a00d6d3b6357.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_f5afde8006acccac.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_84a00d6d3b6357.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1068,10 +1171,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
         </item>
         <item>
         <title>linux安装桌面环境</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
+        <link>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
         <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
+        <guid>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
         <description>&lt;p&gt;在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作：  &lt;/p&gt;
 &lt;h1 id=&#34;一前期准备切换-root--更新系统&#34;&gt;一、前期准备（切换 root + 更新系统）
 &lt;/h1&gt;&lt;p&gt;最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作：  &lt;/p&gt;
@@ -1350,10 +1453,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
         </item>
         <item>
         <title>Jelina常用命令</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;h1 id=&#34;jelina默认账密&#34;&gt;Jelina默认账密
 &lt;/h1&gt;&lt;h2 id=&#34;用户1&#34;&gt;用户1
 &lt;/h2&gt;&lt;p&gt;用户名： root&lt;br&gt;
@@ -1678,10 +1781,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
         </item>
         <item>
         <title>linux基础命令</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
+        <link>https://dsmggm.github.io/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
+        <guid>https://dsmggm.github.io/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;h1 id=&#34;linux基础命令列表&#34;&gt;linux基础命令列表
 &lt;/h1&gt;&lt;h2 id=&#34;常用操作命令&#34;&gt;常用操作命令
 &lt;/h2&gt;&lt;table&gt;

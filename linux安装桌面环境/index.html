@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
-<title>Jelina常用命令</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作： 一、前期准备（切换 root + 更新系统） 最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作： ">
+<title>linux安装桌面环境</title>
 
-<link rel='canonical' href='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel='canonical' href='https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/'>
 
-<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Jelina常用命令">
-<meta property='og:description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
-<meta property='og:url' content='https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="linux安装桌面环境">
+<meta property='og:description' content="在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作： 一、前期准备（切换 root + 更新系统） 最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作： ">
+<meta property='og:url' content='https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/'>
 <meta property='og:site_name' content='dsmggm博客'>
-<meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='Jelina' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-20T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Jelina常用命令">
-<meta name="twitter:description" content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:tag' content='桌面环境' /><meta property='article:tag' content='Linux' /><meta property='article:published_time' content='2025-11-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-27T00:00:00&#43;00:00'/>
+<meta name="twitter:title" content="linux安装桌面环境">
+<meta name="twitter:description" content="在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作： 一、前期准备（切换 root + 更新系统） 最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作： ">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -228,13 +228,14 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#jelina默认账密">Jelina默认账密</a>
+    <li><a href="#一前期准备切换-root--更新系统">一、前期准备（切换 root + 更新系统）</a></li>
+    <li><a href="#二选择桌面环境并安装">二、选择桌面环境并安装</a>
       <ol>
-        <li><a href="#用户1">用户1</a></li>
-        <li><a href="#用户2">用户2</a></li>
+        <li><a href="#方式-1用tasksel一键安装推荐">方式 1：用tasksel一键安装（推荐）</a></li>
+        <li><a href="#方式-2用apt直接安装灵活">方式 2：用apt直接安装（灵活）</a></li>
       </ol>
     </li>
-    <li><a href="#jelina常用命令或命令组合">Jelina常用命令或命令组合</a></li>
+    <li><a href="#三配置显示管理器">三、配置显示管理器</a></li>
   </ol>
 </nav>
         </div>
@@ -253,8 +254,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/%E7%A0%94%E5%8D%8E/" style="background-color: #0051a2ff; color: #fff;">
-                研华
+            <a href="/categories/linux/" style="background-color: #ff0000ff; color: #fff;">
+                Linux
             </a>
         
     </header>
@@ -262,7 +263,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Jelina常用命令</a>
+            <a href="/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/">linux安装桌面环境</a>
         </h2>
     
         
@@ -284,7 +285,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published" datetime='2025-11-20T00:00:00Z'>2025-11-20</time>
+                <time class="article-time--published" datetime='2025-11-27T00:00:00Z'>2025-11-27</time>
             </div>
         
 
@@ -300,61 +301,148 @@
     <section class="article-content">
     
     
-    <h1 id="jelina默认账密">Jelina默认账密
-</h1><h2 id="用户1">用户1
-</h2><p>用户名： root<br>
-密码： jelina</p>
-<h2 id="用户2">用户2
-</h2><p>用户名： jelina<br>
-密码（大多数时候不需要输入密码）： jelina</p>
-<h1 id="jelina常用命令或命令组合">Jelina常用命令或命令组合
-</h1><div class="table-wrapper"><table>
+    <p>在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作：  </p>
+<h1 id="一前期准备切换-root--更新系统">一、前期准备（切换 root + 更新系统）
+</h1><p>最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作：  </p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">su -  <span class="c1"># 切换到root，输入root密码</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>更新软件包索引并升级系统（确保依赖最新）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">apt update
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">apt upgrade -y  <span class="c1"># 可选，但建议执行</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="二选择桌面环境并安装">二、选择桌面环境并安装
+</h1><p>Debian 支持多种桌面环境，可根据需求选择（轻量级适合低配置机器，功能型适合高性能设备）：</p>
+<h2 id="方式-1用tasksel一键安装推荐">方式 1：用tasksel一键安装（推荐）
+</h2><p>tasksel是 Debian 的任务安装工具，可批量安装桌面环境及依赖组件。若未预装，先安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">apt install -y tasksel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>运行tasksel：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">tasksel
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在弹出的界面中，用方向键选择需要的桌面环境（按空格勾选），按Tab 键选<OK>确认：</p>
+<p>GNOME（Debian 默认，功能丰富）：勾选Debian desktop environment</p>
+<p>KDE Plasma（华丽且可定制）：勾选KDE Plasma</p>
+<p>Xfce（轻量级，适合旧机器）：勾选Xfce</p>
+<p>LXDE/LXQt（超轻量级）：勾选LXDE或LXQt</p>
+<p>等待安装完成（时间取决于网络和桌面环境大小）。</p>
+<h2 id="方式-2用apt直接安装灵活">方式 2：用apt直接安装（灵活）
+</h2><p>若不想用tasksel，可直接通过apt安装特定桌面环境：</p>
+<div class="table-wrapper"><table>
   <thead>
       <tr>
-          <th>命令</th>
-          <th>说明</th>
+          <th>桌面环境</th>
+          <th>安装命令</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>jelina-ver</td>
-          <td>查询当前JelinaOS的系统版本</td>
+          <td>GNOME</td>
+          <td>apt install -y task-gnome-desktop（或gnome-shell gdm3）</td>
       </tr>
       <tr>
-          <td>jelina-device-info get &ndash;sn &ndash;ssn</td>
-          <td>查看设备SN号（RK和NXP兼容）的命令</td>
+          <td>KDE</td>
+          <td>apt install -y task-kde-desktop（或plasma-desktop sddm）</td>
       </tr>
       <tr>
-          <td>cat /run/jelina/register/jelina-register-state; echo</td>
-          <td>检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过</td>
+          <td>Xfce</td>
+          <td>apt install -y task-xfce-desktop（或xfce4 xfce4-goodies lightdm）</td>
       </tr>
       <tr>
-          <td>systemctl restart jelina-jelinvisor</td>
-          <td>重启jelinvisor，一般用于初始化与Cloud的连接</td>
+          <td>LXDE</td>
+          <td>apt install -y task-lxde-desktop（或lxde-core lightdm）</td>
       </tr>
       <tr>
-          <td>cat /mnt/boot/config.json</td>
-          <td>查看“舰队”等配置信息</td>
-      </tr>
-      <tr>
-          <td>journalctl -u jelina-jelinvisor.servicef</td>
-          <td>查看最近的jelinvisor日志，一般用于分析设备无法online的情况</td>
-      </tr>
-      <tr>
-          <td>systemctl start <a class="link" href="mailto:jelina-upper-new@root.service" >jelina-upper-new@root.service</a></td>
-          <td>恢复初始状态（Jelinvisor除外）</td>
-      </tr>
-      <tr>
-          <td>jelina-offline off</td>
-          <td>切换jelinvisor到连线模式</td>
-      </tr>
-      <tr>
-          <td>jelina-offline on</td>
-          <td>切换jelinvisor到离线模式</td>
+          <td>LXQt</td>
+          <td>apt install -y task-lxqt-desktop（或lxqt lightdm）</td>
       </tr>
   </tbody>
 </table></div>
-
+<h1 id="三配置显示管理器">三、配置显示管理器
+</h1><p>桌面环境需要显示管理器（登录界面），安装时会自动提示选择默认显示管理器：
+· GNOME 推荐gdm3
+· KDE 推荐sddm
+· 轻量级桌面（Xfce/LXDE/LXQt）推荐lightdm</p>
+<p>若安装时未提示，可手动配置默认显示管理器：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">dpkg-reconfigure gdm3  <span class="c1"># 或替换为sddm/lightdm</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>四、重启系统</p>
+<p>安装完成后，重启系统即可进入桌面环境：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">reboot
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意事项</p>
+<p>网络问题：若下载慢，可先更换 Debian 源（编辑/etc/apt/sources.list，替换为国内源如清华、阿里云）。
+硬件兼容：老旧显卡可能需要安装闭源驱动（如 NVIDIA），否则桌面可能卡顿。
+sudo 权限：若需普通用户用sudo，可安装sudo并将用户加入sudo组：
+apt install -y sudo
+usermod -aG sudo 你的用户名</p>
+<p>debian要使用root登录桌面环境，可能需要把PAM认证配置
+以ssdm为例</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nano /etc/pam.d/sddm
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 找到这行，在前面加 # 注释掉</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># auth    required    pam_succeed_if.so user != root quiet_success</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -362,11 +450,9 @@
     
     <section class="article-tags">
         
-            <a href="/tags/jelina/">Jelina</a>
+            <a href="/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/">桌面环境</a>
         
             <a href="/tags/linux/">Linux</a>
-        
-            <a href="/tags/%E7%A0%94%E5%8D%8E/">研华</a>
         
     </section>
 
@@ -387,48 +473,13 @@
         <div class="flex article-list--tile">
             
                 
-<article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/">
+<article class="">
+    <a href="/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/">
         
-        
-            <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_4cfb89fd987e630.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Jelina安装onboard屏幕软键盘SOP"
-                        
-                        data-hash="md5-XtA7/M3tnsxE1&#43;K&#43;tyOQAw==">
-                
-            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">Jelina安装onboard屏幕软键盘SOP</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">
-        
-        
-            <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.bb9f42734cbb882af34749da4bf234e5_hu_eb7a41a2fec565f9.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post Jelina系统安装"
-                        
-                        data-hash="md5-u59Cc0y7iCrzR0naS/I05Q==">
-                
-            </div>
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Jelina系统安装</h2>
+            <h2 class="article-title">linux基础命令</h2>
         </div>
     </a>
 </article>
@@ -436,60 +487,51 @@
             
                 
 <article class="">
-    <a href="/%E7%A0%94%E5%8D%8E/arm%E4%BF%AE%E6%94%B9%E5%90%AF%E5%8A%A8logo/">
+    <a href="/linux-debian%E6%89%A9%E5%AE%B9%E6%A0%B9_%E5%88%86%E5%8C%BA%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86%E7%A4%BA%E4%BE%8B/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">arm修改启动logo</h2>
+            <h2 class="article-title">linux debian扩容根_分区、磁盘管理示例</h2>
         </div>
     </a>
 </article>
 
             
                 
-<article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/">
+<article class="">
+    <a href="/linux%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC/">
         
-        
-            <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.e27c9227b7235a28db116b228654e067_hu_46d1fe551c93a694.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post ssh工具的连接与使用"
-                        
-                        data-hash="md5-4nySJ7cjWijbEWsihlTgZw==">
-                
-            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">ssh工具的连接与使用</h2>
+            <h2 class="article-title">linux备份脚本</h2>
         </div>
     </a>
 </article>
 
             
                 
-<article class="has-image">
-    <a href="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+<article class="">
+    <a href="/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/">
         
-        
-            <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_f04f497f32de208.png" 
-                        width="250" 
-                        height="150" 
-                        loading="lazy"
-                        alt="Featured image of post arm设备系统安装教程"
-                        
-                        data-hash="md5-ghD2fn/FRGxzWWbFX2tOLQ==">
-                
-            </div>
         
 
         <div class="article-details">
-            <h2 class="article-title">arm设备系统安装教程</h2>
+            <h2 class="article-title">linux安装mysql8.1.0教程</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/linux%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%BA%90/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">linux设置本地源</h2>
         </div>
     </a>
 </article>

@@ -9,10 +9,10 @@
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>linux安装桌面环境</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
+        <link>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
         <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
+        <guid>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
         <description>&lt;p&gt;在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作：  &lt;/p&gt;
 &lt;h1 id=&#34;一前期准备切换-root--更新系统&#34;&gt;一、前期准备（切换 root + 更新系统）
 &lt;/h1&gt;&lt;p&gt;最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作：  &lt;/p&gt;
@@ -158,10 +158,10 @@ usermod -aG sudo 你的用户名&lt;/p&gt;
         </item>
         <item>
         <title>linux基础命令</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
+        <link>https://dsmggm.github.io/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
+        <guid>https://dsmggm.github.io/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;h1 id=&#34;linux基础命令列表&#34;&gt;linux基础命令列表
 &lt;/h1&gt;&lt;h2 id=&#34;常用操作命令&#34;&gt;常用操作命令
 &lt;/h2&gt;&lt;table&gt;
