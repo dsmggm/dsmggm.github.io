@@ -8,16 +8,16 @@
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
         <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Linux 设备上网原理与故障排查指南</title>
-        <link>https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</link>
+        <title>Linux设备上网原理与故障排查指南</title>
+        <link>https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</link>
         <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png" alt="Featured image of post Linux 设备上网原理与故障排查指南" /&gt;&lt;h1 id=&#34;网络分层模型5-层--7-层&#34;&gt;网络分层模型（5 层 / 7 层）
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png&#34;
+        <guid>https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png" alt="Featured image of post Linux设备上网原理与故障排查指南" /&gt;&lt;h1 id=&#34;网络分层模型5-层--7-层&#34;&gt;网络分层模型（5 层 / 7 层）
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png&#34;
 	width=&#34;1120&#34;
 	height=&#34;1587&#34;
-	srcset=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_6c2fe291860c6c5f.png 480w, https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_848124c766cfa3ad.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_6c2fe291860c6c5f.png 480w, https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_848124c766cfa3ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -52,10 +52,10 @@
 &lt;li&gt;观察与判定：
 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。&lt;br&gt;
 网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072.png&#34;
+&lt;img src=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072.png&#34;
 	width=&#34;3072&#34;
 	height=&#34;4096&#34;
-	srcset=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_87c4c8da5cacdf05.png 480w, https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_ddb7c65aa6c6af01.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_87c4c8da5cacdf05.png 480w, https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_ddb7c65aa6c6af01.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -63,10 +63,10 @@
 		data-flex-grow=&#34;75&#34;
 		data-flex-basis=&#34;180px&#34;
 	
-&gt;&lt;img src=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566.png&#34;
+&gt;&lt;img src=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566.png&#34;
 	width=&#34;3072&#34;
 	height=&#34;4096&#34;
-	srcset=&#34;https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_28f634463c645626.png 480w, https://dsmggm.github.io/linux-%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_7268865c7283d5fb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_28f634463c645626.png 480w, https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_7268865c7283d5fb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
