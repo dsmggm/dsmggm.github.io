@@ -177,7 +177,7 @@
 &lt;h1 id=&#34;企业微信机器人&#34;&gt;企业微信机器人
 &lt;/h1&gt;&lt;p&gt;参考官方文档&lt;a class=&#34;link&#34; href=&#34;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;OpenClaw接入企业微信智能机器人-帮助中心-企业微信(https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657)&lt;/a&gt;&lt;br&gt;
-参考第一步即可，将获取到的Bot ID跟Secret保存&lt;/p&gt;
+参考其中的第一步即可，将获取到的Bot ID跟Secret保存&lt;/p&gt;
 &lt;h1 id=&#34;安装企业微信机器人官方插件&#34;&gt;安装企业微信机器人官方插件
 &lt;/h1&gt;&lt;p&gt;命令终端继续执行&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
