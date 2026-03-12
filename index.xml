@@ -62,8 +62,8 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw onboard
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;1、选YES
-2、选QuickStart
+&lt;/div&gt;&lt;p&gt;1、选YES&lt;br&gt;
+2、选QuickStart&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022.png&#34;
 	width=&#34;2070&#34;
 	height=&#34;781&#34;
@@ -76,8 +76,8 @@
 		data-flex-basis=&#34;636px&#34;
 	
 &gt;
-3、对接大模型，选Z.AI（智谱）
-4、国内选Coding-Plan-CN
+3、对接大模型，选Z.AI（智谱）&lt;br&gt;
+4、国内选Coding-Plan-CN&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351.png&#34;
 	width=&#34;1550&#34;
 	height=&#34;405&#34;
@@ -90,8 +90,8 @@
 		data-flex-basis=&#34;918px&#34;
 	
 &gt;
-5、选Paste API key now
-6、右键粘贴智谱的API
+5、选Paste API key now&lt;br&gt;
+6、右键粘贴智谱的API&lt;br&gt;
 申请地址：&lt;a class=&#34;link&#34; href=&#34;https://www.bigmodel.cn/invite?icode=V40hHBW8TpgkSWTfwD8i3nHEaazDlIZGj9HxftzTbt4%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.bigmodel.cn/invite?icode=V40hHBW8TpgkSWTfwD8i3nHEaazDlIZGj9HxftzTbt4%3D&lt;/a&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711.png&#34;
@@ -106,7 +106,7 @@
 		data-flex-basis=&#34;1294px&#34;
 	
 &gt;
-7、选择模型，例如免费的zai/glm-4.7-flash
+7、选择模型，例如免费的zai/glm-4.7-flash&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202.png&#34;
 	width=&#34;1409&#34;
 	height=&#34;529&#34;
@@ -119,7 +119,7 @@
 		data-flex-basis=&#34;639px&#34;
 	
 &gt;
-8、对接机器人渠道，先选Skip for now
+8、对接机器人渠道，先选Skip for now&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414.png&#34;
 	width=&#34;1946&#34;
 	height=&#34;803&#34;
@@ -132,7 +132,7 @@
 		data-flex-basis=&#34;581px&#34;
 	
 &gt;
-9、搜素引擎选Skip for now跳过配置
+9、搜素引擎选Skip for now跳过配置&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903.png&#34;
 	width=&#34;1388&#34;
 	height=&#34;290&#34;
@@ -145,7 +145,7 @@
 		data-flex-basis=&#34;1148px&#34;
 	
 &gt;
-10、skiis配置跳过，选no
+10、skiis配置跳过，选no&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903.png&#34;
 	width=&#34;857&#34;
 	height=&#34;108&#34;
@@ -158,7 +158,7 @@
 		data-flex-basis=&#34;1904px&#34;
 	
 &gt;
-11、hooks选Skip for now（空格选择，回车）
+11、hooks选Skip for now（空格选择，回车）&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317.png&#34;
 	width=&#34;873&#34;
 	height=&#34;259&#34;
@@ -171,13 +171,12 @@
 		data-flex-basis=&#34;808px&#34;
 	
 &gt;
-12、启动管理
-选Open the Web UI&lt;br&gt;
+12、启动管理&lt;br&gt;
+选Open the Web UI &lt;br&gt;
 会打印相关的信息，其中包括token，可以通过浏览器桌面进行访问&lt;/p&gt;
 &lt;h1 id=&#34;企业微信机器人&#34;&gt;企业微信机器人
-&lt;/h1&gt;&lt;p&gt;参考官方文档[OpenClaw接入企业微信智能机器人-帮助中心-企业微信&lt;a class=&#34;link&#34; href=&#34;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;OpenClaw接入企业微信智能机器人-帮助中心-企业微信&lt;/a&gt;](&lt;a class=&#34;link&#34; href=&#34;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&lt;/a&gt;)&lt;br&gt;
+&lt;/h1&gt;&lt;p&gt;参考官方文档&lt;a class=&#34;link&#34; href=&#34;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OpenClaw接入企业微信智能机器人-帮助中心-企业微信(https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657)&lt;/a&gt;&lt;br&gt;
 参考第一步即可，将获取到的Bot ID跟Secret保存&lt;/p&gt;
 &lt;h1 id=&#34;安装企业微信机器人官方插件&#34;&gt;安装企业微信机器人官方插件
 &lt;/h1&gt;&lt;p&gt;命令终端继续执行&lt;/p&gt;
@@ -237,7 +236,7 @@
 		data-flex-basis=&#34;477px&#34;
 	
 &gt;
-将授权码命令粘贴到终端执行即可正常使用
+将授权码命令粘贴到终端执行即可正常使用&lt;br&gt;
 &lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803.png&#34;
 	width=&#34;2511&#34;
 	height=&#34;259&#34;
