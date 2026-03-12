@@ -7,13 +7,13 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>openclaw部署与命令帮助</title>
         <link>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</link>
-        <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+        <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</guid>
-        <description>&lt;h1 id=&#34;安装&#34;&gt;安装
+        <description>&lt;img src="https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864.png" alt="Featured image of post openclaw部署与命令帮助" /&gt;&lt;h1 id=&#34;安装&#34;&gt;安装
 &lt;/h1&gt;&lt;p&gt;使用root用户ssh远程到linux，复制下面命令到ssh终端&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
