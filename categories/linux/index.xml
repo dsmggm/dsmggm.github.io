@@ -7,7 +7,239 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 11 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>openclaw部署与命令帮助</title>
+        <link>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</link>
+        <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</guid>
+        <description>&lt;h1 id=&#34;安装&#34;&gt;安装
+&lt;/h1&gt;&lt;p&gt;使用root用户ssh远程到linux，复制下面命令到ssh终端&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt update &lt;span class=&#34;p&#34;&gt;&amp;amp;&lt;/span&gt; apt install -y curl
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fsSL https://openclaw.ai/install.sh &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; bash
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312111014802.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;572&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312111934426.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;strong&gt;注：如果遇到多次失败，多次尝试执行&lt;code&gt;curl -fsSL https://openclaw.ai/install.sh | bash&lt;/code&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;初始化配置&#34;&gt;初始化配置
+&lt;/h1&gt;&lt;p&gt;安装后可以通过下面的命令重新初始化&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw onboard
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;1、选YES
+2、选QuickStart
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112340022.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+3、对接大模型，选Z.AI（智谱）
+4、国内选Coding-Plan-CN
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112500351.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+5、选Paste API key now
+6、右键粘贴智谱的API
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112715711.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+7、选择模型，例如免费的zai/glm-4.7-flash
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112803202.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+8、对接机器人渠道，先选Skip for now
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112843414.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+9、搜素引擎选Skip for now跳过配置
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112912903.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+10、skiis配置跳过，选no
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312112959903.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+11、hooks选Skip for now（空格选择，回车）
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312113049317.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+12、启动管理
+选Open the Web UI&lt;br&gt;
+会打印相关的信息，其中包括token，可以通过浏览器桌面进行访问&lt;/p&gt;
+&lt;h1 id=&#34;企业微信机器人&#34;&gt;企业微信机器人
+&lt;/h1&gt;&lt;p&gt;参考官方文档[OpenClaw接入企业微信智能机器人-帮助中心-企业微信&lt;a class=&#34;link&#34; href=&#34;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;OpenClaw接入企业微信智能机器人-帮助中心-企业微信&lt;/a&gt;](&lt;a class=&#34;link&#34; href=&#34;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://open.work.weixin.qq.com/help2/pc/cat?doc_id=21657&lt;/a&gt;)&lt;br&gt;
+参考第一步即可，将获取到的Bot ID跟Secret保存&lt;/p&gt;
+&lt;h1 id=&#34;安装企业微信机器人官方插件&#34;&gt;安装企业微信机器人官方插件
+&lt;/h1&gt;&lt;p&gt;命令终端继续执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw plugins install @wecom/wecom-openclaw-plugin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312115422864.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;设置企业微信机器人&#34;&gt;设置企业微信机器人
+&lt;/h1&gt;&lt;p&gt;将下面代码的&lt;botid&gt;跟&lt;Secret&gt;替换为自己的，然后在终端中执行&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw config &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; channels.wecom.botId &amp;lt;BotID&amp;gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; openclaw config &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; channels.wecom.secret &amp;lt;Secret&amp;gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; openclaw config &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; channels.wecom.enabled &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; openclaw gateway restart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312115736080.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;授权用户&#34;&gt;授权用户
+&lt;/h1&gt;&lt;p&gt;等一会儿，到机器人发送你好，机器人会回复授权码&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312120133018.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+将授权码命令粘贴到终端执行即可正常使用
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312120315803.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.github.io/openclaw%e9%83%a8%e7%bd%b2%e4%b8%8e%e5%91%bd%e4%bb%a4%e5%b8%ae%e5%8a%a9-20260312120524557.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;其它命令&#34;&gt;其它命令
+&lt;/h1&gt;&lt;p&gt;重启网关&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw gateway restart
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看状态&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw status
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;查看日志流&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw logs --follow
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;远程隧道配置（在客户端执行）&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh -N -L 18789:127.0.0.1:18789 root@192.168.88.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;</description>
+        </item>
+        <item>
         <title>linux安装桌面环境</title>
         <link>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
         <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
