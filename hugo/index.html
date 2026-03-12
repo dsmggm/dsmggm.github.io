@@ -234,7 +234,11 @@
     <li><a href="#三下载主题">三、下载主题</a></li>
     <li><a href="#四配置hugoyaml">四、配置hugo.yaml</a></li>
     <li><a href="#五启动服务">五、启动服务</a></li>
-    <li><a href="#六github自动部署提交">六、github自动部署提交</a></li>
+    <li><a href="#六github自动部署提交">六、github自动部署提交</a>
+      <ol>
+        <li><a href="#github公开库自动部署设置">github公开库自动部署设置</a></li>
+      </ol>
+    </li>
     <li><a href="#七忽略文件">七忽略文件</a></li>
     <li><a href="#评论">评论</a></li>
   </ol>
@@ -1034,7 +1038,12 @@ token选择永不过期，并勾选 repo 和 workflow 选项<br>
 </span></span></span><span class="line"><span class="cl"><span class="w">              </span><span class="nt">commit_message</span><span class="p">:</span><span class="w"> </span><span class="l">auto deploy</span><span class="w">
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="七忽略文件">七忽略文件
+</div><h2 id="github公开库自动部署设置">github公开库自动部署设置
+</h2><p>Settings-Pages-Build and deployment<br>
+将Source选择为Deploy from a branch<br>
+Branch设置为 <code>main</code>（与部署配置中的PUBLISH_BRANCH一致）<br>
+点击 <code>Save</code> 保存设置</p>
+<h1 id="七忽略文件">七忽略文件
 </h1><p>创建.gitignore</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

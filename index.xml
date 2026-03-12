@@ -4695,7 +4695,12 @@ token选择永不过期，并勾选 repo 和 workflow 选项&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;              &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;commit_message&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;auto deploy&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;h1 id=&#34;七忽略文件&#34;&gt;七忽略文件
+&lt;/div&gt;&lt;h2 id=&#34;github公开库自动部署设置&#34;&gt;github公开库自动部署设置
+&lt;/h2&gt;&lt;p&gt;Settings-Pages-Build and deployment&lt;br&gt;
+将Source选择为Deploy from a branch&lt;br&gt;
+Branch设置为 &lt;code&gt;main&lt;/code&gt;（与部署配置中的PUBLISH_BRANCH一致）&lt;br&gt;
+点击 &lt;code&gt;Save&lt;/code&gt; 保存设置&lt;/p&gt;
+&lt;h1 id=&#34;七忽略文件&#34;&gt;七忽略文件
 &lt;/h1&gt;&lt;p&gt;创建.gitignore&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
