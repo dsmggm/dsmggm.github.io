@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>桌面环境 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
         <description>Recent content in 桌面环境 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 27 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>linux安装桌面环境</title>
-        <link>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
+        <link>https://dsmggm.dpdns.org/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
         <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
+        <guid>https://dsmggm.dpdns.org/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
         <description>&lt;p&gt;在最小安装的 Debian 系统中安装桌面环境，主要步骤包括更新系统、选择桌面环境、安装相关组件并配置显示管理器。以下是详细操作：  &lt;/p&gt;
 &lt;h1 id=&#34;一前期准备切换-root--更新系统&#34;&gt;一、前期准备（切换 root + 更新系统）
 &lt;/h1&gt;&lt;p&gt;最小安装的 Debian 默认没有sudo（除非安装时手动配置），需先切换到root用户操作：  &lt;/p&gt;

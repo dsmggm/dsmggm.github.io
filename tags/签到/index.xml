@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>签到 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E7%AD%BE%E5%88%B0/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%AD%BE%E5%88%B0/</link>
         <description>Recent content in 签到 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E7%AD%BE%E5%88%B0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E7%AD%BE%E5%88%B0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>docker 搭建jd_sgin</title>
-        <link>https://dsmggm.github.io/docker-%E6%90%AD%E5%BB%BAjd_sgin/</link>
+        <link>https://dsmggm.dpdns.org/docker-%E6%90%AD%E5%BB%BAjd_sgin/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/docker-%E6%90%AD%E5%BB%BAjd_sgin/</guid>
+        <guid>https://dsmggm.dpdns.org/docker-%E6%90%AD%E5%BB%BAjd_sgin/</guid>
         <description>&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1

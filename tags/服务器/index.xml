@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>服务器 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <description>Recent content in 服务器 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>nginx配置文件注释说明</title>
-        <link>https://dsmggm.github.io/nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A%E8%AF%B4%E6%98%8E/</link>
+        <link>https://dsmggm.dpdns.org/nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A%E8%AF%B4%E6%98%8E/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A%E8%AF%B4%E6%98%8E/</guid>
+        <guid>https://dsmggm.dpdns.org/nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A%E8%AF%B4%E6%98%8E/</guid>
         <description>&lt;p&gt;nginx.conf配置文件说明&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

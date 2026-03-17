@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>研华 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/categories/%E7%A0%94%E5%8D%8E/</link>
+        <link>https://dsmggm.dpdns.org/categories/%E7%A0%94%E5%8D%8E/</link>
         <description>Recent content in 研华 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/categories/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 21 Jan 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/categories/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Linux设备上网原理与故障排查指南</title>
-        <link>https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</link>
+        <link>https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</link>
         <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png" alt="Featured image of post Linux设备上网原理与故障排查指南" /&gt;&lt;h1 id=&#34;网络分层模型5-层--7-层&#34;&gt;网络分层模型（5 层 / 7 层）
-&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png&#34;
+        <guid>https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png" alt="Featured image of post Linux设备上网原理与故障排查指南" /&gt;&lt;h1 id=&#34;网络分层模型5-层--7-层&#34;&gt;网络分层模型（5 层 / 7 层）
+&lt;/h1&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png&#34;
 	width=&#34;1120&#34;
 	height=&#34;1587&#34;
-	srcset=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_6c2fe291860c6c5f.png 480w, https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_848124c766cfa3ad.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_6c2fe291860c6c5f.png 480w, https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816_hu_848124c766cfa3ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -52,10 +52,10 @@
 &lt;li&gt;观察与判定：
 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。&lt;br&gt;
 网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072.png&#34;
 	width=&#34;3072&#34;
 	height=&#34;4096&#34;
-	srcset=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_87c4c8da5cacdf05.png 480w, https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_ddb7c65aa6c6af01.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_87c4c8da5cacdf05.png 480w, https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163045072_hu_ddb7c65aa6c6af01.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -63,10 +63,10 @@
 		data-flex-grow=&#34;75&#34;
 		data-flex-basis=&#34;180px&#34;
 	
-&gt;&lt;img src=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566.png&#34;
+&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566.png&#34;
 	width=&#34;3072&#34;
 	height=&#34;4096&#34;
-	srcset=&#34;https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_28f634463c645626.png 480w, https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_7268865c7283d5fb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_28f634463c645626.png 480w, https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121163100566_hu_7268865c7283d5fb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -158,11 +158,11 @@ nmcli connection up &amp;lt;连接名&amp;gt;
         </item>
         <item>
         <title>ssh工具的连接与使用</title>
-        <link>https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+        <link>https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
         <pubDate>Fri, 05 Dec 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png" alt="Featured image of post ssh工具的连接与使用" /&gt;&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
+        <guid>https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png" alt="Featured image of post ssh工具的连接与使用" /&gt;&lt;h1 id=&#34;ssh是什么&#34;&gt;ssh是什么
 &lt;/h1&gt;&lt;p&gt;Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。&lt;/p&gt;
 &lt;p&gt;SSH只是一种协议，存在多种实现，既有商业实现，也有开源实现。本文主要介绍在linux中的应用，如果要在Windows中使用SSH，我们将介绍命令行以及第三方工具的使用方法。&lt;/p&gt;
 &lt;h1 id=&#34;openssh命令行连接&#34;&gt;OpenSSH命令行连接
@@ -204,10 +204,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;ol&gt;
 &lt;li&gt;第一次连接需要确认key的保存跟连接&lt;/li&gt;
 &lt;li&gt;输入密码的时候不会显示任何字符
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.png&#34;
 	width=&#34;2423&#34;
 	height=&#34;988&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_9b7d8e9429f36bda.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_f528a3691ff527f8.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_9b7d8e9429f36bda.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212_hu_f528a3691ff527f8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -220,10 +220,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;h2 id=&#34;常见异常&#34;&gt;常见异常
 &lt;/h2&gt;&lt;h3 id=&#34;权限拒绝&#34;&gt;权限拒绝
 &lt;/h3&gt;&lt;p&gt;账户或密码错误，或是账户不允许被ssh登录
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213.png&#34;
 	width=&#34;1078&#34;
 	height=&#34;124&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_199e7f7daa3cda20.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_ae3269c243b79684.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_199e7f7daa3cda20.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307213_hu_ae3269c243b79684.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -234,10 +234,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机失联&#34;&gt;主机失联
 &lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215.png&#34;
 	width=&#34;1627&#34;
 	height=&#34;97&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_50212c190c088272.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_d0d8704455773653.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_50212c190c088272.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307215_hu_d0d8704455773653.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -248,10 +248,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机密钥改变&#34;&gt;主机密钥改变
 &lt;/h3&gt;&lt;p&gt;服务器身份改变，需要重新接受密钥或删除现有密钥
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219.png&#34;
 	width=&#34;1825&#34;
 	height=&#34;603&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_58ab3d50f7d13238.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_d5afd885da717c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_58ab3d50f7d13238.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307219_hu_d5afd885da717c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -269,10 +269,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ssh-keygen -R 192.168.11.5
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222.png&#34;
 	width=&#34;1431&#34;
 	height=&#34;293&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_879a2a814545918c.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_918665bf4473711.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_879a2a814545918c.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307222_hu_918665bf4473711.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -282,10 +282,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 或直接手动删除&lt;strong&gt;c:\users\用户.ssh\known_hosts&lt;/strong&gt;文件下的的对应IP密钥
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223.png&#34;
 	width=&#34;1602&#34;
 	height=&#34;952&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_9a9acd493c9c0802.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_ea305b8d857e5911.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_9a9acd493c9c0802.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307223_hu_ea305b8d857e5911.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -300,10 +300,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;/h2&gt;&lt;p&gt;下面以mobaxterm为例进行ssh链接演示&lt;br&gt;
 点击左上角的&lt;strong&gt;会话&lt;/strong&gt; - &lt;strong&gt;ssh&lt;/strong&gt; - &lt;strong&gt;输入远程主机&lt;/strong&gt; - &lt;strong&gt;指定用户名&lt;/strong&gt; - &lt;strong&gt;确定&lt;/strong&gt; - &lt;strong&gt;输入密码&lt;/strong&gt;&lt;br&gt;
 &lt;code&gt;注：输入密码的时候是不显示密码文本的&lt;/code&gt;&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1890&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_7e3e6c5c65a35ea1.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f5303b2d9aa54a22.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_7e3e6c5c65a35ea1.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307225_hu_f5303b2d9aa54a22.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -313,10 +313,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 选择**信任身份(Accept)**进行连接&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227.png&#34;
 	width=&#34;1186&#34;
 	height=&#34;504&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_e31e244dab6db990.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_d4b804408546c0c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_e31e244dab6db990.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307227_hu_d4b804408546c0c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -326,10 +326,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 输入密码
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229.png&#34;
 	width=&#34;779&#34;
 	height=&#34;162&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_99d73f38e97a9ed4.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_aca4d83337ddce80.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_99d73f38e97a9ed4.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307229_hu_aca4d83337ddce80.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -339,10 +339,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 是否保存密码&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230.png&#34;
 	width=&#34;1091&#34;
 	height=&#34;421&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_a1a13646ff9745ac.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_ceae3433b52dff92.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_a1a13646ff9745ac.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307230_hu_ceae3433b52dff92.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -352,10 +352,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 	
 &gt;
 登录成功&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231.png&#34;
 	width=&#34;1685&#34;
 	height=&#34;882&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_ae6443555019efef.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_8b1cda2ca00c1db8.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_ae6443555019efef.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307231_hu_8b1cda2ca00c1db8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -366,10 +366,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;常见异常-1&#34;&gt;常见异常
 &lt;/h2&gt;&lt;p&gt;出现&lt;strong&gt;Access denied&lt;/strong&gt;一般就是账户不允许被ssh远程登录，或者是账户密码错误
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232.png&#34;
 	width=&#34;747&#34;
 	height=&#34;90&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_43cf4ed523209b23.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_17a362912606943b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_43cf4ed523209b23.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307232_hu_17a362912606943b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -380,10 +380,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;主机失联-1&#34;&gt;主机失联
 &lt;/h3&gt;&lt;p&gt;无法正常连接主机，检查主机或是端口是否无法通讯
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234.png&#34;
 	width=&#34;997&#34;
 	height=&#34;450&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_607819b90842d708.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_ff29d0ebcce37ef0.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_607819b90842d708.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307234_hu_ff29d0ebcce37ef0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -397,10 +397,10 @@ remote -&amp;gt; 指被远程访问的设备，可以是域名，也可以是ip&
 &lt;strong&gt;Accept the new server hostkey and carry on connecting&lt;/strong&gt;接受新的服务器主机密钥并继续连接&lt;br&gt;
 Refuse the new server hostkey and abort the connection拒绝新服务器主机密钥并中止连接&lt;br&gt;
 Accept and save as additional hostkey (keep the existing ones)接受并保存为附加主机密钥(保留现有密钥)&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236.png&#34;
 	width=&#34;1188&#34;
 	height=&#34;1051&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_89080e4a801ac94f.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_b2249e9ce103cc1c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_89080e4a801ac94f.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307236_hu_b2249e9ce103cc1c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -412,10 +412,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;h1 id=&#34;常用ssh软件&#34;&gt;常用ssh软件
 &lt;/h1&gt;&lt;p&gt;其它软件较为出名有&lt;strong&gt;PuTTY、Termius、FinalShell、MobaXterm、XShell&lt;/strong&gt;等，每个人可以根据自己的习惯喜好进行选择&lt;/p&gt;
 &lt;h2 id=&#34;putty&#34;&gt;PuTTY
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238.png&#34;
 	width=&#34;921&#34;
 	height=&#34;851&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_cadb18c451aedfd9.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_1e6bd6a41de792ad.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_cadb18c451aedfd9.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307238_hu_1e6bd6a41de792ad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -424,10 +424,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis=&#34;259px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240.png&#34;
 	width=&#34;672&#34;
 	height=&#34;421&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_c616409a8df537be.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6f01966ea74bfbb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_c616409a8df537be.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307240_hu_b6f01966ea74bfbb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -437,10 +437,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;terminals&#34;&gt;Terminals
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242.png&#34;
 	width=&#34;1329&#34;
 	height=&#34;885&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_2a02199019a2d2c7.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_118ff2b8e446cfc1.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_2a02199019a2d2c7.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307242_hu_118ff2b8e446cfc1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -450,10 +450,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;finalshell&#34;&gt;FinalShell
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;788&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_362045221a0ea162.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_a74831190271e5f6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_362045221a0ea162.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307244_hu_a74831190271e5f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -463,10 +463,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;xshell&#34;&gt;XShell
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246.png&#34;
 	width=&#34;1400&#34;
 	height=&#34;749&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_f90bd6857712a4d6.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_bc7b781f554b5a3a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_f90bd6857712a4d6.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307246_hu_bc7b781f554b5a3a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -476,10 +476,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;mobaxterm&#34;&gt;MobaXterm
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248.png&#34;
 	width=&#34;1366&#34;
 	height=&#34;708&#34;
-	srcset=&#34;https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_f5afde8006acccac.png 480w, https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_84a00d6d3b6357.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_f5afde8006acccac.png 480w, https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307248_hu_84a00d6d3b6357.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -492,19 +492,19 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
         </item>
         <item>
         <title>arm设备系统安装教程</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.png" alt="Featured image of post arm设备系统安装教程" /&gt;&lt;h1 id=&#34;下载debian系统镜像&#34;&gt;下载debian系统镜像
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.png" alt="Featured image of post arm设备系统安装教程" /&gt;&lt;h1 id=&#34;下载debian系统镜像&#34;&gt;下载debian系统镜像
 &lt;/h1&gt;&lt;p&gt;到&lt;a class=&#34;link&#34; href=&#34;https://ess-wiki.advantech.com.tw/view/RISC&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;ESS-WIKI&lt;/a&gt;下载官方镜像及工具、选择对应的设备，这里以RSB-4810刷Debian11为例&lt;br&gt;
 选择 Release Note&lt;br&gt;
 在Image Download从百度网盘下载系统镜像&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_21b5363ff899027e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_101c25de696c06f4.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_21b5363ff899027e.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043888_hu_101c25de696c06f4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -513,10 +513,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_db66f4c89fabf26d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_8c7166141bd49985.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_db66f4c89fabf26d.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043900_hu_8c7166141bd49985.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -525,10 +525,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_3cad6ccd34e10d73.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_6998265a5e790968.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_3cad6ccd34e10d73.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043903_hu_6998265a5e790968.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -541,10 +541,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;p&gt;下载完成后解压&lt;strong&gt;RSB4810A2AIM20DIV130311_2024-03-15.img.tgz&lt;/strong&gt;文件&lt;br&gt;
 解压会得到&lt;strong&gt;RSB4810A2AIM20DIV130311_2024-03-15.img.tar&lt;/strong&gt;&lt;br&gt;
 再解压会得到&lt;strong&gt;RSB4810A2AIM20DIV130311_2024-03-15&lt;/strong&gt;文件夹&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913.png&#34;
 	width=&#34;1843&#34;
 	height=&#34;511&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_26d81186fb88dd45.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_f12361ac23ef034f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_26d81186fb88dd45.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043913_hu_f12361ac23ef034f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -554,10 +554,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;文件夹内文件如下图示例
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915.png&#34;
 	width=&#34;1523&#34;
 	height=&#34;605&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_ff98d0af62152d15.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_3d86b0d0d39d9c39.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_ff98d0af62152d15.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204135043915_hu_3d86b0d0d39d9c39.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -595,10 +595,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;USB公对公实物示例图
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041.png&#34;
 	width=&#34;2225&#34;
 	height=&#34;1301&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_7432284047bdc2ee.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_ff5d740ca48aad7f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_7432284047bdc2ee.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_ff5d740ca48aad7f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -611,10 +611,10 @@ Accept and save as additional hostkey (keep the existing ones)接受并保存为
 &lt;/h2&gt;&lt;p&gt;2.1**打开硬件的MaskROM模式*&lt;br&gt;
 J1跳帽跳到Pin1-Pin2连接(MaskROM模式)&lt;br&gt;
 &lt;code&gt;注：默认Pin2-Pin3连接(非MaskROM模式)&lt;/code&gt;&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668.png&#34;
 	width=&#34;1688&#34;
 	height=&#34;1217&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_341048b5099af0bd.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_e0461217283e19dd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_341048b5099af0bd.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140912668_hu_e0461217283e19dd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -626,10 +626,10 @@ J1跳帽跳到Pin1-Pin2连接(MaskROM模式)&lt;br&gt;
 &lt;p&gt;2.2&lt;strong&gt;打开USB-OTG模式&lt;/strong&gt;&lt;br&gt;
 J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;code&gt;注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)&lt;/code&gt;&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011.png&#34;
 	width=&#34;1694&#34;
 	height=&#34;889&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_fa2ef9cbd37b9433.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_2e8f5354845ee0f9.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_fa2ef9cbd37b9433.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_2e8f5354845ee0f9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -641,10 +641,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;h2 id=&#34;3软件准备&#34;&gt;3.软件准备
 &lt;/h2&gt;&lt;h3 id=&#34;31安装驱动&#34;&gt;3.1安装驱动
 &lt;/h3&gt;&lt;p&gt;解压 DriverAssitant_v4.91.zip&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641.png&#34;
 	width=&#34;1760&#34;
 	height=&#34;558&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_5ac884f967577003.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_2cc3e002c81cd35f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_5ac884f967577003.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141108641_hu_2cc3e002c81cd35f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -654,10 +654,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 运行程序并安装驱动&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623.png&#34;
 	width=&#34;1661&#34;
 	height=&#34;635&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_2ce645f354acf027.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_e7ba8ce626fa1843.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_2ce645f354acf027.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141126623_hu_e7ba8ce626fa1843.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -668,10 +668,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;32运行烧写镜像程序&#34;&gt;3.2运行烧写镜像程序
 &lt;/h3&gt;&lt;p&gt;解压文件后进入 RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367.png&#34;
 	width=&#34;1622&#34;
 	height=&#34;954&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_6533a64d4cd6e59a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_362900b8881e016c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_6533a64d4cd6e59a.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141533367_hu_362900b8881e016c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -681,10 +681,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 确保烧写文件路径为当前目录的上一层目录的 rockdev 文件里的 Image 文件夹里的文件&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775.png&#34;
 	width=&#34;2997&#34;
 	height=&#34;1827&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_fa26c95554afbeda.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_d154b2b14dc00e3b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_fa26c95554afbeda.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141714775_hu_d154b2b14dc00e3b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -695,10 +695,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;4连接硬件上电&#34;&gt;4.连接硬件，上电
 &lt;/h2&gt;&lt;p&gt;设备接入USB，之后上电&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716.png&#34;
 	width=&#34;1679&#34;
 	height=&#34;1427&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_304809aa6e9a9f5a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_f7b92609de6fd4ba.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_304809aa6e9a9f5a.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_f7b92609de6fd4ba.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -708,10 +708,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 上电后在烧录软件软件看是否有&lt;strong&gt;发现一个MASKROM&lt;/strong&gt;字样&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1008&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_687aca3a30a8236d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_164910fa2f0ca93c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_687aca3a30a8236d.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142753565_hu_164910fa2f0ca93c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -722,10 +722,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;5退出maskrom模式&#34;&gt;5.退出MaskROM模式
 &lt;/h2&gt;&lt;p&gt;发现设备后需要退出MaskROM，将J1跳线帽跳回Pin2—Pin3，然后点击执行&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734.png&#34;
 	width=&#34;1685&#34;
 	height=&#34;945&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_9ac56b3aa70e5bf9.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_57b6b1fe9a1fed6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_9ac56b3aa70e5bf9.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142149734_hu_57b6b1fe9a1fed6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -734,10 +734,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;427px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018.png&#34;
 	width=&#34;2174&#34;
 	height=&#34;1013&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_33575ec3fc562cab.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_3138d10767028e69.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_33575ec3fc562cab.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142638018_hu_3138d10767028e69.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -746,10 +746,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;515px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_e1ff83970da848ba.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_b35fd4012f91e181.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_e1ff83970da848ba.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143152483_hu_b35fd4012f91e181.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -761,10 +761,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;h2 id=&#34;6最后操作&#34;&gt;6.最后操作
 &lt;/h2&gt;&lt;p&gt;完成后关闭程序，断开电源，&lt;strong&gt;关闭USB-OTG模式&lt;/strong&gt;（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）&lt;br&gt;
 连接串口线查看开机信息即可&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646.png&#34;
 	width=&#34;1472&#34;
 	height=&#34;936&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_b435d5a62d98d87f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_15eb95977d6d87b2.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_b435d5a62d98d87f.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_15eb95977d6d87b2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -773,10 +773,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;377px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564.png&#34;
 	width=&#34;2450&#34;
 	height=&#34;1636&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_571c6e5a518d6f62.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_5e2c2d24b3ef0453.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_571c6e5a518d6f62.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_5e2c2d24b3ef0453.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -792,10 +792,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;li&gt;USB线材问题&lt;/li&gt;
 &lt;li&gt;USB接口兼容性问题，更换电脑的USB接口尝试&lt;/li&gt;
 &lt;li&gt;开发工具问题，多试几次
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546.png&#34;
 	width=&#34;2169&#34;
 	height=&#34;1010&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_35598589c51e6169.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_57a088b26f198c08.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_35598589c51e6169.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204142904546_hu_57a088b26f198c08.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -834,10 +834,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;USB公对公实物示例图
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041.png&#34;
 	width=&#34;2225&#34;
 	height=&#34;1301&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_7432284047bdc2ee.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_ff5d740ca48aad7f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_7432284047bdc2ee.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140754041_hu_ff5d740ca48aad7f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -850,10 +850,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;/h2&gt;&lt;p&gt;2.1&lt;strong&gt;打开USB-OTG模式&lt;/strong&gt;
 J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;code&gt;注：默认跳线帽J4连接Pin2—Pin3(设置USB-host模式)&lt;/code&gt;&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011.png&#34;
 	width=&#34;1694&#34;
 	height=&#34;889&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_fa2ef9cbd37b9433.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_2e8f5354845ee0f9.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_fa2ef9cbd37b9433.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204140850011_hu_2e8f5354845ee0f9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -863,10 +863,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;2.2&lt;strong&gt;USB、Debug接口都需要与电脑连接&lt;/strong&gt;&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716.png&#34;
 	width=&#34;1679&#34;
 	height=&#34;1427&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_304809aa6e9a9f5a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_f7b92609de6fd4ba.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_304809aa6e9a9f5a.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204141753716_hu_f7b92609de6fd4ba.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -875,10 +875,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;282px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312.png&#34;
 	width=&#34;1148&#34;
 	height=&#34;1033&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_ad90770d9a98a19a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_10e935eb0762edfd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_ad90770d9a98a19a.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144706312_hu_10e935eb0762edfd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -889,10 +889,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;3上电操作&#34;&gt;3.上电操作
 &lt;/h2&gt;&lt;p&gt;上电，在debug窗口快速按Ctrl+C组合键，进入U-Boot&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299.png&#34;
 	width=&#34;1564&#34;
 	height=&#34;1170&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_920114e873359d45.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_df7d610d1ef2158c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_920114e873359d45.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145038299_hu_df7d610d1ef2158c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -902,10 +902,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 然后输入&lt;code&gt;download&lt;/code&gt;，进入到下载模式&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694.png&#34;
 	width=&#34;1501&#34;
 	height=&#34;675&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_69d29dee2cff04af.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_41a2e4dd7fb45b20.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_69d29dee2cff04af.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145148694_hu_41a2e4dd7fb45b20.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -917,10 +917,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;h2 id=&#34;4刷写系统&#34;&gt;4.刷写系统
 &lt;/h2&gt;&lt;p&gt;进入RKDevTool_Release 文件夹，运行 RKDevTool.exe 程序（参考方法一）&lt;br&gt;
 &lt;strong&gt;发现一个LOADER设备&lt;/strong&gt;，执行&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_bd898187d3140ff2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_1f9822adcbd28ae5.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_bd898187d3140ff2.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145515478_hu_1f9822adcbd28ae5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -929,10 +929,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;513px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_dcbc6e01c989c3d0.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_35f56edad94ba712.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_dcbc6e01c989c3d0.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204145642435_hu_35f56edad94ba712.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -941,10 +941,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;513px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.png&#34;
 	width=&#34;2176&#34;
 	height=&#34;1017&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_9c753a7d7686dc98.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_168ce255bdd6c011.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_9c753a7d7686dc98.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951_hu_168ce255bdd6c011.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -956,10 +956,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;h2 id=&#34;5最后操作&#34;&gt;5.最后操作
 &lt;/h2&gt;&lt;p&gt;烧录完成后断电&lt;strong&gt;关闭USB-OTG模式&lt;/strong&gt;（J4针脚跳帽设置为Pin2-Pin3连接-Host模式）&lt;br&gt;
 连接串口线查看开机信息即可&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646.png&#34;
 	width=&#34;1472&#34;
 	height=&#34;936&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_b435d5a62d98d87f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_15eb95977d6d87b2.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_b435d5a62d98d87f.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204144848646_hu_15eb95977d6d87b2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -968,10 +968,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;377px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564.png&#34;
 	width=&#34;2450&#34;
 	height=&#34;1636&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_571c6e5a518d6f62.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_5e2c2d24b3ef0453.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_571c6e5a518d6f62.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204143657564_hu_5e2c2d24b3ef0453.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -984,10 +984,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;/h1&gt;&lt;p&gt;&lt;strong&gt;注意：要先确定板子上当前系统为 Linux，如果当前板子上的系统为 Android 系统，则不能 用此方法，只能用“方法一”。&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;1生成updataimg&#34;&gt;1.生成updata.img
 &lt;/h2&gt;&lt;p&gt;在 PC 上双击运行“rockdev\”目录下的“mkupdate.bat”文件&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968.png&#34;
 	width=&#34;1584&#34;
 	height=&#34;1087&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_88eca8bdacb2af63.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_c8f81f2d40c8223c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_88eca8bdacb2af63.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_c8f81f2d40c8223c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -997,10 +997,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 耐心等待生成“rockdev\update.img”&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426.png&#34;
 	width=&#34;1582&#34;
 	height=&#34;830&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_fe7cf32de21f5a2f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_b273a27e6dfbca15.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_fe7cf32de21f5a2f.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_b273a27e6dfbca15.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1009,10 +1009,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;457px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480.png&#34;
 	width=&#34;1112&#34;
 	height=&#34;686&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_e2e3e7ec70b026a5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_88b309c8369b8997.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_e2e3e7ec70b026a5.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_88b309c8369b8997.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1030,10 +1030,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;li&gt;确认选项&lt;/li&gt;
 &lt;li&gt;开始创建&lt;/li&gt;
 &lt;li&gt;创建成功
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096.png&#34;
 	width=&#34;1820&#34;
 	height=&#34;916&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_6cde1ebdf78db682.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_d026f16645f9aa9a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_6cde1ebdf78db682.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151643096_hu_d026f16645f9aa9a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1045,10 +1045,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;3使用sd烧录系统&#34;&gt;3.使用SD烧录系统
 &lt;/h2&gt;&lt;p&gt;将SD卡插入SD卡槽，连接Debug线，上电自动刷写新系统，查看debug串口信息，等待烧录完成&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024.png&#34;
 	width=&#34;1539&#34;
 	height=&#34;1091&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_1eeebceb066add82.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_cc1a4072fbdb167f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_1eeebceb066add82.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151807024_hu_cc1a4072fbdb167f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1057,10 +1057,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;338px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011.png&#34;
 	width=&#34;1386&#34;
 	height=&#34;846&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_53754fb63e9df555.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_5a9333de10d71d2c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_53754fb63e9df555.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204152457011_hu_5a9333de10d71d2c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1073,10 +1073,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;h1 id=&#34;方法四ota文件升级&#34;&gt;方法四：OTA文件升级
 &lt;/h1&gt;&lt;h2 id=&#34;1生成updataimg-1&#34;&gt;1.生成updata.img
 &lt;/h2&gt;&lt;p&gt;在 PC 上双击运行“rockdev\”目录下的“mkupdate.bat”文件&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968.png&#34;
 	width=&#34;1584&#34;
 	height=&#34;1087&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_88eca8bdacb2af63.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_c8f81f2d40c8223c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_88eca8bdacb2af63.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150935968_hu_c8f81f2d40c8223c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1086,10 +1086,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 耐心等待生成“rockdev\update.img”&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426.png&#34;
 	width=&#34;1582&#34;
 	height=&#34;830&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_fe7cf32de21f5a2f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_b273a27e6dfbca15.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_fe7cf32de21f5a2f.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150957426_hu_b273a27e6dfbca15.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1098,10 +1098,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 		data-flex-basis=&#34;457px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480.png&#34;
 	width=&#34;1112&#34;
 	height=&#34;686&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_e2e3e7ec70b026a5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_88b309c8369b8997.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_e2e3e7ec70b026a5.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204151004480_hu_88b309c8369b8997.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1126,10 +1126,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;执行完update-ota后，系统会自动进行升级，过程中请勿断电
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010.png&#34;
 	width=&#34;1134&#34;
 	height=&#34;272&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_d437b925cbb5f12c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_671d2fa884d98ec5.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_d437b925cbb5f12c.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204163215010_hu_671d2fa884d98ec5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1139,10 +1139,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
 	
 &gt;
 烧录完成&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957.png&#34;
 	width=&#34;1510&#34;
 	height=&#34;729&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_5dec476cd872ff24.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_d7177b573b3fe7bb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_5dec476cd872ff24.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204153510957_hu_d7177b573b3fe7bb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -1156,10 +1156,10 @@ J4跳帽跳到Pin2-Pin4连接(设置USB-OTG模式)&lt;br&gt;
         </item>
         <item>
         <title>硬件接口详解</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</link>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</link>
         <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</guid>
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</guid>
         <description>&lt;h1 id=&#34;一总线&#34;&gt;一、总线
 &lt;/h1&gt;&lt;h2 id=&#34;串口&#34;&gt;串口
 &lt;/h2&gt;&lt;h3 id=&#34;uart&#34;&gt;UART
@@ -1555,7 +1555,7 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
           &lt;td&gt;接地&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;img src=&#34;https://dsmggm.github.io/index-20251128154828498.png&#34;
+          &lt;td&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/index-20251128154828498.png&#34;
 	
 	
 	
@@ -1574,7 +1574,7 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 &lt;/h3&gt;&lt;p&gt;起始位跟结束时在一个周期内进行突变来表示
 SCL高电平为传输数据模式，从主机会接收SDA的电平
 下面是示例图
-&lt;img src=&#34;https://dsmggm.github.io/index-20251128160514603.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/index-20251128160514603.png&#34;
 	
 	
 	
@@ -1583,7 +1583,7 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 	
 &gt;
 每个周期最后一位表示是否继续传输数据，以进行下一轮数据的发送
-&lt;img src=&#34;https://dsmggm.github.io/index-20251128160830160.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/index-20251128160830160.png&#34;
 	
 	
 	
@@ -1592,7 +1592,7 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 	
 &gt;
 怎么确定是读还是写，从第一组数据用来作为指针使用，包括是读模式还是写模式，以及设备编号（器件地址，根据芯片数据手册）
-&lt;img src=&#34;https://dsmggm.github.io/index-20251128161151099.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/index-20251128161151099.png&#34;
 	
 	
 	
@@ -1985,11 +1985,11 @@ WIFI模块、蓝牙模块&lt;/p&gt;
         </item>
         <item>
         <title>Jelina安装onboard屏幕软键盘SOP</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</link>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png" alt="Featured image of post Jelina安装onboard屏幕软键盘SOP" /&gt;&lt;h1 id=&#34;一安装onboard&#34;&gt;一、安装onboard
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png" alt="Featured image of post Jelina安装onboard屏幕软键盘SOP" /&gt;&lt;h1 id=&#34;一安装onboard&#34;&gt;一、安装onboard
 &lt;/h1&gt;&lt;h2 id=&#34;更新系统软件包&#34;&gt;更新系统软件包
 &lt;/h2&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -1999,10 +1999,10 @@ WIFI模块、蓝牙模块&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt updata
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image.png&#34;
 	width=&#34;1245&#34;
 	height=&#34;279&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_83434f98b670345b.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_1d114dccd1a83ad1.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_83434f98b670345b.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image_hu_1d114dccd1a83ad1.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2022,10 +2022,10 @@ WIFI模块、蓝牙模块&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;apt install onboard -y
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.png&#34;
 	width=&#34;1242&#34;
 	height=&#34;406&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_39945fa75b294f46.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_d673091f6c0511ce.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_39945fa75b294f46.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1_hu_d673091f6c0511ce.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2039,10 +2039,10 @@ WIFI模块、蓝牙模块&lt;/p&gt;
 &lt;h1 id=&#34;二设置onboard&#34;&gt;二、设置onboard
 &lt;/h1&gt;&lt;p&gt;在菜单设置中，选择onboard settings&lt;br&gt;
 Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2.png&#34;
 	width=&#34;1245&#34;
 	height=&#34;757&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_a96415cebd3200cb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_db69dd480de1d6f6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_a96415cebd3200cb.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-2_hu_db69dd480de1d6f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2054,10 +2054,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;
 将常规设置(General)中将Auto-show when editing text（在输入时自动显示软键盘）打勾
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3.png&#34;
 	width=&#34;1159&#34;
 	height=&#34;576&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_bae870d5a3f37ee4.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_6263fb2827e8486b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_bae870d5a3f37ee4.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-3_hu_6263fb2827e8486b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2068,10 +2068,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;482px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4.png&#34;
 	width=&#34;810&#34;
 	height=&#34;397&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_3c4343187ab5c36c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_64cc5644a1f2caea.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_3c4343187ab5c36c.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-4_hu_64cc5644a1f2caea.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2084,10 +2084,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h1 id=&#34;三设置onboard开机自动启动&#34;&gt;三、设置onboard开机自动启动
 &lt;/h1&gt;&lt;p&gt;在菜单中找到Settings&amp;ndash;&amp;gt;Session and Startup，将onboard添加到启动项中&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5.png&#34;
 	width=&#34;872&#34;
 	height=&#34;941&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_e60c81e4defba8d7.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_c12c0cf1ca99dcb2.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_e60c81e4defba8d7.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-5_hu_c12c0cf1ca99dcb2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2098,10 +2098,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;222px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6.png&#34;
 	width=&#34;1244&#34;
 	height=&#34;1185&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_5e8d2014e45268fb.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_f53305a25510fb75.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_5e8d2014e45268fb.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-6_hu_f53305a25510fb75.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2118,20 +2118,20 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
         </item>
         <item>
         <title>Jelina操作介绍</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</link>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4.png" alt="Featured image of post Jelina操作介绍" /&gt;&lt;h1 id=&#34;一jelinacloud注册&#34;&gt;一、JelinaCloud注册
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4.png" alt="Featured image of post Jelina操作介绍" /&gt;&lt;h1 id=&#34;一jelinacloud注册&#34;&gt;一、JelinaCloud注册
 &lt;/h1&gt;&lt;p&gt;JelinaCloud&lt;a class=&#34;link&#34; href=&#34;https://jelina.wise-iot-cloud.com/dashboard/login?type=register&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;注册链接&lt;/a&gt;地址：&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://jelina.wise-iot-cloud.com/dashboard/login?type=register&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://jelina.wise-iot-cloud.com/dashboard/login?type=register&lt;/a&gt;&lt;br&gt;
 在注册界面输入邮件等相关信息之后点击注册（邮箱用于登录跟验证）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image_hu_b4474cb788c134d5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image_hu_6d73582c2163b45d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image_hu_b4474cb788c134d5.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image_hu_6d73582c2163b45d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2143,10 +2143,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;登录邮箱，点击邮箱内容&lt;strong&gt;Click to activate&lt;/strong&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-1.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-1.png&#34;
 	width=&#34;2504&#34;
 	height=&#34;1141&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-1_hu_1c4734fe5ef2f244.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-1_hu_9fa13c4b66c09a4c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-1_hu_1c4734fe5ef2f244.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-1_hu_9fa13c4b66c09a4c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2161,10 +2161,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
     &gt;登录界面&lt;/a&gt;，输入用户名和密码进行登录&lt;/p&gt;
 &lt;h1 id=&#34;二jelinacloud舰队管理&#34;&gt;二、JelinaCloud舰队管理
 &lt;/h1&gt;&lt;p&gt;JelinaCloud舰队一般作为同类别群组管理，可以针对某类设备进行批量管理。
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-2.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-2.png&#34;
 	width=&#34;2156&#34;
 	height=&#34;1251&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-2_hu_34d90f7da7a7210c.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-2_hu_55edb6521ac0473a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-2_hu_34d90f7da7a7210c.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-2_hu_55edb6521ac0473a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2175,10 +2175,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;413px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-3.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-3.png&#34;
 	width=&#34;2021&#34;
 	height=&#34;1287&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-3_hu_86aea6422d472137.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-3_hu_dbac8a13b5263885.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-3_hu_86aea6422d472137.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-3_hu_dbac8a13b5263885.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2189,10 +2189,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;376px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4_hu_6cb240b641f21bba.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4_hu_e96a20bf39c716f6.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4_hu_6cb240b641f21bba.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-4_hu_e96a20bf39c716f6.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2203,10 +2203,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-5.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-5.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-5_hu_36ae6ef2066342f4.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-5_hu_acb97ebf7d08cab3.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-5_hu_36ae6ef2066342f4.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-5_hu_acb97ebf7d08cab3.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2218,10 +2218,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;概要&#34;&gt;概要
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-6.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-6.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-6_hu_5b4444a77d65dbb8.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-6_hu_65e93ff1c2aeddc9.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-6_hu_5b4444a77d65dbb8.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-6_hu_65e93ff1c2aeddc9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2235,10 +2235,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;h2 id=&#34;设备&#34;&gt;设备
 &lt;/h2&gt;&lt;p&gt;可进行批量操作，如：指定Release、指定增量包、重启、固定系统、固定内核、固定系统等&lt;br&gt;
 &lt;strong&gt;注：固定的作用为只可升级，不可降级&lt;/strong&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-7.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-7.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-7_hu_577a8588bfa8ffda.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-7_hu_670f3dd3823d7b90.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-7_hu_577a8588bfa8ffda.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-7_hu_670f3dd3823d7b90.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2251,10 +2251,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;release&#34;&gt;Release
 &lt;/h2&gt;&lt;p&gt;release的发布管理
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-8.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-8.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-8_hu_cb8814d8e01ebdcd.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-8_hu_d47829eddb5d2bb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-8_hu_cb8814d8e01ebdcd.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-8_hu_d47829eddb5d2bb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2267,10 +2267,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;环境增量&#34;&gt;环境增量
 &lt;/h2&gt;&lt;p&gt;增量包的发布管理
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-30.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-30.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-30_hu_d03e83c2bf2adde7.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-30_hu_2f56fb44c5629df5.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-30_hu_d03e83c2bf2adde7.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-30_hu_2f56fb44c5629df5.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2281,10 +2281,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-31.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-31.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-31_hu_75f48dc9a62624a6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-31_hu_7b4e740856419b4b.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-31_hu_75f48dc9a62624a6.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-31_hu_7b4e740856419b4b.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2295,10 +2295,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-32.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-32.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-32_hu_b0c9c086fcc4531.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-32_hu_58cb80b936d9a7bb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-32_hu_b0c9c086fcc4531.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-32_hu_58cb80b936d9a7bb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2311,10 +2311,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;操作&#34;&gt;操作
 &lt;/h2&gt;&lt;p&gt;舰队的操作管理，比如：修改设备类型，指定舰队Release、指定舰队增量包、生成注册密钥、重启、固定版本等
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-15.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-15.png&#34;
 	width=&#34;2574&#34;
 	height=&#34;1238&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-15_hu_2f9d9e0f699efca6.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-15_hu_500f12a104e21d5f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-15_hu_2f9d9e0f699efca6.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-15_hu_500f12a104e21d5f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2325,10 +2325,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;498px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-16.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-16.png&#34;
 	width=&#34;2601&#34;
 	height=&#34;1256&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-16_hu_40cd96b850bf74f7.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-16_hu_923c5bf4aa082071.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-16_hu_40cd96b850bf74f7.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-16_hu_923c5bf4aa082071.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2340,10 +2340,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;配置&#34;&gt;配置
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-17.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-17.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1998&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-17_hu_b679cab6a79b7505.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-17_hu_15b539fab4f01e35.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-17_hu_b679cab6a79b7505.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-17_hu_15b539fab4f01e35.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2356,10 +2356,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;其它&#34;&gt;其它
 &lt;/h2&gt;&lt;p&gt;公共服务变量
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-18.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-18.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-18_hu_14f726ec4e680f96.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-18_hu_3f2ef47cb9a9d441.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-18_hu_14f726ec4e680f96.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-18_hu_3f2ef47cb9a9d441.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2371,10 +2371,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;
 权限管理
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-19.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-19.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-19_hu_5f42db3b3f88da0a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-19_hu_52f342f7ede83467.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-19_hu_5f42db3b3f88da0a.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-19_hu_52f342f7ede83467.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2386,10 +2386,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;
 操作日志
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-20.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-20.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-20_hu_a9c0a0d57de906c5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-20_hu_49fcd5a312bcbf79.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-20_hu_a9c0a0d57de906c5.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-20_hu_49fcd5a312bcbf79.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2403,10 +2403,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;h1 id=&#34;三设备管理&#34;&gt;三、设备管理
 &lt;/h1&gt;&lt;p&gt;点击舰队、选择设备，可进入到对设备进行单独的操作&lt;br&gt;
 在此可以看到设备的运行状态，日志，远程桌面，修改设备名称等操作&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-21.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-21.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-21_hu_363ac2ae9ecdee1d.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-21_hu_d19ab8fde3a3797.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-21_hu_363ac2ae9ecdee1d.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-21_hu_d19ab8fde3a3797.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2417,10 +2417,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-22.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-22.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-22_hu_6e5fed196fed4cb3.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-22_hu_406e35ee2417934f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-22_hu_6e5fed196fed4cb3.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-22_hu_406e35ee2417934f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2433,10 +2433,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;远程桌面&#34;&gt;远程桌面
 &lt;/h2&gt;&lt;p&gt;远程桌面可以远程对桌面进行远程管理
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-23.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-23.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-23_hu_b7ff2e2837998406.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-23_hu_c3c7a792ea64325d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-23_hu_b7ff2e2837998406.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-23_hu_c3c7a792ea64325d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2447,10 +2447,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-24.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-24.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-24_hu_59ca3110352fadbf.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-24_hu_31649a394af8346a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-24_hu_59ca3110352fadbf.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-24_hu_31649a394af8346a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2461,10 +2461,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-25.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-25.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-25_hu_f564e948eb780630.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-25_hu_a42327650fbbd1b9.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-25_hu_f564e948eb780630.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-25_hu_a42327650fbbd1b9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2477,10 +2477,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;操作-1&#34;&gt;操作
 &lt;/h2&gt;&lt;p&gt;可单独对设备进行操作，比如：修改设备类型，指定舰队Release、指定舰队增量包、生成注册密钥、重启、固定版本等，舰队管理操作一样
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-26.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-26.png&#34;
 	width=&#34;2975&#34;
 	height=&#34;963&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-26_hu_f54505019bbcbcb2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-26_hu_46bb67ae94cb43c2.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-26_hu_f54505019bbcbcb2.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-26_hu_46bb67ae94cb43c2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2491,10 +2491,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;741px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-27.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-27.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-27_hu_5013d7c9cb5a4470.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-27_hu_da00cb091e08cb8c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-27_hu_5013d7c9cb5a4470.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-27_hu_da00cb091e08cb8c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2506,10 +2506,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;设备配置&#34;&gt;设备配置
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-28.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-28.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-28_hu_4f25954ee94340f1.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-28_hu_214e05a36f436080.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-28_hu_4f25954ee94340f1.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-28_hu_214e05a36f436080.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2521,10 +2521,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;私有服务变量&#34;&gt;私有服务变量
-&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-29.png&#34;
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-29.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-29_hu_731890ff7e982c8f.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-29_hu_3ddd3bff9de1dcda.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-29_hu_731890ff7e982c8f.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-29_hu_3ddd3bff9de1dcda.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2537,10 +2537,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h1 id=&#34;四release的创建说明&#34;&gt;四、Release的创建说明
 &lt;/h1&gt;&lt;p&gt;创建Release分2种，一种开发人员使用compose语法创建，一种使用可视化界面操作
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-9.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-9.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-9_hu_5fc47fb1a29298e8.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-9_hu_b3643272f506f8e0.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-9_hu_5fc47fb1a29298e8.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-9_hu_b3643272f506f8e0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2590,10 +2590,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;command&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/usr/bin/bash helloworld.sh&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;c&#34;&gt;#服务启动命令&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-11.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-11.png&#34;
 	width=&#34;1363&#34;
 	height=&#34;937&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-11_hu_c513a75b2e1dcbcc.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-11_hu_38c6a6e62a3b8d9e.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-11_hu_c513a75b2e1dcbcc.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-11_hu_38c6a6e62a3b8d9e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2606,10 +2606,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;2非开发人员模式&#34;&gt;2、非开发人员模式
 &lt;/h3&gt;&lt;p&gt;根据字段名填写配置
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-12.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-12.png&#34;
 	width=&#34;1336&#34;
 	height=&#34;921&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-12_hu_92267941383604c5.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-12_hu_fb6bdecde2b2b017.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-12_hu_92267941383604c5.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-12_hu_fb6bdecde2b2b017.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2622,10 +2622,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;发布&#34;&gt;发布
 &lt;/h3&gt;&lt;p&gt;添加后点击右边的发布按钮进行发布
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-13.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-13.png&#34;
 	width=&#34;1336&#34;
 	height=&#34;922&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-13_hu_8e20cb2897b2d976.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-13_hu_6b83233347e5f4f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-13_hu_8e20cb2897b2d976.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-13_hu_6b83233347e5f4f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2636,10 +2636,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;347px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-14.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-14.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-14_hu_422a1e7b797087c2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-14_hu_d982b8f51e7fa3a4.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-14_hu_422a1e7b797087c2.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/image-14_hu_d982b8f51e7fa3a4.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2654,10 +2654,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
         </item>
         <item>
         <title>Jelina常用命令</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
         <description>&lt;h1 id=&#34;jelina默认账密&#34;&gt;Jelina默认账密
 &lt;/h1&gt;&lt;h2 id=&#34;用户1&#34;&gt;用户1
 &lt;/h2&gt;&lt;p&gt;用户名： root&lt;br&gt;
@@ -2716,19 +2716,19 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
         </item>
         <item>
         <title>Jelina系统安装</title>
-        <link>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</link>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png" alt="Featured image of post Jelina系统安装" /&gt;&lt;h1 id=&#34;一系统下载&#34;&gt;一、系统下载
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png" alt="Featured image of post Jelina系统安装" /&gt;&lt;h1 id=&#34;一系统下载&#34;&gt;一、系统下载
 &lt;/h1&gt;&lt;p&gt;注册并登录JelinaCloud平台之后，在舰队中添加设备，选择对应的&lt;strong&gt;设备类型&lt;/strong&gt;与&lt;strong&gt;OS版本&lt;/strong&gt;&lt;br&gt;
 下面以&lt;strong&gt;RK3568 RSB-4810&lt;/strong&gt;设备&lt;strong&gt;Debian10 1.1.5&lt;/strong&gt;为例&lt;br&gt;
 选择后点击右下角下载&lt;br&gt;
 一般情况下都会使用&lt;strong&gt;With Configuration&lt;/strong&gt;带舰队配置文件的系统下载，安装后系统会自动加入对应的舰队，便于管理。&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image.png&#34;
 	width=&#34;2984&#34;
 	height=&#34;1649&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_25ceda204a14ebb2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_75e9181fedd0fdf9.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_25ceda204a14ebb2.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image_hu_75e9181fedd0fdf9.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2808,10 +2808,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;p&gt;打开JlinaFlasher工具，选择系统镜像文件，选择micro SD卡，点击下一步，点击烧录并等待完成即可&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1132&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_2c6e77e11a814f65.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_c3191962b8dbc5b7.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_2c6e77e11a814f65.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-1_hu_c3191962b8dbc5b7.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2822,10 +2822,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;381px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1123&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_b107046f9ad55105.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_a67eda709bd1a99c.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_b107046f9ad55105.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-2_hu_a67eda709bd1a99c.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2836,10 +2836,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;384px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1125&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_5784f329843284a2.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_c0c598df79915bad.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_5784f329843284a2.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-3_hu_c0c598df79915bad.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2850,10 +2850,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;383px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.png&#34;
 	width=&#34;1798&#34;
 	height=&#34;1130&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_36728630c91981e1.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_2803e925750a7655.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_36728630c91981e1.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4_hu_2803e925750a7655.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2867,10 +2867,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &lt;h1 id=&#34;三刷入系统&#34;&gt;三、刷入系统
 &lt;/h1&gt;&lt;p&gt;接好硬件，以下图片作为参考
 将&lt;strong&gt;串口&lt;/strong&gt;、&lt;strong&gt;micro SD&lt;/strong&gt;、&lt;strong&gt;Debug串口连接电脑&lt;/strong&gt;，最后再接通电源，网络可在稍后连接
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5.png&#34;
 	width=&#34;2102&#34;
 	height=&#34;1386&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_fef458f0e90f203.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_3d40b8391b03f40e.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_fef458f0e90f203.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-5_hu_3d40b8391b03f40e.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2889,10 +2889,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 4、波特率一般为115200&lt;br&gt;
 5、点击ok&lt;br&gt;
 没有报错就是连接成功，接着上电就能看到输出内容&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6.png&#34;
 	width=&#34;2997&#34;
 	height=&#34;1888&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_2493f24283790287.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_3a6e41c37f75b265.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_2493f24283790287.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-6_hu_3a6e41c37f75b265.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2903,10 +2903,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;380px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7.png&#34;
 	width=&#34;2999&#34;
 	height=&#34;1895&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_3d107b978b9a770b.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_2ec5f6b5cfa6d1fa.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_3d107b978b9a770b.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-7_hu_2ec5f6b5cfa6d1fa.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2918,10 +2918,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;
 接着会显示3秒的U-boot界面，默认会自动刷写Flash，既刷系统
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8.png&#34;
 	width=&#34;1125&#34;
 	height=&#34;394&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_41da44b36117b17e.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_f1f187d64e8bd8b8.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_41da44b36117b17e.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-8_hu_f1f187d64e8bd8b8.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2933,10 +2933,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;
 等待刷写完成
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9.png&#34;
 	width=&#34;2027&#34;
 	height=&#34;718&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_2e6ebf11e959ff0a.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_8d5b464510748bd0.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_2e6ebf11e959ff0a.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-9_hu_8d5b464510748bd0.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2948,10 +2948,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 	
 &gt;
 刷写完成倒计时30秒自动关机，拔出micro SD卡后重新上电即可开机使用&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10.png&#34;
 	width=&#34;2390&#34;
 	height=&#34;1595&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_256f6547fe6f4f30.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_fde40de5bec7affd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_256f6547fe6f4f30.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-10_hu_fde40de5bec7affd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;
@@ -2964,10 +2964,10 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 &gt;&lt;/p&gt;
 &lt;h1 id=&#34;四开机&#34;&gt;四、开机
 &lt;/h1&gt;&lt;p&gt;开机跑码后界面如下
-&lt;img src=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11.png&#34;
 	width=&#34;2390&#34;
 	height=&#34;1595&#34;
-	srcset=&#34;https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_51b1551c929580ab.png 480w, https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_295afe86fbf538dd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_51b1551c929580ab.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-11_hu_295afe86fbf538dd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;alt text&#34;

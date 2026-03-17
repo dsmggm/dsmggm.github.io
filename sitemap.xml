@@ -2,456 +2,468 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://dsmggm.github.io/</loc>
+    <loc>https://dsmggm.dpdns.org/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/categories/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/tags/help/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/page/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/tags/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/categories/%E5%B8%AE%E5%8A%A9/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/</loc>
+    <lastmod>2026-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/categories/linux/</loc>
+    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/tags/linux/</loc>
+    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/linux%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AEfor-debian/</loc>
+    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <lastmod>2026-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://dsmggm.dpdns.org/tags/openclaw/</loc>
     <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/</loc>
+    <loc>https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</loc>
     <lastmod>2026-03-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/linux/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/tags/linux/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/tags/openclaw/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/page/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/tags/</loc>
-    <lastmod>2026-03-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/tags/arm/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/arm/</loc>
     <lastmod>2026-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</loc>
+    <loc>https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2026-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/%E7%A0%94%E5%8D%8E/</loc>
+    <loc>https://dsmggm.dpdns.org/categories/%E7%A0%94%E5%8D%8E/</loc>
     <lastmod>2026-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%A0%94%E5%8D%8E/</loc>
     <lastmod>2026-01-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
+    <loc>https://dsmggm.dpdns.org/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2025-12-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/</loc>
     <lastmod>2025-12-04T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://dsmggm.dpdns.org/linux%E5%AE%89%E8%A3%85%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2025-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3/</loc>
     <lastmod>2025-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</loc>
     <lastmod>2025-11-27T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/jelina/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/jelina/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/jelinacloud/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/jelinacloud/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinacloud%E6%93%8D%E4%BD%9C%E4%BB%8B%E7%BB%8D/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://dsmggm.dpdns.org/linux%E5%9F%BA%E7%A1%80%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2025-11-20T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/windows/</loc>
+    <loc>https://dsmggm.dpdns.org/categories/windows/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/windows/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/windows/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</loc>
+    <loc>https://dsmggm.dpdns.org/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://dsmggm.dpdns.org/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</loc>
+    <loc>https://dsmggm.dpdns.org/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2025-11-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2025-11-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://dsmggm.github.io/tags/hugo/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/hugo/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/hugo/</loc>
+    <loc>https://dsmggm.dpdns.org/hugo/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/obsidian/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/obsidian/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/</loc>
+    <loc>https://dsmggm.dpdns.org/obsibian%E7%AC%94%E8%AE%B0%E8%AE%BE%E7%BD%AE%E8%AE%B0%E5%BD%95/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/other/</loc>
+    <loc>https://dsmggm.dpdns.org/categories/other/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2025-11-10T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/adguard/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/adguard/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/alpine/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/alpine/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>https://dsmggm.dpdns.org/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/alpine%E5%AE%89%E8%A3%85docker/</loc>
+    <loc>https://dsmggm.dpdns.org/alpine%E5%AE%89%E8%A3%85docker/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/alpine%E5%BC%80%E5%90%AFipv6/</loc>
+    <loc>https://dsmggm.dpdns.org/alpine%E5%BC%80%E5%90%AFipv6/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/anaconda/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/anaconda/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/anaconda%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/centos/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/centos/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/cloudflare/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/cloudflare/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/debian/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/debian/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/debian12%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
+    <loc>https://dsmggm.dpdns.org/debian12%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/categories/docker/</loc>
+    <loc>https://dsmggm.dpdns.org/categories/docker/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/docker/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/docker/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker-%E6%90%AD%E5%BB%BAjd_sgin/</loc>
+    <loc>https://dsmggm.dpdns.org/docker-%E6%90%AD%E5%BB%BAjd_sgin/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAhalo%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAhalo%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAiptv_api%E6%9C%AC%E5%9C%B0iptv%E8%B5%84%E6%BA%90/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAiptv_api%E6%9C%AC%E5%9C%B0iptv%E8%B5%84%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAjd_h5st/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAjd_h5st/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAkeepalived%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAkeepalived%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAmysql/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAmysql/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAntqq/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAntqq/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAredis%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAredis%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F%E6%BA%90%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E5%BF%AB%E9%80%9F%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E9%9D%92%E9%BE%99%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E9%9D%92%E9%BE%99%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/docker%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95/</loc>
+    <loc>https://dsmggm.dpdns.org/docker%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/halo/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/halo/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/iptv/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/iptv/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/ipv6/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/ipv6/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/iso/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/iso/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/jd/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/jd/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/jd_h5st/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/jd_h5st/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/k8s/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/k8s/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/keepalived/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/keepalived/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/kubernetes/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/kubernetes/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/labelimg/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/labelimg/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux-debian%E6%89%A9%E5%AE%B9%E6%A0%B9_%E5%88%86%E5%8C%BA%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86%E7%A4%BA%E4%BE%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/linux-debian%E6%89%A9%E5%AE%B9%E6%A0%B9_%E5%88%86%E5%8C%BA%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86%E7%A4%BA%E4%BE%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC/</loc>
+    <loc>https://dsmggm.dpdns.org/linux%E5%A4%87%E4%BB%BD%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/linux%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%BA%90/</loc>
+    <loc>https://dsmggm.dpdns.org/linux%E8%AE%BE%E7%BD%AE%E6%9C%AC%E5%9C%B0%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/mkisofs/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/mkisofs/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/mkisofs%E6%89%93%E5%8C%85iso%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4/</loc>
+    <loc>https://dsmggm.dpdns.org/mkisofs%E6%89%93%E5%8C%85iso%E9%95%9C%E5%83%8F%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/mysql/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/mysql/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</loc>
+    <loc>https://dsmggm.dpdns.org/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/nginx/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/nginx/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A%E8%AF%B4%E6%98%8E/</loc>
+    <loc>https://dsmggm.dpdns.org/nginx%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E6%B3%A8%E9%87%8A%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/ntqq/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/ntqq/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/openwrt/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/openwrt/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/openwrt%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%AE%9A%E5%88%B6%E5%B1%9E%E4%BA%8E%E4%BD%A0%E8%87%AA%E5%B7%B1%E7%9A%84openwrt/</loc>
+    <loc>https://dsmggm.dpdns.org/openwrt%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91%E5%AE%9A%E5%88%B6%E5%B1%9E%E4%BA%8E%E4%BD%A0%E8%87%AA%E5%B7%B1%E7%9A%84openwrt/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/python/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/python/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/qq/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/qq/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/redis/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/redis/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/shell/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/shell/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/sh%E8%84%9A%E6%9C%AC%E5%8F%82%E6%95%B0%E5%86%99%E6%B3%95/</loc>
+    <loc>https://dsmggm.dpdns.org/sh%E8%84%9A%E6%9C%AC%E5%8F%82%E6%95%B0%E5%86%99%E6%B3%95/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/sql%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/</loc>
+    <loc>https://dsmggm.dpdns.org/sql%E5%91%BD%E4%BB%A4%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/syncthing/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/syncthing/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/syncthing%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/</loc>
+    <loc>https://dsmggm.dpdns.org/syncthing%E5%BC%80%E6%BA%90%E5%85%8D%E8%B4%B9%E8%B7%A8%E5%B9%B3%E5%8F%B0%E7%9A%84%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5%E5%B7%A5%E5%85%B7%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/vim/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/vim/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <loc>https://dsmggm.dpdns.org/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/watchtower/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/watchtower/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/yolo/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/yolo/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
+    <loc>https://dsmggm.dpdns.org/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%A4%87%E4%BB%BD/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%A4%87%E4%BB%BD/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%9C%AC%E5%9C%B0%E6%BA%90/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%9C%AC%E5%9C%B0%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%83%A8%E7%BD%B2/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E9%83%A8%E7%BD%B2/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E9%83%A8%E7%BD%B2adguard%E5%8E%BB%E9%99%A4%E5%B1%80%E5%9F%9F%E7%BD%91%E5%B9%BF%E5%91%8A%E4%BB%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%AE%98%E6%96%B9%E6%AF%94%E8%BE%83%E6%9C%89%E7%94%A8%E7%9A%84%E8%A7%84%E5%88%99/</loc>
+    <loc>https://dsmggm.dpdns.org/%E9%83%A8%E7%BD%B2adguard%E5%8E%BB%E9%99%A4%E5%B1%80%E5%9F%9F%E7%BD%91%E5%B9%BF%E5%91%8A%E4%BB%A5%E5%8F%8A%E4%B8%80%E4%BA%9B%E5%AE%98%E6%96%B9%E6%AF%94%E8%BE%83%E6%9C%89%E7%94%A8%E7%9A%84%E8%A7%84%E5%88%99/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%AE%9A%E5%88%B6%E5%9B%BA%E4%BB%B6/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%AE%9A%E5%88%B6%E5%9B%BA%E4%BB%B6/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E8%84%9A%E6%9C%AC%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E8%81%8A%E5%A4%A9%E5%B7%A5%E5%85%B7/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E8%81%8A%E5%A4%A9%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%B5%81%E5%AA%92%E4%BD%93/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%B5%81%E5%AA%92%E4%BD%93/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%9B%BA%E4%BB%B6/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%9B%BA%E4%BB%B6/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%AD%BE%E5%88%B0/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%AD%BE%E5%88%B0/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    <loc>https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8cloudflare-r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-halo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/tags/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/</loc>
+    <loc>https://dsmggm.dpdns.org/tags/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/</loc>
     <lastmod>2025-11-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/archives/</loc>
+    <loc>https://dsmggm.dpdns.org/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://dsmggm.github.io/%E6%90%9C%E7%B4%A2/</loc>
+    <loc>https://dsmggm.dpdns.org/%E6%90%9C%E7%B4%A2/</loc>
   </url>
 </urlset>

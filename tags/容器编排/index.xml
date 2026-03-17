@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>容器编排 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</link>
         <description>Recent content in 容器编排 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>kubernetes(k8s)部署教程</title>
-        <link>https://dsmggm.github.io/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</link>
+        <link>https://dsmggm.dpdns.org/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</guid>
+        <guid>https://dsmggm.dpdns.org/kubernetesk8s%E9%83%A8%E7%BD%B2%E6%95%99%E7%A8%8B/</guid>
         <description>&lt;h1 id=&#34;kubernetes简单说明&#34;&gt;kubernetes简单说明
 &lt;/h1&gt;&lt;p&gt;一、工具介绍
 1、kubectl

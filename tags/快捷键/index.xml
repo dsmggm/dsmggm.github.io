@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>快捷键 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
         <description>Recent content in 快捷键 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>vim的一些快捷键</title>
-        <link>https://dsmggm.github.io/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+        <link>https://dsmggm.dpdns.org/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+        <guid>https://dsmggm.dpdns.org/vim%E7%9A%84%E4%B8%80%E4%BA%9B%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
         <description>&lt;h1 id=&#34;一快速跳转&#34;&gt;一、快速跳转
 &lt;/h1&gt;&lt;h3 id=&#34;1跳转到文件开头&#34;&gt;1、跳转到文件开头
 &lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;

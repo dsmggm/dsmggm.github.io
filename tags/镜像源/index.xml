@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>镜像源 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</link>
         <description>Recent content in 镜像源 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E6%BA%90/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>alpine3.21镜像源设置</title>
-        <link>https://dsmggm.github.io/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://dsmggm.dpdns.org/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</guid>
+        <guid>https://dsmggm.dpdns.org/alpine3.21%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</guid>
         <description>&lt;h1 id=&#34;镜像源设置路径&#34;&gt;镜像源设置路径
 &lt;/h1&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -62,10 +62,10 @@
         </item>
         <item>
         <title>debian12镜像源</title>
-        <link>https://dsmggm.github.io/debian12%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+        <link>https://dsmggm.dpdns.org/debian12%E9%95%9C%E5%83%8F%E6%BA%90/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/debian12%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+        <guid>https://dsmggm.dpdns.org/debian12%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
         <description>&lt;h1 id=&#34;一键更换命令&#34;&gt;一键更换命令
 &lt;/h1&gt;&lt;p&gt;复制下面的命令粘贴即可&lt;/p&gt;
 &lt;h3 id=&#34;阿里云镜像站&#34;&gt;阿里云镜像站
@@ -277,10 +277,10 @@
         </item>
         <item>
         <title>docker代理加速源设置</title>
-        <link>https://dsmggm.github.io/docker%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F%E6%BA%90%E8%AE%BE%E7%BD%AE/</link>
+        <link>https://dsmggm.dpdns.org/docker%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F%E6%BA%90%E8%AE%BE%E7%BD%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/docker%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F%E6%BA%90%E8%AE%BE%E7%BD%AE/</guid>
+        <guid>https://dsmggm.dpdns.org/docker%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F%E6%BA%90%E8%AE%BE%E7%BD%AE/</guid>
         <description>&lt;p&gt;目前测试可用的docker镜像源&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;

@@ -4,11 +4,11 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="docker-compose.yaml文件内容如下\n1 2 3 4 5 6 7 8 9 10 11 12 keepalived: image: openeuler/keepalived:latest container_name: keepalived restart: always network_mode: host cap_add: - NET_ADMIN # 需要网络管理权限 - NET_BROADCAST - NET_RAW volumes: - /data/docker/keepalived/conf:/etc/keepalived command: keepalived -f /etc/keepalived/keepalived.conf --dont-fork --log-console --log-detail keepalived.conf 配置文件如下\n">
 <title>docker搭建keepalived双机热备</title>
 
-<link rel='canonical' href='https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAkeepalived%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/'>
+<link rel='canonical' href='https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAkeepalived%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/'>
 
 <link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="docker搭建keepalived双机热备">
 <meta property='og:description' content="docker-compose.yaml文件内容如下\n1 2 3 4 5 6 7 8 9 10 11 12 keepalived: image: openeuler/keepalived:latest container_name: keepalived restart: always network_mode: host cap_add: - NET_ADMIN # 需要网络管理权限 - NET_BROADCAST - NET_RAW volumes: - /data/docker/keepalived/conf:/etc/keepalived command: keepalived -f /etc/keepalived/keepalived.conf --dont-fork --log-console --log-detail keepalived.conf 配置文件如下\n">
-<meta property='og:url' content='https://dsmggm.github.io/docker%E6%90%AD%E5%BB%BAkeepalived%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/'>
+<meta property='og:url' content='https://dsmggm.dpdns.org/docker%E6%90%AD%E5%BB%BAkeepalived%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/'>
 <meta property='og:site_name' content='dsmggm博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:tag' content='Docker' /><meta property='article:tag' content='Keepalived' /><meta property='article:tag' content='双机热备' /><meta property='article:tag' content='高可用' /><meta property='article:published_time' content='2025-11-01T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-01T00:00:00&#43;00:00'/>
 <meta name="twitter:title" content="docker搭建keepalived双机热备">
@@ -667,7 +667,7 @@
         cursor: pointer;
         width: 30px;
         height: 30px;
-        background-image: url(https://dsmggm.github.io/icons/backTop.svg);
+        background-image: url(https://dsmggm.dpdns.org/icons/backTop.svg);
     }
 </style>
 

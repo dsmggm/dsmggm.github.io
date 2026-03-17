@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Help on dsmggm博客</title>
+        <link>https://dsmggm.dpdns.org/tags/help/</link>
+        <description>Recent content in Help on dsmggm博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Dsmggm</copyright>
+        <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/help/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>修改主板BIOS的UUID与SN</title>
+        <link>https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/</link>
+        <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image.png" alt="Featured image of post 修改主板BIOS的UUID与SN" /&gt;&lt;h1 id=&#34;下载工具&#34;&gt;下载工具
+&lt;/h1&gt;&lt;p&gt;点击下载&lt;a class=&#34;link&#34; href=&#34;https://dsmggm.dpdns.org/download/%e4%bf%ae%e6%94%b9%e4%b8%bb%e6%9d%bfBIOS%e7%9a%84UUID%e4%b8%8eSN/AMIDEWINx64.zip&#34; &gt;AMIDEWINx64&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;查看当前uuid与sn&#34;&gt;查看当前UUID与SN
+&lt;/h1&gt;&lt;p&gt;以&lt;strong&gt;管理员权限&lt;/strong&gt;打开&lt;code&gt;查看当前UUID与SN&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image.png&#34;
+	width=&#34;2223&#34;
+	height=&#34;1157&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image_hu_f864a47af273076a.png 480w, https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image_hu_b05ac7d60e10c24d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;192&#34;
+		data-flex-basis=&#34;461px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;修改主板sn&#34;&gt;修改主板SN
+&lt;/h1&gt;&lt;p&gt;以&lt;strong&gt;管理员权限&lt;/strong&gt;打开&lt;code&gt;修改主板SN&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-1.png&#34;
+	width=&#34;1775&#34;
+	height=&#34;536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-1_hu_2af4d3d31472c59c.png 480w, https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-1_hu_136034df3beeed66.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;331&#34;
+		data-flex-basis=&#34;794px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;修改主板uuid&#34;&gt;修改主板UUID
+&lt;/h1&gt;&lt;p&gt;以&lt;strong&gt;管理员权限&lt;/strong&gt;打开&lt;code&gt;修改主板UUID&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-2.png&#34;
+	width=&#34;1946&#34;
+	height=&#34;686&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-2_hu_5b91539a0a263123.png 480w, https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-2_hu_9a8966795f1edef3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;283&#34;
+		data-flex-basis=&#34;680px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;重启&#34;&gt;重启
+&lt;/h1&gt;&lt;p&gt;以上修改操作均需要重启电脑&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

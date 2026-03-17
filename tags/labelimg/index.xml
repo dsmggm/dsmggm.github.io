@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>LabelImg on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/labelimg/</link>
+        <link>https://dsmggm.dpdns.org/tags/labelimg/</link>
         <description>Recent content in LabelImg on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/labelimg/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/labelimg/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>YOLO目标检测模型训练</title>
-        <link>https://dsmggm.github.io/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</link>
+        <link>https://dsmggm.dpdns.org/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</guid>
+        <guid>https://dsmggm.dpdns.org/yolo%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</guid>
         <description>&lt;p&gt;本教程使用开源项目为&lt;a class=&#34;link&#34; href=&#34;https://github.com/81NewArk/AntiCAP_trainer&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;AntiCAP_trainer&lt;/a&gt;进行训练，使用&lt;a class=&#34;link&#34; href=&#34;https://github.com/HumanSignal/labelImg&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;labelImg&lt;/a&gt;进行标注&lt;/p&gt;

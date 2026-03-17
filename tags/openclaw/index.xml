@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Openclaw on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/openclaw/</link>
+        <link>https://dsmggm.dpdns.org/tags/openclaw/</link>
         <description>Recent content in Openclaw on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/openclaw/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/openclaw/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>openclaw部署与命令帮助</title>
-        <link>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</link>
+        <link>https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</link>
         <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</guid>
-        <description>&lt;img src="https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864.png" alt="Featured image of post openclaw部署与命令帮助" /&gt;&lt;h1 id=&#34;安装&#34;&gt;安装
+        <guid>https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864.png" alt="Featured image of post openclaw部署与命令帮助" /&gt;&lt;h1 id=&#34;安装&#34;&gt;安装
 &lt;/h1&gt;&lt;p&gt;使用root用户ssh远程到linux，复制下面命令到ssh终端&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
@@ -25,10 +25,10 @@
 &lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;curl -fsSL https://openclaw.ai/install.sh &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; bash
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111014802.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111014802.png&#34;
 	width=&#34;2104&#34;
 	height=&#34;808&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111014802_hu_6f53c20f96b57b2a.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111014802_hu_a9bcfdc12b34e659.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111014802_hu_6f53c20f96b57b2a.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111014802_hu_a9bcfdc12b34e659.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;572&#34;
@@ -39,10 +39,10 @@
 		data-flex-basis=&#34;624px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111934426.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111934426.png&#34;
 	width=&#34;2491&#34;
 	height=&#34;1636&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111934426_hu_ed10fa2bed0b14d2.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111934426_hu_dbf19889ceea506a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111934426_hu_ed10fa2bed0b14d2.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312111934426_hu_dbf19889ceea506a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -64,10 +64,10 @@
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;1、选YES&lt;br&gt;
 2、选QuickStart&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022.png&#34;
 	width=&#34;2070&#34;
 	height=&#34;781&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022_hu_d57bb20fc2498f12.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022_hu_84d707b948e8f379.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022_hu_d57bb20fc2498f12.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112340022_hu_84d707b948e8f379.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -78,10 +78,10 @@
 &gt;
 3、对接大模型，选Z.AI（智谱）&lt;br&gt;
 4、国内选Coding-Plan-CN&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351.png&#34;
 	width=&#34;1550&#34;
 	height=&#34;405&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351_hu_15474e27b41edecd.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351_hu_67d3446e615a721a.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351_hu_15474e27b41edecd.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112500351_hu_67d3446e615a721a.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -94,10 +94,10 @@
 6、右键粘贴智谱的API&lt;br&gt;
 申请地址：&lt;a class=&#34;link&#34; href=&#34;https://www.bigmodel.cn/invite?icode=V40hHBW8TpgkSWTfwD8i3nHEaazDlIZGj9HxftzTbt4%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://www.bigmodel.cn/invite?icode=V40hHBW8TpgkSWTfwD8i3nHEaazDlIZGj9HxftzTbt4%3D&lt;/a&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711.png&#34;
 	width=&#34;1289&#34;
 	height=&#34;239&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711_hu_458606a54530786f.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711_hu_592d90820263ebfb.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711_hu_458606a54530786f.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112715711_hu_592d90820263ebfb.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -107,10 +107,10 @@
 	
 &gt;
 7、选择模型，例如免费的zai/glm-4.7-flash&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202.png&#34;
 	width=&#34;1409&#34;
 	height=&#34;529&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202_hu_b9205c80d0fd3d63.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202_hu_e526dca467c7dd9f.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202_hu_b9205c80d0fd3d63.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112803202_hu_e526dca467c7dd9f.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -120,10 +120,10 @@
 	
 &gt;
 8、对接机器人渠道，先选Skip for now&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414.png&#34;
 	width=&#34;1946&#34;
 	height=&#34;803&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414_hu_82abcfbfb83c96f5.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414_hu_245dfc60f8d5c5fd.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414_hu_82abcfbfb83c96f5.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112843414_hu_245dfc60f8d5c5fd.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -133,10 +133,10 @@
 	
 &gt;
 9、搜素引擎选Skip for now跳过配置&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903.png&#34;
 	width=&#34;1388&#34;
 	height=&#34;290&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903_hu_6f745c19109230ba.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903_hu_7fcdd6c9347ac072.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903_hu_6f745c19109230ba.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112912903_hu_7fcdd6c9347ac072.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -146,10 +146,10 @@
 	
 &gt;
 10、skiis配置跳过，选no&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903.png&#34;
 	width=&#34;857&#34;
 	height=&#34;108&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903_hu_7ced7ad2c715b587.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903_hu_793aafdeb0c35208.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903_hu_7ced7ad2c715b587.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312112959903_hu_793aafdeb0c35208.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -159,10 +159,10 @@
 	
 &gt;
 11、hooks选Skip for now（空格选择，回车）&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317.png&#34;
 	width=&#34;873&#34;
 	height=&#34;259&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317_hu_e88151526113e911.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317_hu_7061f940c7819e6d.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317_hu_e88151526113e911.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312113049317_hu_7061f940c7819e6d.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -188,10 +188,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw plugins install @wecom/wecom-openclaw-plugin
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864.png&#34;
 	width=&#34;2502&#34;
 	height=&#34;504&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864_hu_da29fb1cca2dc83d.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864_hu_42f248183a03bbf2.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864_hu_da29fb1cca2dc83d.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115422864_hu_42f248183a03bbf2.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -210,10 +210,10 @@
 &lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;openclaw config &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; channels.wecom.botId &amp;lt;BotID&amp;gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; openclaw config &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; channels.wecom.secret &amp;lt;Secret&amp;gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; openclaw config &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; channels.wecom.enabled &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; openclaw gateway restart
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115736080.png&#34;
+&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115736080.png&#34;
 	width=&#34;2493&#34;
 	height=&#34;918&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115736080_hu_62885e8ee79a1e3d.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115736080_hu_41e0bac9a2091598.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115736080_hu_62885e8ee79a1e3d.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312115736080_hu_41e0bac9a2091598.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -224,10 +224,10 @@
 &gt;&lt;/p&gt;
 &lt;h1 id=&#34;授权用户&#34;&gt;授权用户
 &lt;/h1&gt;&lt;p&gt;等一会儿，到机器人发送你好，机器人会回复授权码&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120133018.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120133018.png&#34;
 	width=&#34;2149&#34;
 	height=&#34;1080&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120133018_hu_444e8737a695bfa0.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120133018_hu_1501a9b983cbe1af.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120133018_hu_444e8737a695bfa0.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120133018_hu_1501a9b983cbe1af.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -237,10 +237,10 @@
 	
 &gt;
 将授权码命令粘贴到终端执行即可正常使用&lt;br&gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803.png&#34;
 	width=&#34;2511&#34;
 	height=&#34;259&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803_hu_9f4ba5558748a1b2.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803_hu_d967db0ba87b1085.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803_hu_9f4ba5558748a1b2.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120315803_hu_d967db0ba87b1085.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	
@@ -249,10 +249,10 @@
 		data-flex-basis=&#34;2326px&#34;
 	
 &gt;
-&lt;img src=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120524557.png&#34;
+&lt;img src=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120524557.png&#34;
 	width=&#34;2115&#34;
 	height=&#34;943&#34;
-	srcset=&#34;https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120524557_hu_cba2c37e3822b78c.png 480w, https://dsmggm.github.io/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120524557_hu_232b6b83d233a078.png 1024w&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120524557_hu_cba2c37e3822b78c.png 480w, https://dsmggm.dpdns.org/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9/openclaw%E9%83%A8%E7%BD%B2%E4%B8%8E%E5%91%BD%E4%BB%A4%E5%B8%AE%E5%8A%A9-20260312120524557_hu_232b6b83d233a078.png 1024w&#34;
 	loading=&#34;lazy&#34;
 	
 	

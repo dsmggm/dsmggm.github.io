@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>安装教程 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <description>Recent content in 安装教程 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>linux安装mysql8.1.0教程</title>
-        <link>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/</link>
+        <link>https://dsmggm.dpdns.org/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/</guid>
+        <guid>https://dsmggm.dpdns.org/linux%E5%AE%89%E8%A3%85mysql8.1.0%E6%95%99%E7%A8%8B/</guid>
         <description>&lt;h1 id=&#34;mysql下载地址&#34;&gt;mysql下载地址
 &lt;/h1&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://downloads.mysql.com/archives/community/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;https://downloads.mysql.com/archives/community/&lt;/a&gt;&lt;/p&gt;

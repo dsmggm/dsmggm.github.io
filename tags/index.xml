@@ -2,729 +2,737 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/</link>
+        <link>https://dsmggm.dpdns.org/tags/</link>
         <description>Recent content in Tags on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 12 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 17 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Help</title>
+        <link>https://dsmggm.dpdns.org/tags/help/</link>
+        <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/help/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Linux</title>
-        <link>https://dsmggm.github.io/tags/linux/</link>
-        <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+        <link>https://dsmggm.dpdns.org/tags/linux/</link>
+        <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/linux/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Openclaw</title>
-        <link>https://dsmggm.github.io/tags/openclaw/</link>
-        <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/openclaw/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Arm</title>
-        <link>https://dsmggm.github.io/tags/arm/</link>
-        <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/arm/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>研华</title>
-        <link>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</link>
-        <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/%E7%A0%94%E5%8D%8E/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>桌面环境</title>
-        <link>https://dsmggm.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
-        <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Jelina</title>
-        <link>https://dsmggm.github.io/tags/jelina/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/jelina/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>JelinaCloud</title>
-        <link>https://dsmggm.github.io/tags/jelinacloud/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/jelinacloud/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Windows</title>
-        <link>https://dsmggm.github.io/tags/windows/</link>
-        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/windows/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>脚本</title>
-        <link>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC/</link>
-        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/linux/</guid>
         <description></description>
         </item>
         <item>
         <title>网络</title>
-        <link>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Mon, 16 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/%E7%BD%91%E7%BB%9C/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Openclaw</title>
+        <link>https://dsmggm.dpdns.org/tags/openclaw/</link>
+        <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/openclaw/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Arm</title>
+        <link>https://dsmggm.dpdns.org/tags/arm/</link>
+        <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/arm/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>研华</title>
+        <link>https://dsmggm.dpdns.org/tags/%E7%A0%94%E5%8D%8E/</link>
+        <pubDate>Wed, 21 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/%E7%A0%94%E5%8D%8E/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>桌面环境</title>
+        <link>https://dsmggm.dpdns.org/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</link>
+        <pubDate>Thu, 27 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/%E6%A1%8C%E9%9D%A2%E7%8E%AF%E5%A2%83/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Jelina</title>
+        <link>https://dsmggm.dpdns.org/tags/jelina/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/jelina/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>JelinaCloud</title>
+        <link>https://dsmggm.dpdns.org/tags/jelinacloud/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/jelinacloud/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Windows</title>
+        <link>https://dsmggm.dpdns.org/tags/windows/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/windows/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>脚本</title>
+        <link>https://dsmggm.dpdns.org/tags/%E8%84%9A%E6%9C%AC/</link>
+        <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/tags/%E8%84%9A%E6%9C%AC/</guid>
         <description></description>
         </item>
         <item>
         <title>文件夹</title>
-        <link>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%96%87%E4%BB%B6%E5%A4%B9/</guid>
         <description></description>
         </item>
         <item>
         <title>优化</title>
-        <link>https://dsmggm.github.io/tags/%E4%BC%98%E5%8C%96/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%BC%98%E5%8C%96/</link>
         <pubDate>Wed, 19 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E4%BC%98%E5%8C%96/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E4%BC%98%E5%8C%96/</guid>
         <description></description>
         </item>
         <item>
         <title>Hugo</title>
-        <link>https://dsmggm.github.io/tags/hugo/</link>
+        <link>https://dsmggm.dpdns.org/tags/hugo/</link>
         <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/hugo/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/hugo/</guid>
         <description></description>
         </item>
         <item>
         <title>Obsidian</title>
-        <link>https://dsmggm.github.io/tags/obsidian/</link>
+        <link>https://dsmggm.dpdns.org/tags/obsidian/</link>
         <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/obsidian/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/obsidian/</guid>
         <description></description>
         </item>
         <item>
         <title>笔记</title>
-        <link>https://dsmggm.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%AC%94%E8%AE%B0/</link>
         <pubDate>Mon, 10 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%AC%94%E8%AE%B0/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%AC%94%E8%AE%B0/</guid>
         <description></description>
         </item>
         <item>
         <title>AdGuard</title>
-        <link>https://dsmggm.github.io/tags/adguard/</link>
+        <link>https://dsmggm.dpdns.org/tags/adguard/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/adguard/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/adguard/</guid>
         <description></description>
         </item>
         <item>
         <title>Alpine</title>
-        <link>https://dsmggm.github.io/tags/alpine/</link>
+        <link>https://dsmggm.dpdns.org/tags/alpine/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/alpine/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/alpine/</guid>
         <description></description>
         </item>
         <item>
         <title>Anaconda</title>
-        <link>https://dsmggm.github.io/tags/anaconda/</link>
+        <link>https://dsmggm.dpdns.org/tags/anaconda/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/anaconda/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/anaconda/</guid>
         <description></description>
         </item>
         <item>
         <title>CentOS</title>
-        <link>https://dsmggm.github.io/tags/centos/</link>
+        <link>https://dsmggm.dpdns.org/tags/centos/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/centos/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/centos/</guid>
         <description></description>
         </item>
         <item>
         <title>Cloudflare</title>
-        <link>https://dsmggm.github.io/tags/cloudflare/</link>
+        <link>https://dsmggm.dpdns.org/tags/cloudflare/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/cloudflare/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/cloudflare/</guid>
         <description></description>
         </item>
         <item>
         <title>Debian</title>
-        <link>https://dsmggm.github.io/tags/debian/</link>
+        <link>https://dsmggm.dpdns.org/tags/debian/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/debian/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/debian/</guid>
         <description></description>
         </item>
         <item>
         <title>Docker</title>
-        <link>https://dsmggm.github.io/tags/docker/</link>
+        <link>https://dsmggm.dpdns.org/tags/docker/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/docker/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/docker/</guid>
         <description></description>
         </item>
         <item>
         <title>Halo</title>
-        <link>https://dsmggm.github.io/tags/halo/</link>
+        <link>https://dsmggm.dpdns.org/tags/halo/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/halo/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/halo/</guid>
         <description></description>
         </item>
         <item>
         <title>IPTV</title>
-        <link>https://dsmggm.github.io/tags/iptv/</link>
+        <link>https://dsmggm.dpdns.org/tags/iptv/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/iptv/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/iptv/</guid>
         <description></description>
         </item>
         <item>
         <title>IPv6</title>
-        <link>https://dsmggm.github.io/tags/ipv6/</link>
+        <link>https://dsmggm.dpdns.org/tags/ipv6/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/ipv6/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/ipv6/</guid>
         <description></description>
         </item>
         <item>
         <title>ISO</title>
-        <link>https://dsmggm.github.io/tags/iso/</link>
+        <link>https://dsmggm.dpdns.org/tags/iso/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/iso/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/iso/</guid>
         <description></description>
         </item>
         <item>
         <title>JD</title>
-        <link>https://dsmggm.github.io/tags/jd/</link>
+        <link>https://dsmggm.dpdns.org/tags/jd/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/jd/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/jd/</guid>
         <description></description>
         </item>
         <item>
         <title>Jd_h5st</title>
-        <link>https://dsmggm.github.io/tags/jd_h5st/</link>
+        <link>https://dsmggm.dpdns.org/tags/jd_h5st/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/jd_h5st/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/jd_h5st/</guid>
         <description></description>
         </item>
         <item>
         <title>K8s</title>
-        <link>https://dsmggm.github.io/tags/k8s/</link>
+        <link>https://dsmggm.dpdns.org/tags/k8s/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/k8s/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/k8s/</guid>
         <description></description>
         </item>
         <item>
         <title>Keepalived</title>
-        <link>https://dsmggm.github.io/tags/keepalived/</link>
+        <link>https://dsmggm.dpdns.org/tags/keepalived/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/keepalived/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/keepalived/</guid>
         <description></description>
         </item>
         <item>
         <title>Kubernetes</title>
-        <link>https://dsmggm.github.io/tags/kubernetes/</link>
+        <link>https://dsmggm.dpdns.org/tags/kubernetes/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/kubernetes/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/kubernetes/</guid>
         <description></description>
         </item>
         <item>
         <title>LabelImg</title>
-        <link>https://dsmggm.github.io/tags/labelimg/</link>
+        <link>https://dsmggm.dpdns.org/tags/labelimg/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/labelimg/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/labelimg/</guid>
         <description></description>
         </item>
         <item>
         <title>Mkisofs</title>
-        <link>https://dsmggm.github.io/tags/mkisofs/</link>
+        <link>https://dsmggm.dpdns.org/tags/mkisofs/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/mkisofs/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/mkisofs/</guid>
         <description></description>
         </item>
         <item>
         <title>MySQL</title>
-        <link>https://dsmggm.github.io/tags/mysql/</link>
+        <link>https://dsmggm.dpdns.org/tags/mysql/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/mysql/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/mysql/</guid>
         <description></description>
         </item>
         <item>
         <title>Nginx</title>
-        <link>https://dsmggm.github.io/tags/nginx/</link>
+        <link>https://dsmggm.dpdns.org/tags/nginx/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/nginx/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/nginx/</guid>
         <description></description>
         </item>
         <item>
         <title>Ntqq</title>
-        <link>https://dsmggm.github.io/tags/ntqq/</link>
+        <link>https://dsmggm.dpdns.org/tags/ntqq/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/ntqq/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/ntqq/</guid>
         <description></description>
         </item>
         <item>
         <title>OpenWrt</title>
-        <link>https://dsmggm.github.io/tags/openwrt/</link>
+        <link>https://dsmggm.dpdns.org/tags/openwrt/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/openwrt/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/openwrt/</guid>
         <description></description>
         </item>
         <item>
         <title>Python</title>
-        <link>https://dsmggm.github.io/tags/python/</link>
+        <link>https://dsmggm.dpdns.org/tags/python/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/python/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/python/</guid>
         <description></description>
         </item>
         <item>
         <title>QQ</title>
-        <link>https://dsmggm.github.io/tags/qq/</link>
+        <link>https://dsmggm.dpdns.org/tags/qq/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/qq/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/qq/</guid>
         <description></description>
         </item>
         <item>
         <title>R2对象存储</title>
-        <link>https://dsmggm.github.io/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</link>
+        <link>https://dsmggm.dpdns.org/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/r2%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8/</guid>
         <description></description>
         </item>
         <item>
         <title>Redis</title>
-        <link>https://dsmggm.github.io/tags/redis/</link>
+        <link>https://dsmggm.dpdns.org/tags/redis/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/redis/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/redis/</guid>
         <description></description>
         </item>
         <item>
         <title>Shell</title>
-        <link>https://dsmggm.github.io/tags/shell/</link>
+        <link>https://dsmggm.dpdns.org/tags/shell/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/shell/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/shell/</guid>
         <description></description>
         </item>
         <item>
         <title>Syncthing</title>
-        <link>https://dsmggm.github.io/tags/syncthing/</link>
+        <link>https://dsmggm.dpdns.org/tags/syncthing/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/syncthing/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/syncthing/</guid>
         <description></description>
         </item>
         <item>
         <title>Vim</title>
-        <link>https://dsmggm.github.io/tags/vim/</link>
+        <link>https://dsmggm.dpdns.org/tags/vim/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/vim/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/vim/</guid>
         <description></description>
         </item>
         <item>
         <title>Watchtower</title>
-        <link>https://dsmggm.github.io/tags/watchtower/</link>
+        <link>https://dsmggm.dpdns.org/tags/watchtower/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/watchtower/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/watchtower/</guid>
         <description></description>
         </item>
         <item>
         <title>Web服务器</title>
-        <link>https://dsmggm.github.io/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <link>https://dsmggm.dpdns.org/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/web%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
         <description></description>
         </item>
         <item>
         <title>YOLO</title>
-        <link>https://dsmggm.github.io/tags/yolo/</link>
+        <link>https://dsmggm.dpdns.org/tags/yolo/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/yolo/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/yolo/</guid>
         <description></description>
         </item>
         <item>
         <title>安装脚本</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E8%84%9A%E6%9C%AC/</guid>
         <description></description>
         </item>
         <item>
         <title>安装教程</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
         <description></description>
         </item>
         <item>
         <title>包管理</title>
-        <link>https://dsmggm.github.io/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%8C%85%E7%AE%A1%E7%90%86/</guid>
         <description></description>
         </item>
         <item>
         <title>备份</title>
-        <link>https://dsmggm.github.io/tags/%E5%A4%87%E4%BB%BD/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%A4%87%E4%BB%BD/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%A4%87%E4%BB%BD/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%A4%87%E4%BB%BD/</guid>
         <description></description>
         </item>
         <item>
         <title>本地源</title>
-        <link>https://dsmggm.github.io/tags/%E6%9C%AC%E5%9C%B0%E6%BA%90/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%9C%AC%E5%9C%B0%E6%BA%90/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%9C%AC%E5%9C%B0%E6%BA%90/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%9C%AC%E5%9C%B0%E6%BA%90/</guid>
         <description></description>
         </item>
         <item>
         <title>博客搭建</title>
-        <link>https://dsmggm.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</guid>
         <description></description>
         </item>
         <item>
         <title>部署</title>
-        <link>https://dsmggm.github.io/tags/%E9%83%A8%E7%BD%B2/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%83%A8%E7%BD%B2/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E9%83%A8%E7%BD%B2/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E9%83%A8%E7%BD%B2/</guid>
         <description></description>
         </item>
         <item>
         <title>磁盘管理</title>
-        <link>https://dsmggm.github.io/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/</guid>
         <description></description>
         </item>
         <item>
         <title>代理加速</title>
-        <link>https://dsmggm.github.io/tags/%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9F/</guid>
         <description></description>
         </item>
         <item>
         <title>定制固件</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%9A%E5%88%B6%E5%9B%BA%E4%BB%B6/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%9A%E5%88%B6%E5%9B%BA%E4%BB%B6/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%AE%9A%E5%88%B6%E5%9B%BA%E4%BB%B6/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%AE%9A%E5%88%B6%E5%9B%BA%E4%BB%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>分区扩容</title>
-        <link>https://dsmggm.github.io/tags/%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%88%86%E5%8C%BA%E6%89%A9%E5%AE%B9/</guid>
         <description></description>
         </item>
         <item>
         <title>服务器</title>
-        <link>https://dsmggm.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
         <description></description>
         </item>
         <item>
         <title>高可用</title>
-        <link>https://dsmggm.github.io/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E9%AB%98%E5%8F%AF%E7%94%A8/</guid>
         <description></description>
         </item>
         <item>
         <title>互为主从</title>
-        <link>https://dsmggm.github.io/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</guid>
         <description></description>
         </item>
         <item>
         <title>环境管理</title>
-        <link>https://dsmggm.github.io/tags/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%8E%AF%E5%A2%83%E7%AE%A1%E7%90%86/</guid>
         <description></description>
         </item>
         <item>
         <title>机器学习</title>
-        <link>https://dsmggm.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/</guid>
         <description></description>
         </item>
         <item>
         <title>脚本管理</title>
-        <link>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC%E7%AE%A1%E7%90%86/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E8%84%9A%E6%9C%AC%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E8%84%9A%E6%9C%AC%E7%AE%A1%E7%90%86/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E8%84%9A%E6%9C%AC%E7%AE%A1%E7%90%86/</guid>
         <description></description>
         </item>
         <item>
         <title>镜像源</title>
-        <link>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E6%BA%90/</guid>
         <description></description>
         </item>
         <item>
         <title>镜像制作</title>
-        <link>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E9%95%9C%E5%83%8F%E5%88%B6%E4%BD%9C/</guid>
         <description></description>
         </item>
         <item>
         <title>快捷键</title>
-        <link>https://dsmggm.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
         <description></description>
         </item>
         <item>
         <title>聊天工具</title>
-        <link>https://dsmggm.github.io/tags/%E8%81%8A%E5%A4%A9%E5%B7%A5%E5%85%B7/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E8%81%8A%E5%A4%A9%E5%B7%A5%E5%85%B7/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E8%81%8A%E5%A4%A9%E5%B7%A5%E5%85%B7/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E8%81%8A%E5%A4%A9%E5%B7%A5%E5%85%B7/</guid>
         <description></description>
         </item>
         <item>
         <title>流媒体</title>
-        <link>https://dsmggm.github.io/tags/%E6%B5%81%E5%AA%92%E4%BD%93/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%B5%81%E5%AA%92%E4%BD%93/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%B5%81%E5%AA%92%E4%BD%93/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%B5%81%E5%AA%92%E4%BD%93/</guid>
         <description></description>
         </item>
         <item>
         <title>路由器固件</title>
-        <link>https://dsmggm.github.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%9B%BA%E4%BB%B6/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%9B%BA%E4%BB%B6/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%9B%BA%E4%BB%B6/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E8%B7%AF%E7%94%B1%E5%99%A8%E5%9B%BA%E4%BB%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>命令行</title>
-        <link>https://dsmggm.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/</guid>
         <description></description>
         </item>
         <item>
         <title>模型训练</title>
-        <link>https://dsmggm.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%A8%A1%E5%9E%8B%E8%AE%AD%E7%BB%83/</guid>
         <description></description>
         </item>
         <item>
         <title>目标检测</title>
-        <link>https://dsmggm.github.io/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B/</guid>
         <description></description>
         </item>
         <item>
         <title>配置文件</title>
-        <link>https://dsmggm.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>签到</title>
-        <link>https://dsmggm.github.io/tags/%E7%AD%BE%E5%88%B0/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%AD%BE%E5%88%B0/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%AD%BE%E5%88%B0/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%AD%BE%E5%88%B0/</guid>
         <description></description>
         </item>
         <item>
         <title>青龙面板</title>
-        <link>https://dsmggm.github.io/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</guid>
         <description></description>
         </item>
         <item>
         <title>容器编排</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E7%BC%96%E6%8E%92/</guid>
         <description></description>
         </item>
         <item>
         <title>容器升级</title>
-        <link>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%AE%B9%E5%99%A8%E5%8D%87%E7%BA%A7/</guid>
         <description></description>
         </item>
         <item>
         <title>软件源</title>
-        <link>https://dsmggm.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E8%BD%AF%E4%BB%B6%E6%BA%90/</guid>
         <description></description>
         </item>
         <item>
         <title>数据库</title>
-        <link>https://dsmggm.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/</guid>
         <description></description>
         </item>
         <item>
         <title>双机热备</title>
-        <link>https://dsmggm.github.io/tags/%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%8F%8C%E6%9C%BA%E7%83%AD%E5%A4%87/</guid>
         <description></description>
         </item>
         <item>
         <title>网络配置</title>
-        <link>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%BD%91%E7%BB%9C%E9%85%8D%E7%BD%AE/</guid>
         <description></description>
         </item>
         <item>
         <title>文件同步</title>
-        <link>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E6%96%87%E4%BB%B6%E5%90%8C%E6%AD%A5/</guid>
         <description></description>
         </item>
         <item>
         <title>系统管理</title>
-        <link>https://dsmggm.github.io/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</guid>
         <description></description>
         </item>
         <item>
         <title>系统配置</title>
-        <link>https://dsmggm.github.io/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E7%B3%BB%E7%BB%9F%E9%85%8D%E7%BD%AE/</guid>
         <description></description>
         </item>
         <item>
         <title>一键安装</title>
-        <link>https://dsmggm.github.io/tags/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85/</guid>
         <description></description>
         </item>
         <item>
         <title>云原生</title>
-        <link>https://dsmggm.github.io/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E4%BA%91%E5%8E%9F%E7%94%9F/</guid>
         <description></description>
         </item>
         <item>
         <title>在线编译</title>
-        <link>https://dsmggm.github.io/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E5%9C%A8%E7%BA%BF%E7%BC%96%E8%AF%91/</guid>
         <description></description>
         </item>
         <item>
         <title>主从复制</title>
-        <link>https://dsmggm.github.io/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E4%B8%BB%E4%BB%8E%E5%A4%8D%E5%88%B6/</guid>
         <description></description>
         </item>
         <item>
         <title>自动签到</title>
-        <link>https://dsmggm.github.io/tags/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/tags/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/</guid>
+        <guid>https://dsmggm.dpdns.org/tags/%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0/</guid>
         <description></description>
         </item>
         

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>互为主从 on dsmggm博客</title>
-        <link>https://dsmggm.github.io/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</link>
+        <link>https://dsmggm.dpdns.org/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</link>
         <description>Recent content in 互为主从 on dsmggm博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.github.io/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 01 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>mysql8.1.0互为主从</title>
-        <link>https://dsmggm.github.io/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</link>
+        <link>https://dsmggm.dpdns.org/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</link>
         <pubDate>Sat, 01 Nov 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://dsmggm.github.io/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</guid>
+        <guid>https://dsmggm.dpdns.org/mysql8.1.0%E4%BA%92%E4%B8%BA%E4%B8%BB%E4%BB%8E/</guid>
         <description>&lt;p&gt;互为主从均需要执行以下命令&lt;/p&gt;
 &lt;h1 id=&#34;修改配置文件&#34;&gt;修改配置文件
 &lt;/h1&gt;&lt;p&gt;修改增加/etc/my.cnf文件&lt;/p&gt;
