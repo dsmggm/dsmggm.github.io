@@ -8418,9 +8418,54 @@ openwrt路径：&lt;/p&gt;
         <pubDate>Wed, 19 Mar 2025 00:00:00 +0000</pubDate>
         
         <guid>https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/</guid>
-        <description>&lt;p&gt;当windows启动开机的时候出现&lt;br&gt;
-&lt;strong&gt;BOOTMGR is missing&lt;/strong&gt;&lt;br&gt;
-&lt;strong&gt;Press Ctrl+Alt+Del to restart&lt;/strong&gt;&lt;/p&gt;
+        <description>&lt;h1 id=&#34;异常现象一&#34;&gt;异常现象一
+&lt;/h1&gt;&lt;p&gt;当windows启动开机的时候出现&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;Reboot and Select proper Boot deviceor&lt;/code&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;Insert Boot Media in selected Boot device and press a key&lt;/code&gt;&lt;/strong&gt;&lt;br&gt;
+的时候，需要确认启动项目。
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/1-14092Z915242B.jpg&#34;
+	width=&#34;626&#34;
+	height=&#34;383&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/1-14092Z915242B_hu_fd21ec1f57c447f.jpg 480w, https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/1-14092Z915242B_hu_6ea98cc223db06ea.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;163&#34;
+		data-flex-basis=&#34;392px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;异常现象二&#34;&gt;异常现象二
+&lt;/h1&gt;&lt;p&gt;当windows启动开机的时候出现
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/614cca50b2520e048049d81eba7d4237.jpg&#34;
+	width=&#34;3840&#34;
+	height=&#34;2173&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/614cca50b2520e048049d81eba7d4237_hu_920c3a93ff5f8688.jpg 480w, https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/614cca50b2520e048049d81eba7d4237_hu_9f86447dffed6cda.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;解决方法&#34;&gt;解决方法
+&lt;/h1&gt;&lt;p&gt;1、开机按Del进入BIOS设置&lt;br&gt;
+2、查看&lt;code&gt;BOOT&lt;/code&gt;选项卡，确认&lt;code&gt;Boot Option #1&lt;/code&gt; 设置为Windows启动项&lt;code&gt;Windows Boot Manaegr(xxxxxxxx)&lt;/code&gt;&lt;br&gt;
+3、按&lt;code&gt;F4&lt;/code&gt;或者是&lt;code&gt;F10&lt;/code&gt; &lt;code&gt;Save &amp;amp; Exit&lt;/code&gt; 保存退出，根据右下角提示选择按键&lt;br&gt;
+最终如下图：&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image.png&#34;
+	width=&#34;2909&#34;
+	height=&#34;1654&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_63b7bf77979c3a8.png 480w, https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E7%9B%AE%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_20bea1854992e653.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
