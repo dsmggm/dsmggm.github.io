@@ -1501,6 +1501,175 @@ WIFI模块、蓝牙模块&lt;/p&gt;
 &lt;/h2&gt;</description>
         </item>
         <item>
+        <title>JelinaOS常用命令与科普</title>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinaos%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%A7%91%E6%99%AE/</link>
+        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinaos%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%A7%91%E6%99%AE/</guid>
+        <description>&lt;h1 id=&#34;相关路径&#34;&gt;相关路径
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;默认账号：root 密码：jelina&lt;/li&gt;
+&lt;li&gt;Jelinvisor缓存路径：/mnt/overlay/rw/tmp&lt;/li&gt;
+&lt;li&gt;Release安装路径：/app&lt;/li&gt;
+&lt;li&gt;JelinaCloud配置文件：/mnt/boot/config.json&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;已注册：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;16
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;17
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;applicationId&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;100210&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;               &lt;span class=&#34;c1&#34;&gt;// 注册舰队ID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;deviceType&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;RK3568 KEDGE-350-A1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;     &lt;span class=&#34;c1&#34;&gt;// 设备类型
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;userId&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;100062&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                      &lt;span class=&#34;c1&#34;&gt;// 配置创建者ID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;appUpdatePollInterval&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;900000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;         &lt;span class=&#34;c1&#34;&gt;// 状态同步周期（单位：毫秒）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;apiEndpoint&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://jelinvisor.wise-iot-cloud.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 注册服务器地址
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;mixpanelToken&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;9bc11c59-3b26-4573-b1d2-1ec2f0aea993&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;c1&#34;&gt;// 弃用
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;configStartWritePosition&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;17M&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;       &lt;span class=&#34;c1&#34;&gt;// 配置写入起始位置
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;productionModeFromCloud&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;        &lt;span class=&#34;c1&#34;&gt;// 生成模式开关（注：原文&amp;#34;生成&amp;#34;应为&amp;#34;生产&amp;#34;）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;uuid&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;uuid&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                          &lt;span class=&#34;c1&#34;&gt;// 设备唯一UUID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;deviceApiKey&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;设备唯一密钥&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;           &lt;span class=&#34;c1&#34;&gt;// 设备云端认证唯一密钥
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;registered_at&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1761531811473&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;// 注册时间（时间戳，单位：毫秒）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;deviceId&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;103194&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                      &lt;span class=&#34;c1&#34;&gt;// 云端设备ID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;mqttEndpoint&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;mqtt://159.27.0.1&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;     &lt;span class=&#34;c1&#34;&gt;// MQTT连接信息（服务器地址）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;mqttUsername&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;username&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;              &lt;span class=&#34;c1&#34;&gt;// MQTT连接用户名
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;mqttPassword&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;password&amp;#34;&lt;/span&gt;               &lt;span class=&#34;c1&#34;&gt;// MQTT连接密码
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;未注册：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-json&#34; data-lang=&#34;json&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;applicationId&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;100210&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                                   &lt;span class=&#34;c1&#34;&gt;// 将要注册的舰队ID
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;deviceType&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;RK3568 AFE-E630 (AKA KEDGE-350-A1)&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;          &lt;span class=&#34;c1&#34;&gt;// 设备类型
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;userId&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;100005&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                                          &lt;span class=&#34;c1&#34;&gt;// 配置创建者
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;appUpdatePollInterval&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;900000&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                             &lt;span class=&#34;c1&#34;&gt;// 状态同步周期（单位：毫秒，对应15分钟）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;apiEndpoint&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;https://jelinvisor.wise-iot-cloud.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;       &lt;span class=&#34;c1&#34;&gt;// 注册服务器地址
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;mixpanelToken&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;65f09e60-48d0-4836-b49f-e3f6e5034819&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;     &lt;span class=&#34;c1&#34;&gt;// 弃用
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;provisionApiKey&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;942c667a-c66f-44aa-99aa-8ef77b0afd28&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;    &lt;span class=&#34;c1&#34;&gt;// 舰队唯一注册密钥
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;configStartWritePosition&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;17M&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;                           &lt;span class=&#34;c1&#34;&gt;// 配置写入起始位置
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;nt&#34;&gt;&amp;#34;productionModeFromCloud&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;                             &lt;span class=&#34;c1&#34;&gt;// 生产模式开关（原文&amp;#34;生成&amp;#34;为笔误）
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;VPN配置文件：/mnt/openvpn/jelina.conf&lt;/li&gt;
+&lt;li&gt;JelinaOS版本信息： /etc/jelina-os-release&lt;/li&gt;
+&lt;li&gt;Jelinvisor日志： /var/log/jelinvisor/jelinvisor.log&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;相关服务&#34;&gt;相关服务
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;Jelinvisor： jelina-jelinvisor.service&lt;/li&gt;
+&lt;li&gt;openvpn：openvpn@jelina.service&lt;/li&gt;
+&lt;li&gt;jelinvisor更新服务：jelina-instpackage-proxy.service&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;可通过日志分析jelinvisor为什么更新失败&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;相关命令&#34;&gt;相关命令
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;更新Jelinvisor： jelina-instpackage &amp;ndash;local jelinvisor.pkg&lt;/li&gt;
+&lt;li&gt;查看Jelinvisor日志：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;旧版本：journalctl -u jelina-jelinvisor.service -f&lt;/li&gt;
+&lt;li&gt;1.2.1及以后：tail -fn 50 /var/log/jelinvisor/jelinvisor.log&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;手动设置开发者模式：config.json中添加属性&amp;quot;forceDevelopmentMode&amp;quot;:true&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;jelina常用命令或命令组合&#34;&gt;Jelina常用命令或命令组合
+&lt;/h1&gt;&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;命令&lt;/th&gt;
+          &lt;th&gt;说明&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-ver&lt;/td&gt;
+          &lt;td&gt;查询当前JelinaOS的系统版本&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-device-info get &amp;ndash;sn &amp;ndash;ssn&lt;/td&gt;
+          &lt;td&gt;查看设备SN号（RK和NXP兼容）的命令&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat /run/jelina/register/jelina-register-state; echo&lt;/td&gt;
+          &lt;td&gt;检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl restart jelina-jelinvisor&lt;/td&gt;
+          &lt;td&gt;重启jelinvisor，一般用于初始化与Cloud的连接&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;cat /mnt/boot/config.json&lt;/td&gt;
+          &lt;td&gt;查看“舰队”等配置信息&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;journalctl -u jelina-jelinvisor.servicef&lt;/td&gt;
+          &lt;td&gt;查看最近的jelinvisor日志，一般用于分析设备无法online的情况&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;systemctl start &lt;a class=&#34;link&#34; href=&#34;mailto:jelina-upper-new@root.service&#34; &gt;jelina-upper-new@root.service&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;恢复初始状态（Jelinvisor除外）&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-offline off&lt;/td&gt;
+          &lt;td&gt;切换jelinvisor到连线模式&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;jelina-offline on&lt;/td&gt;
+          &lt;td&gt;切换jelinvisor到离线模式&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;磁盘空间&#34;&gt;磁盘空间
+&lt;/h1&gt;&lt;p&gt;读写分区挂载在 /mnt/overlay/rw 目录下&lt;br&gt;
+/mnt/overlay/rw 目录大小应当与 / 目录大小一致，若不一致，说明磁盘空间不够，当前分区在使用内存空间&lt;br&gt;
+Jelinvisor只会上报可读写分区使用情况&lt;/p&gt;
+&lt;h1 id=&#34;应用管理&#34;&gt;应用管理
+&lt;/h1&gt;&lt;p&gt;program : 由 systemd 管理&lt;br&gt;
+image : 由 Docker 管理&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Jelina安装onboard屏幕软键盘SOP</title>
         <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/</link>
         <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
@@ -2167,68 +2336,6 @@ Settings&amp;ndash;&amp;gt;onboard settings&lt;br&gt;
 		data-flex-basis=&#34;434px&#34;
 	
 &gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Jelina常用命令</title>
-        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
-        <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
-        
-        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
-        <description>&lt;h1 id=&#34;jelina默认账密&#34;&gt;Jelina默认账密
-&lt;/h1&gt;&lt;h2 id=&#34;用户1&#34;&gt;用户1
-&lt;/h2&gt;&lt;p&gt;用户名： root&lt;br&gt;
-密码： jelina&lt;/p&gt;
-&lt;h2 id=&#34;用户2&#34;&gt;用户2
-&lt;/h2&gt;&lt;p&gt;用户名： jelina&lt;br&gt;
-密码（大多数时候不需要输入密码）： jelina&lt;/p&gt;
-&lt;h1 id=&#34;jelina常用命令或命令组合&#34;&gt;Jelina常用命令或命令组合
-&lt;/h1&gt;&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;命令&lt;/th&gt;
-          &lt;th&gt;说明&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;jelina-ver&lt;/td&gt;
-          &lt;td&gt;查询当前JelinaOS的系统版本&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;jelina-device-info get &amp;ndash;sn &amp;ndash;ssn&lt;/td&gt;
-          &lt;td&gt;查看设备SN号（RK和NXP兼容）的命令&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;cat /run/jelina/register/jelina-register-state; echo&lt;/td&gt;
-          &lt;td&gt;检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;systemctl restart jelina-jelinvisor&lt;/td&gt;
-          &lt;td&gt;重启jelinvisor，一般用于初始化与Cloud的连接&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;cat /mnt/boot/config.json&lt;/td&gt;
-          &lt;td&gt;查看“舰队”等配置信息&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;journalctl -u jelina-jelinvisor.servicef&lt;/td&gt;
-          &lt;td&gt;查看最近的jelinvisor日志，一般用于分析设备无法online的情况&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;systemctl start &lt;a class=&#34;link&#34; href=&#34;mailto:jelina-upper-new@root.service&#34; &gt;jelina-upper-new@root.service&lt;/a&gt;&lt;/td&gt;
-          &lt;td&gt;恢复初始状态（Jelinvisor除外）&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;jelina-offline off&lt;/td&gt;
-          &lt;td&gt;切换jelinvisor到连线模式&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;jelina-offline on&lt;/td&gt;
-          &lt;td&gt;切换jelinvisor到离线模式&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
 </description>
         </item>
         <item>

@@ -98,8 +98,11 @@ dmesg | grep -i &amp;lt;接口&amp;gt; 检查驱动加载消息，必要时安�
 &lt;/ul&gt;
 &lt;h2 id=&#34;网络层&#34;&gt;网络层
 &lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。&lt;/li&gt;
-&lt;li&gt;观察与判定：
+&lt;li&gt;
+&lt;p&gt;可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;观察与判定：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;ip addr show 无 inet 地址或出现 169.254.x.x 。&lt;/li&gt;
 &lt;li&gt;ip route 缺少 default 网关或指向无效接口。&lt;/li&gt;
@@ -108,9 +111,11 @@ dmesg | grep -i &amp;lt;接口&amp;gt; 检查驱动加载消息，必要时安�
 &lt;li&gt;ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;排查步骤：
+&lt;li&gt;
+&lt;p&gt;排查步骤：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;确认网络管理工具：
+&lt;li&gt;
+&lt;p&gt;确认网络管理工具：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;NetworkManager： systemctl is-active NetworkManager 为 active ； nmcli general status 能返回状态。&lt;/li&gt;
 &lt;li&gt;Netplan： ls /etc/netplan/ 有 YAML 文件； sudo netplan status 可查看当前配置。&lt;/li&gt;
@@ -121,39 +126,489 @@ dmesg | grep -i &amp;lt;接口&amp;gt; 检查驱动加载消息，必要时安�
 &lt;li&gt;&lt;strong&gt;DHCP 请求被拒绝&lt;/strong&gt;： sudo dhclient -v 输出包含 DHCPREQUEST on &amp;lt;接口&amp;gt; 后接 DHCPNAK 、No DHCPOFFERS received ，或 NetworkManager 日志出现 dhcp4 (接口): request denied 。此时说明网络联通正常但服务器拒绝分配地址，可临时配置静态 IP 保持通信，并将日志截图、MAC 地址与所需网段提交给 DHCP 管理员排查（检查地址池、认证策略、保留 IP 冲突等）。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;针对工具核对配置：
+&lt;li&gt;
+&lt;p&gt;针对工具核对配置：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;NetworkManager： nmcli dev show &amp;lt;接口&amp;gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。
+&lt;li&gt;
+&lt;p&gt;NetworkManager： nmcli dev show &amp;lt;接口&amp;gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;命令方式设置静态 IP，参考脚本：
 &lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
 &lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmcli connection modify &amp;lt;连接名&amp;gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipv4.method manual &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipv4.addresses 192.168.1.10/24 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipv4.gateway 192.168.1.1 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ipv4.dns &lt;span class=&#34;s2&#34;&gt;&amp;#34;8.8.8.8 114.114.114.114&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;nmcli connection up &amp;lt;连接名&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;配置文件方式：编辑 /etc/NetworkManager/system-onnections/&amp;lt;连接名&amp;gt;.nmconnection ，可参考模板：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;9
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[connection]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;id&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;lt;连接名&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;type&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;ethernet&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[ipv4]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;method&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;manual&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;addresses1&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;192.168.1.10/24,192.168.1.1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;dns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;8.8.8.8;114.114.114.114&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[ipv6]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;method&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;ignore&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;保存后执行 sudo nmcli connection reload &amp;amp;&amp;amp; sudo nmcli connection up &amp;lt;连接名&amp;gt; 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Netplan：编辑 /etc/netplan/*.yaml 中的 addresses 、gateway4 、nameservers ，执行 sudo netplan apply 或 sudo netplan try 。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;命令方式，参考脚本：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo netplan &lt;span class=&#34;nb&#34;&gt;set&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    network.ethernets.eth0.addresses&lt;span class=&#34;o&#34;&gt;=[&lt;/span&gt;192.168.1.10/24&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    network.ethernets.eth0.gateway4&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;192.168.1.1 &lt;span class=&#34;se&#34;&gt;\
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    network.ethernets.eth0.nameservers.addresses&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;o&#34;&gt;[&lt;/span&gt;8.8.8.8,114.114.114.114&lt;span class=&#34;o&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo netplan apply
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;/li&gt;
+&lt;li&gt;配置文件方式：在 YAML 中手工填写，模板示例：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;network&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;renderer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;NetworkManager&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ethernets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;eth0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;addresses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;192.168.1.10&lt;/span&gt;&lt;span class=&#34;l&#34;&gt;/24&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;gateway4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;192.168.1.1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;nameservers&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;addresses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                    &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;8.8.8.8&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;                    &lt;/span&gt;- &lt;span class=&#34;m&#34;&gt;114.114.114.114&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;保存后运行 sudo netplan apply 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;ifupdown：查看 /etc/network/interfaces ，用 sudo ifdown &amp;lt;接口&amp;gt; &amp;amp;&amp;amp; sudo ifup &amp;lt;接口&amp;gt; 让配置生效&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;命令方式：临时运行 sudo ip addr add 192.168.1.10/24 dev eth0 、sudo ip route add default via 192.168.1.1 、在 /etc/resolv.conf 中写入 nameserver 8.8.8.8 ，重启后需重新配置。&lt;/li&gt;
+&lt;li&gt;配置文件方式：在 /etc/network/interfaces 中添加，模板示例：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;auto eth0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;iface eth0 inet static&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;address 192.168.1.10&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;netmask 255.255.255.0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;gateway 192.168.1.1&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;dns-nameservers 8.8.8.8 114.114.114.114&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;保存后执行 sudo ifdown eth0 &amp;amp;&amp;amp; sudo ifup eth0 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DHCP： sudo dhclient -v &amp;lt;接口&amp;gt; ，关注是否收到 bound 日志；若 No DHCPOFFERS received ，检查 DHCP 服务或接入网络。若需恢复自动获取，可按所用工具配置成 DHCP 模式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NetworkManager：编辑 /etc/NetworkManager/system-connections/&amp;lt;连接名&amp;gt;.nmconnection ，在 [ipv4] 段写入：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[ipv4]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;method&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;auto&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;ignore-auto-dns&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;false&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;保存后执行 sudo nmcli connection reload &amp;amp;&amp;amp; sudo nmcli connection up &amp;lt;连接名&amp;gt; 。&lt;/li&gt;
+&lt;li&gt;Netplan：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nt&#34;&gt;network&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;version&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;m&#34;&gt;2&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;renderer&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;l&#34;&gt;NetworkManager&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;    &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;ethernets&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;        &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;eth0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;w&#34;&gt;            &lt;/span&gt;&lt;span class=&#34;nt&#34;&gt;dhcp4&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;w&#34;&gt; &lt;/span&gt;&lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;保存后 sudo netplan apply 。&lt;/li&gt;
+&lt;li&gt;systemd-networkd：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-ini&#34; data-lang=&#34;ini&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Match]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;Name&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;eth0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;[Network]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;na&#34;&gt;DHCP&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;yes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;保存到 /etc/systemd/network/10-eth0.network 后 sudo systemctl restart systemdnetworkd&lt;/li&gt;
+&lt;li&gt;ifupdown：
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;auto eth0&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;l&#34;&gt;iface eth0 inet dhcp&lt;/span&gt;&lt;span class=&#34;w&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;写入 /etc/network/interfaces ，执行 sudo ifdown eth0 &amp;amp;&amp;amp; sudo ifup eth0&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;静态 IP：结合上一步确认的管理工具核对配置文件；应用后再查 ip addr 确认生效。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;路由： ip route get 8.8.8.8 确认出接口；必要时 sudo ip route add default via &amp;lt;网关&amp;gt; 。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MTU：使用 ping -M do -s 1472 8.8.8.8 测试是否出现 Frag needed ，或对比 ip link show &amp;lt;接口&amp;gt; 的 mtu 值；若存在隧道/PPPoE，可将 MTU 调小（如 1492/1450）并在配置文件中同步更新。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;命名空间隔离：若接口位于容器或 ip netns 环境，需进入对应命名空间（ ip netns exec &lt;ns&gt; bash ）检查配置，或调整 CNI/容器网络策略将接口暴露到宿主。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;IP 冲突： arping &amp;lt;本机IP&amp;gt; 或 ip monitor neigh 观察是否收到冲突提示。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;DHCP 被拒场景：联系 DHCP 管理员检查地址池是否耗尽、MAC 是否被限制、租约是否过期；必要时先配置临时静态 IP 保持联通，并记录 dhclient 输出、交换机端口信息，便于服务器侧解除限制或调整策略。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;传输层&#34;&gt;传输层
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：防火墙阻断、端口未监听或被占用、NAT 映射异常、连接被中途重置。
+&lt;ul&gt;
+&lt;li&gt;观察与判定：
+&lt;ul&gt;
+&lt;li&gt;ss -tulpn / netstat -tulpn 查看监听端口与进程。&lt;/li&gt;
+&lt;li&gt;ufw status 、sudo iptables -L -n -v 显示有拒绝策略。&lt;/li&gt;
+&lt;li&gt;telnet / nc 到目标端口失败，但 ping 正常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;排查步骤：
+&lt;ul&gt;
+&lt;li&gt;临时关闭/放宽防火墙（ sudo ufw disable 、sudo systemctl stop firewalld ）验证是否为规则引起。&lt;/li&gt;
+&lt;li&gt;检查 NAT/端口映射设置；在路由器或防火墙控制台查看转发表。&lt;/li&gt;
+&lt;li&gt;使用 nc -vz &amp;lt;主机&amp;gt; &amp;lt;端口&amp;gt; 或 curl -I 验证端口连通；关注服务器日志是否出现 connectionreset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决建议：开放必要端口、调整 NAT 映射、释放被占用端口或修改服务端口、对路由器升级固件或重启。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;会话层&#34;&gt;会话层
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：会话超时、认证失败、VPN 隧道未建立、会话保持配置错误。&lt;/li&gt;
+&lt;li&gt;观察与判定：
+&lt;ul&gt;
+&lt;li&gt;PN 客户端提示  auth failed 、 TLS handshake failed  或频繁掉线。&lt;/li&gt;
+&lt;li&gt;SSH、数据库等长连接频繁中断并报  connection reset by peer 。&lt;/li&gt;
+&lt;li&gt;日志出现  session expired 、 token invalid 、 keepalive timeout 。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;排查步骤：
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;确认系统时间与服务器同步（ timedatectl 、 ntpstat ）。若需要手动调整，可使用：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo timedatectl set-timezone Asia/Shanghai
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo timedatectl set-time &lt;span class=&#34;s2&#34;&gt;&amp;#34;2025-01-01 12:00:00&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;判断当前 NTP 服务由谁管理，可通过：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;timedatectl &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep &lt;span class=&#34;s2&#34;&gt;&amp;#34;System clock synchronized&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;timedatectl show --property&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;NTPSynchronized
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl list-units &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep -E &lt;span class=&#34;s1&#34;&gt;&amp;#39;ntp|chrony|timesync&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status systemd-timesyncd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status chronyd
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;systemctl status ntpd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;哪个服务处于&lt;code&gt;active (running)&lt;/code&gt;状态，通常即为当前同步源。&lt;br&gt;
+检查时间服务器可达性，可以先&lt;code&gt;ping ntp.aliyun.com&lt;/code&gt;、&lt;code&gt;dig ntp.aliyun.com&lt;/code&gt; 验证解析，再用&lt;code&gt;ntpdate -q ntp.aliyun.com&lt;/code&gt;或&lt;code&gt;chronyc sources -n&lt;/code&gt; 观测延迟/偏差；必要时确认防火墙已放行UDP/123。&lt;br&gt;
+systemd-timesyncd 正常与否可通过 &lt;code&gt;timedatectl timesync-status&lt;/code&gt; 或 &lt;code&gt;journalctl -u systemd-timesyncd&lt;/code&gt; 查看；chrony 使用 &lt;code&gt;chronyc tracking&lt;/code&gt;、&lt;code&gt;chronyc sources&lt;/code&gt;；若是传统 ntpd，可运行&lt;code&gt;ntpq -p&lt;/code&gt;。&lt;br&gt;
+将系统加入 NTP 同步，步骤示例（systemd-timesyncd）：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo timedatectl set-ntp &lt;span class=&#34;nb&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 或编辑 /etc/systemd/timesyncd.conf 指定上游：&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo tee /etc/systemd/timesyncd.conf &lt;span class=&#34;s&#34;&gt;&amp;lt;&amp;lt;&amp;#39;EOF&amp;#39;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;[Time]
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;NTP=ntp.aliyun.com ntp.tencent.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;FallbackNTP=time.windows.com time.google.com
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;EOF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo systemctl restart systemd-timesyncd
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;对使用 chrony 的系统，可在  /etc/chrony.conf  添加：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;server ntp.aliyun.com iburst
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;server ntp.tencent.com iburst
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;保存后 &lt;code&gt;sudo systemctl restart chronyd&lt;/code&gt;。完成后再次运行 &lt;code&gt;timedatectl&lt;/code&gt; 或 &lt;code&gt;chronyc sources&lt;/code&gt;验证同步状态。&lt;br&gt;
+传统 ntpd (ntpq) 配置示例可编辑  &lt;code&gt;/etc/ntp.conf&lt;/code&gt; ：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;driftfile /var/lib/ntp/ntp.drift
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;restrict default kod nomodify notrap nopeer noquery
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;restrict 127.0.0.1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;restrict ::1
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;server ntp.aliyun.com iburst
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;server ntp.tencent.com iburst
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;server time.google.com iburst
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;保存后执行 &lt;code&gt;sudo systemctl restart ntpd&lt;/code&gt;，再通过 &lt;code&gt;ntpq -p&lt;/code&gt;检查对时状态。&lt;br&gt;
+常用时间服务器示例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;国内： &lt;code&gt;ntp.aliyun.com&lt;/code&gt; 、&lt;code&gt;ntp.tencent.com&lt;/code&gt; 、&lt;code&gt;ntp.ntsc.ac.cn&lt;/code&gt; （授时中心）、&lt;code&gt;cn.pool.ntp.org&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;海外： &lt;code&gt;time.google.com&lt;/code&gt; 、 &lt;code&gt;time.cloudflare.com&lt;/code&gt; 、 &lt;code&gt;time.windows.com&lt;/code&gt; 、 &lt;code&gt;pool.ntp.org&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;查看 VPN/SSH/中间件日志（如  &lt;code&gt;/var/log/openvpn.log&lt;/code&gt; 、 &lt;code&gt;journalctl -u sshd&lt;/code&gt; ）。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;检查会话保持配置：TCP keepalive、反向代理的超时时间、负载均衡的健康检查。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;若涉及安全设备策略，与管理员确认会话时长限制。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决建议：同步时间、更新凭证或口令、调高超时阈值、修正 VPN/代理配置。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;表示层&#34;&gt;表示层
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：证书过期/不受信任、加密套件不匹配、字符编码错误、压缩包损坏。&lt;/li&gt;
+&lt;li&gt;观察与判定：
+&lt;ul&gt;
+&lt;li&gt;HTTPS 或 TLS 客户端报&lt;code&gt;SSL certificate problem&lt;/code&gt;、浏览器提示证书无效。&lt;/li&gt;
+&lt;li&gt;日志包含&lt;code&gt;unsupported cipher&lt;/code&gt;、&lt;code&gt;bad record mac&lt;/code&gt;、编码转换异常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;排查步骤：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;openssl s_client -connect &amp;lt;主机&amp;gt;:443&lt;/code&gt; 检查证书链、有效期、协商的加密套件。&lt;/li&gt;
+&lt;li&gt;确认系统信任库（&lt;code&gt;/etc/ssl/certs&lt;/code&gt;）中存在根证书；必要时更新 CA 包。&lt;/li&gt;
+&lt;li&gt;针对数据交换格式，使用&lt;code&gt;iconv&lt;/code&gt;、&lt;code&gt;jq&lt;/code&gt;、&lt;code&gt;xmllint&lt;/code&gt;等工具验证内容合法性。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决建议：续签或替换证书、统一 TLS 版本与加密套件、修正编码/序列化逻辑、确保双方使用兼容的压缩方案。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;应用层&#34;&gt;应用层
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;可能故障：服务未启动、配置错误、资源耗尽、依赖不可用、程序 BUG。&lt;/li&gt;
+&lt;li&gt;观察与判定：
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;systemctl status &amp;lt;服务&amp;gt;&lt;/code&gt;显示&lt;code&gt;failed&lt;/code&gt;、&lt;code&gt;inactive&lt;/code&gt;或进程不断重启。&lt;/li&gt;
+&lt;li&gt;应用日志出现&lt;code&gt;connection refused&lt;/code&gt;、&lt;code&gt;permission denied&lt;/code&gt;、&lt;code&gt;cannot connect to database&lt;/code&gt;等。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;top/htop&lt;/code&gt;显示 CPU、内存或磁盘耗尽。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;排查步骤：
+&lt;ul&gt;
+&lt;li&gt;查看  journalctl -u &amp;lt;服务&amp;gt;  与应用自身日志（如&lt;code&gt;/var/log/nginx/error.log&lt;/code&gt; 、&lt;code&gt;/var/log/mysql/error.log&lt;/code&gt; ）。&lt;/li&gt;
+&lt;li&gt;使用应用提供的自检命令（ nginx -t 、 named-checkconf 、 mysqladmin ping ）。&lt;/li&gt;
+&lt;li&gt;检查配置文件语法、路径、权限；确认依赖服务是否可达。&lt;/li&gt;
+&lt;li&gt;通过  systemctl restart &amp;lt;服务&amp;gt;  测试恢复情况，必要时启用 debug 日志。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;解决建议：修正配置或权限、扩容资源、更新或回滚软件版本、修复程序 BUG、保障依赖组件稳定。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;综合排查流程按层推进&#34;&gt;综合排查流程（按层推进）
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;明确故障现象：记录目标地址、时间点、错误提示，确保排查有方向。&lt;/li&gt;
+&lt;li&gt;物理层 → 数据链路层 → 网络层 → 传输层 → 会话层 → 表示层 → 应用层，逐级排除，勿跳层。&lt;/li&gt;
+&lt;li&gt;每完成一层排查即进行测试（如重新 ping、访问服务），若问题解决及时记录；若未解决，再进入上一层。&lt;/li&gt;
+&lt;li&gt;过程中保留命令输出与日志截图，方便回溯或向同事/厂商求助。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;常用命令速查&#34;&gt;常用命令速查
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;物理/链路：&lt;code&gt;ip link show&lt;/code&gt;、&lt;code&gt;ethtool &amp;lt;接口&amp;gt;&lt;/code&gt;、&lt;code&gt;lspci&lt;/code&gt; 、 &lt;code&gt;lsusb&lt;/code&gt; 、 &lt;code&gt;dmesg&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;网络层：&lt;code&gt;ip addr&lt;/code&gt;、&lt;code&gt;ip route&lt;/code&gt;、&lt;code&gt;arp -a&lt;/code&gt;、&lt;code&gt;dhclient&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;传输层：&lt;code&gt;ss -tulpn&lt;/code&gt;、&lt;code&gt;netstat -an&lt;/code&gt;、&lt;code&gt;ufw status&lt;/code&gt;、&lt;code&gt;iptables -L -n -v&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;会话层：&lt;code&gt;journalctl -u sshd&lt;/code&gt; 、VPN客户端日志、&lt;code&gt;timedatectl&lt;/code&gt;、&lt;code&gt;ntpstat&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;表示层：&lt;code&gt;openssl s_client&lt;/code&gt;、&lt;code&gt;curl -v&lt;/code&gt;、&lt;code&gt;iconv&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;应用层：&lt;code&gt;systemctl status&lt;/code&gt;、&lt;code&gt;nginx -t&lt;/code&gt;、&lt;code&gt;mysqladmin ping&lt;/code&gt;、&lt;code&gt;tail -f &amp;lt;日志&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;故障分析习惯与建议&#34;&gt;故障分析习惯与建议
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;先处理最可能的简单问题，再深入复杂层级，避免误判。&lt;/li&gt;
+&lt;li&gt;每次仅修改一项并立即验证，防止连续改动导致问题叠加。&lt;/li&gt;
+&lt;li&gt;将排查过程、结果与最终方案记录成文档或脚本，方便下次复用。&lt;/li&gt;
+&lt;li&gt;对关键服务建立监控、日志告警与定期巡检，提前发现异常。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;常见假性故障示例&#34;&gt;常见“假性故障”示例
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;无法 SSH：误以为网络断开，实则服务器未安装或未启动&lt;code&gt;sshd&lt;/code&gt;，或禁止密码登录。可通过进程与端口(&lt;code&gt;systemctl status sshd&lt;/code&gt;、&lt;code&gt;ss -tnlp | grep 22&lt;/code&gt;) 验证。&lt;/li&gt;
+&lt;li&gt;PING不通：部分服务器禁用 ICMP 或被防火墙丢弃，但 TCP/HTTP 访问正常。遇到&lt;code&gt;ping&lt;/code&gt;超时时，可以改用&lt;code&gt;curl&lt;/code&gt;、&lt;code&gt;nc&lt;/code&gt;、&lt;code&gt;traceroute&lt;/code&gt;检查。&lt;/li&gt;
+&lt;li&gt;DNS 解析失败：手动修改&lt;code&gt;/etc/resolv.conf&lt;/code&gt;后仍被 NetworkManager/Netplan覆盖，看似DNS不可用。
+&lt;ul&gt;
+&lt;li&gt;JelinaOS:
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;cat &amp;gt;&lt;span class=&#34;nv&#34;&gt;$ROOTFS&lt;/span&gt;/etc/resolvconf.conf &lt;span class=&#34;s&#34;&gt;&amp;lt;&amp;lt;EOF
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;resolv_conf=/etc/resolv.conf
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;resolvconf=NO
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;EOF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    chmod &lt;span class=&#34;m&#34;&gt;644&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$ROOTFS&lt;/span&gt;/etc/resolvconf.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# avoid dhclient edit resolv.conf&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    mkdir -p &lt;span class=&#34;nv&#34;&gt;$ROOTFS&lt;/span&gt;/etc/dhcp/dhclient-enter-hooks.d/
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    cat &amp;gt;&lt;span class=&#34;nv&#34;&gt;$ROOTFS&lt;/span&gt;/etc/dhcp/dhclient-enter-hooks.d/nodnsupdate &lt;span class=&#34;s&#34;&gt;&amp;lt;&amp;lt;EOF
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;make_resolv_conf() {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;    :
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;s&#34;&gt;EOF&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    chmod &lt;span class=&#34;m&#34;&gt;755&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$ROOTFS&lt;/span&gt;/etc/dhcp/dhclient-enter-hooks.d/nodnsupdate
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln -sf &lt;span class=&#34;s1&#34;&gt;&amp;#39;../run/systemd/resolve/stub-resolv.conf&amp;#39;&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;$rootfs&lt;/span&gt;/etc/resolv.conf
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ln -srf /run/systemd/resolve/stub-resolv.con
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
+&lt;li&gt;网页打不开：浏览器提示证书错误或 403，误判为网络故障。实际是 HTTPS 证书过期、自签名未导入、或账号权限不足。&lt;/li&gt;
+&lt;li&gt;端口扫描无响应：认为目标离线，但服务绑定在特定内网 IP 或只允许白名单访问。核对服务监听列表与防火墙规则。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;nmcli connection modify &amp;lt;连接名&amp;gt; &lt;br&gt;
-ipv4.method manual &lt;br&gt;
-ipv4.addresses 192.168.1.10/24 &lt;br&gt;
-ipv4.gateway 192.168.1.1 &lt;br&gt;
-ipv4.dns &amp;ldquo;8.8.8.8 114.114.114.114&amp;rdquo;
-nmcli connection up &amp;lt;连接名&amp;gt;
-```
-* DHCP
-* 静态IP
-* 路由
-* MTU
-* 命名空间隔离
-* IP冲突
-* DHCP被拒场景&lt;/p&gt;
 </description>
         </item>
         <item>

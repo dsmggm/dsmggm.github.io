@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
-<title>Jelina常用命令</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="相关路径 默认账号：root 密码：jelina Jelinvisor缓存路径：/mnt/overlay/rw/tmp Release安装路径：/app JelinaCloud配置文件：/mnt/boot/config.json 已注册： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 { &#34;applicationId&#34;: &#34;100210&#34;, // 注册舰队ID &#34;deviceType&#34;: &#34;RK3568 KEDGE-350-A1&#34;, // 设备类型 &#34;userId&#34;: &#34;100062&#34;, // 配置创建者ID &#34;appUpdatePollInterval&#34;: 900000, // 状态同步周期（单位：毫秒） &#34;apiEndpoint&#34;: &#34;https://jelinvisor.wise-iot-cloud.com&#34;, // 注册服务器地址 &#34;mixpanelToken&#34;: &#34;9bc11c59-3b26-4573-b1d2-1ec2f0aea993&#34;, // 弃用 &#34;configStartWritePosition&#34;: &#34;17M&#34;, // 配置写入起始位置 &#34;productionModeFromCloud&#34;: false, // 生成模式开关（注：原文&#34;生成&#34;应为&#34;生产&#34;） &#34;uuid&#34;: &#34;uuid&#34;, // 设备唯一UUID &#34;deviceApiKey&#34;: &#34;设备唯一密钥&#34;, // 设备云端认证唯一密钥 &#34;registered_at&#34;: 1761531811473, // 注册时间（时间戳，单位：毫秒） &#34;deviceId&#34;: 103194, // 云端设备ID &#34;mqttEndpoint&#34;: &#34;mqtt://159.27.0.1&#34;, // MQTT连接信息（服务器地址） &#34;mqttUsername&#34;: &#34;username&#34;, // MQTT连接用户名 &#34;mqttPassword&#34;: &#34;password&#34; // MQTT连接密码 } 未注册： 1 2 3 4 5 6 7 8 9 10 11 { &#34;applicationId&#34;: &#34;100210&#34;, // 将要注册的舰队ID &#34;deviceType&#34;: &#34;RK3568 AFE-E630 (AKA KEDGE-350-A1)&#34;, // 设备类型 &#34;userId&#34;: &#34;100005&#34;, // 配置创建者 &#34;appUpdatePollInterval&#34;: 900000, // 状态同步周期（单位：毫秒，对应15分钟） &#34;apiEndpoint&#34;: &#34;https://jelinvisor.wise-iot-cloud.com&#34;, // 注册服务器地址 &#34;mixpanelToken&#34;: &#34;65f09e60-48d0-4836-b49f-e3f6e5034819&#34;, // 弃用 &#34;provisionApiKey&#34;: &#34;942c667a-c66f-44aa-99aa-8ef77b0afd28&#34;, // 舰队唯一注册密钥 &#34;configStartWritePosition&#34;: &#34;17M&#34;, // 配置写入起始位置 &#34;productionModeFromCloud&#34;: false // 生产模式开关（原文&#34;生成&#34;为笔误） } VPN配置文件：/mnt/openvpn/jelina.conf JelinaOS版本信息： /etc/jelina-os-release Jelinvisor日志： /var/log/jelinvisor/jelinvisor.log 相关服务 Jelinvisor： jelina-jelinvisor.service openvpn：openvpn@jelina.service jelinvisor更新服务：jelina-instpackage-proxy.service 可通过日志分析jelinvisor为什么更新失败 相关命令 更新Jelinvisor： jelina-instpackage &ndash;local jelinvisor.pkg 查看Jelinvisor日志： 旧版本：journalctl -u jelina-jelinvisor.service -f 1.2.1及以后：tail -fn 50 /var/log/jelinvisor/jelinvisor.log 手动设置开发者模式：config.json中添加属性&quot;forceDevelopmentMode&quot;:true Jelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 磁盘空间 读写分区挂载在 /mnt/overlay/rw 目录下\n/mnt/overlay/rw 目录大小应当与 / 目录大小一致，若不一致，说明磁盘空间不够，当前分区在使用内存空间\nJelinvisor只会上报可读写分区使用情况\n">
+<title>JelinaOS常用命令与科普</title>
 
-<link rel='canonical' href='https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel='canonical' href='https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinaos%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%A7%91%E6%99%AE/'>
 
-<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Jelina常用命令">
-<meta property='og:description' content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
-<meta property='og:url' content='https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/'>
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="JelinaOS常用命令与科普">
+<meta property='og:description' content="相关路径 默认账号：root 密码：jelina Jelinvisor缓存路径：/mnt/overlay/rw/tmp Release安装路径：/app JelinaCloud配置文件：/mnt/boot/config.json 已注册： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 { &#34;applicationId&#34;: &#34;100210&#34;, // 注册舰队ID &#34;deviceType&#34;: &#34;RK3568 KEDGE-350-A1&#34;, // 设备类型 &#34;userId&#34;: &#34;100062&#34;, // 配置创建者ID &#34;appUpdatePollInterval&#34;: 900000, // 状态同步周期（单位：毫秒） &#34;apiEndpoint&#34;: &#34;https://jelinvisor.wise-iot-cloud.com&#34;, // 注册服务器地址 &#34;mixpanelToken&#34;: &#34;9bc11c59-3b26-4573-b1d2-1ec2f0aea993&#34;, // 弃用 &#34;configStartWritePosition&#34;: &#34;17M&#34;, // 配置写入起始位置 &#34;productionModeFromCloud&#34;: false, // 生成模式开关（注：原文&#34;生成&#34;应为&#34;生产&#34;） &#34;uuid&#34;: &#34;uuid&#34;, // 设备唯一UUID &#34;deviceApiKey&#34;: &#34;设备唯一密钥&#34;, // 设备云端认证唯一密钥 &#34;registered_at&#34;: 1761531811473, // 注册时间（时间戳，单位：毫秒） &#34;deviceId&#34;: 103194, // 云端设备ID &#34;mqttEndpoint&#34;: &#34;mqtt://159.27.0.1&#34;, // MQTT连接信息（服务器地址） &#34;mqttUsername&#34;: &#34;username&#34;, // MQTT连接用户名 &#34;mqttPassword&#34;: &#34;password&#34; // MQTT连接密码 } 未注册： 1 2 3 4 5 6 7 8 9 10 11 { &#34;applicationId&#34;: &#34;100210&#34;, // 将要注册的舰队ID &#34;deviceType&#34;: &#34;RK3568 AFE-E630 (AKA KEDGE-350-A1)&#34;, // 设备类型 &#34;userId&#34;: &#34;100005&#34;, // 配置创建者 &#34;appUpdatePollInterval&#34;: 900000, // 状态同步周期（单位：毫秒，对应15分钟） &#34;apiEndpoint&#34;: &#34;https://jelinvisor.wise-iot-cloud.com&#34;, // 注册服务器地址 &#34;mixpanelToken&#34;: &#34;65f09e60-48d0-4836-b49f-e3f6e5034819&#34;, // 弃用 &#34;provisionApiKey&#34;: &#34;942c667a-c66f-44aa-99aa-8ef77b0afd28&#34;, // 舰队唯一注册密钥 &#34;configStartWritePosition&#34;: &#34;17M&#34;, // 配置写入起始位置 &#34;productionModeFromCloud&#34;: false // 生产模式开关（原文&#34;生成&#34;为笔误） } VPN配置文件：/mnt/openvpn/jelina.conf JelinaOS版本信息： /etc/jelina-os-release Jelinvisor日志： /var/log/jelinvisor/jelinvisor.log 相关服务 Jelinvisor： jelina-jelinvisor.service openvpn：openvpn@jelina.service jelinvisor更新服务：jelina-instpackage-proxy.service 可通过日志分析jelinvisor为什么更新失败 相关命令 更新Jelinvisor： jelina-instpackage &ndash;local jelinvisor.pkg 查看Jelinvisor日志： 旧版本：journalctl -u jelina-jelinvisor.service -f 1.2.1及以后：tail -fn 50 /var/log/jelinvisor/jelinvisor.log 手动设置开发者模式：config.json中添加属性&quot;forceDevelopmentMode&quot;:true Jelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 磁盘空间 读写分区挂载在 /mnt/overlay/rw 目录下\n/mnt/overlay/rw 目录大小应当与 / 目录大小一致，若不一致，说明磁盘空间不够，当前分区在使用内存空间\nJelinvisor只会上报可读写分区使用情况\n">
+<meta property='og:url' content='https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/jelina/jelinaos%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%A7%91%E6%99%AE/'>
 <meta property='og:site_name' content='dsmggm博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='研华' /><meta property='article:tag' content='Jelina' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2025-11-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-11-20T00:00:00&#43;00:00'/>
-<meta name="twitter:title" content="Jelina常用命令">
-<meta name="twitter:description" content="Jelina默认账密 用户1 用户名： root\n密码： jelina\n用户2 用户名： jelina\n密码（大多数时候不需要输入密码）： jelina\nJelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 ">
+<meta name="twitter:title" content="JelinaOS常用命令与科普">
+<meta name="twitter:description" content="相关路径 默认账号：root 密码：jelina Jelinvisor缓存路径：/mnt/overlay/rw/tmp Release安装路径：/app JelinaCloud配置文件：/mnt/boot/config.json 已注册： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 { &#34;applicationId&#34;: &#34;100210&#34;, // 注册舰队ID &#34;deviceType&#34;: &#34;RK3568 KEDGE-350-A1&#34;, // 设备类型 &#34;userId&#34;: &#34;100062&#34;, // 配置创建者ID &#34;appUpdatePollInterval&#34;: 900000, // 状态同步周期（单位：毫秒） &#34;apiEndpoint&#34;: &#34;https://jelinvisor.wise-iot-cloud.com&#34;, // 注册服务器地址 &#34;mixpanelToken&#34;: &#34;9bc11c59-3b26-4573-b1d2-1ec2f0aea993&#34;, // 弃用 &#34;configStartWritePosition&#34;: &#34;17M&#34;, // 配置写入起始位置 &#34;productionModeFromCloud&#34;: false, // 生成模式开关（注：原文&#34;生成&#34;应为&#34;生产&#34;） &#34;uuid&#34;: &#34;uuid&#34;, // 设备唯一UUID &#34;deviceApiKey&#34;: &#34;设备唯一密钥&#34;, // 设备云端认证唯一密钥 &#34;registered_at&#34;: 1761531811473, // 注册时间（时间戳，单位：毫秒） &#34;deviceId&#34;: 103194, // 云端设备ID &#34;mqttEndpoint&#34;: &#34;mqtt://159.27.0.1&#34;, // MQTT连接信息（服务器地址） &#34;mqttUsername&#34;: &#34;username&#34;, // MQTT连接用户名 &#34;mqttPassword&#34;: &#34;password&#34; // MQTT连接密码 } 未注册： 1 2 3 4 5 6 7 8 9 10 11 { &#34;applicationId&#34;: &#34;100210&#34;, // 将要注册的舰队ID &#34;deviceType&#34;: &#34;RK3568 AFE-E630 (AKA KEDGE-350-A1)&#34;, // 设备类型 &#34;userId&#34;: &#34;100005&#34;, // 配置创建者 &#34;appUpdatePollInterval&#34;: 900000, // 状态同步周期（单位：毫秒，对应15分钟） &#34;apiEndpoint&#34;: &#34;https://jelinvisor.wise-iot-cloud.com&#34;, // 注册服务器地址 &#34;mixpanelToken&#34;: &#34;65f09e60-48d0-4836-b49f-e3f6e5034819&#34;, // 弃用 &#34;provisionApiKey&#34;: &#34;942c667a-c66f-44aa-99aa-8ef77b0afd28&#34;, // 舰队唯一注册密钥 &#34;configStartWritePosition&#34;: &#34;17M&#34;, // 配置写入起始位置 &#34;productionModeFromCloud&#34;: false // 生产模式开关（原文&#34;生成&#34;为笔误） } VPN配置文件：/mnt/openvpn/jelina.conf JelinaOS版本信息： /etc/jelina-os-release Jelinvisor日志： /var/log/jelinvisor/jelinvisor.log 相关服务 Jelinvisor： jelina-jelinvisor.service openvpn：openvpn@jelina.service jelinvisor更新服务：jelina-instpackage-proxy.service 可通过日志分析jelinvisor为什么更新失败 相关命令 更新Jelinvisor： jelina-instpackage &ndash;local jelinvisor.pkg 查看Jelinvisor日志： 旧版本：journalctl -u jelina-jelinvisor.service -f 1.2.1及以后：tail -fn 50 /var/log/jelinvisor/jelinvisor.log 手动设置开发者模式：config.json中添加属性&quot;forceDevelopmentMode&quot;:true Jelina常用命令或命令组合 命令 说明 jelina-ver 查询当前JelinaOS的系统版本 jelina-device-info get &ndash;sn &ndash;ssn 查看设备SN号（RK和NXP兼容）的命令 cat /run/jelina/register/jelina-register-state; echo 检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过 systemctl restart jelina-jelinvisor 重启jelinvisor，一般用于初始化与Cloud的连接 cat /mnt/boot/config.json 查看“舰队”等配置信息 journalctl -u jelina-jelinvisor.servicef 查看最近的jelinvisor日志，一般用于分析设备无法online的情况 systemctl start jelina-upper-new@root.service 恢复初始状态（Jelinvisor除外） jelina-offline off 切换jelinvisor到连线模式 jelina-offline on 切换jelinvisor到离线模式 磁盘空间 读写分区挂载在 /mnt/overlay/rw 目录下\n/mnt/overlay/rw 目录大小应当与 / 目录大小一致，若不一致，说明磁盘空间不够，当前分区在使用内存空间\nJelinvisor只会上报可读写分区使用情况\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -228,13 +228,12 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#jelina默认账密">Jelina默认账密</a>
-      <ol>
-        <li><a href="#用户1">用户1</a></li>
-        <li><a href="#用户2">用户2</a></li>
-      </ol>
-    </li>
+    <li><a href="#相关路径">相关路径</a></li>
+    <li><a href="#相关服务">相关服务</a></li>
+    <li><a href="#相关命令">相关命令</a></li>
     <li><a href="#jelina常用命令或命令组合">Jelina常用命令或命令组合</a></li>
+    <li><a href="#磁盘空间">磁盘空间</a></li>
+    <li><a href="#应用管理">应用管理</a></li>
   </ol>
 </nav>
         </div>
@@ -262,7 +261,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">Jelina常用命令</a>
+            <a href="/%E7%A0%94%E5%8D%8E/jelina/jelinaos%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%A7%91%E6%99%AE/">JelinaOS常用命令与科普</a>
         </h2>
     
         
@@ -300,13 +299,113 @@
     <section class="article-content">
     
     
-    <h1 id="jelina默认账密">Jelina默认账密
-</h1><h2 id="用户1">用户1
-</h2><p>用户名： root<br>
-密码： jelina</p>
-<h2 id="用户2">用户2
-</h2><p>用户名： jelina<br>
-密码（大多数时候不需要输入密码）： jelina</p>
+    <h1 id="相关路径">相关路径
+</h1><ol>
+<li>默认账号：root 密码：jelina</li>
+<li>Jelinvisor缓存路径：/mnt/overlay/rw/tmp</li>
+<li>Release安装路径：/app</li>
+<li>JelinaCloud配置文件：/mnt/boot/config.json</li>
+</ol>
+<ul>
+<li>已注册：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;applicationId&#34;</span><span class="p">:</span> <span class="s2">&#34;100210&#34;</span><span class="p">,</span>               <span class="c1">// 注册舰队ID
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;deviceType&#34;</span><span class="p">:</span> <span class="s2">&#34;RK3568 KEDGE-350-A1&#34;</span><span class="p">,</span>     <span class="c1">// 设备类型
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;userId&#34;</span><span class="p">:</span> <span class="s2">&#34;100062&#34;</span><span class="p">,</span>                      <span class="c1">// 配置创建者ID
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;appUpdatePollInterval&#34;</span><span class="p">:</span> <span class="mi">900000</span><span class="p">,</span>         <span class="c1">// 状态同步周期（单位：毫秒）
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;apiEndpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://jelinvisor.wise-iot-cloud.com&#34;</span><span class="p">,</span>  <span class="c1">// 注册服务器地址
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;mixpanelToken&#34;</span><span class="p">:</span> <span class="s2">&#34;9bc11c59-3b26-4573-b1d2-1ec2f0aea993&#34;</span><span class="p">,</span> <span class="c1">// 弃用
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;configStartWritePosition&#34;</span><span class="p">:</span> <span class="s2">&#34;17M&#34;</span><span class="p">,</span>       <span class="c1">// 配置写入起始位置
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;productionModeFromCloud&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>        <span class="c1">// 生成模式开关（注：原文&#34;生成&#34;应为&#34;生产&#34;）
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;uuid&#34;</span><span class="p">:</span> <span class="s2">&#34;uuid&#34;</span><span class="p">,</span>                          <span class="c1">// 设备唯一UUID
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;deviceApiKey&#34;</span><span class="p">:</span> <span class="s2">&#34;设备唯一密钥&#34;</span><span class="p">,</span>           <span class="c1">// 设备云端认证唯一密钥
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;registered_at&#34;</span><span class="p">:</span> <span class="mi">1761531811473</span><span class="p">,</span>          <span class="c1">// 注册时间（时间戳，单位：毫秒）
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;deviceId&#34;</span><span class="p">:</span> <span class="mi">103194</span><span class="p">,</span>                      <span class="c1">// 云端设备ID
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;mqttEndpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;mqtt://159.27.0.1&#34;</span><span class="p">,</span>     <span class="c1">// MQTT连接信息（服务器地址）
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;mqttUsername&#34;</span><span class="p">:</span> <span class="s2">&#34;username&#34;</span><span class="p">,</span>              <span class="c1">// MQTT连接用户名
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;mqttPassword&#34;</span><span class="p">:</span> <span class="s2">&#34;password&#34;</span>               <span class="c1">// MQTT连接密码
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>未注册：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;applicationId&#34;</span><span class="p">:</span> <span class="s2">&#34;100210&#34;</span><span class="p">,</span>                                   <span class="c1">// 将要注册的舰队ID
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;deviceType&#34;</span><span class="p">:</span> <span class="s2">&#34;RK3568 AFE-E630 (AKA KEDGE-350-A1)&#34;</span><span class="p">,</span>          <span class="c1">// 设备类型
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;userId&#34;</span><span class="p">:</span> <span class="s2">&#34;100005&#34;</span><span class="p">,</span>                                          <span class="c1">// 配置创建者
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;appUpdatePollInterval&#34;</span><span class="p">:</span> <span class="mi">900000</span><span class="p">,</span>                             <span class="c1">// 状态同步周期（单位：毫秒，对应15分钟）
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;apiEndpoint&#34;</span><span class="p">:</span> <span class="s2">&#34;https://jelinvisor.wise-iot-cloud.com&#34;</span><span class="p">,</span>       <span class="c1">// 注册服务器地址
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;mixpanelToken&#34;</span><span class="p">:</span> <span class="s2">&#34;65f09e60-48d0-4836-b49f-e3f6e5034819&#34;</span><span class="p">,</span>     <span class="c1">// 弃用
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;provisionApiKey&#34;</span><span class="p">:</span> <span class="s2">&#34;942c667a-c66f-44aa-99aa-8ef77b0afd28&#34;</span><span class="p">,</span>    <span class="c1">// 舰队唯一注册密钥
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;configStartWritePosition&#34;</span><span class="p">:</span> <span class="s2">&#34;17M&#34;</span><span class="p">,</span>                           <span class="c1">// 配置写入起始位置
+</span></span></span><span class="line"><span class="cl">  <span class="nt">&#34;productionModeFromCloud&#34;</span><span class="p">:</span> <span class="kc">false</span>                             <span class="c1">// 生产模式开关（原文&#34;生成&#34;为笔误）
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<ol start="5">
+<li>VPN配置文件：/mnt/openvpn/jelina.conf</li>
+<li>JelinaOS版本信息： /etc/jelina-os-release</li>
+<li>Jelinvisor日志： /var/log/jelinvisor/jelinvisor.log</li>
+</ol>
+<h1 id="相关服务">相关服务
+</h1><ol>
+<li>Jelinvisor： jelina-jelinvisor.service</li>
+<li>openvpn：openvpn@jelina.service</li>
+<li>jelinvisor更新服务：jelina-instpackage-proxy.service</li>
+</ol>
+<ul>
+<li>可通过日志分析jelinvisor为什么更新失败</li>
+</ul>
+<h1 id="相关命令">相关命令
+</h1><ol>
+<li>更新Jelinvisor： jelina-instpackage &ndash;local jelinvisor.pkg</li>
+<li>查看Jelinvisor日志：</li>
+</ol>
+<ul>
+<li>旧版本：journalctl -u jelina-jelinvisor.service -f</li>
+<li>1.2.1及以后：tail -fn 50 /var/log/jelinvisor/jelinvisor.log</li>
+</ul>
+<ol start="3">
+<li>手动设置开发者模式：config.json中添加属性&quot;forceDevelopmentMode&quot;:true</li>
+</ol>
 <h1 id="jelina常用命令或命令组合">Jelina常用命令或命令组合
 </h1><div class="table-wrapper"><table>
   <thead>
@@ -354,6 +453,13 @@
       </tr>
   </tbody>
 </table></div>
+<h1 id="磁盘空间">磁盘空间
+</h1><p>读写分区挂载在 /mnt/overlay/rw 目录下<br>
+/mnt/overlay/rw 目录大小应当与 / 目录大小一致，若不一致，说明磁盘空间不够，当前分区在使用内存空间<br>
+Jelinvisor只会上报可读写分区使用情况</p>
+<h1 id="应用管理">应用管理
+</h1><p>program : 由 systemd 管理<br>
+image : 由 Docker 管理</p>
 
 </section>
 

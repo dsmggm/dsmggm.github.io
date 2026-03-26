@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="网络分层模型（5 层 / 7 层） 物理层（Physical）：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。 数据链路层（Data Link）：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。 网络层（Network）：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。 传输层（Transport）：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。 会话层（Session）：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。 表示层（Presentation）：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。 应用层（Application）：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。\n说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。 上网原理概述 网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。 数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。 网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。 传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。 应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。 DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。 各层常见故障与排查 物理层 可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。 观察与判定： 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。\n网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。\n常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。\n若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100 Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8 依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。 排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。 解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。 数据链路层 可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。 观察与判定： ip link show 显示接口 state DOWN 或接口未列出。\ndmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。\n局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。 排查步骤： sudo ip link set &lt;接口&gt; up 尝试启用；若失败继续排查。 lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。\ndmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。\n与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。 解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。 网络层 可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。 观察与判定： ip addr show 无 inet 地址或出现 169.254.x.x 。 ip route 缺少 default 网关或指向无效接口。 ping 同网段设备失败但物理层正常。 能 ping 小包却无法传输大报文、HTTPS／SSH 连接容易超时，常见于 MTU 设置过小或被PPPoE/隧道额外封装压缩。 ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。 排查步骤： 确认网络管理工具： NetworkManager： systemctl is-active NetworkManager 为 active ； nmcli general status 能返回状态。 Netplan： ls /etc/netplan/ 有 YAML 文件； sudo netplan status 可查看当前配置。 systemd-networkd： systemctl is-active systemd-networkd 为 active ；配置在/etc/systemd/network/ 。 ifupdown（传统脚本）：Debian/旧版 Ubuntu 使用 /etc/network/interfaces ，可用ifquery &ndash;list 查看。 多个工具同时运行：如果 systemctl 显示 NetworkManager 和 systemd-networkd 均为active ，或 Netplan 配置与 NetworkManager 同时存在，可能出现互相覆盖，应决定保留其一，并停用/禁用其他服务（如 sudo systemctl disable &ndash;now systemd-networkd ）。 都未运行：若所有管理工具均显示 inactive ，网络接口可能由手工脚本或容器化平台接管。可临时使用 sudo ip addr add 、sudo ip route add 手动设定，并确认是否有网管脚本（如/etc/rc.local 、/usr/local/bin/*.sh ）或云平台代理。 DHCP 请求被拒绝： sudo dhclient -v 输出包含 DHCPREQUEST on &lt;接口&gt; 后接 DHCPNAK 、No DHCPOFFERS received ，或 NetworkManager 日志出现 dhcp4 (接口): request denied 。此时说明网络联通正常但服务器拒绝分配地址，可临时配置静态 IP 保持通信，并将日志截图、MAC 地址与所需网段提交给 DHCP 管理员排查（检查地址池、认证策略、保留 IP 冲突等）。 针对工具核对配置： NetworkManager： nmcli dev show &lt;接口&gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。 命令方式设置静态 IP，参考脚本： nmcli connection modify &lt;连接名&gt; ipv4.method manual ipv4.addresses 192.168.1.10/24 ipv4.gateway 192.168.1.1 ipv4.dns &ldquo;8.8.8.8 114.114.114.114&rdquo; nmcli connection up &lt;连接名&gt; ``` * DHCP * 静态IP * 路由 * MTU * 命名空间隔离 * IP冲突 * DHCP被拒场景\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="网络分层模型（5 层 / 7 层） 物理层（Physical）：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。 数据链路层（Data Link）：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。 网络层（Network）：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。 传输层（Transport）：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。 会话层（Session）：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。 表示层（Presentation）：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。 应用层（Application）：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。\n说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。 上网原理概述 网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。 数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。 网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。 传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。 应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。 DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。 各层常见故障与排查 物理层 可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。 观察与判定： 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。\n网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。\n常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。\n若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100 Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8 依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。 排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。 解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。 数据链路层 可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。 观察与判定： ip link show 显示接口 state DOWN 或接口未列出。\ndmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。\n局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。 排查步骤： sudo ip link set &lt;接口&gt; up 尝试启用；若失败继续排查。 lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。\ndmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。\n与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。 解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。 网络层 可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。\n">
 <title>Linux设备上网原理与故障排查指南</title>
 
 <link rel='canonical' href='https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/'>
 
 <link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="Linux设备上网原理与故障排查指南">
-<meta property='og:description' content="网络分层模型（5 层 / 7 层） 物理层（Physical）：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。 数据链路层（Data Link）：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。 网络层（Network）：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。 传输层（Transport）：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。 会话层（Session）：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。 表示层（Presentation）：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。 应用层（Application）：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。\n说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。 上网原理概述 网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。 数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。 网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。 传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。 应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。 DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。 各层常见故障与排查 物理层 可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。 观察与判定： 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。\n网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。\n常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。\n若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100 Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8 依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。 排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。 解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。 数据链路层 可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。 观察与判定： ip link show 显示接口 state DOWN 或接口未列出。\ndmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。\n局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。 排查步骤： sudo ip link set &lt;接口&gt; up 尝试启用；若失败继续排查。 lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。\ndmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。\n与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。 解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。 网络层 可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。 观察与判定： ip addr show 无 inet 地址或出现 169.254.x.x 。 ip route 缺少 default 网关或指向无效接口。 ping 同网段设备失败但物理层正常。 能 ping 小包却无法传输大报文、HTTPS／SSH 连接容易超时，常见于 MTU 设置过小或被PPPoE/隧道额外封装压缩。 ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。 排查步骤： 确认网络管理工具： NetworkManager： systemctl is-active NetworkManager 为 active ； nmcli general status 能返回状态。 Netplan： ls /etc/netplan/ 有 YAML 文件； sudo netplan status 可查看当前配置。 systemd-networkd： systemctl is-active systemd-networkd 为 active ；配置在/etc/systemd/network/ 。 ifupdown（传统脚本）：Debian/旧版 Ubuntu 使用 /etc/network/interfaces ，可用ifquery &ndash;list 查看。 多个工具同时运行：如果 systemctl 显示 NetworkManager 和 systemd-networkd 均为active ，或 Netplan 配置与 NetworkManager 同时存在，可能出现互相覆盖，应决定保留其一，并停用/禁用其他服务（如 sudo systemctl disable &ndash;now systemd-networkd ）。 都未运行：若所有管理工具均显示 inactive ，网络接口可能由手工脚本或容器化平台接管。可临时使用 sudo ip addr add 、sudo ip route add 手动设定，并确认是否有网管脚本（如/etc/rc.local 、/usr/local/bin/*.sh ）或云平台代理。 DHCP 请求被拒绝： sudo dhclient -v 输出包含 DHCPREQUEST on &lt;接口&gt; 后接 DHCPNAK 、No DHCPOFFERS received ，或 NetworkManager 日志出现 dhcp4 (接口): request denied 。此时说明网络联通正常但服务器拒绝分配地址，可临时配置静态 IP 保持通信，并将日志截图、MAC 地址与所需网段提交给 DHCP 管理员排查（检查地址池、认证策略、保留 IP 冲突等）。 针对工具核对配置： NetworkManager： nmcli dev show &lt;接口&gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。 命令方式设置静态 IP，参考脚本： nmcli connection modify &lt;连接名&gt; ipv4.method manual ipv4.addresses 192.168.1.10/24 ipv4.gateway 192.168.1.1 ipv4.dns &ldquo;8.8.8.8 114.114.114.114&rdquo; nmcli connection up &lt;连接名&gt; ``` * DHCP * 静态IP * 路由 * MTU * 命名空间隔离 * IP冲突 * DHCP被拒场景\n">
+<meta property='og:description' content="网络分层模型（5 层 / 7 层） 物理层（Physical）：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。 数据链路层（Data Link）：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。 网络层（Network）：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。 传输层（Transport）：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。 会话层（Session）：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。 表示层（Presentation）：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。 应用层（Application）：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。\n说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。 上网原理概述 网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。 数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。 网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。 传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。 应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。 DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。 各层常见故障与排查 物理层 可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。 观察与判定： 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。\n网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。\n常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。\n若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100 Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8 依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。 排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。 解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。 数据链路层 可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。 观察与判定： ip link show 显示接口 state DOWN 或接口未列出。\ndmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。\n局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。 排查步骤： sudo ip link set &lt;接口&gt; up 尝试启用；若失败继续排查。 lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。\ndmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。\n与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。 解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。 网络层 可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。\n">
 <meta property='og:url' content='https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/'>
 <meta property='og:site_name' content='dsmggm博客'>
 <meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:tag' content='arm' /><meta property='article:tag' content='Linux' /><meta property='article:tag' content='研华' /><meta property='article:published_time' content='2026-01-21T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-01-21T00:00:00&#43;00:00'/><meta property='og:image' content='https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png' />
 <meta name="twitter:title" content="Linux设备上网原理与故障排查指南">
-<meta name="twitter:description" content="网络分层模型（5 层 / 7 层） 物理层（Physical）：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。 数据链路层（Data Link）：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。 网络层（Network）：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。 传输层（Transport）：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。 会话层（Session）：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。 表示层（Presentation）：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。 应用层（Application）：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。\n说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。 上网原理概述 网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。 数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。 网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。 传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。 应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。 DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。 各层常见故障与排查 物理层 可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。 观察与判定： 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。\n网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。\n常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。\n若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100 Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8 依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。 排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。 解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。 数据链路层 可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。 观察与判定： ip link show 显示接口 state DOWN 或接口未列出。\ndmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。\n局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。 排查步骤： sudo ip link set &lt;接口&gt; up 尝试启用；若失败继续排查。 lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。\ndmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。\n与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。 解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。 网络层 可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。 观察与判定： ip addr show 无 inet 地址或出现 169.254.x.x 。 ip route 缺少 default 网关或指向无效接口。 ping 同网段设备失败但物理层正常。 能 ping 小包却无法传输大报文、HTTPS／SSH 连接容易超时，常见于 MTU 设置过小或被PPPoE/隧道额外封装压缩。 ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。 排查步骤： 确认网络管理工具： NetworkManager： systemctl is-active NetworkManager 为 active ； nmcli general status 能返回状态。 Netplan： ls /etc/netplan/ 有 YAML 文件； sudo netplan status 可查看当前配置。 systemd-networkd： systemctl is-active systemd-networkd 为 active ；配置在/etc/systemd/network/ 。 ifupdown（传统脚本）：Debian/旧版 Ubuntu 使用 /etc/network/interfaces ，可用ifquery &ndash;list 查看。 多个工具同时运行：如果 systemctl 显示 NetworkManager 和 systemd-networkd 均为active ，或 Netplan 配置与 NetworkManager 同时存在，可能出现互相覆盖，应决定保留其一，并停用/禁用其他服务（如 sudo systemctl disable &ndash;now systemd-networkd ）。 都未运行：若所有管理工具均显示 inactive ，网络接口可能由手工脚本或容器化平台接管。可临时使用 sudo ip addr add 、sudo ip route add 手动设定，并确认是否有网管脚本（如/etc/rc.local 、/usr/local/bin/*.sh ）或云平台代理。 DHCP 请求被拒绝： sudo dhclient -v 输出包含 DHCPREQUEST on &lt;接口&gt; 后接 DHCPNAK 、No DHCPOFFERS received ，或 NetworkManager 日志出现 dhcp4 (接口): request denied 。此时说明网络联通正常但服务器拒绝分配地址，可临时配置静态 IP 保持通信，并将日志截图、MAC 地址与所需网段提交给 DHCP 管理员排查（检查地址池、认证策略、保留 IP 冲突等）。 针对工具核对配置： NetworkManager： nmcli dev show &lt;接口&gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。 命令方式设置静态 IP，参考脚本： nmcli connection modify &lt;连接名&gt; ipv4.method manual ipv4.addresses 192.168.1.10/24 ipv4.gateway 192.168.1.1 ipv4.dns &ldquo;8.8.8.8 114.114.114.114&rdquo; nmcli connection up &lt;连接名&gt; ``` * DHCP * 静态IP * 路由 * MTU * 命名空间隔离 * IP冲突 * DHCP被拒场景\n"><meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="网络分层模型（5 层 / 7 层） 物理层（Physical）：负责比特流的传输与电气/光学信号转换。典型硬件包括网线、光纤、网络接口卡、集线器等；软件层面主要由驱动程序与固件控制信号发送。 数据链路层（Data Link）：在同一局域网内建立可靠链路，处理 MAC 地址、帧校验。硬件设备如交换机、网桥；对应软件是网卡驱动、内核中的以太网协议栈（如 Linux 的 eth 、bridge 模块）。 网络层（Network）：负责跨网络的寻址与路由（IP 协议）。硬件侧通常是三层交换机、路由器；软件侧包括操作系统的 IP 协议栈、路由表、ip 命令、iptables 等。 传输层（Transport）：提供端到端的传输控制（TCP、UDP）。主要由操作系统内核中的传输层实现，常见软件组件包括 socket API、netstat 、ss 。 会话层（Session）：管理会话、连接维护与同步，在现代实现里多由应用协议或中间件处理，如 RPC 框架、会话管理库。 表示层（Presentation）：负责数据格式、加密与解密，如 TLS/SSL、字符编码转换。对应软件包括OpenSSL、GnuTLS、序列化库（JSON、ProtoBuf）。 应用层（Application）：直接面向用户的网络应用协议，如 HTTP、SSH、FTP；对应软件是浏览器、SSH 客户端、数据库客户端等。\n说明：实际工程常使用 TCP/IP 5 层模型，将会话层与表示层合并到应用层。理解各层能帮助在故障排查时快速定位是物理问题、网络层问题还是应用配置问题。 上网原理概述 网络接口：设备的有线网卡或无线网卡负责发送与接收数据，必须具备正确的硬件状态与驱动支持。 数据链路：层通过网线、无线电波连接交换机、路由器等网络设备，形成局域网。 网络层：使用 IP 协议，设备需要正确的 IP 地址、子网掩码和默认网关，才能与其他主机通信。 传输层：常见的 TCP、UDP 协议负责提供可靠或快速的数据传输通道。 应用层：浏览器、SSH、数据库客户端等具体应用通过网络协议访问远程服务。 DNS 与路由：DNS 负责将域名解析为 IP 地址；路由器根据路由表决定数据包转发路径，最终达到目标服务器或互联网。 各层常见故障与排查 物理层 可能故障：电源中断、网线损坏、光模块松动、接口未插紧、无线开关关闭。 观察与判定： 电源灯常亮或缓慢闪烁代表供电稳定；熄灭或快速闪烁为异常。\n网卡 Link/Act 灯常亮并伴随闪烁表示接通且有流量；全暗或变红说明物理链路断开。\n常见指示规律：“常亮=链路建立、闪烁=有流量”。百兆网口多为黄色/橙色常亮表示 100 Mbps 链路、绿色闪烁代表数据传输；千兆网口通常绿灯常亮表示 1000 Mbps 正常联通、黄灯/另一盏灯闪烁表示实时流量。\n若网线内部双绞对接错（例如部分线芯反接），常见现象是指示灯间歇亮灭、链路速率降到 10/100 Mbps、ethtool 显示大量 Tx/Rx errors 或 CRC 错误，数据传输极慢。标准 T568B 线序由 1 到 8 依次为：白橙、橙、白绿、蓝、白蓝、绿、白棕、棕；T568A 则为白绿、绿、白橙、蓝、白蓝、橙、白棕、棕。可使用网线测试仪检测八芯对应关系，或更换一根合格网线验证。 排查步骤：重新插拔电源、确认插座或 UPS 供电；检查网线卡扣并尝试更换另一根线或端口；无线适配器按下硬件开关或功能键（如 Fn+F5）。 解决建议：替换损坏线缆/光纤、修复或更换异常端口；必要时重启交换机/路由器；为易松动的接口配固定卡扣。 数据链路层 可能故障：网卡未启用、驱动缺失、MAC 地址冲突、交换机 VLAN 配置错误。 观察与判定： ip link show 显示接口 state DOWN 或接口未列出。\ndmesg 出现 device not found 、firmware missing 、Tx timeout 等信息。\n局域网内其他主机的 arp -a 中没有该主机 MAC，或提示冲突。 排查步骤： sudo ip link set &lt;接口&gt; up 尝试启用；若失败继续排查。 lspci | grep -i ethernet 、lsusb | grep -i wireless 确认硬件被识别。\ndmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新内核模块（如 sudo modprobe e1000e ）。\n与网络管理员核实交换机端口 VLAN/Trunk 配置是否正确。 解决建议：重新安装驱动或固件、升级内核、调整 VLAN；若网卡故障则更换硬件。 网络层 可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。\n"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://dsmggm.dpdns.org/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.png' />
     <link rel="shortcut icon" href="/favicon.ico" />
 
@@ -236,8 +236,16 @@
         <li><a href="#物理层">物理层</a></li>
         <li><a href="#数据链路层">数据链路层</a></li>
         <li><a href="#网络层">网络层</a></li>
+        <li><a href="#传输层">传输层</a></li>
+        <li><a href="#会话层">会话层</a></li>
       </ol>
     </li>
+    <li><a href="#表示层">表示层</a></li>
+    <li><a href="#应用层">应用层</a></li>
+    <li><a href="#综合排查流程按层推进">综合排查流程（按层推进）</a></li>
+    <li><a href="#常用命令速查">常用命令速查</a></li>
+    <li><a href="#故障分析习惯与建议">故障分析习惯与建议</a></li>
+    <li><a href="#常见假性故障示例">常见“假性故障”示例</a></li>
   </ol>
 </nav>
         </div>
@@ -400,8 +408,11 @@ dmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新
 </ul>
 <h2 id="网络层">网络层
 </h2><ul>
-<li>可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。</li>
-<li>观察与判定：
+<li>
+<p>可能故障：IP/子网掩码/网关配置错误、DHCP 故障、路由缺失或错误、IP 冲突。</p>
+</li>
+<li>
+<p>观察与判定：</p>
 <ul>
 <li>ip addr show 无 inet 地址或出现 169.254.x.x 。</li>
 <li>ip route 缺少 default 网关或指向无效接口。</li>
@@ -410,9 +421,11 @@ dmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新
 <li>ip netns list 显示存在网络命名空间，或 ip -br addr 只在特定命名空间内可见接口，提示可能被容器/虚拟化隔离导致主命名空间无法访问。</li>
 </ul>
 </li>
-<li>排查步骤：
+<li>
+<p>排查步骤：</p>
 <ul>
-<li>确认网络管理工具：
+<li>
+<p>确认网络管理工具：</p>
 <ul>
 <li>NetworkManager： systemctl is-active NetworkManager 为 active ； nmcli general status 能返回状态。</li>
 <li>Netplan： ls /etc/netplan/ 有 YAML 文件； sudo netplan status 可查看当前配置。</li>
@@ -423,39 +436,489 @@ dmesg | grep -i &lt;接口&gt; 检查驱动加载消息，必要时安装/更新
 <li><strong>DHCP 请求被拒绝</strong>： sudo dhclient -v 输出包含 DHCPREQUEST on &lt;接口&gt; 后接 DHCPNAK 、No DHCPOFFERS received ，或 NetworkManager 日志出现 dhcp4 (接口): request denied 。此时说明网络联通正常但服务器拒绝分配地址，可临时配置静态 IP 保持通信，并将日志截图、MAC 地址与所需网段提交给 DHCP 管理员排查（检查地址池、认证策略、保留 IP 冲突等）。</li>
 </ul>
 </li>
-<li>针对工具核对配置：
+<li>
+<p>针对工具核对配置：</p>
 <ul>
-<li>NetworkManager： nmcli dev show &lt;接口&gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。
+<li>
+<p>NetworkManager： nmcli dev show &lt;接口&gt; 、nmcli connection show 查看 IP、网关、DNS；必要时用 nm-connection-editor 或 nmcli connection edit 调整。</p>
 <ul>
 <li>命令方式设置静态 IP，参考脚本：
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code></code></pre></td>
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"></code></pre></td></tr></table>
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">nmcli connection modify &lt;连接名&gt; <span class="se">\
+</span></span></span><span class="line"><span class="cl">ipv4.method manual <span class="se">\
+</span></span></span><span class="line"><span class="cl">ipv4.addresses 192.168.1.10/24 <span class="se">\
+</span></span></span><span class="line"><span class="cl">ipv4.gateway 192.168.1.1 <span class="se">\
+</span></span></span><span class="line"><span class="cl">ipv4.dns <span class="s2">&#34;8.8.8.8 114.114.114.114&#34;</span>
+</span></span><span class="line"><span class="cl">nmcli connection up &lt;连接名&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>配置文件方式：编辑 /etc/NetworkManager/system-onnections/&lt;连接名&gt;.nmconnection ，可参考模板：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[connection]</span>
+</span></span><span class="line"><span class="cl"><span class="na">id</span><span class="o">=</span><span class="s">&lt;连接名&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="na">type</span><span class="o">=</span><span class="s">ethernet</span>
+</span></span><span class="line"><span class="cl"><span class="k">[ipv4]</span>
+</span></span><span class="line"><span class="cl"><span class="na">method</span><span class="o">=</span><span class="s">manual</span>
+</span></span><span class="line"><span class="cl"><span class="na">addresses1</span><span class="o">=</span><span class="s">192.168.1.10/24,192.168.1.1</span>
+</span></span><span class="line"><span class="cl"><span class="na">dns</span><span class="o">=</span><span class="s">8.8.8.8;114.114.114.114</span>
+</span></span><span class="line"><span class="cl"><span class="k">[ipv6]</span>
+</span></span><span class="line"><span class="cl"><span class="na">method</span><span class="o">=</span><span class="s">ignore</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>保存后执行 sudo nmcli connection reload &amp;&amp; sudo nmcli connection up &lt;连接名&gt; 。</li>
+</ul>
+</li>
+<li>
+<p>Netplan：编辑 /etc/netplan/*.yaml 中的 addresses 、gateway4 、nameservers ，执行 sudo netplan apply 或 sudo netplan try 。</p>
+<ul>
+<li>命令方式，参考脚本：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo netplan <span class="nb">set</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    network.ethernets.eth0.addresses<span class="o">=[</span>192.168.1.10/24<span class="o">]</span> <span class="se">\
+</span></span></span><span class="line"><span class="cl">    network.ethernets.eth0.gateway4<span class="o">=</span>192.168.1.1 <span class="se">\
+</span></span></span><span class="line"><span class="cl">    network.ethernets.eth0.nameservers.addresses<span class="o">=</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>8.8.8.8,114.114.114.114<span class="o">]</span>
+</span></span><span class="line"><span class="cl">sudo netplan apply
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>配置文件方式：在 YAML 中手工填写，模板示例：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">network</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l">NetworkManager</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ethernets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">eth0</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">addresses</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span>- <span class="m">192.168.1.10</span><span class="l">/24</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">gateway4</span><span class="p">:</span><span class="w"> </span><span class="m">192.168.1.1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">nameservers</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                </span><span class="nt">addresses</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span>- <span class="m">8.8.8.8</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                    </span>- <span class="m">114.114.114.114</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>保存后运行 sudo netplan apply 。</li>
+</ul>
+</li>
+<li>
+<p>ifupdown：查看 /etc/network/interfaces ，用 sudo ifdown &lt;接口&gt; &amp;&amp; sudo ifup &lt;接口&gt; 让配置生效</p>
+<ul>
+<li>命令方式：临时运行 sudo ip addr add 192.168.1.10/24 dev eth0 、sudo ip route add default via 192.168.1.1 、在 /etc/resolv.conf 中写入 nameserver 8.8.8.8 ，重启后需重新配置。</li>
+<li>配置文件方式：在 /etc/network/interfaces 中添加，模板示例：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">auto eth0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="l">iface eth0 inet static</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">address 192.168.1.10</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">netmask 255.255.255.0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">gateway 192.168.1.1</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="l">dns-nameservers 8.8.8.8 114.114.114.114</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>保存后执行 sudo ifdown eth0 &amp;&amp; sudo ifup eth0 。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>DHCP： sudo dhclient -v &lt;接口&gt; ，关注是否收到 bound 日志；若 No DHCPOFFERS received ，检查 DHCP 服务或接入网络。若需恢复自动获取，可按所用工具配置成 DHCP 模式：</p>
+<ul>
+<li>NetworkManager：编辑 /etc/NetworkManager/system-connections/&lt;连接名&gt;.nmconnection ，在 [ipv4] 段写入：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[ipv4]</span>
+</span></span><span class="line"><span class="cl"><span class="na">method</span><span class="o">=</span><span class="s">auto</span>
+</span></span><span class="line"><span class="cl"><span class="na">ignore-auto-dns</span><span class="o">=</span><span class="s">false</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>保存后执行 sudo nmcli connection reload &amp;&amp; sudo nmcli connection up &lt;连接名&gt; 。</li>
+<li>Netplan：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">network</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="m">2</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">renderer</span><span class="p">:</span><span class="w"> </span><span class="l">NetworkManager</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">ethernets</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">        </span><span class="nt">eth0</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">            </span><span class="nt">dhcp4</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>保存后 sudo netplan apply 。</li>
+<li>systemd-networkd：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-ini" data-lang="ini"><span class="line"><span class="cl"><span class="k">[Match]</span>
+</span></span><span class="line"><span class="cl"><span class="na">Name</span><span class="o">=</span><span class="s">eth0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">[Network]</span>
+</span></span><span class="line"><span class="cl"><span class="na">DHCP</span><span class="o">=</span><span class="s">yes</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>保存到 /etc/systemd/network/10-eth0.network 后 sudo systemctl restart systemdnetworkd</li>
+<li>ifupdown：
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="l">auto eth0</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="l">iface eth0 inet dhcp</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>写入 /etc/network/interfaces ，执行 sudo ifdown eth0 &amp;&amp; sudo ifup eth0</li>
+</ul>
+</li>
+<li>
+<p>静态 IP：结合上一步确认的管理工具核对配置文件；应用后再查 ip addr 确认生效。</p>
+</li>
+<li>
+<p>路由： ip route get 8.8.8.8 确认出接口；必要时 sudo ip route add default via &lt;网关&gt; 。</p>
+</li>
+<li>
+<p>MTU：使用 ping -M do -s 1472 8.8.8.8 测试是否出现 Frag needed ，或对比 ip link show &lt;接口&gt; 的 mtu 值；若存在隧道/PPPoE，可将 MTU 调小（如 1492/1450）并在配置文件中同步更新。</p>
+</li>
+<li>
+<p>命名空间隔离：若接口位于容器或 ip netns 环境，需进入对应命名空间（ ip netns exec <ns> bash ）检查配置，或调整 CNI/容器网络策略将接口暴露到宿主。</p>
+</li>
+<li>
+<p>IP 冲突： arping &lt;本机IP&gt; 或 ip monitor neigh 观察是否收到冲突提示。</p>
+</li>
+<li>
+<p>DHCP 被拒场景：联系 DHCP 管理员检查地址池是否耗尽、MAC 是否被限制、租约是否过期；必要时先配置临时静态 IP 保持联通，并记录 dhclient 输出、交换机端口信息，便于服务器侧解除限制或调整策略。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="传输层">传输层
+</h2><ul>
+<li>可能故障：防火墙阻断、端口未监听或被占用、NAT 映射异常、连接被中途重置。
+<ul>
+<li>观察与判定：
+<ul>
+<li>ss -tulpn / netstat -tulpn 查看监听端口与进程。</li>
+<li>ufw status 、sudo iptables -L -n -v 显示有拒绝策略。</li>
+<li>telnet / nc 到目标端口失败，但 ping 正常。</li>
+</ul>
+</li>
+<li>排查步骤：
+<ul>
+<li>临时关闭/放宽防火墙（ sudo ufw disable 、sudo systemctl stop firewalld ）验证是否为规则引起。</li>
+<li>检查 NAT/端口映射设置；在路由器或防火墙控制台查看转发表。</li>
+<li>使用 nc -vz &lt;主机&gt; &lt;端口&gt; 或 curl -I 验证端口连通；关注服务器日志是否出现 connectionreset</li>
+</ul>
+</li>
+<li>解决建议：开放必要端口、调整 NAT 映射、释放被占用端口或修改服务端口、对路由器升级固件或重启。</li>
+</ul>
+</li>
+</ul>
+<h2 id="会话层">会话层
+</h2><ul>
+<li>可能故障：会话超时、认证失败、VPN 隧道未建立、会话保持配置错误。</li>
+<li>观察与判定：
+<ul>
+<li>PN 客户端提示  auth failed 、 TLS handshake failed  或频繁掉线。</li>
+<li>SSH、数据库等长连接频繁中断并报  connection reset by peer 。</li>
+<li>日志出现  session expired 、 token invalid 、 keepalive timeout 。</li>
+</ul>
+</li>
+<li>排查步骤：
+<ul>
+<li>
+<p>确认系统时间与服务器同步（ timedatectl 、 ntpstat ）。若需要手动调整，可使用：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo timedatectl set-timezone Asia/Shanghai
+</span></span><span class="line"><span class="cl">sudo timedatectl set-time <span class="s2">&#34;2025-01-01 12:00:00&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>判断当前 NTP 服务由谁管理，可通过：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">timedatectl <span class="p">|</span> grep <span class="s2">&#34;System clock synchronized&#34;</span>
+</span></span><span class="line"><span class="cl">timedatectl show --property<span class="o">=</span>NTPSynchronized
+</span></span><span class="line"><span class="cl">systemctl list-units <span class="p">|</span> grep -E <span class="s1">&#39;ntp|chrony|timesync&#39;</span>
+</span></span><span class="line"><span class="cl">systemctl status systemd-timesyncd
+</span></span><span class="line"><span class="cl">systemctl status chronyd
+</span></span><span class="line"><span class="cl">systemctl status ntpd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>哪个服务处于<code>active (running)</code>状态，通常即为当前同步源。<br>
+检查时间服务器可达性，可以先<code>ping ntp.aliyun.com</code>、<code>dig ntp.aliyun.com</code> 验证解析，再用<code>ntpdate -q ntp.aliyun.com</code>或<code>chronyc sources -n</code> 观测延迟/偏差；必要时确认防火墙已放行UDP/123。<br>
+systemd-timesyncd 正常与否可通过 <code>timedatectl timesync-status</code> 或 <code>journalctl -u systemd-timesyncd</code> 查看；chrony 使用 <code>chronyc tracking</code>、<code>chronyc sources</code>；若是传统 ntpd，可运行<code>ntpq -p</code>。<br>
+将系统加入 NTP 同步，步骤示例（systemd-timesyncd）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo timedatectl set-ntp <span class="nb">true</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 或编辑 /etc/systemd/timesyncd.conf 指定上游：</span>
+</span></span><span class="line"><span class="cl">sudo tee /etc/systemd/timesyncd.conf <span class="s">&lt;&lt;&#39;EOF&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s">[Time]
+</span></span></span><span class="line"><span class="cl"><span class="s">NTP=ntp.aliyun.com ntp.tencent.com
+</span></span></span><span class="line"><span class="cl"><span class="s">FallbackNTP=time.windows.com time.google.com
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl">sudo systemctl restart systemd-timesyncd
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>对使用 chrony 的系统，可在  /etc/chrony.conf  添加：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">server ntp.aliyun.com iburst
+</span></span><span class="line"><span class="cl">server ntp.tencent.com iburst
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存后 <code>sudo systemctl restart chronyd</code>。完成后再次运行 <code>timedatectl</code> 或 <code>chronyc sources</code>验证同步状态。<br>
+传统 ntpd (ntpq) 配置示例可编辑  <code>/etc/ntp.conf</code> ：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">driftfile /var/lib/ntp/ntp.drift
+</span></span><span class="line"><span class="cl">restrict default kod nomodify notrap nopeer noquery
+</span></span><span class="line"><span class="cl">restrict 127.0.0.1
+</span></span><span class="line"><span class="cl">restrict ::1
+</span></span><span class="line"><span class="cl">server ntp.aliyun.com iburst
+</span></span><span class="line"><span class="cl">server ntp.tencent.com iburst
+</span></span><span class="line"><span class="cl">server time.google.com iburst
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>保存后执行 <code>sudo systemctl restart ntpd</code>，再通过 <code>ntpq -p</code>检查对时状态。<br>
+常用时间服务器示例：</p>
+<ul>
+<li>国内： <code>ntp.aliyun.com</code> 、<code>ntp.tencent.com</code> 、<code>ntp.ntsc.ac.cn</code> （授时中心）、<code>cn.pool.ntp.org</code></li>
+<li>海外： <code>time.google.com</code> 、 <code>time.cloudflare.com</code> 、 <code>time.windows.com</code> 、 <code>pool.ntp.org</code></li>
+</ul>
+</li>
+<li>
+<p>查看 VPN/SSH/中间件日志（如  <code>/var/log/openvpn.log</code> 、 <code>journalctl -u sshd</code> ）。</p>
+</li>
+<li>
+<p>检查会话保持配置：TCP keepalive、反向代理的超时时间、负载均衡的健康检查。</p>
+</li>
+<li>
+<p>若涉及安全设备策略，与管理员确认会话时长限制。</p>
+</li>
+</ul>
+</li>
+<li>解决建议：同步时间、更新凭证或口令、调高超时阈值、修正 VPN/代理配置。</li>
+</ul>
+<h1 id="表示层">表示层
+</h1><ul>
+<li>可能故障：证书过期/不受信任、加密套件不匹配、字符编码错误、压缩包损坏。</li>
+<li>观察与判定：
+<ul>
+<li>HTTPS 或 TLS 客户端报<code>SSL certificate problem</code>、浏览器提示证书无效。</li>
+<li>日志包含<code>unsupported cipher</code>、<code>bad record mac</code>、编码转换异常。</li>
+</ul>
+</li>
+<li>排查步骤：
+<ul>
+<li><code>openssl s_client -connect &lt;主机&gt;:443</code> 检查证书链、有效期、协商的加密套件。</li>
+<li>确认系统信任库（<code>/etc/ssl/certs</code>）中存在根证书；必要时更新 CA 包。</li>
+<li>针对数据交换格式，使用<code>iconv</code>、<code>jq</code>、<code>xmllint</code>等工具验证内容合法性。</li>
+</ul>
+</li>
+<li>解决建议：续签或替换证书、统一 TLS 版本与加密套件、修正编码/序列化逻辑、确保双方使用兼容的压缩方案。</li>
+</ul>
+<h1 id="应用层">应用层
+</h1><ul>
+<li>可能故障：服务未启动、配置错误、资源耗尽、依赖不可用、程序 BUG。</li>
+<li>观察与判定：
+<ul>
+<li><code>systemctl status &lt;服务&gt;</code>显示<code>failed</code>、<code>inactive</code>或进程不断重启。</li>
+<li>应用日志出现<code>connection refused</code>、<code>permission denied</code>、<code>cannot connect to database</code>等。</li>
+<li><code>top/htop</code>显示 CPU、内存或磁盘耗尽。</li>
+</ul>
+</li>
+<li>排查步骤：
+<ul>
+<li>查看  journalctl -u &lt;服务&gt;  与应用自身日志（如<code>/var/log/nginx/error.log</code> 、<code>/var/log/mysql/error.log</code> ）。</li>
+<li>使用应用提供的自检命令（ nginx -t 、 named-checkconf 、 mysqladmin ping ）。</li>
+<li>检查配置文件语法、路径、权限；确认依赖服务是否可达。</li>
+<li>通过  systemctl restart &lt;服务&gt;  测试恢复情况，必要时启用 debug 日志。</li>
+</ul>
+</li>
+<li>解决建议：修正配置或权限、扩容资源、更新或回滚软件版本、修复程序 BUG、保障依赖组件稳定。</li>
+</ul>
+<h1 id="综合排查流程按层推进">综合排查流程（按层推进）
+</h1><ul>
+<li>明确故障现象：记录目标地址、时间点、错误提示，确保排查有方向。</li>
+<li>物理层 → 数据链路层 → 网络层 → 传输层 → 会话层 → 表示层 → 应用层，逐级排除，勿跳层。</li>
+<li>每完成一层排查即进行测试（如重新 ping、访问服务），若问题解决及时记录；若未解决，再进入上一层。</li>
+<li>过程中保留命令输出与日志截图，方便回溯或向同事/厂商求助。</li>
+</ul>
+<h1 id="常用命令速查">常用命令速查
+</h1><ul>
+<li>物理/链路：<code>ip link show</code>、<code>ethtool &lt;接口&gt;</code>、<code>lspci</code> 、 <code>lsusb</code> 、 <code>dmesg</code></li>
+<li>网络层：<code>ip addr</code>、<code>ip route</code>、<code>arp -a</code>、<code>dhclient</code></li>
+<li>传输层：<code>ss -tulpn</code>、<code>netstat -an</code>、<code>ufw status</code>、<code>iptables -L -n -v</code></li>
+<li>会话层：<code>journalctl -u sshd</code> 、VPN客户端日志、<code>timedatectl</code>、<code>ntpstat</code></li>
+<li>表示层：<code>openssl s_client</code>、<code>curl -v</code>、<code>iconv</code></li>
+<li>应用层：<code>systemctl status</code>、<code>nginx -t</code>、<code>mysqladmin ping</code>、<code>tail -f &lt;日志&gt;</code></li>
+</ul>
+<h1 id="故障分析习惯与建议">故障分析习惯与建议
+</h1><ul>
+<li>先处理最可能的简单问题，再深入复杂层级，避免误判。</li>
+<li>每次仅修改一项并立即验证，防止连续改动导致问题叠加。</li>
+<li>将排查过程、结果与最终方案记录成文档或脚本，方便下次复用。</li>
+<li>对关键服务建立监控、日志告警与定期巡检，提前发现异常。</li>
+</ul>
+<h1 id="常见假性故障示例">常见“假性故障”示例
+</h1><ul>
+<li>无法 SSH：误以为网络断开，实则服务器未安装或未启动<code>sshd</code>，或禁止密码登录。可通过进程与端口(<code>systemctl status sshd</code>、<code>ss -tnlp | grep 22</code>) 验证。</li>
+<li>PING不通：部分服务器禁用 ICMP 或被防火墙丢弃，但 TCP/HTTP 访问正常。遇到<code>ping</code>超时时，可以改用<code>curl</code>、<code>nc</code>、<code>traceroute</code>检查。</li>
+<li>DNS 解析失败：手动修改<code>/etc/resolv.conf</code>后仍被 NetworkManager/Netplan覆盖，看似DNS不可用。
+<ul>
+<li>JelinaOS:
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat &gt;<span class="nv">$ROOTFS</span>/etc/resolvconf.conf <span class="s">&lt;&lt;EOF
+</span></span></span><span class="line"><span class="cl"><span class="s">resolv_conf=/etc/resolv.conf
+</span></span></span><span class="line"><span class="cl"><span class="s">resolvconf=NO
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl">    chmod <span class="m">644</span> <span class="nv">$ROOTFS</span>/etc/resolvconf.conf
+</span></span><span class="line"><span class="cl"><span class="c1"># avoid dhclient edit resolv.conf</span>
+</span></span><span class="line"><span class="cl">    mkdir -p <span class="nv">$ROOTFS</span>/etc/dhcp/dhclient-enter-hooks.d/
+</span></span><span class="line"><span class="cl">    cat &gt;<span class="nv">$ROOTFS</span>/etc/dhcp/dhclient-enter-hooks.d/nodnsupdate <span class="s">&lt;&lt;EOF
+</span></span></span><span class="line"><span class="cl"><span class="s">make_resolv_conf() {
+</span></span></span><span class="line"><span class="cl"><span class="s">    :
+</span></span></span><span class="line"><span class="cl"><span class="s">}
+</span></span></span><span class="line"><span class="cl"><span class="s">EOF</span>
+</span></span><span class="line"><span class="cl">    chmod <span class="m">755</span> <span class="nv">$ROOTFS</span>/etc/dhcp/dhclient-enter-hooks.d/nodnsupdate
+</span></span><span class="line"><span class="cl">ln -sf <span class="s1">&#39;../run/systemd/resolve/stub-resolv.conf&#39;</span> <span class="nv">$rootfs</span>/etc/resolv.conf
+</span></span><span class="line"><span class="cl">ln -srf /run/systemd/resolve/stub-resolv.con
+</span></span></code></pre></td></tr></table>
 </div>
 </div></li>
 </ul>
 </li>
+<li>网页打不开：浏览器提示证书错误或 403，误判为网络故障。实际是 HTTPS 证书过期、自签名未导入、或账号权限不足。</li>
+<li>端口扫描无响应：认为目标离线，但服务绑定在特定内网 IP 或只允许白名单访问。核对服务监听列表与防火墙规则。</li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>nmcli connection modify &lt;连接名&gt; <br>
-ipv4.method manual <br>
-ipv4.addresses 192.168.1.10/24 <br>
-ipv4.gateway 192.168.1.1 <br>
-ipv4.dns &ldquo;8.8.8.8 114.114.114.114&rdquo;
-nmcli connection up &lt;连接名&gt;
-```
-* DHCP
-* 静态IP
-* 路由
-* MTU
-* 命名空间隔离
-* IP冲突
-* DHCP被拒场景</p>
 
 </section>
 
@@ -537,6 +1000,19 @@ nmcli connection up &lt;连接名&gt;
 
             
                 
+<article class="">
+    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelinaos%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E4%B8%8E%E7%A7%91%E6%99%AE/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">JelinaOS常用命令与科普</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
 <article class="has-image">
     <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/">
         
@@ -555,19 +1031,6 @@ nmcli connection up &lt;连接名&gt;
 
         <div class="article-details">
             <h2 class="article-title">Jelina安装onboard屏幕软键盘SOP</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Jelina常用命令</h2>
         </div>
     </a>
 </article>
