@@ -1,0 +1,1721 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>教程 on dsmggm博客</title>
+        <link>https://dsmggm.dpdns.org/tags/%E6%95%99%E7%A8%8B/</link>
+        <description>Recent content in 教程 on dsmggm博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Dsmggm</copyright>
+        <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Windows11安装教程</title>
+        <link>https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image.png" alt="Featured image of post Windows11安装教程" /&gt;&lt;p&gt;此教程基于&lt;code&gt;Win 11 IoT Ent High End 21H2 x64 ChnSimp OPK(22000.318).iso&lt;/code&gt;系统镜像制作，其它系统安装方法与之类似&lt;/p&gt;
+&lt;h1 id=&#34;准备工作&#34;&gt;准备工作
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;U盘&lt;/li&gt;
+&lt;li&gt;制作启动盘&lt;/li&gt;
+&lt;li&gt;下载Windows系统镜像文件&lt;/li&gt;
+&lt;li&gt;复制到启动U盘中&lt;/li&gt;
+&lt;li&gt;断开网络&lt;/li&gt;
+&lt;li&gt;重装系统需要确认目前的C盘总大小，以便于后面安装时分区的选择
+以上准备工作操作流程请参考&lt;a class=&#34;link&#34; href=&#34;https://dsmggm.dpdns.org/%e7%b3%bb%e7%bb%9f%e9%95%9c%e5%83%8f%e4%b8%8b%e8%bd%bd%e9%93%be%e6%8e%a5&#34; &gt;系统镜像下载链接&lt;/a&gt;与&lt;a class=&#34;link&#34; href=&#34;https://dsmggm.dpdns.org/%e7%b3%bb%e7%bb%9f%e5%90%af%e5%8a%a8%e7%9b%98%e5%88%b6%e4%bd%9c%e6%95%99%e7%a8%8b&#34; &gt;系统启动盘制作教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安装向导ltsc版本&#34;&gt;安装向导（LTSC版本）
+&lt;/h1&gt;&lt;h2 id=&#34;安装界面&#34;&gt;安装界面
+&lt;/h2&gt;&lt;p&gt;点击&lt;code&gt;下一步&lt;/code&gt;&lt;br&gt;
+点击&lt;code&gt;现在安装&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image_hu_9ec6e1010fd19730.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image_hu_5a4a0ab68604bec4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-1.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-1_hu_69b10fb7e443e0cf.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-1_hu_7406fb84bd5d0c30.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;版本选择&#34;&gt;版本选择
+&lt;/h2&gt;&lt;p&gt;选择下方的&lt;code&gt;我没有产品密钥&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-2.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-2_hu_77dd03c3220f6fa3.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-2_hu_5bd4944e9aadc996.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+选择IOT版本，下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-3.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-3_hu_8c9b12193b04f3b8.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-3_hu_28884f2987673c9f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;协议同意&#34;&gt;协议同意
+&lt;/h2&gt;&lt;p&gt;打勾接受，下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-4.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-4_hu_20915d10b070b7b5.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-4_hu_abef4add860ac2af.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;系统分区与系统盘选择&#34;&gt;系统分区与系统盘选择
+&lt;/h2&gt;&lt;p&gt;系统分区有2种情况：&lt;br&gt;
+1、系统重装&lt;br&gt;
+2、全新安装&lt;br&gt;
+请参照自己的实际情况根据进行操作&lt;/p&gt;
+&lt;h3 id=&#34;系统重装的分区操作方法&#34;&gt;系统重装的分区操作方法
+&lt;/h3&gt;&lt;p&gt;选择自定义
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_4b1f4539d25583f2.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_1cd5ff5fff07ccae.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+选中系统盘，根据重装前确认的容量大小，点击格式化&lt;br&gt;
+也可根据驱动器与分区确认系统盘，进行格式化&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-6.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-6_hu_d0c077e250af3c25.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-6_hu_774ce0bcb12303b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+格式化点确认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-7.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-7_hu_cec6ac1b1f2ff40d.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-7_hu_57668ce0b7c3df.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+选中要安装系统的分区，此处选中100G的分区作为系统盘安装系统，点击下一步系统开始安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-8.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-8_hu_e70e6094f4ae89e2.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-8_hu_feacae2c0accebad.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;全新安装的分区操作方法&#34;&gt;全新安装的分区操作方法
+&lt;/h3&gt;&lt;p&gt;选择自定义
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_4b1f4539d25583f2.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_1cd5ff5fff07ccae.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+新建分区
+新建分区&lt;br&gt;
+输入新建的分区大小，&lt;strong&gt;1024M=1GB的大小&lt;/strong&gt;&lt;br&gt;
+比如100GB的分区大小，输入102400M，并应用&lt;br&gt;
+以此类推、将全部容量分区完成
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_92a8ae81732c4ab5.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_cd69285a812cef50.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-11.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-11_hu_1ce59922ca1bab03.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-11_hu_2af4466eebaaaeb9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+新建完全部分区后，对&lt;strong&gt;所有主分区&lt;/strong&gt;进行&lt;strong&gt;格式化&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-12.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-12_hu_3f87b6cc2ae019bd.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-12_hu_11a9df2cb0f27c58.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+格式化点确认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-13.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-13_hu_9a59a951652c43b3.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-13_hu_c9d1c51b6f7632d9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+选中要安装系统的分区，此处选中100G的分区作为系统盘安装系统，点击下一步系统开始安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-14.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-14_hu_9d890c84d510c7b2.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-14_hu_e7cf58d13c26934a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;等待安装完成&#34;&gt;等待安装完成
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9_hu_42523fa11bbe2f3a.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9_hu_ffc3f6ac04bf87b1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;欢迎设置向导ltsc版本&#34;&gt;欢迎设置向导（LTSC版本）
+&lt;/h1&gt;&lt;h2 id=&#34;选择地区&#34;&gt;选择地区
+&lt;/h2&gt;&lt;p&gt;默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15_hu_5ea406a2dd1e0a65.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15_hu_8a2a101b8f896bf5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置键盘&#34;&gt;设置键盘
+&lt;/h2&gt;&lt;p&gt;默认即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16_hu_afc5391943c02244.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16_hu_54dd3f0ddccd2859.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+跳过即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17_hu_3ac03f69e8a9dd51.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17_hu_cbfde8d2e56b004.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;跳过网络连接&#34;&gt;跳过网络连接
+&lt;/h2&gt;&lt;p&gt;点击我没有Internet连接
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-18.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-18_hu_ea7241ded2164fbc.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-18_hu_83d75bb68fea23a1.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+点击继续执行受限设置&lt;/p&gt;
+&lt;h2 id=&#34;设置用户名&#34;&gt;设置用户名
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19_hu_c2ea51381b6f0ac7.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19_hu_15b8502fbe92efab.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置密码&#34;&gt;设置密码
+&lt;/h2&gt;&lt;p&gt;密码可以留空不设置直接下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21_hu_395d93016aa85fcb.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21_hu_972a57e243f25719.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其它设置均默认接受即可&#34;&gt;其它设置，均默认接受即可
+&lt;/h2&gt;&lt;p&gt;下一步、接受
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22_hu_38bab78869654ba3.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22_hu_3af1b715e4ab808b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-38.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-38_hu_dd793313d2e86249.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-38_hu_7f83adbad90b29b2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;等待初始化完成进入桌面即可&#34;&gt;等待初始化完成进入桌面即可
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23_hu_ae82abd42ce1da6c.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23_hu_fab5dec5fd622308.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-24.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-24_hu_a9f8ce9474b02753.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-24_hu_303725f70e1eeccc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;安装向导专业版&#34;&gt;安装向导（专业版）
+&lt;/h1&gt;&lt;p&gt;专业版与企业版安装界面的仅略有差异&lt;/p&gt;
+&lt;h2 id=&#34;选择语言设置&#34;&gt;选择语言设置
+&lt;/h2&gt;&lt;p&gt;默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-25.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-25_hu_eb95b99ae65903c1.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-25_hu_1c8f5b65dc056e79.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;选择键盘设置&#34;&gt;选择键盘设置
+&lt;/h2&gt;&lt;p&gt;默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-26.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-26_hu_b7270c04270ee455.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-26_hu_97d5d64efb8dca51.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;选择安装类型&#34;&gt;选择安装类型
+&lt;/h2&gt;&lt;p&gt;勾选&lt;code&gt;我同意将删除所有内容，包括文件、应用和设置(A)&lt;/code&gt;，下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-27.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-27_hu_8fcbda2b20175fdd.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-27_hu_74f564c8499efdbf.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;选择版本&#34;&gt;选择版本
+&lt;/h2&gt;&lt;p&gt;选择专业版、下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-28.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-28_hu_23763abfc9fc089d.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-28_hu_d78a350e90795c7e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;接受协议&#34;&gt;接受协议
+&lt;/h2&gt;&lt;p&gt;接受即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-29.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-29_hu_1bb0b29f6ff7edb7.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-29_hu_6f9c27e27b66b4e7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;系统分区与系统盘选择-1&#34;&gt;系统分区与系统盘选择
+&lt;/h2&gt;&lt;p&gt;系统分区有2种情况：&lt;br&gt;
+1、系统重装&lt;br&gt;
+2、全新安装&lt;br&gt;
+请参照自己的实际情况根据进行操作&lt;/p&gt;
+&lt;h3 id=&#34;系统重装的分区操作方法-1&#34;&gt;系统重装的分区操作方法
+&lt;/h3&gt;&lt;p&gt;选中系统盘，根据重装前确认的容量大小，点击格式化&lt;br&gt;
+也可根据磁盘号与分区确认系统盘，进行格式化&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-33.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-33_hu_9c899a14efbe182e.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-33_hu_4ccd38faee7c1700.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+选中要安装系统的分区，此处选中100G的分区作为系统盘安装系统，点击下一步&lt;br&gt;
+点安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-34.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-34_hu_e0daffc79a2a07be.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-34_hu_f85fa4e3650dfcd7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;全新安装的分区操作方法-1&#34;&gt;全新安装的分区操作方法
+&lt;/h3&gt;&lt;p&gt;新建分区&lt;br&gt;
+输入新建的分区大小，&lt;strong&gt;1024M=1GB的大小&lt;/strong&gt;&lt;br&gt;
+比如100GB的分区大小，输入102400M，并应用&lt;br&gt;
+以此类推、将全部未分配的容量分区完成
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-30.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-30_hu_a2e600f159e9a8ae.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-30_hu_9ae454b152e9ae02.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-31.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-31_hu_ec8ad8fadfbac82b.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-31_hu_f768b8fcd8ae5ef3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+新建完全部分区后，对&lt;strong&gt;所有主分区&lt;/strong&gt;进行&lt;strong&gt;格式化&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-32.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-32_hu_1c683407fba05832.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-32_hu_b12a21c7c5ef9345.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+选中要安装系统的分区，此处选中100G的分区作为系统盘安装系统，点击下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-33.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-33_hu_9c899a14efbe182e.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-33_hu_4ccd38faee7c1700.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;
+点安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-34.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-34_hu_e0daffc79a2a07be.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-34_hu_f85fa4e3650dfcd7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;等待安装完成-1&#34;&gt;等待安装完成
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-35.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-35_hu_e64768faa33d7d7e.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-35_hu_4de9e7b4bce4c531.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;欢迎设置向导专业版&#34;&gt;欢迎设置向导（专业版）
+&lt;/h1&gt;&lt;h2 id=&#34;跳过网络连接设置&#34;&gt;跳过网络连接设置
+&lt;/h2&gt;&lt;p&gt;按键盘&lt;strong&gt;shift+f10&lt;/strong&gt;，跳出cmd窗口&lt;br&gt;
+输入&lt;code&gt;**OOBE\BYPASSNRO**&lt;/code&gt;不区分大小写，输入后回车自动重启
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-36.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-36_hu_521c4301c3f59a8f.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-36_hu_34e103c1728b0728.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;选择地区-1&#34;&gt;选择地区
+&lt;/h2&gt;&lt;p&gt;默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15_hu_5ea406a2dd1e0a65.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15_hu_8a2a101b8f896bf5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置键盘-1&#34;&gt;设置键盘
+&lt;/h2&gt;&lt;p&gt;默认即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16_hu_afc5391943c02244.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16_hu_54dd3f0ddccd2859.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+跳过即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17_hu_3ac03f69e8a9dd51.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17_hu_cbfde8d2e56b004.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;跳过网络连接-1&#34;&gt;跳过网络连接
+&lt;/h2&gt;&lt;p&gt;点击我没有Internet连接
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-37.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-37_hu_215b4059b4fce6bf.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-37_hu_c56e5bf417cf41a7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置用户名-1&#34;&gt;设置用户名
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19_hu_c2ea51381b6f0ac7.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19_hu_15b8502fbe92efab.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置密码-1&#34;&gt;设置密码
+&lt;/h2&gt;&lt;p&gt;密码可以留空不设置直接下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21_hu_395d93016aa85fcb.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21_hu_972a57e243f25719.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其它设置均默认接受即可-1&#34;&gt;其它设置，均默认接受即可
+&lt;/h2&gt;&lt;p&gt;下一步、接受
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22_hu_38bab78869654ba3.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22_hu_3af1b715e4ab808b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-38.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-38_hu_dd793313d2e86249.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-38_hu_7f83adbad90b29b2.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;等待初始化完成&#34;&gt;等待初始化完成
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23_hu_ae82abd42ce1da6c.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23_hu_fab5dec5fd622308.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;同意协议&#34;&gt;同意协议
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-39.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-39_hu_799de9636f02da5c.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-39_hu_94f5a7aac8a79349.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;进入桌面&#34;&gt;进入桌面
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-40.png&#34;
+	width=&#34;2048&#34;
+	height=&#34;1536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-40_hu_c48dda3f046d885.png 480w, https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-40_hu_30560e5ca2a5cbe3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;驱动安装&#34;&gt;驱动安装
+&lt;/h1&gt;&lt;p&gt;需要连接网络或提前下载好对应驱动进行安装&lt;br&gt;
+根据硬件安装相应驱动&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Windows10安装教程</title>
+        <link>https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Mon, 13 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23.png" alt="Featured image of post Windows10安装教程" /&gt;&lt;p&gt;此教程基于&lt;code&gt;Win10_IOT_Ent_2019_LTSC_1809_64bit_CHS.iso&lt;/code&gt;系统镜像制作，其它系统安装方法与之类似&lt;/p&gt;
+&lt;h1 id=&#34;准备工作&#34;&gt;准备工作
+&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;U盘&lt;/li&gt;
+&lt;li&gt;制作启动盘&lt;/li&gt;
+&lt;li&gt;下载Windows系统镜像文件&lt;/li&gt;
+&lt;li&gt;复制到启动U盘中&lt;/li&gt;
+&lt;li&gt;断开网络&lt;/li&gt;
+&lt;li&gt;重装系统需要确认目前的C盘总大小，以便于后面安装时分区的选择
+以上准备工作操作流程请参考&lt;a class=&#34;link&#34; href=&#34;https://dsmggm.dpdns.org/%e7%b3%bb%e7%bb%9f%e9%95%9c%e5%83%8f%e4%b8%8b%e8%bd%bd%e9%93%be%e6%8e%a5&#34; &gt;系统镜像下载链接&lt;/a&gt;与&lt;a class=&#34;link&#34; href=&#34;https://dsmggm.dpdns.org/%e7%b3%bb%e7%bb%9f%e5%90%af%e5%8a%a8%e7%9b%98%e5%88%b6%e4%bd%9c%e6%95%99%e7%a8%8b&#34; &gt;系统启动盘制作教程&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安装向导&#34;&gt;安装向导
+&lt;/h1&gt;&lt;h2 id=&#34;安装界面&#34;&gt;安装界面
+&lt;/h2&gt;&lt;p&gt;点击&lt;code&gt;下一步&lt;/code&gt;&lt;br&gt;
+点击&lt;code&gt;现在安装&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image_hu_f898c7f52d78c25f.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image_hu_670e889e1773b6c5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-1.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-1_hu_8d2a563179de6afa.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-1_hu_2750b9caec95e839.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;版本选择&#34;&gt;版本选择
+&lt;/h2&gt;&lt;p&gt;下方将展示专业版与LTSC安装界面的差异与选择方法&lt;/p&gt;
+&lt;h3 id=&#34;ltsc版本页面&#34;&gt;LTSC版本页面
+&lt;/h3&gt;&lt;p&gt;选择下方的&lt;code&gt;我没有产品密钥&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-3.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-3_hu_607aab364c2fddf6.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-3_hu_9a380b697da8ef61.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;专业版页面&#34;&gt;专业版页面
+&lt;/h3&gt;&lt;p&gt;选择下方的&lt;code&gt;专业版&lt;/code&gt;，下一步即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-25.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-25_hu_3c842fda9d3f3cc7.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-25_hu_65880933d80e9089.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;协议同意&#34;&gt;协议同意
+&lt;/h2&gt;&lt;p&gt;打勾接受，下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-4.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-4_hu_94c0c61bfb8cee96.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-4_hu_1165c104244d83d8.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;系统分区与系统盘选择&#34;&gt;系统分区与系统盘选择
+&lt;/h2&gt;&lt;p&gt;系统分区有2种情况：&lt;br&gt;
+1、系统重装&lt;br&gt;
+2、全新安装&lt;br&gt;
+请参照自己的实际情况根据进行操作&lt;/p&gt;
+&lt;h3 id=&#34;系统重装的分区操作方法&#34;&gt;系统重装的分区操作方法
+&lt;/h3&gt;&lt;p&gt;选择自定义
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_bca04a8a56cb3f0a.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_259c89d56f451609.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+选中系统盘，根据重装前确认的容量大小，点击格式化&lt;br&gt;
+也可根据驱动器与分区确认系统盘，进行格式化
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_f1249850f98ca3e5.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_5b0d1b604d87624f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+格式化点确认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9_hu_9af5f1016fa06c50.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9_hu_b1c743655a2225fc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+选中要安装系统的分区，此处选中100G的分区作为系统盘安装系统，点击下一步系统开始安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_f1249850f98ca3e5.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_5b0d1b604d87624f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;全新安装的分区操作方法&#34;&gt;全新安装的分区操作方法
+&lt;/h3&gt;&lt;p&gt;选择自定义
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_bca04a8a56cb3f0a.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-5_hu_259c89d56f451609.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+新建分区&lt;br&gt;
+输入新建的分区大小，&lt;strong&gt;1024M=1GB的大小&lt;/strong&gt;&lt;br&gt;
+比如100GB的分区大小，输入102400M，并应用&lt;br&gt;
+以此类推、将全部容量分区完成
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-6.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-6_hu_d522757d228e02b0.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-6_hu_bb266690ec39416c.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-7.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-7_hu_66dba2670cb7014a.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-7_hu_46277c1b63b5494f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+新建完全部分区后，对&lt;strong&gt;所有主分区&lt;/strong&gt;进行&lt;strong&gt;格式化&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-8.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-8_hu_a9fe01fdcc9d55bd.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-8_hu_9cdd755648bf2314.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+格式化点确认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9_hu_9af5f1016fa06c50.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-9_hu_b1c743655a2225fc.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+选中要安装系统的分区，此处选中100G的分区作为系统盘安装系统，点击下一步系统开始安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_f1249850f98ca3e5.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-10_hu_5b0d1b604d87624f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;等待安装完成&#34;&gt;等待安装完成
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-11.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-11_hu_4a69f8c1d305a84d.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-11_hu_99d23811ab5cdddb.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;欢迎设置向导&#34;&gt;欢迎设置向导
+&lt;/h1&gt;&lt;h2 id=&#34;选择区域&#34;&gt;选择区域
+&lt;/h2&gt;&lt;p&gt;默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-12.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-12_hu_9570de5227842840.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-12_hu_955dad2625dc094f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置键盘&#34;&gt;设置键盘
+&lt;/h2&gt;&lt;p&gt;默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-13.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-13_hu_adc357607b2bb667.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-13_hu_9b7924aae3627448.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+跳过即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-14.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-14_hu_4b73738d1c67178e.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-14_hu_c1d94950c25858c6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;跳过网络连接&#34;&gt;跳过网络连接
+&lt;/h2&gt;&lt;p&gt;点击左下角的&lt;code&gt;现在跳过&lt;/code&gt;，专业版为&lt;code&gt;我没有Internet连接&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15_hu_411ce436984c2991.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-15_hu_16f679d56af01498.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+此处选&lt;code&gt;否&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16_hu_dbe488b5f5764cd8.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-16_hu_beaa981254b3c609.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;
+Win 10 IoT Enterprise LTSC 2021或专业版是以下界面，选择左下角继续有限的设置
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-24.png&#34;
+	width=&#34;2304&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-24_hu_d59db21d8bd8c800.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-24_hu_d9b8a15152e26df6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置用户名&#34;&gt;设置用户名
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17_hu_f8ec41c82896ee4a.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-17_hu_1f776e102c529a47.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;设置密码&#34;&gt;设置密码
+&lt;/h2&gt;&lt;p&gt;密码可以留空不设置直接下一步
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-18.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-18_hu_f3dbe83a67e07841.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-18_hu_b4b3d809956b101e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;其它设置均默认接受即可&#34;&gt;其它设置，均默认接受即可
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19_hu_df64a205d74e627e.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-19_hu_fc2dbffd5f944f56.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20_hu_336f28b0e476ed9f.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-20_hu_473d2b85f9077d59.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;等待初始化完成进入桌面即可&#34;&gt;等待初始化完成进入桌面即可
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21_hu_56a686a3e0e9262d.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-21_hu_b3143185e7c20444.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22_hu_bd6ab3311bec6328.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-22_hu_59a8e5aa0d02d1a6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23.png&#34;
+	width=&#34;2302&#34;
+	height=&#34;1728&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23_hu_6b2f3a1bf2e0c1b.png 480w, https://dsmggm.dpdns.org/windows10%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/image-23_hu_9b9aa4b50bfc609d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;319px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;驱动安装&#34;&gt;驱动安装
+&lt;/h1&gt;&lt;p&gt;需要连接网络或提前下载好对应驱动进行安装&lt;br&gt;
+根据硬件安装相应驱动&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>纽扣电池更换教程</title>
+        <link>https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Thu, 09 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/1775713744361.png" alt="Featured image of post 纽扣电池更换教程" /&gt;&lt;h1 id=&#34;常见样式1&#34;&gt;常见样式1
+&lt;/h1&gt;&lt;p&gt;找到主板上纽扣电池位置 ，如图示例：&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/image.png&#34;
+	width=&#34;842&#34;
+	height=&#34;556&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/image_hu_9ac2a5cc2fcfc780.png 480w, https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/image_hu_b06e5e454ce619f7.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;151&#34;
+		data-flex-basis=&#34;363px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;推动固定夹以释放电池&lt;/li&gt;
+&lt;li&gt;从底座中移除电池&lt;/li&gt;
+&lt;li&gt;安装 CR2032 纽扣电池，+ 符号朝上，确保固定器牢 固地固定电池&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/1775713744361.png&#34;
+	width=&#34;746&#34;
+	height=&#34;361&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/1775713744361_hu_52baaf537eb685f.png 480w, https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/1775713744361_hu_475f194d6be9313b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;495px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;常见样式2&#34;&gt;常见样式2
+&lt;/h1&gt;&lt;p&gt;将其连接线拔出，再插入&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;注：需要注意正反以及防呆接口位置&lt;/code&gt;&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/image-1.png&#34;
+	width=&#34;1051&#34;
+	height=&#34;891&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/image-1_hu_13d0b8e2db94b1c9.png 480w, https://dsmggm.dpdns.org/%E7%BA%BD%E6%89%A3%E7%94%B5%E6%B1%A0%E6%9B%B4%E6%8D%A2%E6%95%99%E7%A8%8B/image-1_hu_a063d684b8c95e57.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;117&#34;
+		data-flex-basis=&#34;283px&#34;
+	
+&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Win杀毒软件添加白名单</title>
+        <link>https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/</link>
+        <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image.png" alt="Featured image of post Win杀毒软件添加白名单" /&gt;&lt;p&gt;&lt;strong&gt;此教程针对客户软件被杀毒软件误杀的情况，添加白名单解决。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;windows-defender杀毒软件添加白名单&#34;&gt;Windows Defender杀毒软件添加白名单
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;点击管理设置
+&lt;img src=&#34;https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image.png&#34;
+	width=&#34;2052&#34;
+	height=&#34;1584&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image_hu_1652305d6f5634a1.png 480w, https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image_hu_26a48a33e84b3832.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;310px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;点击添加或删除排除项
+&lt;img src=&#34;https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image-1.png&#34;
+	width=&#34;2180&#34;
+	height=&#34;1667&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image-1_hu_960424ab5501b24b.png 480w, https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image-1_hu_3cbdebbc18900d3b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;130&#34;
+		data-flex-basis=&#34;313px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;一般建议选择文件夹，选择被误杀程序存放的文件夹目录
+&lt;img src=&#34;https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image-2.png&#34;
+	width=&#34;2167&#34;
+	height=&#34;1472&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image-2_hu_9ea35812da761973.png 480w, https://dsmggm.dpdns.org/win%E6%9D%80%E6%AF%92%E8%BD%AF%E4%BB%B6%E6%B7%BB%E5%8A%A0%E7%99%BD%E5%90%8D%E5%8D%95/image-2_hu_89350b2113e50d3b.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;147&#34;
+		data-flex-basis=&#34;353px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>使用PE备份还原Windows教程</title>
+        <link>https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b2bd768ac6f7718c7580e6a431211ce2.jpg" alt="Featured image of post 使用PE备份还原Windows教程" /&gt;&lt;h1 id=&#34;软件准备&#34;&gt;软件准备
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;ventoy
+&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/longpanda/Ventoy/releases/download/v1.1.09/ventoy-1.1.09-windows.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitee.com/longpanda/Ventoy/releases/download/v1.1.09/ventoy-1.1.09-windows.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;pe镜像
+仅提供局域网下载，不提供公网下载。&lt;br&gt;
+点击下载&lt;a class=&#34;link&#34; href=&#34;./WindowsPE64_SKS.iso&#34; &gt;WindowsPE64_SKS.iso&lt;/a&gt;&lt;br&gt;
+或是到极空间Nas网盘下载&lt;code&gt;产品部:\OSImages-系统镜像\PE\WindowsPE64_SKS.iso&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;制作pe启动u盘&#34;&gt;制作PE启动U盘
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;插上U盘（U盘需要格式化，请提前做好数据备份）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解压ventoy到桌面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开&lt;code&gt;Ventoy2Disk&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image.png&#34;
+	width=&#34;1904&#34;
+	height=&#34;826&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image_hu_2e716e466649cdcd.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image_hu_834d37beba5ab0e4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;230&#34;
+		data-flex-basis=&#34;553px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击安装一键制作
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-1.png&#34;
+	width=&#34;1019&#34;
+	height=&#34;808&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-1_hu_ec87891d00c2e2e9.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-1_hu_e6979811183f521e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;302px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-2.png&#34;
+	width=&#34;1019&#34;
+	height=&#34;808&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-2_hu_c62b21ff3997e2b2.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-2_hu_dd407461dc87440a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;302px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复制&lt;code&gt;WindowsPE64_SKS.iso&lt;/code&gt;到U盘
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-3.png&#34;
+	width=&#34;1006&#34;
+	height=&#34;572&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-3_hu_a14cde02272b5ebe.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-3_hu_f4521526a7bdc5d6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;启动pe系统&#34;&gt;启动PE系统
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;插上U盘&lt;/li&gt;
+&lt;li&gt;开机按键盘&lt;code&gt;del&lt;/code&gt;进入BIOS&lt;/li&gt;
+&lt;li&gt;到&lt;code&gt;Exit &amp;amp; Save&lt;/code&gt;界面，选择U盘启动&lt;/li&gt;
+&lt;li&gt;其余选项默认回车直到进入PE系统&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-4.png&#34;
+	width=&#34;2844&#34;
+	height=&#34;1582&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-4_hu_f0d5c30957f81a30.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-4_hu_701c5c35a58b1e06.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;431px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b242be468bd484302177d370d7ceb53c.jpg&#34;
+	width=&#34;3763&#34;
+	height=&#34;2125&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b242be468bd484302177d370d7ceb53c_hu_edd30ab36f4f3da1.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b242be468bd484302177d370d7ceb53c_hu_b309bf97bafe80e2.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/df24d0b3eac384c7f97277692f3a9081.jpg&#34;
+	width=&#34;3667&#34;
+	height=&#34;2075&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/df24d0b3eac384c7f97277692f3a9081_hu_54d0d49944be467d.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/df24d0b3eac384c7f97277692f3a9081_hu_4ce3d4adab53b242.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/7d522654048dc1f99374314a293db66e.jpg&#34;
+	width=&#34;3546&#34;
+	height=&#34;2007&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/7d522654048dc1f99374314a293db66e_hu_aecf5bfe1132057b.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/7d522654048dc1f99374314a293db66e_hu_adfd163ac8bdfac1.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;备份系统&#34;&gt;备份系统
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;打开OneKey Ghost&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;备份分区&lt;/code&gt;，选择镜像保存路径，默认选中的系统盘即可&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-5.png&#34;
+	width=&#34;2097&#34;
+	height=&#34;1175&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-5_hu_1a282759d8ecb548.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-5_hu_f505eeb709293091.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-6.png&#34;
+	width=&#34;1199&#34;
+	height=&#34;392&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-6_hu_c69b8ded4c90bf52.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-6_hu_914a87a6a54e5845.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;305&#34;
+		data-flex-basis=&#34;734px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;等待备份完成&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b2bd768ac6f7718c7580e6a431211ce2.jpg&#34;
+	width=&#34;3711&#34;
+	height=&#34;2212&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b2bd768ac6f7718c7580e6a431211ce2_hu_7a2829b6408e7bb4.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/b2bd768ac6f7718c7580e6a431211ce2_hu_3a165f52d1fb9f2f.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;167&#34;
+		data-flex-basis=&#34;402px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;备份完成
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/bfeda44aad5a7ac32ecc769d2ed3a410.jpg&#34;
+	width=&#34;2002&#34;
+	height=&#34;873&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/bfeda44aad5a7ac32ecc769d2ed3a410_hu_7ee437f902c57c64.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/bfeda44aad5a7ac32ecc769d2ed3a410_hu_d2ff9db51ae2d0aa.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;229&#34;
+		data-flex-basis=&#34;550px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/d245b9b3a6bc7872ac3f2837c2c07db7.jpg&#34;
+	width=&#34;3788&#34;
+	height=&#34;1997&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/d245b9b3a6bc7872ac3f2837c2c07db7_hu_26437d5eabfa3b5b.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/d245b9b3a6bc7872ac3f2837c2c07db7_hu_9530c7ed37921e09.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;455px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;还原系统&#34;&gt;还原系统
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;打开OneKey Ghost&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;还原分区&lt;/code&gt;，选择镜像保存路径，选择需要进行还原的分区&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-7.png&#34;
+	width=&#34;2390&#34;
+	height=&#34;1339&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-7_hu_ac1897af1e87edbc.png 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/image-7_hu_98604a609f0bbc4a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;178&#34;
+		data-flex-basis=&#34;428px&#34;
+	
+&gt;&lt;br&gt;
+&lt;strong&gt;&lt;code&gt;注：如果选择的当前分区没有系统(既没有引导)，需要勾选引导修复选项&lt;/code&gt;&lt;/strong&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/5e2672276587ccb1081c527c0d08599d.jpg&#34;
+	width=&#34;2331&#34;
+	height=&#34;919&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/5e2672276587ccb1081c527c0d08599d_hu_a6e94e2bd62fcd87.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/5e2672276587ccb1081c527c0d08599d_hu_107e1bb7bc49340a.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;253&#34;
+		data-flex-basis=&#34;608px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;等待还原完成
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/07f849469ba4011a15750d888d7407af.jpg&#34;
+	width=&#34;3909&#34;
+	height=&#34;2310&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/07f849469ba4011a15750d888d7407af_hu_38edef201b732698.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/07f849469ba4011a15750d888d7407af_hu_3670211dbbb011d7.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;169&#34;
+		data-flex-basis=&#34;406px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;还原完成，重启
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/67debdc675292afd32c568a076fdc32e.jpg&#34;
+	width=&#34;2322&#34;
+	height=&#34;1122&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/67debdc675292afd32c568a076fdc32e_hu_3a41a01221d39b2a.jpg 480w, https://dsmggm.dpdns.org/%E4%BD%BF%E7%94%A8pe%E5%A4%87%E4%BB%BD%E8%BF%98%E5%8E%9Fwindows%E6%95%99%E7%A8%8B/67debdc675292afd32c568a076fdc32e_hu_8619805754cbb4f5.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;206&#34;
+		data-flex-basis=&#34;496px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
+        <title>系统启动盘制作教程</title>
+        <link>https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/1e5212ff6510f00c6a45b316da4f8964.jpg" alt="Featured image of post 系统启动盘制作教程" /&gt;&lt;h1 id=&#34;软件准备&#34;&gt;软件准备
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;下载ventoy&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://gitee.com/longpanda/Ventoy/releases/download/v1.1.09/ventoy-1.1.09-windows.zip&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://gitee.com/longpanda/Ventoy/releases/download/v1.1.09/ventoy-1.1.09-windows.zip&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;下载系统镜像&lt;br&gt;
+&lt;a class=&#34;link&#34; href=&#34;https://dsmggm.dpdns.org/%e7%b3%bb%e7%bb%9f%e9%95%9c%e5%83%8f%e4%b8%8b%e8%bd%bd%e9%93%be%e6%8e%a5&#34; &gt;跳转系统镜像下载链接&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;制作pe启动u盘&#34;&gt;制作PE启动U盘
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;插上U盘（U盘需要格式化，请提前做好数据备份）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;解压ventoy到桌面&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开&lt;code&gt;Ventoy2Disk&lt;/code&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image.png&#34;
+	width=&#34;1904&#34;
+	height=&#34;826&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image_hu_2e716e466649cdcd.png 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image_hu_834d37beba5ab0e4.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;230&#34;
+		data-flex-basis=&#34;553px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;点击安装一键制作
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-1.png&#34;
+	width=&#34;1019&#34;
+	height=&#34;808&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-1_hu_ec87891d00c2e2e9.png 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-1_hu_e6979811183f521e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;302px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-2.png&#34;
+	width=&#34;1019&#34;
+	height=&#34;808&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-2_hu_c62b21ff3997e2b2.png 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-2_hu_dd407461dc87440a.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;126&#34;
+		data-flex-basis=&#34;302px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;复制&lt;code&gt;xxxxx系统镜像.iso&lt;/code&gt;文件到U盘
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-4.png&#34;
+	width=&#34;1033&#34;
+	height=&#34;650&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-4_hu_7a73506cd9606489.png 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-4_hu_55c6d86b1c459f5d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;158&#34;
+		data-flex-basis=&#34;381px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;启动到系统安装界面&#34;&gt;启动到系统安装界面
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;插上U盘&lt;/li&gt;
+&lt;li&gt;开机按键盘&lt;code&gt;del&lt;/code&gt;进入BIOS&lt;/li&gt;
+&lt;li&gt;到&lt;code&gt;Exit &amp;amp; Save&lt;/code&gt;界面，选择U盘启动&lt;/li&gt;
+&lt;li&gt;其余选项默认回车直到进入系统安装界面&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-5.png&#34;
+	width=&#34;2844&#34;
+	height=&#34;1582&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-5_hu_f0d5c30957f81a30.png 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/image-5_hu_701c5c35a58b1e06.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;179&#34;
+		data-flex-basis=&#34;431px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;选择你要安装的系统镜像镜像启动，其它默认即可
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/1e5212ff6510f00c6a45b316da4f8964.jpg&#34;
+	width=&#34;3659&#34;
+	height=&#34;2079&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/1e5212ff6510f00c6a45b316da4f8964_hu_2c5bdd6bd4441f5d.jpg 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/1e5212ff6510f00c6a45b316da4f8964_hu_20fee1468c22a645.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;422px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/df24d0b3eac384c7f97277692f3a9081.jpg&#34;
+	width=&#34;3667&#34;
+	height=&#34;2075&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/df24d0b3eac384c7f97277692f3a9081_hu_54d0d49944be467d.jpg 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/df24d0b3eac384c7f97277692f3a9081_hu_4ce3d4adab53b242.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;424px&#34;
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/27504485d7cd19c90995f9cf75210e89.jpg&#34;
+	width=&#34;3690&#34;
+	height=&#34;2091&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/27504485d7cd19c90995f9cf75210e89_hu_2b06937c6d3fa807.jpg 480w, https://dsmggm.dpdns.org/%E7%B3%BB%E7%BB%9F%E5%90%AF%E5%8A%A8%E7%9B%98%E5%88%B6%E4%BD%9C%E6%95%99%E7%A8%8B/27504485d7cd19c90995f9cf75210e89_hu_af667c2f1440e4ef.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;176&#34;
+		data-flex-basis=&#34;423px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;注：系统安装操作步骤请自行百度查询&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>修改主板BIOS的UUID与SN</title>
+        <link>https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/</link>
+        <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image.png" alt="Featured image of post 修改主板BIOS的UUID与SN" /&gt;&lt;h1 id=&#34;下载工具&#34;&gt;下载工具
+&lt;/h1&gt;&lt;p&gt;点击下载&lt;a class=&#34;link&#34; href=&#34;AMIDEWINx64.zip&#34; &gt;AMIDEWINx64&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;查看当前uuid与sn&#34;&gt;查看当前UUID与SN
+&lt;/h1&gt;&lt;p&gt;以&lt;strong&gt;管理员权限&lt;/strong&gt;打开&lt;code&gt;查看当前UUID与SN&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image.png&#34;
+	width=&#34;2223&#34;
+	height=&#34;1157&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image_hu_f864a47af273076a.png 480w, https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image_hu_b05ac7d60e10c24d.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;192&#34;
+		data-flex-basis=&#34;461px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;修改主板sn&#34;&gt;修改主板SN
+&lt;/h1&gt;&lt;p&gt;以&lt;strong&gt;管理员权限&lt;/strong&gt;打开&lt;code&gt;修改主板SN&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-1.png&#34;
+	width=&#34;1775&#34;
+	height=&#34;536&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-1_hu_2af4d3d31472c59c.png 480w, https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-1_hu_136034df3beeed66.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;331&#34;
+		data-flex-basis=&#34;794px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;修改主板uuid&#34;&gt;修改主板UUID
+&lt;/h1&gt;&lt;p&gt;以&lt;strong&gt;管理员权限&lt;/strong&gt;打开&lt;code&gt;[推荐]自动修改主板UUID&lt;/code&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-2.png&#34;
+	width=&#34;1895&#34;
+	height=&#34;655&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-2_hu_e2b287ac5998fee6.png 480w, https://dsmggm.dpdns.org/%E4%BF%AE%E6%94%B9%E4%B8%BB%E6%9D%BFbios%E7%9A%84uuid%E4%B8%8Esn/image-2_hu_241886356ea7c054.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;289&#34;
+		data-flex-basis=&#34;694px&#34;
+	
+&gt;
+每次打开都会自动修改主板UUID，无需手动操作。&lt;/p&gt;
+&lt;h1 id=&#34;重启&#34;&gt;重启
+&lt;/h1&gt;&lt;p&gt;以上修改操作均需要重启电脑&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
