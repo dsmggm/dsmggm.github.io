@@ -212,11 +212,20 @@
     <article class="main-article">
     <header class="article-header">
 
-    <div class="article-details">
+    
+
+<style>
+ 
+.article-details {
+  cursor: pointer !important;
+}
+</style>
+
+<div class="article-details" onclick="window.location.href='\/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC\/'">
     
     <header class="article-category">
         
-            <a href="/categories/windows/" style="background-color: #a200ffff; color: #fff;">
+            <a href="/categories/windows/" style="background-color: #a200ffff; color: #fff;" onclick="event.stopPropagation()">
                 Windows
             </a>
         
@@ -257,8 +266,299 @@
 
     
 </div>
-
 </header>
+
+    
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        body {
+             
+        }
+        .buttonDownload {
+            display: inline-block;
+            position: relative;
+            padding: 10px 25px;
+            background-color: #2F5496;
+            color: white;
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 0.9em;
+            text-align: center;
+            text-indent: 15px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 6px;
+            min-width: 200px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .buttonDownload:hover {
+            background-color: #1a3563;
+            color: white;
+        }
+
+         
+        .buttonDownload:disabled {
+            background-color: #909090 !important;
+            cursor: not-allowed !important;
+            opacity: 0.8;
+        }
+
+        .buttonDownload:before, .buttonDownload:after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 52%;
+        }
+
+        .buttonDownload:before {
+            width: 10px;
+            height: 2px;
+            border-style: solid;
+            border-width: 0 2px 2px;
+        }
+
+        .buttonDownload:after {
+            width: 0;
+            height: 0;
+            margin-left: 3px;
+            margin-top: -7px;
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            border-color: transparent;
+            border-top-color: inherit;
+            animation: downloadArrow 1s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .buttonDownload:hover:before {
+            border-color: #cdefbd;
+        }
+
+        .buttonDownload:hover:after {
+            border-top-color: #cdefbd;
+            animation-play-state: running;
+        }
+
+        @keyframes downloadArrow {
+            0% { margin-top: -7px; opacity: 1; }
+            0.001% { margin-top: -15px; opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { margin-top: 0; opacity: 0.4; }
+        }
+
+        .center-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+        }
+
+        .download-container {
+            display: flex;
+            border: 1px solid #2F5496;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .text-container {
+            color: var(--body-text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-container">
+        <div class="download-container">
+            <button onclick="printArticleToPDF()" class="buttonDownload">另存为PDF</button>
+            <div class="text-container">点击后跳出打印窗口 打印机选择打印为PDF</div>
+        </div>
+        
+        
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+    <script>
+        
+        const { jsPDF } = window.jspdf;
+        const btn = document.getElementById('exportPdfBtn');
+        const originalText = btn.innerText;
+
+        async function exportToPDF(options = {}) {
+            const { filename = '网页导出', scale = 2 } = options;
+
+            
+            btn.disabled = true;
+            btn.innerText = "生成PDF中...";
+
+            try {
+                
+                const element = document.querySelector('main article section');
+
+                const canvas = await html2canvas(element, {
+                    scale: scale,
+                    useCORS: true,
+                    backgroundColor: '#ffffff',
+                    logging: false,
+                    allowTaint: false
+                });
+
+                const imgData = canvas.toDataURL('image/jpeg', 0.95);
+                const imgWidth = 210;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                let heightLeft = imgHeight;
+                let position = 0;
+                const pageHeight = 297;
+
+                pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+
+                while (heightLeft > 0) {
+                    position = heightLeft - imgHeight;
+                    pdf.addPage();
+                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+
+                pdf.save(`${filename}.pdf`);
+                alert('导出成功！');
+
+            } catch (error) {
+                console.error('导出失败：', error);
+                alert('导出失败：' + error.message);
+            } finally {
+                
+                btn.disabled = false;
+                btn.innerText = originalText;
+            }
+        }
+
+        btn.addEventListener('click', () => {
+            exportToPDF({ filename: document.title, scale: 2 });
+        });
+        
+
+        
+        
+        function printArticleToPDF() {
+        
+        const articleElement = document.querySelector('article section');
+        if (!articleElement) {
+            alert('未找到 article 标签，请检查页面结构！');
+            return;
+        }
+
+        
+        const articleClone = articleElement.cloneNode(true);
+        
+        
+        const images = articleClone.querySelectorAll('img');
+        images.forEach(img => {
+            const src = img.src;
+            
+            if (src && !src.startsWith('http')) {
+            img.src = window.location.origin + src;
+            }
+            
+            img.style.maxWidth = '100%';
+            img.style.height = 'auto';
+            img.style.pageBreakInside = 'avoid'; 
+        });
+
+        
+        const styleLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+            .map(link => `<link rel="stylesheet" href="${link.href}">`)
+            .join('');
+        const styleTags = Array.from(document.querySelectorAll('style'))
+            .map(style => `<style>${style.innerHTML}</style>`)
+            .join('');
+
+        
+        const printWindow = window.open('', '_blank');
+        printWindow.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta charset="UTF-8">
+            <title>${document.title}</title>
+            \x3C!-- 加载原网页样式 -->
+            ${styleLinks}
+            ${styleTags}
+            \x3C!-- 打印专属样式（重点优化图片） -->
+            <style>
+                /* 基础重置 */
+                body { margin: 0; padding: 0; }
+                /* 打印核心适配 */
+                @media print {
+                /* Article 基础排版 */
+                article { 
+                    max-width: 100% !important; 
+                    margin: 0 auto !important; 
+                    padding: 15mm !important; 
+                    box-shadow: none !important;
+                }
+                /* 图片终极适配 */
+                article img {
+                    max-width: 100% !important; /* 不超过 PDF 页面宽度 */
+                    height: auto !important; /* 保持宽高比 */
+                    page-break-inside: avoid !important; /* 禁止图片跨页 */
+                    page-break-after: auto !important; /* 图片后自动分页 */
+                    display: block !important; /* 避免行内样式错乱 */
+                    margin: 10mm auto !important; /* 图片居中+上下间距 */
+                }
+                /* 避免标题和图片拆分 */
+                h1, h2, h3, h4 {
+                    page-break-after: avoid !important;
+                }
+                /* 移除浏览器默认页眉页脚 */
+                @page {
+                    margin: 20mm; 
+                    size: A4;
+                }
+                /* 隐藏无关元素 */
+                .no-print, .header, .footer, .sidebar, nav, aside { 
+                    display: none !important; 
+                }
+                }
+            </style>
+            </head>
+            <body>
+            \x3C!-- 插入修复后的 article 内容 -->
+            ${articleClone.outerHTML}
+            </body>
+            </html>
+        `);
+        
+        
+        printWindow.document.close();
+        printWindow.focus();
+        setTimeout(() => {
+            printWindow.print();
+            printWindow.close();
+        }, 1200); 
+        }
+    </script>
+    
+</body>
+</html>
 
     <section class="article-content">
     
