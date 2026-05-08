@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="异常现象一 当windows启动开机的时候出现\nReboot and Select proper Boot deviceor\nOR Insert Boot Media in selected Boot device and press a key\n的时候，需要确认启动项目。 异常现象二 当windows启动开机的时候出现 ">
+<title>windows启动项设置确认</title>
+
+<link rel='canonical' href='https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/'>
+
+<link rel="stylesheet" href="/scss/style.min.4c0c92d9918e105364155aa8c14ee2e3e8aed44681ecc744fc5d1d34da7a3daa.css"><meta property='og:title' content="windows启动项设置确认">
+<meta property='og:description' content="异常现象一 当windows启动开机的时候出现\nReboot and Select proper Boot deviceor\nOR Insert Boot Media in selected Boot device and press a key\n的时候，需要确认启动项目。 异常现象二 当windows启动开机的时候出现 ">
+<meta property='og:url' content='https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/'>
+<meta property='og:site_name' content='dsmggm博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Page' /><meta property='article:tag' content='windows' /><meta property='article:published_time' content='2026-03-20T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-03-20T00:00:00&#43;00:00'/><meta property='og:image' content='https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image.png' />
+<meta name="twitter:title" content="windows启动项设置确认">
+<meta name="twitter:description" content="异常现象一 当windows启动开机的时候出现\nReboot and Select proper Boot deviceor\nOR Insert Boot Media in selected Boot device and press a key\n的时候，需要确认启动项目。 异常现象二 当windows启动开机的时候出现 "><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://dsmggm.dpdns.org/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image.png' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_8826a01871497fe2.png" width="300"
+                            height="300" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">✅</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">dsmggm博客</a></h1>
+            <h2 class="site-description">日常记录与学习~</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/dsmggm'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/%E6%90%9C%E7%B4%A2/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/%E7%A0%94%E5%8D%8E/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>研华</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#异常现象一">异常现象一</a></li>
+    <li><a href="#异常现象二">异常现象二</a></li>
+    <li><a href="#解决方法">解决方法</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/">
+                <img src="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_adf81d8e32490726.png"
+                        srcset="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_adf81d8e32490726.png 800w, /windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_49f9ccb4109e32bb.png 1600w"
+                        width="800" 
+                        height="455" 
+                        loading="lazy"
+                        alt="Featured image of post windows启动项设置确认" />
+                
+            </a>
+        </div>
+    
+
+    
+
+<style>
+ 
+.article-details {
+  cursor: pointer !important;
+}
+</style>
+
+<div class="article-details" onclick="window.location.href='\/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4\/'">
+    
+    <header class="article-category">
+        
+            <a href="/categories/windows/" style="background-color: #a200ffff; color: #fff;" onclick="event.stopPropagation()">
+                Windows
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/">windows启动项设置确认</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published" datetime='2026-03-20T00:00:00Z'>2026-03-20</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+</div>
+</header>
+
+    
+    <!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    
+    <style>
+        body {
+             
+        }
+        .buttonDownload {
+            display: inline-block;
+            position: relative;
+            padding: 10px 25px;
+            background-color: #2F5496;
+            color: white;
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 0.9em;
+            text-align: center;
+            text-indent: 15px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s;
+            border-radius: 6px;
+            min-width: 200px;
+            box-sizing: border-box;
+            margin: 10px;
+        }
+
+        .buttonDownload:hover {
+            background-color: #1a3563;
+            color: white;
+        }
+
+         
+        .buttonDownload:disabled {
+            background-color: #909090 !important;
+            cursor: not-allowed !important;
+            opacity: 0.8;
+        }
+
+        .buttonDownload:before, .buttonDownload:after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 52%;
+        }
+
+        .buttonDownload:before {
+            width: 10px;
+            height: 2px;
+            border-style: solid;
+            border-width: 0 2px 2px;
+        }
+
+        .buttonDownload:after {
+            width: 0;
+            height: 0;
+            margin-left: 3px;
+            margin-top: -7px;
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            border-color: transparent;
+            border-top-color: inherit;
+            animation: downloadArrow 1s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .buttonDownload:hover:before {
+            border-color: #cdefbd;
+        }
+
+        .buttonDownload:hover:after {
+            border-top-color: #cdefbd;
+            animation-play-state: running;
+        }
+
+        @keyframes downloadArrow {
+            0% { margin-top: -7px; opacity: 1; }
+            0.001% { margin-top: -15px; opacity: 0.4; }
+            50% { opacity: 1; }
+            100% { margin-top: 0; opacity: 0.4; }
+        }
+
+        .center-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100px;
+        }
+
+        .download-container {
+            display: flex;
+            border: 1px solid #2F5496;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            border-radius: 6px;
+        }
+
+        .text-container {
+            color: var(--body-text-color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center-container">
+        <div class="download-container">
+            <button onclick="printArticleToPDF()" class="buttonDownload">另存为PDF</button>
+            <div class="text-container">点击后跳出打印窗口 打印机选择打印为PDF</div>
+        </div>
+        
+        
+    </div>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+
+    <script>
+        
+        const { jsPDF } = window.jspdf;
+        const btn = document.getElementById('exportPdfBtn');
+        const originalText = btn.innerText;
+
+        async function exportToPDF(options = {}) {
+            const { filename = '网页导出', scale = 2 } = options;
+
+            
+            btn.disabled = true;
+            btn.innerText = "生成PDF中...";
+
+            try {
+                
+                const element = document.querySelector('main article section');
+
+                const canvas = await html2canvas(element, {
+                    scale: scale,
+                    useCORS: true,
+                    backgroundColor: '#ffffff',
+                    logging: false,
+                    allowTaint: false
+                });
+
+                const imgData = canvas.toDataURL('image/jpeg', 0.95);
+                const imgWidth = 210;
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                let heightLeft = imgHeight;
+                let position = 0;
+                const pageHeight = 297;
+
+                pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+
+                while (heightLeft > 0) {
+                    position = heightLeft - imgHeight;
+                    pdf.addPage();
+                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+
+                pdf.save(`${filename}.pdf`);
+                alert('导出成功！');
+
+            } catch (error) {
+                console.error('导出失败：', error);
+                alert('导出失败：' + error.message);
+            } finally {
+                
+                btn.disabled = false;
+                btn.innerText = originalText;
+            }
+        }
+
+        btn.addEventListener('click', () => {
+            exportToPDF({ filename: document.title, scale: 2 });
+        });
+        
+
+        
+        
+        function printArticleToPDF() {
+        
+        const articleElement = document.querySelector('article section');
+        if (!articleElement) {
+            alert('未找到 article 标签，请检查页面结构！');
+            return;
+        }
+
+        
+        const articleClone = articleElement.cloneNode(true);
+        
+        
+        const images = articleClone.querySelectorAll('img');
+        images.forEach(img => {
+            const src = img.src;
+            
+            if (src && !src.startsWith('http')) {
+            img.src = window.location.origin + src;
+            }
+            
+            img.style.maxWidth = '100%';
+            img.style.height = 'auto';
+            img.style.pageBreakInside = 'avoid'; 
+        });
+
+        
+        const styleLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+            .map(link => `<link rel="stylesheet" href="${link.href}">`)
+            .join('');
+        const styleTags = Array.from(document.querySelectorAll('style'))
+            .map(style => `<style>${style.innerHTML}</style>`)
+            .join('');
+
+        
+        const printWindow = window.open('', '_blank');
+        printWindow.document.write(`
+            <!DOCTYPE html>
+            <html>
+            <head>
+            <meta charset="UTF-8">
+            <title>${document.title}</title>
+            \x3C!-- 加载原网页样式 -->
+            ${styleLinks}
+            ${styleTags}
+            \x3C!-- 打印专属样式（重点优化图片） -->
+            <style>
+                /* 基础重置 */
+                body { margin: 0; padding: 0; }
+                /* 打印核心适配 */
+                @media print {
+                /* Article 基础排版 */
+                article { 
+                    max-width: 100% !important; 
+                    margin: 0 auto !important; 
+                    padding: 15mm !important; 
+                    box-shadow: none !important;
+                }
+                /* 图片终极适配 */
+                article img {
+                    max-width: 100% !important; /* 不超过 PDF 页面宽度 */
+                    height: auto !important; /* 保持宽高比 */
+                    page-break-inside: avoid !important; /* 禁止图片跨页 */
+                    page-break-after: auto !important; /* 图片后自动分页 */
+                    display: block !important; /* 避免行内样式错乱 */
+                    margin: 10mm auto !important; /* 图片居中+上下间距 */
+                }
+                /* 避免标题和图片拆分 */
+                h1, h2, h3, h4 {
+                    page-break-after: avoid !important;
+                }
+                /* 移除浏览器默认页眉页脚 */
+                @page {
+                    margin: 20mm; 
+                    size: A4;
+                }
+                /* 隐藏无关元素 */
+                .no-print, .header, .footer, .sidebar, nav, aside { 
+                    display: none !important; 
+                }
+                }
+            </style>
+            </head>
+            <body>
+            \x3C!-- 插入修复后的 article 内容 -->
+            ${articleClone.outerHTML}
+            </body>
+            </html>
+        `);
+        
+        
+        printWindow.document.close();
+        printWindow.focus();
+        setTimeout(() => {
+            printWindow.print();
+            printWindow.close();
+        }, 1200); 
+        }
+    </script>
+    
+</body>
+</html>
+
+    <section class="article-content">
+    
+    
+    <h1 id="异常现象一">异常现象一
+</h1><p>当windows启动开机的时候出现<br>
+<strong><code>Reboot and Select proper Boot deviceor</code></strong><br>
+<strong><code>OR Insert Boot Media in selected Boot device and press a key</code></strong><br>
+的时候，需要确认启动项目。
+<img src="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/index-20260319161607181.png"
+	width="3264"
+	height="1739"
+	srcset="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/index-20260319161607181_hu_8ef936b1cb4546a6.png 480w, /windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/index-20260319161607181_hu_933ced2ac1a73bef.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="187"
+		data-flex-basis="450px"
+	
+></p>
+<h1 id="异常现象二">异常现象二
+</h1><p>当windows启动开机的时候出现
+<img src="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/614cca50b2520e048049d81eba7d4237.jpg"
+	width="3840"
+	height="2173"
+	srcset="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/614cca50b2520e048049d81eba7d4237_hu_920c3a93ff5f8688.jpg 480w, /windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/614cca50b2520e048049d81eba7d4237_hu_9f86447dffed6cda.jpg 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="176"
+		data-flex-basis="424px"
+	
+></p>
+<h1 id="解决方法">解决方法
+</h1><p>1、开机按Del进入BIOS设置<br>
+2、查看<code>BOOT</code>选项卡，确认<code>Boot Option #1</code> 设置为Windows启动项<code>Windows Boot Manaegr(xxxxxxxx)</code><br>
+3、按<code>F4</code>或者是<code>F10</code> <code>Save &amp; Exit</code> 保存退出，根据右下角提示选择按键<br>
+最终如下图：<br>
+<img src="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image.png"
+	width="2909"
+	height="1654"
+	srcset="/windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_63b7bf77979c3a8.png 480w, /windows%E5%90%AF%E5%8A%A8%E9%A1%B9%E8%AE%BE%E7%BD%AE%E7%A1%AE%E8%AE%A4/image_hu_20bea1854992e653.png 1024w"
+	loading="lazy"
+	
+	
+		class="gallery-image" 
+		data-flex-grow="175"
+		data-flex-basis="422px"
+	
+></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/windows/">Windows</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/windows%E4%BC%98%E5%8C%96%E8%84%9A%E6%9C%AC/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">windows优化脚本</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/windows%E5%A4%9A%E7%BD%91%E7%BB%9C%E8%BF%9E%E6%8E%A5%E6%9C%89%E7%BA%BF%E6%97%A0%E7%BA%BF%E5%90%8C%E6%97%B6%E8%BF%9E%E6%8E%A5/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">windows多网络连接(有线无线同时连接)</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/windows%E7%89%B9%E6%AE%8A%E6%96%87%E4%BB%B6%E5%A4%B9%E5%91%BD%E4%BB%A4/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">windows特殊文件夹命令</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script
+    src="https://giscus.app/client.js"
+    data-repo="dsmggm/dsmggm.github.io"
+    data-repo-id="R_kgDOQYfQbA"
+    data-category="Show and tell"
+    data-category-id="DIC_kwDOQYfQbM4Cx9Ge"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="preferred_color_scheme"
+    data-lang="en"
+    data-loading=""
+    crossorigin="anonymous"
+    async
+></script>
+<script>
+    function setGiscusTheme(theme) {
+        let giscus = document.querySelector("iframe.giscus-frame");
+        if (giscus) {
+            giscus.contentWindow.postMessage(
+                {
+                    giscus: {
+                        setConfig: {
+                            theme: theme,
+                        },
+                    },
+                },
+                "https://giscus.app"
+            );
+        }
+    }
+
+    (function () {
+        addEventListener("message", (e) => {
+            if (event.origin !== "https://giscus.app") return;
+            handler();
+        });
+        window.addEventListener("onColorSchemeChange", handler);
+
+        function handler() {
+            if (document.documentElement.dataset.scheme === "light") {
+                setGiscusTheme('preferred_color_scheme');
+            } else {
+                setGiscusTheme('preferred_color_scheme');
+            }
+        }
+    })();
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2020 - 
+        
+        2026 Dsmggm
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.32.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.c922af694cc257bf1ecc41c0dd7b0430f9114ec280ccf67cd2c6ad55f5316c4e.js" defer></script><script type="text/javascript" src="/ts/custom.b87be80912e624ed49b2718eb4c0373f9f78fec2c034dd987ae48f3e2fb4cf93.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+<style>
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 30px;
+        z-index: 99;
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        background-image: url(https://dsmggm.dpdns.org/icons/backTop.svg);
+    }
+</style>
+
+<script>
+    
+
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+    
+
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+
+
+<script src="/js/jquery.min.js" defer></script>
+
+
+<script src="/js/cursor/cursor6.js" defer></script>
+
+
+<script src="/js/backdrop/petals.js"></script>
+
+
+<script src="/js/min/common.min.js"></script>
+
+
+    </body>
+</html>
