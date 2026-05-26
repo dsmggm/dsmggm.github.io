@@ -7,7 +7,81 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Tue, 14 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/categories/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>蓝屏分析文件导出指导</title>
+        <link>https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/</link>
+        <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/image.png" alt="Featured image of post 蓝屏分析文件导出指导" /&gt;&lt;h1 id=&#34;系统记录文件&#34;&gt;系统记录文件
+&lt;/h1&gt;&lt;p&gt;将C盘windows目录下整个minidump目录复制&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/01.png&#34;
+	width=&#34;1738&#34;
+	height=&#34;990&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/01_hu_c9db1f83d59b5ee1.png 480w, https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/01_hu_2831871709a2afb6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;175&#34;
+		data-flex-basis=&#34;421px&#34;
+	
+&gt;&lt;br&gt;
+将C盘windows目录MEMORY.DMP文件复制&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/02.png&#34;
+	width=&#34;1514&#34;
+	height=&#34;1034&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/02_hu_586d10b9a257a886.png 480w, https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/02_hu_4d39a4ce00476a1f.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;146&#34;
+		data-flex-basis=&#34;351px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;导出日志&#34;&gt;导出日志
+&lt;/h1&gt;&lt;p&gt;根据图片操作
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/03-%E5%BC%80%E5%A7%8B%E8%8F%9C%E5%8D%95%E6%90%9C%E7%B4%A2%E2%80%9C%E4%BA%8B%E4%BB%B6%E6%9F%A5%E7%9C%8B%E5%99%A8%E2%80%9D.png&#34;
+	width=&#34;1460&#34;
+	height=&#34;1456&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/03-%E5%BC%80%E5%A7%8B%E8%8F%9C%E5%8D%95%E6%90%9C%E7%B4%A2%E2%80%9C%E4%BA%8B%E4%BB%B6%E6%9F%A5%E7%9C%8B%E5%99%A8%E2%80%9D_hu_155122d9e7492a25.png 480w, https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/03-%E5%BC%80%E5%A7%8B%E8%8F%9C%E5%8D%95%E6%90%9C%E7%B4%A2%E2%80%9C%E4%BA%8B%E4%BB%B6%E6%9F%A5%E7%9C%8B%E5%99%A8%E2%80%9D_hu_6ef9c6a7ec8256a6.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;100&#34;
+		data-flex-basis=&#34;240px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/04.png&#34;
+	width=&#34;2060&#34;
+	height=&#34;1126&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/04_hu_ff7acb362cb5cc0d.png 480w, https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/04_hu_e6d9de95c05d6dd5.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;439px&#34;
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/05.png&#34;
+	width=&#34;1222&#34;
+	height=&#34;946&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/05_hu_2076366d5a9870b7.png 480w, https://dsmggm.dpdns.org/%E8%93%9D%E5%B1%8F%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/05_hu_801cd832c6edad95.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;129&#34;
+		data-flex-basis=&#34;310px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;将全部文件打包发送&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Windows11安装教程</title>
         <link>https://dsmggm.dpdns.org/windows11%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
