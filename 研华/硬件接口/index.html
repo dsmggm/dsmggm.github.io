@@ -720,80 +720,80 @@
 </h3><p>硬件Pin针脚定义（*为核心针脚）：
 RS-232为±9V以上的电压通讯，靠GND做参考</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>引脚编号</th>
-          <th>英文简称</th>
-          <th>中文名称</th>
-          <th>核心功能</th>
-          <th></th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>DCD</td>
-          <td>载波检测</td>
-          <td>告知终端远程设备已连接（如调制解调器检测到载波）</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>2*</td>
-          <td>RXD*</td>
-          <td>接收数据</td>
-          <td>接收来自外部设备的数据</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>3*</td>
-          <td>TXD*</td>
-          <td>发送数据</td>
-          <td>向外部设备发送数据</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>DTR</td>
-          <td>数据终端就绪</td>
-          <td>通知外部设备自身已准备好通信</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>5*</td>
-          <td>GND*</td>
-          <td>信号地</td>
-          <td>所有信号的参考地线，是通信必需的关键引脚</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td>DSR</td>
-          <td>数据设备就绪</td>
-          <td>外部设备通知终端自身已准备就绪</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>7</td>
-          <td>RTS</td>
-          <td>请求发送</td>
-          <td>请求向外部设备发送数据，属于硬件流控信号</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>8</td>
-          <td>CTS</td>
-          <td>清除发送</td>
-          <td>响应 RTS 信号，告知终端可发送数据</td>
-          <td></td>
-      </tr>
-      <tr>
-          <td>9</td>
-          <td>RI</td>
-          <td>振铃指示</td>
-          <td>通知终端有来电振铃（常用于调制解调器）</td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>引脚编号</th>
+					<th>英文简称</th>
+					<th>中文名称</th>
+					<th>核心功能</th>
+					<th></th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>DCD</td>
+					<td>载波检测</td>
+					<td>告知终端远程设备已连接（如调制解调器检测到载波）</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>2*</td>
+					<td>RXD*</td>
+					<td>接收数据</td>
+					<td>接收来自外部设备的数据</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>3*</td>
+					<td>TXD*</td>
+					<td>发送数据</td>
+					<td>向外部设备发送数据</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>DTR</td>
+					<td>数据终端就绪</td>
+					<td>通知外部设备自身已准备好通信</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>5*</td>
+					<td>GND*</td>
+					<td>信号地</td>
+					<td>所有信号的参考地线，是通信必需的关键引脚</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>6</td>
+					<td>DSR</td>
+					<td>数据设备就绪</td>
+					<td>外部设备通知终端自身已准备就绪</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>7</td>
+					<td>RTS</td>
+					<td>请求发送</td>
+					<td>请求向外部设备发送数据，属于硬件流控信号</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>8</td>
+					<td>CTS</td>
+					<td>清除发送</td>
+					<td>响应 RTS 信号，告知终端可发送数据</td>
+					<td></td>
+			</tr>
+			<tr>
+					<td>9</td>
+					<td>RI</td>
+					<td>振铃指示</td>
+					<td>通知终端有来电振铃（常用于调制解调器）</td>
+					<td></td>
+			</tr>
+	</tbody>
 </table></div>
 <p>接口属性：<br>
 RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根核心线（TXD 发、RXD 收、GND 地）就能通信，支持全双工，传输距离≤15 米、速率≤20kbps，抗干扰一般，适合近距离点对点连接（如调试、老设备通信），需和对方波特率、数据格式一致才能用。</p>
@@ -802,74 +802,74 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 空闲状态 → 起始位 → 数据位 → 校验位（可选） → 停止位 → 空闲状态</p>
 <p>用法：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>接线类型</th>
-          <th>适用场景</th>
-          <th>所需引脚（DB9）</th>
-          <th>接线逻辑</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>最简通信（推荐）</td>
-          <td>短距离、低速率（如调试）</td>
-          <td>TXD(3)、RXD(2)、GND(5)</td>
-          <td>设备 A TXD → 设备 B RXD；设备 A RXD → 设备 B TXD；GND 直接相连</td>
-      </tr>
-      <tr>
-          <td>硬件流控通信</td>
-          <td>高速 / 大数据量（如工业设备）</td>
-          <td>加 RTS (7)、CTS (8)</td>
-          <td>设备 A RTS → 设备 B CTS；设备 A CTS → 设备 B RTS（避免缓冲区溢出）</td>
-      </tr>
-      <tr>
-          <td>全功能通信</td>
-          <td>需状态检测（如 Modem 拨号）</td>
-          <td>加 DTR (4)、DSR (6)、DCD (1)、RI (9)</td>
-          <td>按引脚定义对应连接，用于设备就绪检测、载波检测等</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>接线类型</th>
+					<th>适用场景</th>
+					<th>所需引脚（DB9）</th>
+					<th>接线逻辑</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>最简通信（推荐）</td>
+					<td>短距离、低速率（如调试）</td>
+					<td>TXD(3)、RXD(2)、GND(5)</td>
+					<td>设备 A TXD → 设备 B RXD；设备 A RXD → 设备 B TXD；GND 直接相连</td>
+			</tr>
+			<tr>
+					<td>硬件流控通信</td>
+					<td>高速 / 大数据量（如工业设备）</td>
+					<td>加 RTS (7)、CTS (8)</td>
+					<td>设备 A RTS → 设备 B CTS；设备 A CTS → 设备 B RTS（避免缓冲区溢出）</td>
+			</tr>
+			<tr>
+					<td>全功能通信</td>
+					<td>需状态检测（如 Modem 拨号）</td>
+					<td>加 DTR (4)、DSR (6)、DCD (1)、RI (9)</td>
+					<td>按引脚定义对应连接，用于设备就绪检测、载波检测等</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="rs-485">RS-485
 </h3><p>RS-285为差分信号A线与B线相差2V~6V，2条线为1组为半双工、全双工则由2组组成，GND是必须的</p>
 <h4 id="modubus-rtu">modubus-RTU
 </h4><p>接口Pin:</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>引脚编号</th>
-          <th>英文简称</th>
-          <th>中文名称</th>
-          <th>核心功能</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>GND</td>
-          <td>信号地</td>
-          <td>参考地，增强抗干扰性（建议必接）</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>A/D+</td>
-          <td>差分信号正端</td>
-          <td>与 B 端组成差分传输，高电平表示逻辑 1（部分手册标为 Data+）</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>B/D-</td>
-          <td>差分信号负端</td>
-          <td>与 A 端组成差分传输，低电平表示逻辑 0（部分手册标为 Data-）</td>
-      </tr>
-      <tr>
-          <td>4-9</td>
-          <td>预留</td>
-          <td>备用 / 扩展</td>
-          <td>可用于电源、硬件流控（实际极少用）</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>引脚编号</th>
+					<th>英文简称</th>
+					<th>中文名称</th>
+					<th>核心功能</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>GND</td>
+					<td>信号地</td>
+					<td>参考地，增强抗干扰性（建议必接）</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>A/D+</td>
+					<td>差分信号正端</td>
+					<td>与 B 端组成差分传输，高电平表示逻辑 1（部分手册标为 Data+）</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>B/D-</td>
+					<td>差分信号负端</td>
+					<td>与 A 端组成差分传输，低电平表示逻辑 0（部分手册标为 Data-）</td>
+			</tr>
+			<tr>
+					<td>4-9</td>
+					<td>预留</td>
+					<td>备用 / 扩展</td>
+					<td>可用于电源、硬件流控（实际极少用）</td>
+			</tr>
+	</tbody>
 </table></div>
 <p>接口属性：</p>
 <ol>
@@ -884,40 +884,40 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 与RS-232一致，参考上面RS-232</p>
 <p>用法：</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>接线类型</th>
-          <th>适用场景</th>
-          <th>所需引脚（DB9）</th>
-          <th>接线逻辑</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>最简组网（推荐）</td>
-          <td>短距离、少节点（≤10个）、低速率（如传感器组网）</td>
-          <td>A(2)、B(3)、GND(1)</td>
-          <td>所有设备的 A 引脚互连、B 引脚互连、GND 引脚互连；总线两端设备的 A/B 间各接120Ω终端电阻</td>
-      </tr>
-      <tr>
-          <td>工业稳定组网</td>
-          <td>长距离（＞10米）、多节点（≤32个）、高速（如Modbus RTU）</td>
-          <td>A(2)、B(3)、GND(1)、DE(4)、RE(5)</td>
-          <td>1. A/B/GND 总线互连+两端120Ω终端电阻；2. 主/从设备 DE 与 RE 短接，通过GPIO控制（高电平发送、低电平接收）</td>
-      </tr>
-      <tr>
-          <td>全功能冗余组网</td>
-          <td>工业关键场景（需抗干扰+状态监测）</td>
-          <td>A(2)、B(3)、GND(1)、DE(4)、RE(5)、备用(6-9)</td>
-          <td>1. 基础组网+终端电阻+DE/RE方向控制；2. 备用引脚可接电源（给从设备供电）或额外差分线（冗余备份）</td>
-      </tr>
-      <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>接线类型</th>
+					<th>适用场景</th>
+					<th>所需引脚（DB9）</th>
+					<th>接线逻辑</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>最简组网（推荐）</td>
+					<td>短距离、少节点（≤10个）、低速率（如传感器组网）</td>
+					<td>A(2)、B(3)、GND(1)</td>
+					<td>所有设备的 A 引脚互连、B 引脚互连、GND 引脚互连；总线两端设备的 A/B 间各接120Ω终端电阻</td>
+			</tr>
+			<tr>
+					<td>工业稳定组网</td>
+					<td>长距离（＞10米）、多节点（≤32个）、高速（如Modbus RTU）</td>
+					<td>A(2)、B(3)、GND(1)、DE(4)、RE(5)</td>
+					<td>1. A/B/GND 总线互连+两端120Ω终端电阻；2. 主/从设备 DE 与 RE 短接，通过GPIO控制（高电平发送、低电平接收）</td>
+			</tr>
+			<tr>
+					<td>全功能冗余组网</td>
+					<td>工业关键场景（需抗干扰+状态监测）</td>
+					<td>A(2)、B(3)、GND(1)、DE(4)、RE(5)、备用(6-9)</td>
+					<td>1. 基础组网+终端电阻+DE/RE方向控制；2. 备用引脚可接电源（给从设备供电）或额外差分线（冗余备份）</td>
+			</tr>
+			<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+			</tr>
+	</tbody>
 </table></div>
 <h4 id="modubus-tcp">modubus-TCP
 </h4><p>基于网络的TCP协议，使用了RTU逻辑，可以理解为把把RTU封装进TCP</p>
@@ -934,142 +934,142 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 时钟信号，由主机产生，同步数据传输时序。
 时钟信号、MOSI、MISO可以复用</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>针脚名称</th>
-          <th>功能描述</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>SCLK（Serial Clock）</td>
-          <td>时钟信号，由主机产生，同步数据传输时序</td>
-      </tr>
-      <tr>
-          <td>MOSI（Master Out Slave In）</td>
-          <td>主机输出→从机输入（数据发送线）接SDI</td>
-      </tr>
-      <tr>
-          <td>MISO（Master In Slave Out）</td>
-          <td>从机输出→主机输入（数据接收线）接SDO</td>
-      </tr>
-      <tr>
-          <td>CS/SS（Chip Select）</td>
-          <td>片选信号，低电平有效（选中指定从机）</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>针脚名称</th>
+					<th>功能描述</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>SCLK（Serial Clock）</td>
+					<td>时钟信号，由主机产生，同步数据传输时序</td>
+			</tr>
+			<tr>
+					<td>MOSI（Master Out Slave In）</td>
+					<td>主机输出→从机输入（数据发送线）接SDI</td>
+			</tr>
+			<tr>
+					<td>MISO（Master In Slave Out）</td>
+					<td>从机输出→主机输入（数据接收线）接SDO</td>
+			</tr>
+			<tr>
+					<td>CS/SS（Chip Select）</td>
+					<td>片选信号，低电平有效（选中指定从机）</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="qspi">QSPI
 </h3><p>QSPI（Quad SPI，四线串行外设接口）是SPI的扩展，使用4条数据线进行传输，提高数据传输速率。</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>针脚名称</th>
-          <th>功能描述</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>SCLK（Serial Clock）</td>
-          <td>时钟信号，由主机产生，同步数据传输时序</td>
-      </tr>
-      <tr>
-          <td>CS/SS（Chip Select）</td>
-          <td>片选信号，低电平有效（选中指定从机）</td>
-      </tr>
-      <tr>
-          <td>IO0/D0</td>
-          <td>双向数据线 0（兼容传统 SPI 的 MOSI） 双向</td>
-      </tr>
-      <tr>
-          <td>IO1/D1</td>
-          <td>双向数据线 1（兼容传统 SPI 的 MISO） 双向</td>
-      </tr>
-      <tr>
-          <td>IO2/D2</td>
-          <td>双向数据线 2（部分芯片复用为写保护功能 / WP#） 双向</td>
-      </tr>
-      <tr>
-          <td>IO3/D3</td>
-          <td>双向数据线 3（部分芯片复用为保持功能 / HOLD#） 双向</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>针脚名称</th>
+					<th>功能描述</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>SCLK（Serial Clock）</td>
+					<td>时钟信号，由主机产生，同步数据传输时序</td>
+			</tr>
+			<tr>
+					<td>CS/SS（Chip Select）</td>
+					<td>片选信号，低电平有效（选中指定从机）</td>
+			</tr>
+			<tr>
+					<td>IO0/D0</td>
+					<td>双向数据线 0（兼容传统 SPI 的 MOSI） 双向</td>
+			</tr>
+			<tr>
+					<td>IO1/D1</td>
+					<td>双向数据线 1（兼容传统 SPI 的 MISO） 双向</td>
+			</tr>
+			<tr>
+					<td>IO2/D2</td>
+					<td>双向数据线 2（部分芯片复用为写保护功能 / WP#） 双向</td>
+			</tr>
+			<tr>
+					<td>IO3/D3</td>
+					<td>双向数据线 3（部分芯片复用为保持功能 / HOLD#） 双向</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="lpspi">LPSPI
 </h3><p>可以理解为低功耗的QSPI，主要用于一些电池设备，有对功耗的深度优化，支持休眠模式下工作</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>引脚名称</th>
-          <th>功能描述</th>
-          <th>方向</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>SCK</td>
-          <td>串行时钟信号（主模式输出，从模式输入）</td>
-          <td>主→从</td>
-      </tr>
-      <tr>
-          <td>PCS[0-3]</td>
-          <td>片选信号（低电平有效），选择目标从设备</td>
-          <td>主→从</td>
-      </tr>
-      <tr>
-          <td>SOUT/DATA[0]</td>
-          <td>串行数据输出（可配置为输入），四线模式下为数据位 0</td>
-          <td>双向</td>
-      </tr>
-      <tr>
-          <td>SIN/DATA[1]</td>
-          <td>串行数据输入（可配置为输出），四线模式下为数据位 1</td>
-          <td>双向</td>
-      </tr>
-      <tr>
-          <td>DATA[2]</td>
-          <td>四线模式下为数据位 2（部分芯片复用为其他功能）</td>
-          <td>双向</td>
-      </tr>
-      <tr>
-          <td>DATA[3]</td>
-          <td>四线模式下为数据位 3（部分芯片复用为其他功能）</td>
-          <td>双向</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>引脚名称</th>
+					<th>功能描述</th>
+					<th>方向</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>SCK</td>
+					<td>串行时钟信号（主模式输出，从模式输入）</td>
+					<td>主→从</td>
+			</tr>
+			<tr>
+					<td>PCS[0-3]</td>
+					<td>片选信号（低电平有效），选择目标从设备</td>
+					<td>主→从</td>
+			</tr>
+			<tr>
+					<td>SOUT/DATA[0]</td>
+					<td>串行数据输出（可配置为输入），四线模式下为数据位 0</td>
+					<td>双向</td>
+			</tr>
+			<tr>
+					<td>SIN/DATA[1]</td>
+					<td>串行数据输入（可配置为输出），四线模式下为数据位 1</td>
+					<td>双向</td>
+			</tr>
+			<tr>
+					<td>DATA[2]</td>
+					<td>四线模式下为数据位 2（部分芯片复用为其他功能）</td>
+					<td>双向</td>
+			</tr>
+			<tr>
+					<td>DATA[3]</td>
+					<td>四线模式下为数据位 3（部分芯片复用为其他功能）</td>
+					<td>双向</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="flexspi">FlexSPI
 </h3><p>性能最强的SPI</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>引脚名称</th>
-          <th>功能描述</th>
-          <th>方向</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>SCK</strong></td>
-          <td>串行时钟（主模式输出，从模式输入）</td>
-          <td>主→从</td>
-      </tr>
-      <tr>
-          <td><strong>CS[0-3]</strong></td>
-          <td>片选信号（低电平有效），选择目标设备</td>
-          <td>主→从</td>
-      </tr>
-      <tr>
-          <td><strong>IO[0-7]</strong></td>
-          <td>双向数据线（模式不同，使用数量不同）</td>
-          <td>双向</td>
-      </tr>
-      <tr>
-          <td><strong>DQS</strong></td>
-          <td>数据选通（仅 DDR 模式需要，部分设备可省略）</td>
-          <td>双向</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>引脚名称</th>
+					<th>功能描述</th>
+					<th>方向</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>SCK</strong></td>
+					<td>串行时钟（主模式输出，从模式输入）</td>
+					<td>主→从</td>
+			</tr>
+			<tr>
+					<td><strong>CS[0-3]</strong></td>
+					<td>片选信号（低电平有效），选择目标设备</td>
+					<td>主→从</td>
+			</tr>
+			<tr>
+					<td><strong>IO[0-7]</strong></td>
+					<td>双向数据线（模式不同，使用数量不同）</td>
+					<td>双向</td>
+			</tr>
+			<tr>
+					<td><strong>DQS</strong></td>
+					<td>数据选通（仅 DDR 模式需要，部分设备可省略）</td>
+					<td>双向</td>
+			</tr>
+	</tbody>
 </table></div>
 <h2 id="i2c">I2C
 </h2><h3 id="接线硬件设计">接线/硬件设计
@@ -1078,36 +1078,36 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 一主多从，7位地址可以连接111个设备，接收端元器件一般不接内置电阻
 电路设计一般都是开漏模式</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>针脚</th>
-          <th>名称</th>
-          <th>功能描述</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>VCC/3V3/5V</td>
-          <td>电源正极（通常 3.3V 或 5V）</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>SCL</td>
-          <td>时钟线</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>SDA</td>
-          <td>数据线</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>GND</td>
-          <td>接地</td>
-      </tr>
-      <tr>
-          <td><img src="/index-20251128154828498.png"
+	<thead>
+			<tr>
+					<th>针脚</th>
+					<th>名称</th>
+					<th>功能描述</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>VCC/3V3/5V</td>
+					<td>电源正极（通常 3.3V 或 5V）</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>SCL</td>
+					<td>时钟线</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>SDA</td>
+					<td>数据线</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>GND</td>
+					<td>接地</td>
+			</tr>
+			<tr>
+					<td><img src="/index-20251128154828498.png"
 	
 	
 	
@@ -1115,10 +1115,10 @@ RS-232 是单端电平的异步串口，用 ±3~±15V 表示逻辑，需 3 根�
 	
 	
 ></td>
-          <td></td>
-          <td></td>
-      </tr>
-  </tbody>
+					<td></td>
+					<td></td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="速率时钟">速率/时钟
 </h3><p>可变速，标准模式100kbps，快速模式400kbps，高速模式3.4Mbps</p>
@@ -1263,64 +1263,64 @@ SCL高电平为传输数据模式，从主机会接收SDA的电平
 </div><h2 id="gpio">GPIO
 </h2><p>通用IO接口，可通过软件配置通用引脚功能的工作模式，工作模式有8种</p>
 <div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>序号</th>
-          <th>模式名称</th>
-          <th>大类归属</th>
-          <th>配置要点 &amp; 核心特点</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>1</td>
-          <td>浮空输入（Input Floating）</td>
-          <td>输入模式</td>
-          <td><code>MODER=00</code>（输入）+<code>PUPDR=00</code>（无上下拉）；电平由外部电路决定，未接外部电路时电平漂移</td>
-      </tr>
-      <tr>
-          <td>2</td>
-          <td>上拉输入（Input Pull-Up）</td>
-          <td>输入模式</td>
-          <td><code>MODER=00</code>+<code>PUPDR=01</code>（上拉）；默认高电平，外部拉低时读低电平（如按键检测）</td>
-      </tr>
-      <tr>
-          <td>3</td>
-          <td>下拉输入（Input Pull-Down）</td>
-          <td>输入模式</td>
-          <td><code>MODER=00</code>+<code>PUPDR=10</code>（下拉）；默认低电平，外部拉高时读高电平</td>
-      </tr>
-      <tr>
-          <td>4</td>
-          <td>模拟输入（Analog Input）</td>
-          <td>模拟模式</td>
-          <td><code>MODER=11</code>（模拟）；GPIO 数字电路关闭，引脚直通 ADC/DAC，用于读取 / 输出模拟信号</td>
-      </tr>
-      <tr>
-          <td>5</td>
-          <td>推挽输出（Output Push-Pull）</td>
-          <td>输出模式</td>
-          <td><code>MODER=01</code>（输出）+<code>OTYPER=0</code>（推挽）；可主动输出高低电平，驱动能力强</td>
-      </tr>
-      <tr>
-          <td>6</td>
-          <td>开漏输出（Output Open-Drain）</td>
-          <td>输出模式</td>
-          <td><code>MODER=01</code>+<code>OTYPER=1</code>（开漏）；仅能拉低电平，需外部上拉才能输出高电平</td>
-      </tr>
-      <tr>
-          <td>7</td>
-          <td>复用推挽输出（AF Push-Pull）</td>
-          <td>复用功能模式</td>
-          <td><code>MODER=10</code>（复用）+<code>OTYPER=0</code>；引脚作为外设（如 UART_TX）输出端，电平由外设控制</td>
-      </tr>
-      <tr>
-          <td>8</td>
-          <td>复用开漏输出（AF Open-Drain）</td>
-          <td>复用功能模式</td>
-          <td><code>MODER=10</code>+<code>OTYPER=1</code>；引脚作为外设（如 I2C_SDA）输出端，开漏特性适配总线协议</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>序号</th>
+					<th>模式名称</th>
+					<th>大类归属</th>
+					<th>配置要点 &amp; 核心特点</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>1</td>
+					<td>浮空输入（Input Floating）</td>
+					<td>输入模式</td>
+					<td><code>MODER=00</code>（输入）+<code>PUPDR=00</code>（无上下拉）；电平由外部电路决定，未接外部电路时电平漂移</td>
+			</tr>
+			<tr>
+					<td>2</td>
+					<td>上拉输入（Input Pull-Up）</td>
+					<td>输入模式</td>
+					<td><code>MODER=00</code>+<code>PUPDR=01</code>（上拉）；默认高电平，外部拉低时读低电平（如按键检测）</td>
+			</tr>
+			<tr>
+					<td>3</td>
+					<td>下拉输入（Input Pull-Down）</td>
+					<td>输入模式</td>
+					<td><code>MODER=00</code>+<code>PUPDR=10</code>（下拉）；默认低电平，外部拉高时读高电平</td>
+			</tr>
+			<tr>
+					<td>4</td>
+					<td>模拟输入（Analog Input）</td>
+					<td>模拟模式</td>
+					<td><code>MODER=11</code>（模拟）；GPIO 数字电路关闭，引脚直通 ADC/DAC，用于读取 / 输出模拟信号</td>
+			</tr>
+			<tr>
+					<td>5</td>
+					<td>推挽输出（Output Push-Pull）</td>
+					<td>输出模式</td>
+					<td><code>MODER=01</code>（输出）+<code>OTYPER=0</code>（推挽）；可主动输出高低电平，驱动能力强</td>
+			</tr>
+			<tr>
+					<td>6</td>
+					<td>开漏输出（Output Open-Drain）</td>
+					<td>输出模式</td>
+					<td><code>MODER=01</code>+<code>OTYPER=1</code>（开漏）；仅能拉低电平，需外部上拉才能输出高电平</td>
+			</tr>
+			<tr>
+					<td>7</td>
+					<td>复用推挽输出（AF Push-Pull）</td>
+					<td>复用功能模式</td>
+					<td><code>MODER=10</code>（复用）+<code>OTYPER=0</code>；引脚作为外设（如 UART_TX）输出端，电平由外设控制</td>
+			</tr>
+			<tr>
+					<td>8</td>
+					<td>复用开漏输出（AF Open-Drain）</td>
+					<td>复用功能模式</td>
+					<td><code>MODER=10</code>+<code>OTYPER=1</code>；引脚作为外设（如 I2C_SDA）输出端，开漏特性适配总线协议</td>
+			</tr>
+	</tbody>
 </table></div>
 <h3 id="cpu原生">CPU原生
 </h3><p>CPU总线支持的GPIO</p>
@@ -1442,40 +1442,40 @@ I2C 转 GPIO 芯片驱动加载后会被识别为<code>gpiochipX</code>，操作
 输入：麦克风把声音变成数字数据，通过 I2S 传给录音笔的存储芯片，保存成音频文件</p>
 <h3 id="针脚定义">针脚定义
 </h3><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>针脚名称</th>
-          <th>常用别名</th>
-          <th>方向</th>
-          <th>功能</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><strong>BCLK</strong></td>
-          <td>SCK (串行时钟)<br><br>位时钟</td>
-          <td>主设备输出<br><br>从设备输入</td>
-          <td>像 &ldquo;节拍器&rdquo; 一样，每滴答一次传 1 位数据</td>
-      </tr>
-      <tr>
-          <td><strong>LRCLK</strong></td>
-          <td>WS (字选择)<br><br>FS (帧同步)</td>
-          <td>主设备输出<br><br>从设备输入</td>
-          <td>告诉接收方：<br><br>0 = 左声道数据<br><br>1 = 右声道数据</td>
-      </tr>
-      <tr>
-          <td><strong>SD</strong></td>
-          <td>SDO (输出)<br><br>SDI (输入)</td>
-          <td>单向<br><br>(取决于角色)</td>
-          <td>传输实际的<strong>PCM 音频数据</strong>(0 和 1 的串)</td>
-      </tr>
-      <tr>
-          <td><strong>MCLK（可选）</strong></td>
-          <td>主时钟 / 系统时钟（可选）</td>
-          <td>主设备输出，从设备接收</td>
-          <td>通常是采样率的 256/384 倍，- 帮助多设备间精确同步，提高音质稳定性</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>针脚名称</th>
+					<th>常用别名</th>
+					<th>方向</th>
+					<th>功能</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td><strong>BCLK</strong></td>
+					<td>SCK (串行时钟)<br><br>位时钟</td>
+					<td>主设备输出<br><br>从设备输入</td>
+					<td>像 &ldquo;节拍器&rdquo; 一样，每滴答一次传 1 位数据</td>
+			</tr>
+			<tr>
+					<td><strong>LRCLK</strong></td>
+					<td>WS (字选择)<br><br>FS (帧同步)</td>
+					<td>主设备输出<br><br>从设备输入</td>
+					<td>告诉接收方：<br><br>0 = 左声道数据<br><br>1 = 右声道数据</td>
+			</tr>
+			<tr>
+					<td><strong>SD</strong></td>
+					<td>SDO (输出)<br><br>SDI (输入)</td>
+					<td>单向<br><br>(取决于角色)</td>
+					<td>传输实际的<strong>PCM 音频数据</strong>(0 和 1 的串)</td>
+			</tr>
+			<tr>
+					<td><strong>MCLK（可选）</strong></td>
+					<td>主时钟 / 系统时钟（可选）</td>
+					<td>主设备输出，从设备接收</td>
+					<td>通常是采样率的 256/384 倍，- 帮助多设备间精确同步，提高音质稳定性</td>
+			</tr>
+	</tbody>
 </table></div>
 <h2 id="pcie">PCIE
 </h2><h3 id="gen几x几">Gen几、x几
@@ -1567,7 +1567,7 @@ WIFI模块、蓝牙模块</p>
         
         
             <div class="article-image">
-                <img src="/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.ece128027d308b0b2cbfee451e56f2bd_hu_74ba09f56ce8a28d.png" 
+                <img src="/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.ece128027d308b0b2cbfee451e56f2bd_hu_84c7564b6ca5e9f8.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1591,7 +1591,7 @@ WIFI模块、蓝牙模块</p>
         
         
             <div class="article-image">
-                <img src="/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.e27c9227b7235a28db116b228654e067_hu_46d1fe551c93a694.png" 
+                <img src="/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.e27c9227b7235a28db116b228654e067_hu_d9827c93dab33ddd.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1615,7 +1615,7 @@ WIFI模块、蓝牙模块</p>
         
         
             <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_f04f497f32de208.png" 
+                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_5cdba464fe805d53.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -1652,7 +1652,7 @@ WIFI模块、蓝牙模块</p>
         
         
             <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_4cfb89fd987e630.png" 
+                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_1a1e009c36385374.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"

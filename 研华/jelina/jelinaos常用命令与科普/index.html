@@ -708,50 +708,50 @@
 </ol>
 <h1 id="jelina常用命令或命令组合">Jelina常用命令或命令组合
 </h1><div class="table-wrapper"><table>
-  <thead>
-      <tr>
-          <th>命令</th>
-          <th>说明</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>jelina-ver</td>
-          <td>查询当前JelinaOS的系统版本</td>
-      </tr>
-      <tr>
-          <td>jelina-device-info get &ndash;sn &ndash;ssn</td>
-          <td>查看设备SN号（RK和NXP兼容）的命令</td>
-      </tr>
-      <tr>
-          <td>cat /run/jelina/register/jelina-register-state; echo</td>
-          <td>检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过</td>
-      </tr>
-      <tr>
-          <td>systemctl restart jelina-jelinvisor</td>
-          <td>重启jelinvisor，一般用于初始化与Cloud的连接</td>
-      </tr>
-      <tr>
-          <td>cat /mnt/boot/config.json</td>
-          <td>查看“舰队”等配置信息</td>
-      </tr>
-      <tr>
-          <td>journalctl -u jelina-jelinvisor.servicef</td>
-          <td>查看最近的jelinvisor日志，一般用于分析设备无法online的情况</td>
-      </tr>
-      <tr>
-          <td>systemctl start <a class="link" href="mailto:jelina-upper-new@root.service" >jelina-upper-new@root.service</a></td>
-          <td>恢复初始状态（Jelinvisor除外）</td>
-      </tr>
-      <tr>
-          <td>jelina-offline off</td>
-          <td>切换jelinvisor到连线模式</td>
-      </tr>
-      <tr>
-          <td>jelina-offline on</td>
-          <td>切换jelinvisor到离线模式</td>
-      </tr>
-  </tbody>
+	<thead>
+			<tr>
+					<th>命令</th>
+					<th>说明</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>jelina-ver</td>
+					<td>查询当前JelinaOS的系统版本</td>
+			</tr>
+			<tr>
+					<td>jelina-device-info get &ndash;sn &ndash;ssn</td>
+					<td>查看设备SN号（RK和NXP兼容）的命令</td>
+			</tr>
+			<tr>
+					<td>cat /run/jelina/register/jelina-register-state; echo</td>
+					<td>检查设备是否注册过的本地检查方法：开机后，等待一分钟，命令行终端上使用该命令。返回verified，表示已注册过；返回not_registered，表示未注册过</td>
+			</tr>
+			<tr>
+					<td>systemctl restart jelina-jelinvisor</td>
+					<td>重启jelinvisor，一般用于初始化与Cloud的连接</td>
+			</tr>
+			<tr>
+					<td>cat /mnt/boot/config.json</td>
+					<td>查看“舰队”等配置信息</td>
+			</tr>
+			<tr>
+					<td>journalctl -u jelina-jelinvisor.servicef</td>
+					<td>查看最近的jelinvisor日志，一般用于分析设备无法online的情况</td>
+			</tr>
+			<tr>
+					<td>systemctl start <a class="link" href="mailto:jelina-upper-new@root.service" >jelina-upper-new@root.service</a></td>
+					<td>恢复初始状态（Jelinvisor除外）</td>
+			</tr>
+			<tr>
+					<td>jelina-offline off</td>
+					<td>切换jelinvisor到连线模式</td>
+			</tr>
+			<tr>
+					<td>jelina-offline on</td>
+					<td>切换jelinvisor到离线模式</td>
+			</tr>
+	</tbody>
 </table></div>
 <h1 id="磁盘空间">磁盘空间
 </h1><p>读写分区挂载在 /mnt/overlay/rw 目录下<br>
@@ -798,7 +798,7 @@ image : 由 Docker 管理</p>
         
         
             <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_4cfb89fd987e630.png" 
+                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E5%AE%89%E8%A3%85onboard%E5%B1%8F%E5%B9%95%E8%BD%AF%E9%94%AE%E7%9B%98sop/image-1.5ed03bfccded9ecc44d7e2beb7239003_hu_1a1e009c36385374.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -822,7 +822,7 @@ image : 由 Docker 管理</p>
         
         
             <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.bb9f42734cbb882af34749da4bf234e5_hu_eb7a41a2fec565f9.png" 
+                <img src="/%E7%A0%94%E5%8D%8E/jelina/jelina%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/image-4.bb9f42734cbb882af34749da4bf234e5_hu_a061d542879b2d07.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -846,7 +846,7 @@ image : 由 Docker 管理</p>
         
         
             <div class="article-image">
-                <img src="/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.ece128027d308b0b2cbfee451e56f2bd_hu_74ba09f56ce8a28d.png" 
+                <img src="/linux%E8%AE%BE%E5%A4%87%E4%B8%8A%E7%BD%91%E5%8E%9F%E7%90%86%E4%B8%8E%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%8C%87%E5%8D%97/index-20260121162301816.ece128027d308b0b2cbfee451e56f2bd_hu_84c7564b6ca5e9f8.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -870,7 +870,7 @@ image : 由 Docker 管理</p>
         
         
             <div class="article-image">
-                <img src="/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.e27c9227b7235a28db116b228654e067_hu_46d1fe551c93a694.png" 
+                <img src="/ssh%E5%B7%A5%E5%85%B7%E7%9A%84%E8%BF%9E%E6%8E%A5%E4%B8%8E%E4%BD%BF%E7%94%A8/index-20251208091307212.e27c9227b7235a28db116b228654e067_hu_d9827c93dab33ddd.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
@@ -894,7 +894,7 @@ image : 由 Docker 管理</p>
         
         
             <div class="article-image">
-                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_f04f497f32de208.png" 
+                <img src="/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index-20251204150741951.8210f67e7fc5446c735966c55f6b4e2d_hu_5cdba464fe805d53.png" 
                         width="250" 
                         height="150" 
                         loading="lazy"
