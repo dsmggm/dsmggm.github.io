@@ -7,7 +7,96 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Thu, 04 Dec 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 24 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>BIOS设置来电启动</title>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/</link>
+        <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/3ee2356fdff5c2f01ccd2f90bf3ac0b9.jpg" alt="Featured image of post BIOS设置来电启动" /&gt;&lt;p&gt;注：此教程仅适用于研华AIMB-705主板&lt;/p&gt;
+&lt;h1 id=&#34;开机进入bios&#34;&gt;开机进入BIOS
+&lt;/h1&gt;&lt;p&gt;开机时按下Del键进入BIOS设置界面&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/5cb8b9770005dda2759db126d20c7c9b.jpg&#34;
+	width=&#34;2045&#34;
+	height=&#34;1080&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/5cb8b9770005dda2759db126d20c7c9b_hu_4cc9100ae7ee98fd.jpg 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/5cb8b9770005dda2759db126d20c7c9b_hu_5bfc7ddfda52e543.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;189&#34;
+		data-flex-basis=&#34;454px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;设置来电启动&#34;&gt;设置来电启动
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;在BIOS设置界面中，方向键控制到达&lt;code&gt;Chipset&lt;/code&gt;选项卡&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;PCH-IO Configuration&lt;/code&gt;后回车&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/02742fe2f00b67841a263adadba0bc2b.jpg&#34;
+	width=&#34;1955&#34;
+	height=&#34;1079&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/02742fe2f00b67841a263adadba0bc2b_hu_816a560656561d8.jpg 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/02742fe2f00b67841a263adadba0bc2b_hu_d979690116a0d561.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;434px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;找到&lt;code&gt;Restore AC Power On loss&lt;/code&gt;选项或者是&lt;code&gt;State After G3&lt;/code&gt;选项，按下回车进行选择&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/a2a39bb5d0e3896d2e00d0929a0d7351.jpg&#34;
+	width=&#34;1972&#34;
+	height=&#34;1079&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/a2a39bb5d0e3896d2e00d0929a0d7351_hu_a92c973b189b85ad.jpg 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/a2a39bb5d0e3896d2e00d0929a0d7351_hu_17ac6951e7095e2c.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;182&#34;
+		data-flex-basis=&#34;438px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;根据需求选择&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;S5 State&lt;/code&gt;或&lt;code&gt;Power Off&lt;/code&gt;：接通电源后关机状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;S0 State&lt;/code&gt;或&lt;code&gt;Power On&lt;/code&gt;：接通电源后开机状态&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Last State&lt;/code&gt;：接通电源后恢复上一次状态，包括关机状态和开机状态&lt;br&gt;
+选择后按下回车确认&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/3ee2356fdff5c2f01ccd2f90bf3ac0b9.jpg&#34;
+	width=&#34;2002&#34;
+	height=&#34;1080&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/3ee2356fdff5c2f01ccd2f90bf3ac0b9_hu_c0e75498d1243cc1.jpg 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/3ee2356fdff5c2f01ccd2f90bf3ac0b9_hu_2998cbb131991636.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;185&#34;
+		data-flex-basis=&#34;444px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;保存重启&#34;&gt;保存重启
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;按下&lt;code&gt;F4&lt;/code&gt;键保存设置&lt;/li&gt;
+&lt;li&gt;回车确认保存自动重启&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/01de497ae04ac2968d8894b7610ba591.jpg&#34;
+	width=&#34;1919&#34;
+	height=&#34;1080&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/01de497ae04ac2968d8894b7610ba591_hu_e89383f30510c75.jpg 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%9D%A5%E7%94%B5%E5%90%AF%E5%8A%A8/01de497ae04ac2968d8894b7610ba591_hu_fe9628ca2000f264.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;177&#34;
+		data-flex-basis=&#34;426px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>arm设备系统安装教程</title>
         <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/arm%E8%AE%BE%E5%A4%87%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/</link>
         <pubDate>Thu, 04 Dec 2025 00:00:00 +0000</pubDate>
