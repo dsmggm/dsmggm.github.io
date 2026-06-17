@@ -7,7 +7,125 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Tue, 26 May 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 17 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>火箭R640L阵列卡刷写固件教程</title>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/%E7%81%AB%E7%AE%ADr640l%E9%98%B5%E5%88%97%E5%8D%A1%E5%88%B7%E5%86%99%E5%9B%BA%E4%BB%B6%E6%95%99%E7%A8%8B/%E7%81%AB%E7%AE%ADr640l%E9%98%B5%E5%88%97%E5%8D%A1%E5%88%B7%E5%86%99%E5%9B%BA%E4%BB%B6%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/%E7%81%AB%E7%AE%ADr640l%E9%98%B5%E5%88%97%E5%8D%A1%E5%88%B7%E5%86%99%E5%9B%BA%E4%BB%B6%E6%95%99%E7%A8%8B/%E7%81%AB%E7%AE%ADr640l%E9%98%B5%E5%88%97%E5%8D%A1%E5%88%B7%E5%86%99%E5%9B%BA%E4%BB%B6%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="https://dsmggm.dpdns.org/image.png" alt="Featured image of post 火箭R640L阵列卡刷写固件教程" /&gt;&lt;h1 id=&#34;硬件准备&#34;&gt;硬件准备
+&lt;/h1&gt;&lt;p&gt;准备U盘一个 &amp;amp;  阵列卡连接主板&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/image.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;alt text&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;软件准备&#34;&gt;软件准备
+&lt;/h1&gt;&lt;p&gt;火箭R640L官网连接&lt;a class=&#34;link&#34; href=&#34;http://www.highpoint-tech.cn/pro-detail640l.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://www.highpoint-tech.cn/pro-detail640l.html&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;固件刷写软件下载&#34;&gt;固件刷写软件下载
+&lt;/h2&gt;&lt;p&gt;下载uefi启动刷写固件文件&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-1.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+格式化U盘为&lt;strong&gt;Fat32&lt;/strong&gt;格式，将文件复制解压到U盘根目录&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-2.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;驱动与管理软件下载&#34;&gt;驱动与管理软件下载
+&lt;/h2&gt;&lt;p&gt;根据需求下载安装
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-3.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;刷固件&#34;&gt;刷固件
+&lt;/h1&gt;&lt;p&gt;将U盘插到设备，UEFI启动到U盘&lt;br&gt;
+输入&lt;strong&gt;go&lt;/strong&gt;指令回车后刷写固件&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ScreenShot_2026-06-17_150143_534.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ScreenShot_2026-06-17_150218_108.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;设置raid&#34;&gt;设置RAID
+&lt;/h1&gt;&lt;p&gt;重启电脑进入BIOS——Advanced——HighPoint RAID Management Utility进行RAID设置&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/ScreenShot_2026-06-17_150233_743.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;pe系统安装驱动&#34;&gt;PE系统安装驱动
+&lt;/h1&gt;&lt;p&gt;设备管理器安装驱动&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-4.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-6.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;
+浏览选择下载并解压的驱动文件
+&lt;img src=&#34;https://dsmggm.dpdns.org/image-7.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;软件安装&#34;&gt;软件安装
+&lt;/h1&gt;&lt;p&gt;进入系统后根据提示安装管理软件即可&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Windows异常分析文件导出指导</title>
         <link>https://dsmggm.dpdns.org/windows%E5%BC%82%E5%B8%B8%E5%88%86%E6%9E%90%E6%96%87%E4%BB%B6%E5%AF%BC%E5%87%BA%E6%8C%87%E5%AF%BC/</link>
         <pubDate>Tue, 26 May 2026 00:00:00 +0000</pubDate>
