@@ -727,6 +727,8 @@
 </span><span class="lnt">35
 </span><span class="lnt">36
 </span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="cp">#!/usr/sbin/nft -f
@@ -743,8 +745,10 @@
 </span></span><span class="line"><span class="cl">        iif lo accept
 </span></span><span class="line"><span class="cl">        <span class="c1"># 内网LAN访问本机所有服务（dnsmasq、ssh等）</span>
 </span></span><span class="line"><span class="cl">        iif enp3s0 accept
-</span></span><span class="line"><span class="cl">        <span class="c1"># WAN仅放行必要端口，示例放行SSH 22</span>
-</span></span><span class="line"><span class="cl">        iif enp2s0 tcp dport <span class="m">22</span> accept
+</span></span><span class="line"><span class="cl">        <span class="c1"># WAN放行全部外网入站流量</span>
+</span></span><span class="line"><span class="cl">        iif enp2s0 accept
+</span></span><span class="line"><span class="cl">        <span class="c1"># WAN仅放行必要端口，注释上面的accept，示例放行SSH 22</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># iif enp2s0 tcp dport 22 accept</span>
 </span></span><span class="line"><span class="cl">        <span class="c1"># 允许本机主动向外发起连接的回包</span>
 </span></span><span class="line"><span class="cl">        ct state related,established accept
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
