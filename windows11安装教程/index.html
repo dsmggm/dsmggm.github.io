@@ -373,10 +373,8 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    
     <style>
         body {
-             
         }
         .buttonDownload {
             display: inline-block;
@@ -403,7 +401,6 @@
             color: white;
         }
 
-         
         .buttonDownload:disabled {
             background-color: #909090 !important;
             cursor: not-allowed !important;
@@ -480,185 +477,255 @@
 <body>
     <div class="center-container">
         <div class="download-container">
-            <button onclick="printArticleToPDF()" class="buttonDownload">另存为PDF</button>
-            <div class="text-container">点击后跳出打印窗口 打印机选择打印为PDF</div>
+            <button id="exportPdfBtn" class="buttonDownload">导出为PDF</button>
+            <div class="text-container">点击后调用浏览器打印，选择"另存为PDF"</div>
         </div>
-        
-        
     </div>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
 
     <script>
         
-        const { jsPDF } = window.jspdf;
-        const btn = document.getElementById('exportPdfBtn');
-        const originalText = btn.innerText;
+        const CONTENT_SELECTOR = 'main article section.article-content, main article section';
 
-        async function exportToPDF(options = {}) {
-            const { filename = '网页导出', scale = 2 } = options;
+        
+        
+        const exportBtns = document.querySelectorAll('#exportPdfBtn');
+        exportBtns.forEach(btn => {
+            const originalText = btn.innerText;
 
-            
-            btn.disabled = true;
-            btn.innerText = "生成PDF中...";
-
-            try {
-                
-                const element = document.querySelector('main article section');
-
-                const canvas = await html2canvas(element, {
-                    scale: scale,
-                    useCORS: true,
-                    backgroundColor: '#ffffff',
-                    logging: false,
-                    allowTaint: false
+            btn.addEventListener('click', () => {
+                btn.disabled = true;
+                btn.innerText = "准备打印中...";
+                printArticleToPDF().finally(() => {
+                    btn.disabled = false;
+                    btn.innerText = originalText;
                 });
+            });
+        });
 
-                const imgData = canvas.toDataURL('image/jpeg', 0.95);
-                const imgWidth = 210;
-                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+        async function printArticleToPDF() {
+            const articleElement = document.querySelector(CONTENT_SELECTOR);
+            if (!articleElement) {
+                alert('未找到文章内容，请检查页面结构！');
+                return;
+            }
 
-                const pdf = new jsPDF('p', 'mm', 'a4');
-                let heightLeft = imgHeight;
-                let position = 0;
-                const pageHeight = 297;
+            
+            const articleClone = articleElement.cloneNode(true);
 
-                pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-                heightLeft -= pageHeight;
-
-                while (heightLeft > 0) {
-                    position = heightLeft - imgHeight;
-                    pdf.addPage();
-                    pdf.addImage(imgData, 'JPEG', 0, position, imgWidth, imgHeight);
-                    heightLeft -= pageHeight;
+            
+            const toAbsoluteUrl = (url) => {
+                if (!url) return url;
+                if (url.startsWith('http') || url.startsWith('data:') || url.startsWith('//')) {
+                    return url.startsWith('//') ? window.location.protocol + url : url;
                 }
+                try {
+                    return new URL(url, window.location.origin).href;
+                } catch (e) {
+                    return window.location.origin + url;
+                }
+            };
+            const fixSrcset = (srcset) => {
+                if (!srcset) return srcset;
+                return srcset.split(',').map(part => {
+                    const trimmed = part.trim();
+                    if (!trimmed) return trimmed;
+                    const [url, ...rest] = trimmed.split(/\s+/);
+                    return toAbsoluteUrl(url) + (rest.length ? ' ' + rest.join(' ') : '');
+                }).join(', ');
+            };
 
-                pdf.save(`${filename}.pdf`);
-                alert('导出成功！');
-
-            } catch (error) {
-                console.error('导出失败：', error);
-                alert('导出失败：' + error.message);
-            } finally {
+            const images = articleClone.querySelectorAll('img');
+            images.forEach(img => {
                 
-                btn.disabled = false;
-                btn.innerText = originalText;
-            }
-        }
+                if (img.getAttribute('data-src')) {
+                    img.setAttribute('src', img.getAttribute('data-src'));
+                }
+                if (img.getAttribute('data-srcset')) {
+                    img.setAttribute('srcset', img.getAttribute('data-srcset'));
+                }
+                
+                img.removeAttribute('loading');
+                img.removeAttribute('data-src');
+                img.removeAttribute('data-srcset');
+                img.removeAttribute('decoding');
 
-        btn.addEventListener('click', () => {
-            exportToPDF({ filename: document.title, scale: 2 });
-        });
-        
+                
+                const src = img.getAttribute('src');
+                if (src) img.setAttribute('src', toAbsoluteUrl(src));
+                
+                const srcset = img.getAttribute('srcset');
+                if (srcset) img.setAttribute('srcset', fixSrcset(srcset));
 
-        
-        
-        function printArticleToPDF() {
-        
-        const articleElement = document.querySelector('article section');
-        if (!articleElement) {
-            alert('未找到 article 标签，请检查页面结构！');
-            return;
-        }
+                img.style.maxWidth = '100%';
+                img.style.height = 'auto';
+                img.style.display = 'block';
+                img.style.margin = '10px auto';
+                img.style.pageBreakInside = 'avoid';
+                img.style.breakInside = 'avoid';
+            });
 
-        
-        const articleClone = articleElement.cloneNode(true);
-        
-        
-        const images = articleClone.querySelectorAll('img');
-        images.forEach(img => {
-            const src = img.src;
             
-            if (src && !src.startsWith('http')) {
-            img.src = window.location.origin + src;
-            }
+            articleClone.querySelectorAll('picture source').forEach(source => {
+                const ss = source.getAttribute('srcset') || source.getAttribute('data-srcset');
+                if (ss) source.setAttribute('srcset', fixSrcset(ss));
+                source.removeAttribute('data-srcset');
+            });
+
             
-            img.style.maxWidth = '100%';
-            img.style.height = 'auto';
-            img.style.pageBreakInside = 'avoid'; 
-        });
+            const styleLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
+                .map(link => link.outerHTML).join('');
+            const styleTags = Array.from(document.querySelectorAll('style'))
+                .map(style => style.outerHTML).join('');
 
-        
-        const styleLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]'))
-            .map(link => `<link rel="stylesheet" href="${link.href}">`)
-            .join('');
-        const styleTags = Array.from(document.querySelectorAll('style'))
-            .map(style => `<style>${style.innerHTML}</style>`)
-            .join('');
+            
+            const printWindow = window.open('', '_blank');
+            if (!printWindow) {
+                alert('打印窗口被浏览器拦截，请允许弹窗后重试！');
+                return;
+            }
 
-        
-        const printWindow = window.open('', '_blank');
-        printWindow.document.write(`
-            <!DOCTYPE html>
-            <html>
-            <head>
-            <meta charset="UTF-8">
-            <title>${document.title}</title>
-            \x3C!-- 加载原网页样式 -->
-            ${styleLinks}
-            ${styleTags}
-            \x3C!-- 打印专属样式（重点优化图片） -->
-            <style>
-                /* 基础重置 */
-                body { margin: 0; padding: 0; }
-                /* 打印核心适配 */
-                @media print {
-                /* Article 基础排版 */
-                article { 
-                    max-width: 100% !important; 
-                    margin: 0 auto !important; 
-                    padding: 15mm !important; 
-                    box-shadow: none !important;
-                }
-                /* 图片终极适配 */
-                article img {
-                    max-width: 100% !important; /* 不超过 PDF 页面宽度 */
-                    height: auto !important; /* 保持宽高比 */
-                    page-break-inside: avoid !important; /* 禁止图片跨页 */
-                    page-break-after: auto !important; /* 图片后自动分页 */
-                    display: block !important; /* 避免行内样式错乱 */
-                    margin: 10mm auto !important; /* 图片居中+上下间距 */
-                }
-                /* 避免标题和图片拆分 */
-                h1, h2, h3, h4 {
-                    page-break-after: avoid !important;
-                }
-                /* 移除浏览器默认页眉页脚 */
-                @page {
-                    margin: 20mm; 
-                    size: A4;
-                }
-                /* 隐藏无关元素 */
-                .no-print, .header, .footer, .sidebar, nav, aside { 
-                    display: none !important; 
-                }
-                }
-            </style>
-            </head>
-            <body>
-            \x3C!-- 插入修复后的 article 内容 -->
-            ${articleClone.outerHTML}
-            </body>
-            </html>
-        `);
-        
-        
-        printWindow.document.close();
-        printWindow.focus();
-        setTimeout(() => {
+            printWindow.document.write(`
+                <!DOCTYPE html>
+                <html>
+                <head>
+                <meta charset="UTF-8">
+                <title>${document.title}</title>
+                ${styleLinks}
+                ${styleTags}
+                <style>
+                    html, body {
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        background: #ffffff !important;
+                        color: #333333 !important;
+                        max-height: none !important;
+                        height: auto !important;
+                        overflow: visible !important;
+                    }
+                    /* 强制亮色：避免暗色模式导致白底白字 */
+                    :root, * {
+                        --body-background: #ffffff !important;
+                        --body-text-color: #333333 !important;
+                        --card-background: #ffffff !important;
+                        --accent-color: #34495e !important;
+                        --accent-color-text: #ffffff !important;
+                    }
+                    body * {
+                        color: #333333 !important;
+                        background-color: transparent !important;
+                        border-color: #ccc !important;
+                    }
+                    /* 代码块保留浅灰底 */
+                    pre, code, .highlight, .hljs {
+                        background-color: #f6f6f6 !important;
+                        color: #333 !important;
+                    }
+                    pre code { background-color: transparent !important; }
+                    article, .article-content, .main-article {
+                        max-width: 100% !important;
+                        width: 100% !important;
+                        margin: 0 !important;
+                        padding: 0 !important;
+                        box-shadow: none !important;
+                        background: #fff !important;
+                    }
+                    img {
+                        max-width: 100% !important;
+                        height: auto !important;
+                        page-break-inside: avoid !important;
+                        break-inside: avoid !important;
+                        display: block !important;
+                        margin: 10px auto !important;
+                    }
+                    h1, h2, h3, h4, h5, h6 {
+                        page-break-after: avoid !important;
+                        break-after: avoid !important;
+                        color: #1a3563 !important;
+                    }
+                    p, li, blockquote, table, tr, pre, figure {
+                        page-break-inside: avoid !important;
+                        break-inside: avoid !important;
+                    }
+                    table { width: 100% !important; border-collapse: collapse !important; }
+                    th, td { border: 1px solid #ccc !important; padding: 6px !important; }
+                    /* 隐藏无关元素 */
+                    .no-print, .header, .footer, .sidebar, nav, aside, .article-time,
+                    .article-tags, .article-copyright, .article-header { display: none !important; }
+                    @page {
+                        margin: 15mm;
+                        size: A4;
+                    }
+                </style>
+                </head>
+                <body>
+                ${articleClone.outerHTML}
+                </body>
+                </html>
+            `);
+            printWindow.document.close();
+
+            
+            await waitForReady(printWindow);
+
+            
+            printWindow.focus();
+            printWindow.onafterprint = () => {
+                setTimeout(() => { if (!printWindow.closed) printWindow.close(); }, 200);
+            };
             printWindow.print();
-            printWindow.close();
-        }, 1200); 
+            
+            setTimeout(() => { if (!printWindow.closed) printWindow.close(); }, 30000);
+        }
+
+        
+        function waitForReady(printWindow) {
+            return new Promise(resolve => {
+                let done = false;
+                const finish = () => {
+                    if (done) return;
+                    done = true;
+                    setTimeout(resolve, 500);
+                };
+
+                const startImageWait = () => {
+                    const imgs = Array.from(printWindow.document.querySelectorAll('img'));
+                    if (imgs.length === 0) { finish(); return; }
+                    let pending = imgs.length;
+                    const onDone = () => {
+                        pending--;
+                        if (pending === 0) finish();
+                    };
+                    imgs.forEach(img => {
+                        if (img.complete && img.naturalWidth > 0) {
+                            onDone();
+                        } else {
+                            img.addEventListener('load', onDone, { once: true });
+                            img.addEventListener('error', onDone, { once: true });
+                            
+                            const s = img.getAttribute('src');
+                            if (s) {
+                                img.src = s;
+                            }
+                        }
+                    });
+                };
+
+                
+                if (printWindow.document.readyState === 'complete') {
+                    startImageWait();
+                } else {
+                    printWindow.addEventListener('load', startImageWait, { once: true });
+                }
+
+                
+                setTimeout(finish, 15000);
+            });
         }
     </script>
-    
+
 </body>
 </html>
+
 
     <section class="article-content">
     
