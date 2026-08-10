@@ -7,7 +7,81 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Dsmggm</copyright>
-        <lastBuildDate>Wed, 17 Jun 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 10 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>BIOS设置打开集显双显卡</title>
+        <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/</link>
+        <pubDate>Mon, 10 Aug 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/</guid>
+        <description>&lt;p&gt;注：此教程仅适用于研华AIMB-705、AIMB-505、AIMB-205主板等&lt;/p&gt;
+&lt;h1 id=&#34;开机进入bios&#34;&gt;开机进入BIOS
+&lt;/h1&gt;&lt;p&gt;开机时按下Del键进入BIOS设置界面&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/5cb8b9770005dda2759db126d20c7c9b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;设置集成显卡始终打开&#34;&gt;设置集成显卡始终打开
+&lt;/h1&gt;&lt;p&gt;Chipset Configuration——System Agent Configuration——Graphics Configuration——Internal Graphics&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在BIOS设置界面中，方向键控制到达&lt;code&gt;Chipset&lt;/code&gt;选项卡&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image.png&#34;
+	width=&#34;600&#34;
+	height=&#34;450&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image_hu_8a7ddc9a536857b1.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image_hu_c559e4473015df9.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;System Agent Configuration&lt;/code&gt;后回车&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image-1.png&#34;
+	width=&#34;800&#34;
+	height=&#34;600&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image-1_hu_f5056f3a65841884.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image-1_hu_64d15845d91c7ac3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;Graphics Configuration&lt;/code&gt;后回车&lt;br&gt;
+&lt;img src=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image-2.png&#34;
+	width=&#34;600&#34;
+	height=&#34;450&#34;
+	srcset=&#34;https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image-2_hu_cbcedac49b379f28.png 480w, https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/bios%E8%AE%BE%E7%BD%AE%E6%89%93%E5%BC%80%E9%9B%86%E6%98%BE%E5%8F%8C%E6%98%BE%E5%8D%A1/image-2_hu_225367fe3c6fca8e.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;133&#34;
+		data-flex-basis=&#34;320px&#34;
+	
+&gt;&lt;/li&gt;
+&lt;li&gt;选择&lt;code&gt;Internal Graphics&lt;/code&gt;后回车&lt;br&gt;
+Internal Graphics选择为Enable为打开集成显卡&lt;br&gt;
+另外一个选项Primary Display为设置主屏幕选项：&lt;br&gt;
+IGFX：集成显卡&lt;br&gt;
+PCI：PCI独立显卡&lt;br&gt;
+PEG：PCIE独立显卡&lt;br&gt;
+SG：由系统调度，多用于笔记本双显卡设备&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;保存重启&#34;&gt;保存重启
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;按下&lt;code&gt;F4&lt;/code&gt;键保存设置&lt;/li&gt;
+&lt;li&gt;回车确认保存自动重启&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        <item>
         <title>火箭R640L阵列卡刷写固件教程</title>
         <link>https://dsmggm.dpdns.org/%E7%A0%94%E5%8D%8E/%E7%81%AB%E7%AE%ADr640l%E9%98%B5%E5%88%97%E5%8D%A1%E5%88%B7%E5%86%99%E5%9B%BA%E4%BB%B6%E6%95%99%E7%A8%8B/</link>
         <pubDate>Wed, 17 Jun 2026 00:00:00 +0000</pubDate>
